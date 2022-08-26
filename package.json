@@ -8,6 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "storybook": "export NODE_OPTIONS=--openssl-legacy-provider; start-storybook -p 6006",
+    "storybookw": "set NODE_OPTIONS=--openssl-legacy-provider; start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
