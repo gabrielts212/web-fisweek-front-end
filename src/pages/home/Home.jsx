@@ -4,7 +4,7 @@ export function Home() {
     return (
         <div>
             <h2>HOME</h2>
-            <Link to="/">Save the date</Link>
+            <Link to="/">Pre</Link>
         </div>
     );
 }
