@@ -10,7 +10,6 @@ import './App.css'
 export default function App() {
   return (
     <div className="App">
-      <h1>FISWEEK 2022</h1>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Pre />} />
