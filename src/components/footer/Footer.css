@@ -1,0 +1,14 @@
+.ft-container {
+    width: auto;
+    height: 226px;
+
+  background: linear-gradient(
+    180deg, 
+    rgba(126, 112, 186, 0) 9.68%, 
+    #5837EA 100%
+  );
+}
+
+.partners {
+  margin-top: 108px;
+}

@@ -1,0 +1,80 @@
+.save-the-date {
+  width: 720px;
+  height: 830px;
+}
+
+.geometric-shapes1 {
+  position: absolute;
+  left: .17%;
+  right: 91.39%;
+  top: 0;
+  bottom: 75.97%;
+}
+
+.fisweek {
+  position: absolute;
+  left: 3.5%;
+  right: 71.88%;
+  top: 5.57%;
+  bottom: 87.87%;
+
+  z-index: 1;
+}
+
+.logo {
+  position: absolute;
+  width: 88px;
+  height: 89px;
+  left: 430px;
+  top: 55px;
+}
+
+.na {
+  position: absolute;
+  width: 30.48px;
+  height: 30.48px;
+  left: 185.87px;
+  top: 145.6px;
+}
+
+.rio-innovation {
+  position: absolute;
+  width: 429px;
+  height: 247px;
+  left: 130px;
+  top: 130px;
+}
+
+.image1 {
+  width: auto;
+
+  position: absolute;
+  left: .93%;
+  right: 24.72%;
+  top: 33%;
+  bottom: 18.46%;
+}
+
+.event-date {
+  position: absolute;
+  width: 91.33px;
+  height: 229.76px;
+  left: 477px;
+  top: 560px;
+}
+
+.geometric-shapes2 {
+  position: absolute;
+  left: .25%;
+  right: 92.78%;
+  top: 53.69%;
+  bottom: 26.9%;
+}
+
+.geometric-shapes3 {
+  position: absolute;
+  left: 29.5%;
+  right: 56.18%;
+  top: 76.5%;
+  bottom: 5.47%;
+}

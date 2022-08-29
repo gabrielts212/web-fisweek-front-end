@@ -1,0 +1,129 @@
+.newsletter {
+  height: 830px;
+}
+
+.geometric-shapes4 {
+  position: absolute;
+  left: 58.88%;
+  right: 21.39%;
+  top: -0.3%;
+  bottom: 89.61%;
+}
+
+.geometric-shapes5 {
+  position: absolute;
+  left: 49.5%;
+  right: -3.51%;
+  top: 6.97%;
+  bottom: 73.93%;
+}
+
+.image2 {
+  width: auto; 
+
+  position: absolute;
+  left: 63%;
+  right: -0.03%;
+  top: 7.7%;
+  bottom: 48.05%;
+}
+
+.newsletter h2 {
+  width: 523px;
+  word-wrap: break-word;
+
+  position: absolute;
+  left: 47.76%;
+  right: 12.92%;
+  bottom: 54.17%;
+
+  color: #FFF;
+
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 3.2rem;
+  line-height: 4.3rem;
+  text-align: center;
+}
+
+form {
+  width: 428px;
+  height: 290px;
+
+  position: absolute;
+  left: 51.5%;
+  right: 16.18%;
+  bottom: 24.58%;
+
+  border-radius: 0 15% 0 15%;
+  background: #FFFFFF;
+ 
+  margin-top: 40px;
+  padding-top: 27px;
+}
+
+form h3 {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  text-align: center;
+  color: #2A2850;
+
+  margin-bottom: 20px;
+}
+
+form input[type=text],
+form input[type=email] {
+  width: 370px;
+  height: 39.87px;
+  background: #D2D7EE;
+  color: #2E2E5D;
+
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 19.5px;
+  padding-left: 11px;
+  margin-bottom: 23px;
+}
+
+form input[type=image] {
+  background: #D2D7EE;
+  color: #2E2E5D;
+}
+
+form input[type=text]::before {
+  content: '';
+}
+
+form input[type=email]::before {
+  content: '';
+}
+
+form input::placeholder {
+  color: #2E2E5D;
+}
+
+.geometric-shapes6 {
+  position: absolute;
+  left: 85%;
+  right: -9.51%;
+  top: 61.97%;
+  bottom: 5.47%;
+}
+
+form button {
+  width: 142.97px;
+  height: 33.3px;
+
+  background: #4F67F3;
+  border-radius: 21px;
+
+  color: #FFF;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  filter: brightness(1.1);
+}

@@ -7,13 +7,11 @@ import { Footer } from '../../components/footer/Footer';
 import { Newsletter } from '../../components/newsletter/Newsletter';
 import { SaveTheDate } from '../../components/savethedate/SaveTheDate';
 
+import './Pre.css';
 
 export function Pre() {
     return (
         <Container>
-            <Row>
-                <h2>Pre</h2>
-            </Row>
             <Row>
                 <Col md={6}><SaveTheDate /></Col>
                 <Col md={6}><Newsletter /></Col>
