@@ -16,10 +16,8 @@ export function Pre() {
                 <Col md={6}><SaveTheDate /></Col>
                 <Col md={6}><Newsletter /></Col>
             </Row>
-            <Row>
+            <Row className="home">
                 <Footer />
-            </Row>
-            <Row>
                 <Link to="/home">Home</Link>
             </Row>
         </Container>

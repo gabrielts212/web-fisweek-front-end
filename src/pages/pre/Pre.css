@@ -1,7 +1,29 @@
-.container {
-  min-width: 1400px;
-  height: 1078px;
+body {
+  height: 100vh;
+}
 
+.container {
+  width: 90%;
+  max-width: 1400px;
+  height: 1078px;
+  
   background: #2A2850;
 }
 
+.home {
+  background: linear-gradient(
+    180deg, 
+    rgba(126, 112, 186, 0) 9.68%, 
+    #5837EA 100%
+  );
+}
+
+.home a {
+  color: #FFF;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.home a:hover {
+  color: #FFF;
+}

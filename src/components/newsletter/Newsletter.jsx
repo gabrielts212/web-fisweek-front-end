@@ -20,11 +20,11 @@ export function Newsletter() {
 
             <form method="POST" action="">
                 <h3>Fique por dentro</h3>
-                <input type="image" src="/src/assets/images/user.png"/>
-                <input type="text" name="name" placeholder="Nome" />
+                <i class="far fa-user icon-modify"></i> 
+                <input type="text" name="name" placeholder="Nome" required />
                 <br/>
-                <input type="image" src="/src/assets/images/email.png"/>
-                <input type="email" name="email" placeholder="Email" />
+                <i class="far fa-envelope icon-modify"></i>
+                <input type="email" name="email" placeholder="Email" required />
                 <button type="submit">CADASTRE-SE</button>
             </form>
 
