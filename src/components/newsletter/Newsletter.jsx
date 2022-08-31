@@ -4,11 +4,11 @@ import GeometricShapes5 from '../../assets/images/geometric-shapes5.png';
 import GeometricShapes6 from '../../assets/images/geometric-shapes6.png';
 
 import './Newsletter.css';
+import '../responsive/Responsive.css';
 
 export function Newsletter() {
     return (
         <div className="newsletter">
-            NEWSLETTER
             <img className="image2" src={Image2} alt="Aperto de mãos de um robô com um humano" />
             <h2>
                 A MAIOR EXPERIÊNCIA EM 

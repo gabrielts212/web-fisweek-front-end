@@ -14,7 +14,6 @@ import '../responsive/Responsive.css';
 export function SaveTheDate() {
     return (
         <div className="save-the-date">
-            SAVE THE DATE
             <img className="fisweek" src={Fisweek} alt="Fisweek"/>
             <img className="logo" src={Logo} alt="Logo Fisweek" />
             <img className="na" src={Na} alt="na" />

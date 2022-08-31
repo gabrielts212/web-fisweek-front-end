@@ -1,85 +1,201 @@
-@media (min-width: 1024px) and (max-width: 1200px){
+@media (max-width: 1200px) {
+
+  /* ==== GLOBAL ===========================*/
   html {
     font-size: 50%;
   }
 
+  /* ==== SAVE THE DATE ====================*/
   .geometric-shapes1 {
     width: 10%;
-
     position: absolute;
-    left: 2.4%;
-    right: 91.39%;
-    top: 0;
-    bottom: 75.97%;
+    left: 0;
   }
   
   .fisweek {
+    width: 30%;
+    
     position: absolute;
-    left: 6.1%;
-    right: 71.88%;
-    top: 6%;
-    bottom: 87.87%;
-  
-    z-index: 1;
+    left: 3.1%;
+    top: 5%;
   }
   
   .logo {
+    width: 7%;
+    height: 6.5%;
+
     position: absolute;
-    width: 88px;
-    height: 89px;
-    left: 37.7%;
-    top: 5%;
-    
+    left: 34.5%;
+    top: 4.3%;
   }
   
   .na {
     position: absolute;
-    width: 30.48px;
-    height: 30.48px;
-    left: 17.5%;
-    top: 13.5%;
+    left: 14.5%;
+    top: 11%;
   }
   
   .rio-innovation {
+    width: 40%;
+    height: 20%;
+
     position: absolute;
-    width: 429px;
-    height: 247px;
-    left: 12.9%;
-    top: 11.3%;
+    left: 9.5%;
+    top: 9.5%;
   }
   
   .image1 {
-    width: 39%;
+    width: 43%;
   
     position: absolute;
-    left: 24.5%;
-    right: 24.72%;
-    top: 34%;
-    bottom: 18.46%;
+    left: 0;
+    top: 27%;
   }
   
   .event-date {
+    width: 73.58px;
+    height: 185.09px;
+
     position: absolute;
-    width: 91.33px;
-    height: 229.76px;
-    left: 42.6%;
-    top: 55.1%;
+    left: 37%;
+    top: 43%;
   }
   
   .geometric-shapes2 {
+    width: 91px;
+    height: 163px;
+
     position: absolute;
-    left: 24.2%;
-    right: 92.78%;
-    top: 55%;
-    bottom: 26.9%;
+    left: 0;
+    top: 45%;
   }
   
   .geometric-shapes3 {
+    width: 164px;
+    height: 76px;
+
     position: absolute;
-    left: 40%;
-    right: 56.18%;
-    top: 80%;
-    bottom: 5.47%;
+    left: 32%;
+    top: 63%;
   }  
+
+  /* ==== NEWSLETTER =======================*/
+  .geometric-shapes4 {
+    width: 20%;
+
+    position: absolute;
+    left: 64%;
+    right: 21.39%;
+    top: -0.3%;
+    bottom: 89.61%;
+  }
+  
+  .geometric-shapes5 {
+    width: 17%;
+
+    position: absolute;
+    left: 52%;
+    top: 4%;
+  }
+  
+  .image2 {
+    width: 33%; 
+  
+    position: absolute;
+    left: 67%;
+    top: 8%;
+  }
+  
+  .newsletter h2 {
+    width: 50%;
+    position: absolute;
+    left: 49%;
+    bottom: 62%;
+
+    font-size: 2.9rem;
+  }
+  
+  form {
+    width:40%;
+    height: 25%;
+  
+    position: absolute;
+    left: 54.1%;
+    bottom: 34%;
+  }
+  
+  form h3 {
+    font-size: 2.2rem;
+  }
+  
+  /* form .fa-user {
+    position: relative;
+    background-color: #ecf0f1;
+  }
+  
+  form .fa-user:before {
+    content: "\f007";
+    width: 50%;
+    height: 50%;
+  
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+  }
+  
+  form .fa-envelope{
+    position: relative;
+    background-color: #ecf0f1;
+  }
+  
+  form .fa-envelope:before {
+    content: "\f0e0";
+    width: 50%;
+    height: 50%;
+  
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+  } */
+  
+  form input[type=text],
+  form input[type=email] {
+    width: 80%;
+    height: 15%;
+    
+    font-size: 1.6rem;
+  }
+  
+  .geometric-shapes6 {
+    width: 10%;
+
+    position: absolute;
+    left: 88.5%;
+    right: -9.51%;
+    top: 60%;
+  }
+
+  /* ==== FOOTER ===========================*/
+  .ft-container {
+    max-width: 1200px;
+    height: 226px;
+  }
+
+  .partners {
+    width: 80%;
+  }
+} 
+
+@media (max-width: 992px) {
+
+} 
+
+@media (max-width: 768px) {
+
 }
+
+@media (max-width: 576px) {
+  
+}
+
 
