@@ -33,8 +33,7 @@ export function Newsletter() {
                     <img src={User} alt="User" />
                     <input type="text" name="name" placeholder="Nome" required />
                 </label>
-                <br/>
-                <label className="label-input">
+                <label className="label-input label-margin-small">
                     <img src={Email} alt="Email" />
                     <input type="email" name="email" placeholder="Email" required />
                 </label>

@@ -82,9 +82,13 @@ form h3 {
   align-items: center;
 
   margin-inline: 7%;
-  margin-bottom: 15px;
+  margin-bottom: 31.13px;
 
   padding-left: 1rem;
+}
+
+.label-margin-small {
+  margin-bottom: 25px;
 }
 
 form input[type=text],
@@ -115,8 +119,6 @@ form button {
   color: #FFF;
   font-size: 1.6rem;
   cursor: pointer;
-
-  margin-top: 1rem;
 }
 
 form button:hover {
@@ -223,44 +225,27 @@ form button:hover {
   
   form h3 {
     font-size: 2.2rem;
+    margin-bottom: 25px;
   }
   
-  /* form .fa-user {
-    position: relative;
-    background-color: #ecf0f1;
+  .label-input {
+    padding: 10px;
   }
-  
-  form .fa-user:before {
-    content: "\f007";
-    width: 50%;
-    height: 50%;
-  
-    position: absolute;
-    left: 1rem;
-    bottom: 1rem;
+
+  .label-margin-small {
+    margin-bottom: 20px;
   }
-  
-  form .fa-envelope{
-    position: relative;
-    background-color: #ecf0f1;
-  }
-  
-  form .fa-envelope:before {
-    content: "\f0e0";
-    width: 50%;
-    height: 50%;
-  
-    position: absolute;
-    left: 1rem;
-    bottom: 1rem;
-  } */
-  
+
   form input[type=text],
   form input[type=email] {
     width: 85%;
     height: 16%;
     
     font-size: 1.6rem;
+  }
+
+  .form-send .button button {
+    margin-top: 1.6rem;
   }
   
   .geometric-shapes6 {
