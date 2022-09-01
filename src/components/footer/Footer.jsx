@@ -1,6 +1,5 @@
 import Partners from '../../assets/images/partners.png';
 import './Footer.css'
-import '../responsive/Responsive.css';
 
 export function Footer() {
     return (

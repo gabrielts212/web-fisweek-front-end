@@ -77,3 +77,181 @@
   top: 73.5%;
   bottom: 5.47%;
 }
+
+
+@media (max-width: 1200px) {
+
+  /* ==== SAVE THE DATE ====================*/
+  .save-the-date .geometric-shapes1 {
+    width: 9%;
+    position: absolute;
+    left: 0;
+  }
+
+  .fisweek {
+    width: 25%;
+    
+    position: absolute;
+    left: 3.9%;
+    top: 5%;
+  }
+  
+  .logo {
+    width: 5.9%;
+    height: 6.3%;
+
+    position: absolute;
+    left: 30%;
+    top: 4.6%;
+  }
+  
+  .na {
+    position: absolute;
+    left: 13.5%;
+    top: 11%;
+  }
+  
+  .rio-innovation {
+    width: 30%;
+    height: auto;
+
+    position: absolute;
+    left: 10%;
+    top: 10%;
+  }
+  
+  .image1 {
+    width: 40%;
+  
+    position: absolute;
+    left: .5%;
+    top: 28.5%;
+  }
+  
+  .event-date {
+    width: 73.58px;
+    height: 185.09px;
+
+    position: absolute;
+    left: 35%;
+    top: 45%;
+  }
+  
+  .geometric-shapes2 {
+    width: 8.5%;
+    position: absolute;
+    left: 0;
+    top: 45%;
+  }
+  
+  .geometric-shapes3 {
+    width: 17%;
+    position: absolute;
+    left: 29.5%;
+    top: 65.5%;
+  }  
+}
+
+@media (max-width: 1024px) {
+
+  /* ==== SAVE THE DATE ====================*/
+  .save-the-date .geometric-shapes1 {
+    width: 9.5%;
+  }
+
+  .fisweek {
+    width: 27.5%;
+    position: absolute;
+    left: 4%;
+  }
+  
+  .logo {
+    width: 6.3%;
+    height: 6%;
+
+    position: absolute;
+    left: 32.5%;
+  }
+  
+  .na {
+    position: absolute;
+    left: 14%;
+  }
+  
+  .rio-innovation {
+    width: 34%;
+  }
+  
+  .image1 {
+    width: 42%;
+  }
+  
+  .event-date {
+    position: absolute;
+    left: 36.5%;
+    top: 44%;
+  }
+  
+  .geometric-shapes2 {
+    top: 44.5%;
+  }
+  
+  .geometric-shapes3 {
+    width: 18%;
+    position: absolute;
+    left: 30%;
+    top: 64.2%;
+  }  
+}
+
+@media (max-width: 768px) {
+  
+  /* ==== SAVE THE DATE ====================*/
+  .save-the-date .geometric-shapes1 {
+    width: 9.5%;
+  }
+
+  .fisweek {
+    width: 27.5%;
+    position: absolute;
+    left: 4%;
+  }
+  
+  .logo {
+    width: 6.3%;
+    height: 6%;
+
+    position: absolute;
+    left: 32.5%;
+  }
+  
+  .na {
+    position: absolute;
+    left: 14%;
+  }
+  
+  .rio-innovation {
+    width: 34%;
+  }
+  
+  .image1 {
+    width: 42%;
+  }
+  
+  .event-date {
+    position: absolute;
+    left: 36.5%;
+    top: 44%;
+  }
+  
+  .geometric-shapes2 {
+    top: 44.5%;
+  }
+  
+  .geometric-shapes3 {
+    width: 18%;
+    position: absolute;
+    left: 30%;
+    top: 64.2%;
+  }  
+}

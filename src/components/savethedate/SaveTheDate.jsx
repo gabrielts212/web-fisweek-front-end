@@ -9,7 +9,6 @@ import GeometricShapes2 from '../../assets/images/geometric-shapes2.png';
 import GeometricShapes3 from '../../assets/images/geometric-shapes3.png';
 
 import './SaveTheDate.css';
-import '../responsive/Responsive.css';
 
 export function SaveTheDate() {
     return (

@@ -144,3 +144,190 @@ form button {
 form button:hover {
   filter: brightness(1.1);
 }
+
+
+@media (max-width: 1200px) {
+
+  /* ==== GLOBAL ===========================*/
+  html {
+    font-size: 50%;
+  }
+
+  /* ==== NEWSLETTER =======================*/
+  .geometric-shapes4 {
+    width: 20%;
+
+    position: absolute;
+    left: 63%;
+    right: 21.39%;
+    top: -0.3%;
+    bottom: 89.61%;
+  }
+  
+  .geometric-shapes5 {
+    width: 17%;
+
+    position: absolute;
+    left: 51%;
+    top: 5%;
+  }
+  
+  .image2 {
+    width: 35%; 
+  
+    position: absolute;
+    left: 65%;
+    top: 11%;
+  }
+  
+  .newsletter h2 {
+    width: 40%;
+    
+    position: absolute;
+    left: 48.5%;
+    bottom: 58%;
+
+    font-size: 2.9rem;
+  }
+  
+  form {
+    width:35%;
+    height: 25%;
+  
+    position: absolute;
+    left: 51%;
+    bottom: 30%;
+  }
+  
+  form h3 {
+    font-size: 2.2rem;
+  }
+  
+  /* form .fa-user {
+    position: relative;
+    background-color: #ecf0f1;
+  }
+  
+  form .fa-user:before {
+    content: "\f007";
+    width: 50%;
+    height: 50%;
+  
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+  }
+  
+  form .fa-envelope{
+    position: relative;
+    background-color: #ecf0f1;
+  }
+  
+  form .fa-envelope:before {
+    content: "\f0e0";
+    width: 50%;
+    height: 50%;
+  
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+  } */
+  
+  form input[type=text],
+  form input[type=email] {
+    width: 85%;
+    height: 16%;
+    
+    font-size: 1.6rem;
+  }
+  
+  .geometric-shapes6 {
+    width: 9%;
+
+    position: absolute;
+    left: 88.5%;
+    right: -9.51%;
+    top: 60%;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* ==== NEWSLETTER =======================*/
+  .geometric-shapes4 {
+    width: 22%;
+  }
+  
+  .geometric-shapes5 {
+    width: 17%;
+
+    position: absolute;
+    left: 51%;
+    top: 5%;
+  }
+  
+  .image2 {
+    width: 35%; 
+    position: absolute;
+    top: 10.5%;
+  }
+  
+  .newsletter h2 {
+    width: 40%;
+    
+    position: absolute;
+    left: 48.5%;
+    bottom: 59%;
+
+    font-size: 2.6rem;
+  }
+  
+  form {
+    width: 40%;
+  
+    position: absolute;
+    left: 51%;
+    bottom: 33%;
+  }
+  
+  /* form .fa-user {
+    position: relative;
+    background-color: #ecf0f1;
+  }
+  
+  form .fa-user:before {
+    content: "\f007";
+    width: 50%;
+    height: 50%;
+  
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+  }
+  
+  form .fa-envelope{
+    position: relative;
+    background-color: #ecf0f1;
+  }
+  
+  form .fa-envelope:before {
+    content: "\f0e0";
+    width: 50%;
+    height: 50%;
+  
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+  } */
+  
+  .geometric-shapes6 {
+    width: 9.5%;
+
+    position: absolute;
+    left: 88.5%;
+    top: 55.5%;
+  }
+}
+
+@media (max-width: 768px) {
+  
+}
