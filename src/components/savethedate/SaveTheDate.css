@@ -45,12 +45,12 @@
 }
 
 .image1 {
-  width: 36%;
+  width: 42%;
 
   position: absolute;
-  left: 1.5%;
+  left: 1%;
   right: 24.72%;
-  top: 32%;
+  top: 23%;
   bottom: 18.46%;
 }
 
@@ -58,23 +58,23 @@
   position: absolute;
   width: 91.33px;
   height: 229.76px;
-  left: 32.3%;
-  top: 49.5%;
+  left: 37%;
+  top: 48%;
 }
 
 .geometric-shapes2 {
   position: absolute;
   left: 0;
   right: 92.78%;
-  top: 51%;
+  top: 46%;
   bottom: 26.9%;
 }
 
 .geometric-shapes3 {
   position: absolute;
-  left: 27.5%;
+  left: 32%;
   right: 56.18%;
-  top: 73.5%;
+  top: 72%;
   bottom: 5.47%;
 }
 
@@ -121,11 +121,11 @@
   }
   
   .image1 {
-    width: 40%;
-  
+    width: 43%;
+
     position: absolute;
-    left: .5%;
-    top: 28.5%;
+    left: 0;
+    top: 23%;
   }
   
   .event-date {
@@ -133,7 +133,7 @@
     height: 185.09px;
 
     position: absolute;
-    left: 35%;
+    left: 37%;
     top: 45%;
   }
   
@@ -141,13 +141,13 @@
     width: 8.5%;
     position: absolute;
     left: 0;
-    top: 45%;
+    top: 44%;
   }
   
   .geometric-shapes3 {
     width: 17%;
     position: absolute;
-    left: 29.5%;
+    left: 31%;
     top: 65.5%;
   }  
 }
@@ -183,24 +183,24 @@
   }
   
   .image1 {
-    width: 42%;
+    width: 43%;
   }
   
   .event-date {
     position: absolute;
     left: 36.5%;
-    top: 44%;
+    top: 39%;
   }
   
   .geometric-shapes2 {
-    top: 44.5%;
+    top: 40%;
   }
   
   .geometric-shapes3 {
     width: 18%;
     position: absolute;
     left: 30%;
-    top: 64.2%;
+    top: 59%;
   }  
 }
 
