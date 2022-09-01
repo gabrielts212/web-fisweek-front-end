@@ -10,6 +10,8 @@ import Linkedin from '../../assets/images/linkedin.png';
 import Twitter from '../../assets/images/twitter.png';
 import TikTok from '../../assets/images/tik-tok.png';
 import Facebook from '../../assets/images/facebook.png';
+import User from '../../assets/images/user.png';
+import Email from '../../assets/images/email.png';
 
 import './Newsletter.css';
 
@@ -27,11 +29,15 @@ export function Newsletter() {
 
             <form method="POST" action="">
                 <h3>Fique por dentro</h3>
-                <i class="far fa-user icon-modify"></i> 
-                <input type="text" name="name" placeholder="Nome" required />
+                <label className="label-input">
+                    <img src={User} alt="User" />
+                    <input type="text" name="name" placeholder="Nome" required />
+                </label>
                 <br/>
-                <i class="far fa-envelope icon-modify"></i>
-                <input type="email" name="email" placeholder="Email" required />
+                <label className="label-input">
+                    <img src={Email} alt="Email" />
+                    <input type="email" name="email" placeholder="Email" required />
+                </label>
                 <button type="submit">CADASTRE-SE</button>
             </form>
 
@@ -73,4 +79,5 @@ export function Newsletter() {
         </div>
     );
 }
+
 
