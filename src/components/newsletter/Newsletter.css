@@ -122,13 +122,6 @@ form input::placeholder {
   color: #2E2E5D;
 }
 
-.geometric-shapes6 {
-  position: absolute;
-  left: 88.6%;
-  right: -9.51%;
-  top: 63%;
-}
-
 form button {
   width: 142.97px;
   height: 33.3px;
@@ -143,6 +136,50 @@ form button {
 
 form button:hover {
   filter: brightness(1.1);
+}
+
+.form-send .h3 {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  text-align: center;
+  color: #2A2850;
+
+  padding-top: 1rem;
+}
+
+.form-send h4 {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.194rem;
+  text-align: center;
+  color: #2A2850;
+
+  padding-top: 2.5rem;
+}
+
+.form-send .icons-form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  padding-top: .7rem;
+}
+
+.form-send .button button {
+  width: 274px;
+  text-align: center;
+
+  margin-top: 3rem;
+}
+
+.geometric-shapes6 {
+  position: absolute;
+  left: 88.6%;
+  right: -9.51%;
+  top: 63%;
 }
 
 
@@ -318,7 +355,7 @@ form button:hover {
     left: 1rem;
     bottom: 1rem;
   } */
-  
+
   .geometric-shapes6 {
     width: 9.5%;
 
