@@ -1,6 +1,6 @@
 .newsletter {
   max-width: 720px;
-  height: 830px;
+  height: 850px;
 }
 
 .geometric-shapes4 {
@@ -103,6 +103,7 @@ form input[type=email] {
   line-height: 19.5px;
 
   padding-left: 11px;
+  outline: #D2D7EE
 }
 
 form input::placeholder {

@@ -1,7 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { Link } from 'react-router-dom';
 
 import { Footer } from '../../components/footer/Footer';
 import { Newsletter } from '../../components/newsletter/Newsletter';
@@ -13,12 +12,11 @@ export function Pre() {
     return (
         <Container>
             <Row>
-                <Col md={6}><SaveTheDate /></Col>
-                <Col md={6}><Newsletter /></Col>
+                <Col xs={12} md={6}><SaveTheDate /></Col>
+                <Col xs={12} md={6}><Newsletter /></Col>
             </Row>
-            <Row className="home">
+            <Row>
                 <Footer />
-                <Link to="/home">Home</Link>
             </Row>
         </Container>
     );

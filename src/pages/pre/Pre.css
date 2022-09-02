@@ -1,3 +1,7 @@
+body {
+  background: #2A2850 !important;
+}
+
 .container {
   max-width: 1400px;
   height: 1078px;
@@ -5,29 +9,3 @@
   position: relative;
   background: #2A2850;
 }
-
-.home {
-  background: linear-gradient(
-    180deg, 
-    rgba(126, 112, 186, 0) 9.68%, 
-    #5837EA 100%
-  );
-}
-
-.home a {
-  color: #FFF;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.home a:hover {
-  color: #FFF;
-}
-
-@media (max-width: 768px) {
-  .Pre {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
