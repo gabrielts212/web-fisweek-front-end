@@ -23,3 +23,11 @@
 .home a:hover {
   color: #FFF;
 }
+
+@media (max-width: 768px) {
+  .Pre {
+    display: flex;
+    flex-direction: column;
+  }
+}
+

@@ -12,6 +12,7 @@ import TikTok from '../../assets/images/tik-tok.png';
 import Facebook from '../../assets/images/facebook.png';
 import User from '../../assets/images/user.png';
 import Email from '../../assets/images/email.png';
+import Telegram from '../../assets/images/telegram.png';
 
 import './Newsletter.css';
 
@@ -68,7 +69,10 @@ export function Newsletter() {
                     </a>
                 </div>
                 <div className="button">
-                <button type="submit">INSCREVA-SE NO TELEGRAM</button>
+                    <label className="label-icon-telegram">
+                        <img src={Telegram} alt="Telegram" />
+                        <input type="submit" value="INSCREVA-SE NO TELEGRAM" />
+                    </label>
                 </div>
             </form> */}
 

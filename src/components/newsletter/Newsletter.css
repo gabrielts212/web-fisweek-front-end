@@ -153,13 +153,32 @@ form button:hover {
   gap: 1rem;
 
   padding-top: .7rem;
+  margin-bottom: 3rem;
 }
 
-.form-send .button button {
-  width: 274px;
-  text-align: center;
+.form-send .button input{
+  background: #4F67F3;
+  color: #FFF;
 
-  margin-top: 3rem;
+  padding-left: .5rem;
+}
+
+.form-send .label-icon-telegram {
+  font-family: 'Montserrat';
+  width: 282px;
+  height: 34px;
+  background: #4F67F3;
+  color: #FFF;
+
+  border-radius: 21px; 
+  font-size: 1.6rem;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 7.5rem;
 }
 
 .geometric-shapes6 {
@@ -244,10 +263,14 @@ form button:hover {
     font-size: 1.6rem;
   }
 
-  .form-send .button button {
-    margin-top: 1.6rem;
+  .form-send .icons-form {
+    margin-bottom: 1.8rem;
   }
-  
+
+  .form-send .label-icon-telegram  {
+    margin-left: 6rem;
+  }
+
   .geometric-shapes6 {
     width: 9%;
 
@@ -296,36 +319,6 @@ form button:hover {
     bottom: 33%;
   }
   
-  /* form .fa-user {
-    position: relative;
-    background-color: #ecf0f1;
-  }
-  
-  form .fa-user:before {
-    content: "\f007";
-    width: 50%;
-    height: 50%;
-  
-    position: absolute;
-    left: 1rem;
-    bottom: 1rem;
-  }
-  
-  form .fa-envelope{
-    position: relative;
-    background-color: #ecf0f1;
-  }
-  
-  form .fa-envelope:before {
-    content: "\f0e0";
-    width: 50%;
-    height: 50%;
-  
-    position: absolute;
-    left: 1rem;
-    bottom: 1rem;
-  } */
-
   .geometric-shapes6 {
     width: 9.5%;
 
