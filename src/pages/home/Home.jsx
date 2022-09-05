@@ -1,10 +1,20 @@
-import { Link } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { Registratiominfo } from '../../components/registrationinfo/Registratiominfo';
+
+import './Home.css';
 
 export function Home() {
     return (
-        <div>
-            <h2>HOME</h2>
-            <Link to="/">Pre</Link>
-        </div>
+        <Container>
+           <Row>
+               <Col xs={12} md={6}><Registratiominfo /></Col>
+           </Row>
+           <Row>
+                <a className="pre"href="/pre">pre</a>
+           </Row>
+        </Container>
     );
+
 }

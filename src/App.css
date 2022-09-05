@@ -9,3 +9,106 @@
   box-sizing: border-box;
   border: none;
 }
+
+body {
+  background: #fff !important;
+}
+
+.container {
+  max-width: 1400px;
+  height: 1078px;
+  position: relative;
+  background: #2A2850;
+}
+.women{
+position: absolute;
+width: 300.04px;
+height: 300.04px;
+left: 220px;
+z-index: 1;
+}
+.geometric-shapes7{
+position: absolute;
+width: 300.04px;
+height: 300.04px;
+left: 220px;
+}
+.geometric-shapes8{
+  position: absolute;
+  left: 3.71%;
+  right: 84.93%;
+  top: 1.68%;
+  bottom: 97.06%;
+  width: 150px;
+}
+.geometric-shapes9{
+position: absolute;
+left: 3.5%;
+right: 84.95%;
+top: 18.01%;
+bottom: 95.59%;
+width: 150px;
+}
+
+.geometric-shapes10{
+position: absolute;
+left: 25.73%;
+right: 63.37%;
+top: 689px;
+bottom: 91.42%;
+transform: rotate(-90deg);
+
+}
+.geometric-shapes11{
+  position: absolute;
+  width: 250px;
+  height: 134px;
+  left: 436px;
+  top: 689px;
+}
+/* .geometric-shapes14{
+  position: absolute;
+left: 29.46%;
+right: 43.89%;
+top: 7.49%;
+bottom: 89.51%;
+
+background: #6777C4;
+transform: rotate(-180deg);
+} */
+
+.two-hands{
+  position: absolute;
+width: 300.34px;
+height: 300.16px;
+left: 30.57px;
+top: 400.31px;
+transform: matrix(-0.96, -0.26, -0.26, 0.96, 0, 0);
+}
+.text1{
+position: absolute;
+width: 300px;
+height: 150px;
+left: 400px;
+top: 500px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 45px;
+line-height: 55px;
+}
+.text2{
+  position: absolute;
+  left: 20.46%;
+  right: 40.15%;
+  top: 15.48%;
+  bottom: 94.89%;
+  
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
