@@ -9,3 +9,15 @@
   box-sizing: border-box;
   border: none;
 }
+
+body {
+  background: #FFF !important;
+}
+
+.container {
+  max-width: 1400px;
+  height: 1078px;
+  
+  position: relative;
+  background: #2A2850;
+}
