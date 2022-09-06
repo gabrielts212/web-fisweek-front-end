@@ -2,12 +2,12 @@
   width: 447px;
   height: 684px;
 
-  /* margin: 0 -477px 54px 120px; */
-  border-radius: 7% 10% 12% 1%;
+  border-radius: 7% 22% 7% 0 / 5% 13% 5% 70% ;
 
   background: #6777C4;
 
   position: absolute;
+  top: 10%;
   left: 63%;
 }
 
@@ -21,7 +21,7 @@ label {
   font-size: 3.1rem;
   font-weight: 700;
 
-  margin-top: 15px;
+  margin-top: 13px;
 }
 
 .application-form input[type=text],
@@ -69,10 +69,20 @@ label {
   color: #FFF;
 }
 
+.application-form .button {
+  margin-top: 7px;
+}
+
 .form-completed {
   width: 447px;
   height: 273px;
   background: #6777C4;
+
+  border-radius: 8% 20% 8% 0 / 15% 35% 15% 77%;
+
+  position: absolute;
+  top: 38%;
+  left: 63%;
 }
 
 .form-completed h1 {
@@ -80,8 +90,92 @@ label {
   font-size: 3.1rem;
   font-weight: 700;
   color: #FFF;
+
+  margin: 65px 0 30px 0;
 }
 
-.form-completed .registration-verified {
+@media (max-width: 1200px) {
+  .application-form {
+    width: 430px;
+    height: 670px;
 
+    position: absolute;
+    left: 57.5%;
+  }  
+
+  .application-form .button {
+    margin-top: 2px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .application-form {
+    width: 420px;
+    height: 650px;
+
+    position: absolute;
+    left: 52%;
+  }  
+
+  .application-form .caption-title {
+    font-size: 3rem;
+    margin-top: 6px;
+  } 
+
+  .application-form .form-control {
+    margin: 0 0 16.8px 31px;
+  }
+
+  .application-form .button {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(25, 23, 53, 0.71);
+    box-shadow: inset 0px 4px 78px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .application-form {
+    width: 447px;
+    height: 684px;
+
+    position: absolute;
+    left: 21%;
+    
+    z-index: 999;
+  }  
+
+  .application-form .form-control {
+    margin: 0 0 16.8px 44px;
+  }
+
+  .application-form .button {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 630px) {
+  .application-form {
+    position: absolute;
+    left: 8.5%;
+  }  
+}
+
+@media (max-width: 540px) {
+  .application-form {
+    position: absolute;
+    left: 7%;
+  }  
 }

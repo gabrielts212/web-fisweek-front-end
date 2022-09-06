@@ -28,10 +28,12 @@ export function ApplicationForm() {
         </label>
       </form>
 
-      <form className="form-completed" action="POST">
+      <div className="modal-overlay"></div>
+
+      {/* <form className="form-completed" action="POST">
         <h1>Cadastro concluído!</h1>
-        <img className="registration-verified" src={RegistrationVerified} alt="RegistrationVerified" />
-      </form>
+        <img src={RegistrationVerified} alt="RegistrationVerified" />
+      </form> */}
     </div>
   )
 }
