@@ -1,19 +1,14 @@
-.geometric-shapes12 {
-  
-}
-
-.geometric-shapes13 {
- 
-}
-
 .application-form {
   width: 447px;
   height: 684px;
 
-  margin: 0 -477px 54px 120px;
+  /* margin: 0 -477px 54px 120px; */
   border-radius: 7% 10% 12% 1%;
 
   background: #6777C4;
+
+  position: absolute;
+  left: 63%;
 }
 
 label {
@@ -30,13 +25,16 @@ label {
 }
 
 .application-form input[type=text],
-.application-form input[type=email] {
+.application-form input[type=email],
+.application-form input[type=number] {
   width: 359px;
   height: 51.2px;
 
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(50px);
   /* Note: backdrop-filter has minimal browser support */
+  color: #FFF;
+  font-size: 1.6rem;
 
   border-radius: 51px;
   margin-bottom: 16.8px;
@@ -64,6 +62,26 @@ label {
   border-radius: 51px;
   border: none;
 
-  margin-bottom: 16.8px;
+  margin: 0 0 16.8px 42px;
   padding-left: 20px;
+
+  font-size: 1.6rem;
+  color: #FFF;
+}
+
+.form-completed {
+  width: 447px;
+  height: 273px;
+  background: #6777C4;
+}
+
+.form-completed h1 {
+  font-family: 'Montserrat';
+  font-size: 3.1rem;
+  font-weight: 700;
+  color: #FFF;
+}
+
+.form-completed .registration-verified {
+
 }

@@ -1,14 +1,10 @@
-import GeometricShapes12 from '../../assets/images/geometric-shapes12.png';
-import GeometricShapes13 from '../../assets/images/geometric-shapes13.png';
-
+import { Button } from '../button/Button';
+import RegistrationVerified from '../../assets/images/registration-verified.png';
 import './ApplicationForm.css';
 
 export function ApplicationForm() {
   return (
     <div>
-      <img className="geometric-shapes12" src={GeometricShapes12} alt="GeometricShapes12" />
-      <img className="geometric-shapes13" src={GeometricShapes13} alt="GeometricShapes13" />
-      
       <form className="application-form" action="POST">
         <label className="caption-title">
           Faça sua inscrição
@@ -20,17 +16,23 @@ export function ApplicationForm() {
           <div>
             <select className="form-control">
               <option>Qual evento gostaria de participar?</option>
-              <option value="Fis">Fis</option>
-              <option value="S/M">S/M</option>
+              <option value="Fis22">Fis22</option>
+              <option value="S/M22">S/M22</option>
               <option value="Lygga">Lygga</option>
-              <option value="Com .Meets">Com .Meets</option>
+              <option value="com .Meets22">com .Meets22</option>
               <option value="Startups">Startups</option>
             </select>
           </div>
           <input type="number" name="number" placeholder="Idade" />
-          <button type="submit">Cadastra-se</button>
+          <Button />
         </label>
+      </form>
+
+      <form className="form-completed" action="POST">
+        <h1>Cadastro concluído!</h1>
+        <img className="registration-verified" src={RegistrationVerified} alt="RegistrationVerified" />
       </form>
     </div>
   )
 }
+

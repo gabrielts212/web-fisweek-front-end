@@ -12,9 +12,7 @@ export function Home() {
             <Row>
                 <Col xs={12} md={6}><ApplicationForm /></Col>
             </Row>
-            <Row>
-                <a className="pre" href="/pre">Pre</a>
-            </Row>
+            <Row></Row>
         </Container>
     );
 }

@@ -1,0 +1,16 @@
+.application-form .button {
+  width: 221.23px;
+  height: 46px;
+
+  background: #FFF;
+  border-radius: 21px;
+
+  color: #2A2850;
+  font-size: 2.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.application-form .button:hover {
+  filter: brightness(1.2);
+}
