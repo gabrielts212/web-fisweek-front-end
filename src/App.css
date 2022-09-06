@@ -23,48 +23,51 @@ body {
 .women{
 position: absolute;
 width: 300.04px;
-height: 300.04px;
-left: 220px;
+height: 340.04px;
+left: 200px;
 z-index: 1;
+bottom: 67.06%;
+
 }
 .geometric-shapes7{
 position: absolute;
 width: 300.04px;
-height: 300.04px;
-left: 220px;
+height: 350.04px;
+left: 200px;
+bottom: 65.06%;
 }
 .geometric-shapes8{
   position: absolute;
-  left: 3.71%;
+  left: 1.71%;
   right: 84.93%;
-  top: 1.68%;
-  bottom: 97.06%;
-  width: 150px;
+  top: 2.30%;
+  bottom: 70.06%;
+  width: 170px;
 }
 .geometric-shapes9{
 position: absolute;
-left: 3.5%;
+left: 1.5%;
 right: 84.95%;
 top: 18.01%;
 bottom: 95.59%;
-width: 150px;
+width: 170px;
 }
 
 .geometric-shapes10{
 position: absolute;
 left: 25.73%;
 right: 63.37%;
-top: 689px;
+top: 600px;
 bottom: 91.42%;
-transform: rotate(-90deg);
+/* transform: rotate(-90deg); */
 
 }
 .geometric-shapes11{
   position: absolute;
-  width: 250px;
-  height: 134px;
-  left: 436px;
-  top: 689px;
+  width: 300px;
+  height: 110px;
+  left: 360px;
+  top: 460px;
 }
 /* .geometric-shapes14{
   position: absolute;
@@ -88,21 +91,22 @@ transform: matrix(-0.96, -0.26, -0.26, 0.96, 0, 0);
 .text1{
 position: absolute;
 width: 300px;
-height: 150px;
-left: 400px;
-top: 500px;
+height: 200px;
+left: 390px;
+top: 250px;
 
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
 font-size: 45px;
 line-height: 55px;
+z-index: 1;
 }
 .text2{
   position: absolute;
-  left: 20.46%;
+  left: 29.46%;
   right: 40.15%;
-  top: 15.48%;
+  top: 8.48%;
   bottom: 94.89%;
   
   font-family: 'Montserrat';
@@ -110,5 +114,6 @@ line-height: 55px;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+  z-index: 1;
 }
 

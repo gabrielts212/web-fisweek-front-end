@@ -11,9 +11,7 @@ export function Home() {
            <Row>
                <Col xs={12} md={6}><Registratiominfo /></Col>
            </Row>
-           <Row>
-                <a className="pre"href="/pre">pre</a>
-           </Row>
+           <Row></Row>
         </Container>
     );
 

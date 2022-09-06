@@ -17,7 +17,6 @@ export function Pre() {
             </Row>
             <Row>
                 <Footer />
-                <a className="home"href="/home">Home</a>
             </Row>
         </Container>
     );
