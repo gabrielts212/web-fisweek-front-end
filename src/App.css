@@ -21,99 +21,108 @@ body {
   background: #2A2850;
 }
 .women{
-position: absolute;
-width: 300.04px;
-height: 340.04px;
-left: 200px;
-z-index: 1;
-bottom: 67.06%;
-
+  position: absolute;
+  width: 460.04px;
+  height: 405.04px;
+  left: 123px;
+  z-index: 1;
+  bottom: 53.55%;
 }
 .geometric-shapes7{
-position: absolute;
-width: 300.04px;
-height: 350.04px;
-left: 200px;
-bottom: 65.06%;
+  position: absolute;
+  width: 310.04px;
+  height: 335.04px;
+  left: 200px;
+  bottom: 55.99%;
 }
 .geometric-shapes8{
   position: absolute;
-  left: 1.71%;
+  left: 1.8%;
   right: 84.93%;
-  top: 2.30%;
-  bottom: 70.06%;
+  top: 13.00%;
+  bottom: 60.06%;
   width: 170px;
 }
 .geometric-shapes9{
-position: absolute;
-left: 1.5%;
-right: 84.95%;
-top: 18.01%;
-bottom: 95.59%;
-width: 170px;
+ position: absolute;
+ left: 1.9%;
+ right: 84.95%;
+ top: 28.30%;
+ bottom: 95.59%;
+ width: 165px;
 }
 
 .geometric-shapes10{
-position: absolute;
-left: 25.73%;
-right: 63.37%;
-top: 600px;
-bottom: 91.42%;
-/* transform: rotate(-90deg); */
-
+  position: absolute;
+  left: 27.55%;
+  right: 63.37%;
+  top: 690px;
+  bottom: 90.42%;
 }
 .geometric-shapes11{
   position: absolute;
-  width: 300px;
+  width: 350px;
   height: 110px;
-  left: 360px;
-  top: 460px;
+  left: 380px;
+  top: 570px;
 }
-/* .geometric-shapes14{
-  position: absolute;
-left: 29.46%;
-right: 43.89%;
-top: 7.49%;
-bottom: 89.51%;
 
-background: #6777C4;
-transform: rotate(-180deg);
-} */
-
-.two-hands{
+.hands{
   position: absolute;
-width: 300.34px;
-height: 300.16px;
-left: 30.57px;
-top: 400.31px;
-transform: matrix(-0.96, -0.26, -0.26, 0.96, 0, 0);
+  width: 330.34px;
+  height: 350.16px;
+  left: 44.55px;
+  top: 500.31px;
 }
-.text1{
-position: absolute;
-width: 300px;
-height: 200px;
-left: 390px;
-top: 250px;
-
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 45px;
-line-height: 55px;
-z-index: 1;
-}
-.text2{
+.geometric-shapes15{
   position: absolute;
-  left: 29.46%;
-  right: 40.15%;
-  top: 8.48%;
+  width: 330.00px;
+  height: 352.00px;
+  left: 45.57px;
+  top: 500.31px;
+}
+.text {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  left: 409px;
+  top: 360px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+  z-index: 1;
+  color: #fff;
+}
+.h1 {
+  position: absolute;
+  left: 31.00%;
+  right: 35.15%;
+  height: 150px;
+  width: 400px;
+  top: 17.48%;
   bottom: 94.89%;
-  
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   z-index: 1;
+  color: #fff;
+}
+.text3{
+  position: absolute;
+  width: 140px;
+  height: 50px;
+  left:550px;
+  top: 595px;
+}
+.logo {
+  position: absolute;
+  left: 29.88%;
+  right: 61.33%;
+  top: 53.77%;
+  bottom: 32.67%;
 }
 
