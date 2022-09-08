@@ -11,8 +11,13 @@
 }
 
 body {
-  background: #2A2850!important;
+  background: #FFF !important;
+  --webkit-font-smoothing: antialiased;
 }
+
+body, input, textarea, button, select, label, h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Montserrat', sans-serif;
+} 
 
 .container {
   max-width: 1400px;

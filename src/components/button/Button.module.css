@@ -1,4 +1,4 @@
-.application-form .button {
+.button {
   width: 221.23px;
   height: 46px;
 
@@ -11,6 +11,6 @@
   cursor: pointer;
 }
 
-.application-form .button:hover {
+.button:hover {
   filter: brightness(1.2);
 }

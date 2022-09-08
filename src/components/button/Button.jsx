@@ -1,7 +1,8 @@
-import './Button.css'
+import styles from'./Button.module.css'
 
-export function Button() {
+export function Button(props) {
   return (
-    <button className="button" type="submit">Cadastra-se</button>
-  )
+    <button className={styles.button} type="submit">{props.title}</button>
+  )  
 }
+

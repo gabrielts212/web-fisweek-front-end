@@ -24,7 +24,7 @@ export function ApplicationForm() {
             </select>
           </div>
           <input type="number" name="number" placeholder="Idade" />
-          <Button />
+          <Button title="Cadastre-se"/>
         </label>
       </form>
 
