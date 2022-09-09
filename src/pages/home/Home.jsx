@@ -9,7 +9,7 @@ export function Home() {
     return (
         <Container>
            <Row>
-               <Col xs={12} md={6}><Registratiominfo /></Col>
+               <Col xs={12} md={8}><Registratiominfo /></Col>
            </Row>
            <Row></Row>
         </Container>
