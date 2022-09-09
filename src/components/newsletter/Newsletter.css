@@ -40,7 +40,6 @@
 
   color: #FFF;
 
-  font-family: 'Montserrat';
   font-weight: 800;
   font-size: 3.2rem;
   line-height: 4.3rem;
@@ -57,14 +56,13 @@ form {
   bottom: 25%;
 
   border-radius: 0 15% 0 15%;
-  background: #FFFFFF;
+  background: #FFF;
  
   margin-top: 40px;
   padding-top: 27px;
 }
 
 form h3 {
-  font-family: 'Montserrat';
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 2.9rem;
@@ -127,7 +125,6 @@ form button:hover {
 }
 
 .form-send .h3 {
-  font-family: 'Montserrat';
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 2.9rem;
@@ -138,7 +135,6 @@ form button:hover {
 }
 
 .form-send h4 {
-  font-family: 'Montserrat';
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 2.194rem;
@@ -165,7 +161,6 @@ form button:hover {
 }
 
 .form-send .label-icon-telegram {
-  font-family: 'Montserrat';
   width: 282px;
   height: 34px;
   background: #4F67F3;
@@ -327,8 +322,4 @@ form button:hover {
     left: 88.5%;
     top: 55.5%;
   }
-}
-
-@media (max-width: 768px) {
-  
 }

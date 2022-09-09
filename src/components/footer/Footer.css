@@ -2,7 +2,7 @@
     max-width: 1400px;
     height: 226px;
   
-  background: linear-gradient(
+    background: linear-gradient(
     180deg, 
     rgba(126, 112, 186, 0) 9.68%, 
     #5837EA 100%
@@ -10,9 +10,8 @@
 }
 
 .partners {
-  margin-top: 150px;
+  margin-top: 140px;
 }
-
 
 @media (max-width: 1200px) {
 
@@ -26,7 +25,3 @@
     width: 80%;
   }
 } 
-
-@media (max-width: 768px) {
-
-}
