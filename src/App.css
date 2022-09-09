@@ -1,0 +1,27 @@
+:root {
+  text-align: center;
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  background: #FFF !important;
+  --webkit-font-smoothing: antialiased;
+}
+
+body, input, select, textarea, label, h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  height: 1078px;
+  position: relative;
+  background: #2A2850;
+}

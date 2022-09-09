@@ -1,11 +1,27 @@
 import { Button } from '../button/Button';
 import RegistrationVerified from '../../assets/images/registration-verified.png';
 import './ApplicationForm.css';
+import { useState } from 'react';
+
+const handleFormSubmit = () => {
+  event.preventDefault()
+
+  console.log('Enviado!')
+}
+
+const formSent = () => {
+  <form className="form-completed" action="POST">
+    <h1>Cadastro concluído!</h1>
+    <img src={RegistrationVerified} alt="RegistrationVerified" />
+  </form>
+}
 
 export function ApplicationForm() {
+  const [formCompleted, setFormCompleted] = useState(false)
+
   return (
     <div>
-      <form className="application-form" action="POST">
+      <form onSubmit={handleFormSubmit} className="application-form" action="POST">
         <label className="caption-title">
           Faça sua inscrição
           <input type="text" name="name" placeholder="Nome" />
@@ -29,11 +45,6 @@ export function ApplicationForm() {
       </form>
 
       <div className="modal-overlay"></div>
-
-      {/* <form className="form-completed" action="POST">
-        <h1>Cadastro concluído!</h1>
-        <img src={RegistrationVerified} alt="RegistrationVerified" />
-      </form> */}
     </div>
   )
 }

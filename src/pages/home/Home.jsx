@@ -1,18 +1,23 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { Registratiominfo } from '../../components/registrationinfo/Registratiominfo';
+
+import { ApplicationForm } from '../../components/applicationform/ApplicationForm';
+import { RegistrationInfo } from '../../components/registrationInfo/RegistrationInfo';
+import { Footer } from '../../components/footer/Footer';
 
 import './Home.css';
 
 export function Home() {
     return (
         <Container>
-           <Row>
-               <Col xs={12} md={8}><Registratiominfo /></Col>
-           </Row>
-           <Row></Row>
+            <Row>
+                <Col xs={12} md={4}><ApplicationForm /></Col>
+                <Col xs={12} md={8}><RegistrationInfo /></Col>
+            </Row>
+            <Row>
+                {/* <Footer /> */}
+            </Row>
         </Container>
     );
-
 }

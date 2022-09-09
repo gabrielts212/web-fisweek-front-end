@@ -9,7 +9,7 @@ import Text3 from "../../assets/images/text3.png";
 import Logo2 from "../../assets/images/logo2.png";
 import Hands from "../../assets/images/hands.png";
 
-export function Registratiominfo() {
+export function RegistrationInfo() {
   return (
     <div>
       <img className="women" src={Women} alt="" />
