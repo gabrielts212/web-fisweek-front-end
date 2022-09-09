@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { Registratiominfo } from '../../components/registrationinfo/Registratiominfo';
+import { RegistrationInfo } from '../../components/registrationInfo/RegistrationInfo';
 
 import './Home.css';
 
