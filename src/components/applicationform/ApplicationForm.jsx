@@ -20,7 +20,7 @@ export function ApplicationForm() {
   const [formCompleted, setFormCompleted] = useState(false)
 
   return (
-    <div>
+    <div className="form-container">
       <form onSubmit={handleFormSubmit} className="application-form" action="POST">
         <label className="caption-title">
           Faça sua inscrição

@@ -9,6 +9,8 @@ import Text3 from "../../assets/images/text3.png";
 import Logo2 from "../../assets/images/logo2.png";
 import Hands from "../../assets/images/hands.png";
 
+import './RegistrationInfo.css';
+
 export function RegistrationInfo() {
   return (
     <div>
