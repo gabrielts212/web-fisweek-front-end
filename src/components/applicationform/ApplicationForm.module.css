@@ -7,8 +7,8 @@
   background: #6777C4;
 
   position: absolute;
-  top: 7%;
-  left: 57%;
+  top: 8%;
+  left: 57.5%;
 
   text-align: center;
 }
@@ -22,7 +22,7 @@ label {
   font-size: 2rem;
   font-weight: 700;
 
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .applicationForm input[type=text],

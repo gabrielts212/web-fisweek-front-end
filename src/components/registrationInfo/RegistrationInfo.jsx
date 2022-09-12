@@ -4,32 +4,35 @@ import GeometricShapes8 from "../../assets/images/geometric-shapes8.png";
 import GeometricShapes9 from "../../assets/images/geometric-shapes9.png";
 import GeometricShapes10 from "../../assets/images/geometric-shapes10.png";
 import GeometricShapes11 from "../../assets/images/geometric-shapes11.png";
-// import GeometricShapes14 from "../../assets/images/geometric-shapes14.png";
-import Text3 from "../../assets/images/text3.png";
-import Logo2 from "../../assets/images/logo2.png";
+import GeometricShapes12 from "../../assets/images/geometric-shapes12.png";
 import Hands from "../../assets/images/hands.png";
+import EventDate from "../../assets/images/eventDate.png";
+import LogoFis from "../../assets/images/logo-fis.png";
 
 import './RegistrationInfo.css';
 
 export function RegistrationInfo() {
   return (
     <div>
-      <img className="women" src={Women} alt="" />
-      <img className="geometric-shapes7" src={GeometricShapes7} alt="" />
-      <img className="geometric-shapes8" src={GeometricShapes8} alt="" />
-      <img className="geometric-shapes9" src={GeometricShapes9} alt="" />
-      <img className="geometric-shapes10" src={GeometricShapes10} alt="" />
-      <img className="geometric-shapes11" src={GeometricShapes11} alt="" />
-      {/* <img className="geometric-shapes14" src={GeometricShapes14} alt="" /> */}
-      <img className="hands" src={Hands} alt="" />
-      <img className="text3" src={Text3} alt="" />
-      <img className="logo2" src={Logo2} alt="" />
+      <img className="women" src={Women} alt="Mulher Sorrindo" />
+      <img className="geometricShapes7" src={GeometricShapes7} alt="Forma Geométrica" />
+      <img className="geometricShapes8" src={GeometricShapes8} alt="Forma Geométrica" />
+      <img className="geometricShapes9" src={GeometricShapes9} alt="Forma Geométrica" />
+      <img className="geometricShapes10" src={GeometricShapes10} alt="Forma Geométrica" />
+      <img className="geometricShapes11" src={GeometricShapes11} alt="Forma Geométrica" />
+      <img className="geometricShapes12" src={GeometricShapes12} alt="Forma Geométrica" />
+      <img className="hands" src={Hands} alt="Aperto de mão humana com uma robótica" />
+      <img className="eventDate" src={EventDate} alt="Data do evento" />
+      <img className="logoFis" src={LogoFis} alt="Logo Fis" />
 
-      <h1 className="text">
-        A maior experiência da área da saúde da América Latina
+      <h1 className="title">
+        A maior experiência 
+        <br /> 
+        da área da saúde da 
+        América Latina
       </h1>
 
-      <div className="text2">
+      <div className="text">
         <p>
           Vivencie uma super semana e impacte o Ecossistema da Saúde com a
           gente!A #FISWEEK é a maior Experiência da Saúde na América
