@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/Col';
 
 import { ApplicationForm } from '../../components/applicationform/ApplicationForm';
 import { RegistrationInfo } from '../../components/registrationInfo/RegistrationInfo';
+import { ConferenceBar } from '../../components/conferencebar/ConferenceBar';
 
 import './Home.css';
 
@@ -15,6 +16,7 @@ export function Home() {
                 <Col xs={12} md={4}><ApplicationForm /></Col>
             </Row>
             <Row>
+                <ConferenceBar />
             </Row>
         </Container>
     );
