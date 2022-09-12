@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import { Footer } from '../../components/footer/Footer';
+import { ConferenceBar } from '../../components/conferencebar/ConferenceBar';
 import { Newsletter } from '../../components/newsletter/Newsletter';
 import { SaveTheDate } from '../../components/savethedate/SaveTheDate';
 
@@ -12,11 +12,11 @@ export function Pre() {
     return (
         <Container>
             <Row>
-                <Col xs={12} md={6}><SaveTheDate /></Col>
-                <Col xs={12} md={6}><Newsletter /></Col>
+                <Col xs={12} lg={6}><SaveTheDate /></Col>
+                <Col xs={12} lg={6}><Newsletter /></Col>
             </Row>
             <Row>
-                <Footer />
+                <ConferenceBar />
             </Row>
         </Container>
     );

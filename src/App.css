@@ -1,11 +1,14 @@
-:root {
-  text-align: center;
-  font-size: 62.5%; /* 1rem = 10px */
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: local('Montserrat-Regular'), url(./assets/fonts/Montserrat-Regular.ttf) format('truetype');
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  border: none;
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: local('Montserrat-Bold'), url(./assets/fonts/Montserrat-Bold.ttf) format('truetype');
 }
+
+body {
+  background: #2A2850 !important;
+}
+

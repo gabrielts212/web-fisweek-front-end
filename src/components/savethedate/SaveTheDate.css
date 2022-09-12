@@ -1,257 +1,104 @@
-.save-the-date {
-  width: 720px;
+.saveTheDate {
+    height: 850px;
+    overflow: hidden;
+    position: relative;
 }
 
-.geometric-shapes1 {
-  position: absolute;
-  left: .01%;
-  right: 91.39%;
-  top: 0;
-  bottom: 75.97%;
-}
-
-.fisweek {
-  position: absolute;
-  left: 4.1%;
-  right: 71.88%;
-  top: 6%;
-  bottom: 87.87%;
-
-  z-index: 1;
-}
-
-.logo {
-  position: absolute;
-  width: 88px;
-  height: 89px;
-  left: 32.6%;
-  top: 5%;
-}
-
-.na {
-  position: absolute;
-  width: 30.48px;
-  height: 30.48px;
-  left: 14.5%;
-  top: 13.4%;
-}
-
-.rio-innovation {
-  position: absolute;
-  width: 429px;
-  height: 247px;
-  left: 10.5%;
-  top: 11.3%;
-}
-
-.image1 {
-  width: 42%;
-
-  position: absolute;
-  left: 1%;
-  right: 24.72%;
-  top: 23%;
-  bottom: 18.46%;
-}
-
-.event-date {
-  position: absolute;
-  width: 91.33px;
-  height: 229.76px;
-  left: 37%;
-  top: 48%;
-}
-
-.geometric-shapes2 {
-  position: absolute;
-  left: 0;
-  right: 92.78%;
-  top: 46%;
-  bottom: 26.9%;
-}
-
-.geometric-shapes3 {
-  position: absolute;
-  left: 32%;
-  right: 56.18%;
-  top: 72%;
-  bottom: 5.47%;
-}
-
-
-@media (max-width: 1200px) {
-
-  /* ==== SAVE THE DATE ====================*/
-  .save-the-date .geometric-shapes1 {
-    width: 9%;
+.saveTheDate img.date {
+    left: 495px;
     position: absolute;
+    top: 480px;
+}
+
+.saveTheDate img.logo {
+    left: 50px;
+    height: 72px;
+    position: absolute;
+    top: 50px;
+}
+
+.saveTheDate img.main {
+    height: 544px;
+    left: 20px;
+    position: absolute;
+    top: 235px;
+}
+
+.saveTheDate img.shape1 {
+    height: 230px;
     left: 0;
-  }
-
-  .fisweek {
-    width: 25%;
-    
     position: absolute;
-    left: 3.9%;
-    top: 5%;
-  }
-  
-  .logo {
-    width: 5.9%;
-    height: 6.3%;
-
-    position: absolute;
-    left: 30%;
-    top: 4.6%;
-  }
-  
-  .na {
-    position: absolute;
-    left: 13.5%;
-    top: 11%;
-  }
-  
-  .rio-innovation {
-    width: 30%;
-    height: auto;
-
-    position: absolute;
-    left: 10%;
-    top: 10%;
-  }
-  
-  .image1 {
-    width: 43%;
-
-    position: absolute;
-    left: 0;
-    top: 23%;
-  }
-  
-  .event-date {
-    width: 73.58px;
-    height: 185.09px;
-
-    position: absolute;
-    left: 37%;
-    top: 45%;
-  }
-  
-  .geometric-shapes2 {
-    width: 8.5%;
-    position: absolute;
-    left: 0;
-    top: 44%;
-  }
-  
-  .geometric-shapes3 {
-    width: 17%;
-    position: absolute;
-    left: 31%;
-    top: 65.5%;
-  }  
+    top: 0;
 }
 
-@media (max-width: 1024px) {
-
-  /* ==== SAVE THE DATE ====================*/
-  .save-the-date .geometric-shapes1 {
-    width: 9.5%;
-  }
-
-  .fisweek {
-    width: 27.5%;
+.saveTheDate img.shape2 {
+    left: 0;
     position: absolute;
-    left: 4%;
-  }
-  
-  .logo {
-    width: 6.3%;
-    height: 6%;
-
-    position: absolute;
-    left: 32.5%;
-  }
-  
-  .na {
-    position: absolute;
-    left: 14%;
-  }
-  
-  .rio-innovation {
-    width: 34%;
-  }
-  
-  .image1 {
-    width: 43%;
-  }
-  
-  .event-date {
-    position: absolute;
-    left: 36.5%;
-    top: 39%;
-  }
-  
-  .geometric-shapes2 {
-    top: 40%;
-  }
-  
-  .geometric-shapes3 {
-    width: 18%;
-    position: absolute;
-    left: 30%;
-    top: 59%;
-  }  
+    top: 450px;
 }
 
-@media (max-width: 768px) {
-  
-  /* ==== SAVE THE DATE ====================*/
-  .save-the-date .geometric-shapes1 {
-    width: 9.5%;
-  }
+.saveTheDate img.shape3 {
+    left: 414px;
+    position: absolute;
+    top: 746px;
+}
 
-  .fisweek {
-    width: 27.5%;
-    position: absolute;
-    left: 4%;
-  }
-  
-  .logo {
-    width: 6.3%;
-    height: 6%;
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
 
-    position: absolute;
-    left: 32.5%;
-  }
-  
-  .na {
-    position: absolute;
-    left: 14%;
-  }
-  
-  .rio-innovation {
-    width: 34%;
-  }
-  
-  .image1 {
-    width: 42%;
-  }
-  
-  .event-date {
-    position: absolute;
-    left: 36.5%;
-    top: 44%;
-  }
-  
-  .geometric-shapes2 {
-    top: 44.5%;
-  }
-  
-  .geometric-shapes3 {
-    width: 18%;
-    position: absolute;
-    left: 30%;
-    top: 64.2%;
-  }  
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .saveTheDate img.main {
+        height: 500px;
+        left: 0;
+    }
+
+    .saveTheDate img.date {
+        left: 405px;
+        top: 440px;
+    }
+
+    .saveTheDate img.shape3 {
+        left: 294px;
+        top: 726px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .saveTheDate img.main {
+        height: 450px;
+    }
+
+    .saveTheDate img.date {
+        left: 365px;
+        top: 412px;
+    }
+
+    .saveTheDate img.shape3 {
+        left: 234px;
+    }
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+    .saveTheDate img.main {
+        height: 520px;
+    }
+
+    .saveTheDate img.date {
+        left: 450px;
+        top: 412px;
+    }
+
+    .saveTheDate img.shape3 {
+        left: 322px;
+    }
 }

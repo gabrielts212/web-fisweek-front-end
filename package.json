@@ -6,12 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "storybook": "export NODE_OPTIONS=--openssl-legacy-provider; start-storybook -p 6006",
-    "storybookw": "set NODE_OPTIONS=--openssl-legacy-provider; start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "bootstrap": "^5.2.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
@@ -21,13 +19,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.18.13",
-    "@storybook/addon-actions": "^6.5.10",
-    "@storybook/addon-essentials": "^6.5.10",
-    "@storybook/addon-interactions": "^6.5.10",
-    "@storybook/addon-links": "^6.5.10",
-    "@storybook/builder-vite": "^0.2.2",
-    "@storybook/react": "^6.5.10",
-    "@storybook/testing-library": "^0.0.13",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.1",

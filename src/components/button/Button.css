@@ -1,0 +1,20 @@
+.button .container {
+    background-color: #4F67F3;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 5px 15px;
+    width: auto;
+}
+
+.button img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.button button {
+    background-color: #4F67F3;
+    border: 0;
+    color: #fff;
+    font-family: "Montserrat-Regular";
+    font-size: 16px;
+}
