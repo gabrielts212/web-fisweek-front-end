@@ -1,7 +1,8 @@
 import { Button } from '../button/Button';
 import RegistrationVerified from '../../assets/images/registration-verified.png';
-import './ApplicationForm.css';
 import { useState } from 'react';
+
+import styles from './ApplicationForm.module.css';
 
 const handleFormSubmit = () => {
   event.preventDefault()
@@ -10,7 +11,7 @@ const handleFormSubmit = () => {
 }
 
 const formSent = () => {
-  <form className="form-completed" action="POST">
+  <form className={styles.formCompleted} action="POST">
     <h1>Cadastro concluído!</h1>
     <img src={RegistrationVerified} alt="RegistrationVerified" />
   </form>
@@ -20,9 +21,9 @@ export function ApplicationForm() {
   const [formCompleted, setFormCompleted] = useState(false)
 
   return (
-    <div className="form-container">
-      <form onSubmit={handleFormSubmit} className="application-form" action="POST">
-        <label className="caption-title">
+    <div>
+      <form onSubmit={handleFormSubmit} className={styles.applicationForm} action="POST">
+        <label className={styles.captionTitle}>
           Faça sua inscrição
           <input type="text" name="name" placeholder="Nome" />
           <input type="text" name="name" placeholder="Sobrenome" />
@@ -30,7 +31,7 @@ export function ApplicationForm() {
           <input type="text" name="name" placeholder="Conhecia a Iniciativa?" />
           <input type="text" name="name" placeholder="Como soube do evento?" />
           <div>
-            <select className="form-control">
+            <select className={styles.formControl}>
               <option>Qual evento gostaria de participar?</option>
               <option value="Fis22">Fis22</option>
               <option value="S/M22">S/M22</option>
@@ -44,7 +45,7 @@ export function ApplicationForm() {
         </label>
       </form>
 
-      <div className="modal-overlay"></div>
+      <div className={styles.modalOverlay}></div>
     </div>
   )
 }

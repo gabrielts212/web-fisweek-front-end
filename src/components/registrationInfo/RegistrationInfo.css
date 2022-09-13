@@ -1,93 +1,80 @@
 .women {
   position: absolute;
-  width: 430.99px;
-  height: 384.99px;
-  left: 122px;
+  width: 365.99px;
+  height: 322.99px;
+  top: 4%;
+  left: 28%;
   z-index: 1;
-  bottom: 53.55%;
 }
 
-.geometric-shapes7 {
+.geometricShapes7 {
   position: absolute;
-  width: 271.04px;
-  height: 320.04px;
-  left: 200px;
-  bottom: 55.99%;
+  width: 260.04px;
+  height: 270.04px;
+  top: 8%;
+  left: 30.2%;
 }
 
-.geometric-shapes8 {
+.geometricShapes8 {
   position: absolute;
-  left: 2.9%;
+  width: 140px;
+  height: 130px;
+  left: 25%;
   right: 84.93%;
-  top: 14.33%;
-  width: 150px;
-  height: 150.04px;
+  top: 8%;
 }
-.geometric-shapes9 {
+
+.geometricShapes9 {
   position: absolute;
-  left: 2.9%;
+  width: 140px;
+  height: 145px;
+  left: 25%;
   right: 84.95%;
-  top: 29%;
+  top: 21.5%;
   bottom: 95.59%;
-  width: 150px;
-  height: 160.04px;
 }
-.geometric-shapes10 {
+
+.geometricShapes10 {
   position: absolute;
-  left: 27%;
+  left: 50%;
   right: 63.37%;
   top: 690px;
   bottom: 90.42%;
   width: 150px;
 }
-.geometric-shapes11 {
+
+.geometricShapes11 {
   position: absolute;
   width: 337px;
   height: 110px;
-  left: 380px;
+  left: 50%;
   top: 570px;
 }
-.geometric-shapes14 {
+
+.geometricShapes12 {
   position: absolute;
-  width: 320px;
-  height: 320px;
-  left: 45.57px;
-  top: 485.31px;
+  width: 353.73px;
+  height: 352.67px;
+  left: 25%;
+  top: 570px;
 }
 
-.logo2 {
-  width: 85px;
-  height: 85px;
-  position: absolute;
-  left: 29.88%;
-  right: 61.33%;
-  top: 54%;
-  bottom: 93.87%;
-  z-index: 1;
-}
-.hands {
-  position: absolute;
-  width: 320.34px;
-  height: 340.16px;
-  left: 44.55px;
-  top: 500.31px;
-}
-.text {
+.title {
   position: absolute;
   width: 497px;
-  height: 165px;
-  left: 400px;
-  top: 200px;
+  left: 50%;
+  top: 13%;
+
   font-style: normal;
   font-weight: 700;
-  font-size: 45px;
-  line-height: 55px;
+  font-size: 2.5rem;
   color: #fff;
+
   z-index: 1;
   text-align: left;
 }
 
-.text2 {
+.text {
   width: 500px;
   height: 100px;
   position: absolute;
@@ -101,7 +88,27 @@
   z-index: 1;
   text-align: left;
 }
-.text3 {
+
+.hands {
+  position: absolute;
+  width: 320.34px;
+  height: 340.16px;
+  left: 30%;
+  top: 500.31px;
+}
+
+.logoFis {
+  width: 85px;
+  height: 85px;
+  position: absolute;
+  left: 29.88%;
+  right: 61.33%;
+  top: 54%;
+  bottom: 93.87%;
+  z-index: 1;
+}
+
+.eventDate {
   position: absolute;
   left: 40.46%;
   right: 40.15%;
@@ -117,60 +124,21 @@
 }
 
 @media (max-width: 1200px) {
-  .text3 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
+  
 }
 
 @media (max-width: 1024px) {
-  p {
-    /* flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      text-align: justify; */
-  }
+
 }
+
 @media (max-width: 768px) {
-  p,
-  h1 {
-    align-items: left;
-    font-size: 30px;
-  }
+  
 }
 
 @media (max-width: 630px) {
-  img {
-    width: 100%;
-  }
-}
-@media (max-width: 540px) {
-  img {
-    width: 100%;
-  }
+  
 }
 
-/* @media (max-width: 768px) {
-    
-    img
-    {
-      flex-direction:column;
-      align-items:center;
-      justify-content:center;
-    }
-  } */
-/* @media (max-width: 1024px) {
-    img{
-      max-width: 60%; 
-      
-    }
-  } */
-/* @media (max-width: 1024px) {
-    p {
-      width: 100%;
-      align-items: left;
-      justify-content: center;
-    }
-  } */
+@media (max-width: 540px) {
+  
+}
