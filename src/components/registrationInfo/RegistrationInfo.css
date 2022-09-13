@@ -1,24 +1,24 @@
 .women {
   position: absolute;
-  width: 365.99px;
-  height: 322.99px;
-  top: 4%;
-  left: 28%;
+  width: 405.99px;
+  height: 350.99px;
+  top: 4.4%;
+  left: 28.5%;
   z-index: 1;
 }
 
 .geometricShapes7 {
   position: absolute;
-  width: 260.04px;
-  height: 270.04px;
+  width: 275.04px;
+  height: 295.04px;
   top: 8%;
-  left: 30.2%;
+  left: 31%;
 }
 
 .geometricShapes8 {
   position: absolute;
-  width: 140px;
-  height: 130px;
+  width: 150px;
+  height: 135px;
   left: 25%;
   right: 84.93%;
   top: 8%;
@@ -26,46 +26,43 @@
 
 .geometricShapes9 {
   position: absolute;
-  width: 140px;
-  height: 145px;
+  width: 150px;
+  height: 155px;
   left: 25%;
   right: 84.95%;
-  top: 21.5%;
+  top: 23%;
   bottom: 95.59%;
 }
 
 .geometricShapes10 {
   position: absolute;
-  left: 50%;
-  right: 63.37%;
-  top: 690px;
-  bottom: 90.42%;
-  width: 150px;
+  width: 130px;
+  top: 65.5%;
+  left: 36%;
 }
 
 .geometricShapes11 {
   position: absolute;
-  width: 337px;
-  height: 110px;
-  left: 50%;
-  top: 570px;
+  width: 363px;
+  height: 124px;
+  left: 38.5%;
+  top: 51%;
 }
 
 .geometricShapes12 {
   position: absolute;
-  width: 353.73px;
-  height: 352.67px;
+  width: 333.73px;
+  height: 332.67px;
   left: 25%;
-  top: 570px;
+  top: 40.5%;
 }
 
 .title {
   position: absolute;
   width: 497px;
-  left: 50%;
-  top: 13%;
+  left: 38.9%;
+  top: 12%;
 
-  font-style: normal;
   font-weight: 700;
   font-size: 2.5rem;
   color: #fff;
@@ -75,52 +72,47 @@
 }
 
 .text {
-  width: 500px;
-  height: 100px;
   position: absolute;
-  left: 29.99%;
-  top: 35.55%;
-  font-style: normal;
+  width: 450px;
+  left: 38.9%;
+  top: 29%;
+
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.5rem;
   color: #fff;
+
   z-index: 1;
   text-align: left;
 }
 
 .hands {
   position: absolute;
-  width: 320.34px;
-  height: 340.16px;
-  left: 30%;
-  top: 500.31px;
+  width: 321.50px;
+  height: 320.16px;
+  left: 25%;
+  top: 40%;
 }
 
 .logoFis {
   width: 85px;
   height: 85px;
+
   position: absolute;
-  left: 29.88%;
-  right: 61.33%;
-  top: 54%;
-  bottom: 93.87%;
+  left: 39.5%;
+  top: 53%;
+ 
   z-index: 1;
 }
 
 .eventDate {
   position: absolute;
-  left: 40.46%;
-  right: 40.15%;
-  top: 54.99%;
-  font-style: normal;
-  font-size: 20px;
-  line-height: 23px;
-  color: #fff;
-  z-index: 1;
   width: 140px;
   height: 60px;
-  flex-direction: column;
+  top: 54%;
+  left: 46%;
+ 
+  z-index: 1;
 }
 
 @media (max-width: 1200px) {

@@ -16,7 +16,7 @@ export function Home() {
                 <Col xs={12} md={4}><ApplicationForm /></Col>
             </Row>
             <Row>
-                <ConferenceBar />
+                {/* <ConferenceBar /> */}
             </Row>
         </Container>
     );
