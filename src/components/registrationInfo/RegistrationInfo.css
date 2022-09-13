@@ -115,6 +115,61 @@
   z-index: 1;
 }
 
+/* @media (max-width: 2560px) {
+  .women {
+    position: absolute;
+    width: 410.99px;
+    height: 355.99px;
+    top: 4.4%;
+  }
+  
+  .geometricShapes9 {
+    position: absolute;
+    top: 21%;
+  }
+  
+  .geometricShapes10 {
+    position: absolute;
+    width: 130px;
+    top: 58.5%;
+    left: 35.5%;
+  }
+  
+  .geometricShapes11 {
+    position: absolute;
+    width: 353px;
+    height: 114px;
+    top: 46.5%;
+  }
+  
+  .geometricShapes12 {
+    position: absolute;
+    top: 36%;
+  }
+  
+  .text {
+    position: absolute;
+    top: 27%;
+  }
+  
+  .hands {
+    position: absolute;
+    width: 330.50px;
+    top: 36%;
+  }
+  
+  .logoFis {
+    position: absolute;
+    top: 48%;
+  }
+  
+  .eventDate {
+    position: absolute;
+    top: 48.8%;
+    left: 45.5%;
+  }
+} */
+
 @media (max-width: 1200px) {
   
 }

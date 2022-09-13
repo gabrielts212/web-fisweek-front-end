@@ -1,13 +1,13 @@
 .applicationForm {
-  width: 447px;
-  height: 684px;
+  width: 432px;
+  height: 670px;
 
   border-radius: 7% 22% 7% 0 / 5% 13% 5% 70% ;
 
   background: #6777C4;
 
   position: absolute;
-  top: 8%;
+  top: 7%;
   left: 57.5%;
 
   text-align: center;
@@ -22,7 +22,7 @@ label {
   font-size: 2rem;
   font-weight: 700;
 
-  margin-top: 40px;
+  margin-top: 33px;
 }
 
 .applicationForm input[type=text],
@@ -35,7 +35,8 @@ label {
   backdrop-filter: blur(50px);
   /* Note: backdrop-filter has minimal browser support */
   color: #FFF;
-  font-size: 1.6rem;
+  font-size: 1.1rem;
+  font-weight: 300;
 
   outline: none;
   border: none;
@@ -48,8 +49,8 @@ label {
 }
 
 .applicationForm input::placeholder {
-  font-size: 1.6rem;
-  font-weight: 400;
+  font-size: 1.1rem;
+  font-weight: 300;
   color: #FFF;
 }
 
@@ -71,7 +72,8 @@ label {
   margin: 0 0 16.8px -5px;
   padding-left: 20px;
 
-  font-size: 1.6rem;
+  font-size: 1.1rem;
+  font-weight: 300;
   color: #FFF;
 
   opacity: 0.92;
