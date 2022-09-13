@@ -105,12 +105,16 @@ label {
 
 @media (max-width: 1200px) {
   .applicationForm {
-    width: 430px;
-    height: 670px;
+    width: 415px;
+    height: 650px;
 
     position: absolute;
-    left: 59%;
+    left: 62.5%;
   }  
+
+  .applicationForm .captionTitle {
+    margin-top: 30px;
+  }
 
   .applicationForm .button {
     margin-top: 2px;
@@ -127,20 +131,35 @@ label {
 
 @media (max-width: 1024px) {
   .applicationForm {
-    width: 420px;
-    height: 650px;
+    width: 350px;
+    height: 580px;
 
     position: absolute;
-    left: 53.5%;
+    left: 62.5%;
   }  
 
   .applicationForm .captionTitle {
-    font-size: 2rem;
-    margin-top: 1rem;
+    font-size: 1.7rem;
+    margin-top: 25px;
   } 
 
+  .applicationForm input[type=text],
+  .applicationForm input[type=email],
+  .applicationForm input[type=number] {
+    width: 300px;
+    height: 45px;
+    font-size: .9rem;
+}
+
+  .applicationForm input::placeholder {
+    font-size: .9rem;
+  }
+
   .applicationForm .formControl {
+    width: 300px;
+    height: 45px;
     margin: 0 0 16.8px 0;
+    font-size: .9rem;
   }
 
   .applicationForm .button {
@@ -157,6 +176,33 @@ label {
 }
 
 @media (max-width: 768px) {
+  .applicationForm {
+    width: 432px;
+    height: 670px;
+
+    position: absolute;
+    top: 7%;
+    left: 57.5%;
+  }  
+
+  .applicationForm .captionTitle {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  .applicationForm input[type=text],
+  .applicationForm input[type=email],
+  .applicationForm input[type=number] {
+    width: 359px;
+    height: 51.2px;
+
+    font-size: 1.1rem;
+  }
+
+  .applicationForm input::placeholder {
+    font-size: 1.1rem;
+  }
+
   .modalOverlay {
     position: absolute;
     top: 0;
@@ -182,12 +228,9 @@ label {
     z-index: 999;
   }  
 
-  .applicationForm .captionTitle {
-    font-size: 2.2rem;
-    margin-top: 1rem;
-  }  
-
   .applicationForm .formControl {
+    width: 359px;
+    height: 51.2px;
     margin: 0 0 16.8px 0;
   }
 
@@ -201,6 +244,14 @@ label {
     left: 24%;
 
     z-index: 999;
+  }
+
+  .applicationForm {
+    display: none;
+  }
+
+  .modalOverlay {
+    display: none;
   }
 }
 

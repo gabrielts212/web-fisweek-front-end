@@ -5,6 +5,9 @@ import GeometricShapes9 from "../../assets/images/geometric-shapes9.png";
 import GeometricShapes10 from "../../assets/images/geometric-shapes10.png";
 import GeometricShapes11 from "../../assets/images/geometric-shapes11.png";
 import GeometricShapes12 from "../../assets/images/geometric-shapes12.png";
+import GeometricShapes13 from "../../assets/images/geometric-shapes13.png";
+import GeometricShapes14 from "../../assets/images/geometric-shapes14.png";
+import FilterBlur from "../../assets/images/filter-blur.png";
 import Hands from "../../assets/images/hands.png";
 import EventDate from "../../assets/images/eventDate.png";
 import LogoFis from "../../assets/images/logo-fis.png";
@@ -21,6 +24,9 @@ export function RegistrationInfo() {
       <img className="geometricShapes10" src={GeometricShapes10} alt="Forma Geométrica" />
       <img className="geometricShapes11" src={GeometricShapes11} alt="Forma Geométrica" />
       <img className="geometricShapes12" src={GeometricShapes12} alt="Forma Geométrica" />
+      <img className="geometricShapes13" src={GeometricShapes13} alt="Forma Geométrica" />
+      <img className="geometricShapes14" src={GeometricShapes14} alt="Forma Geométrica" />
+      <img className="filterBlur" src={FilterBlur} />
       <img className="hands" src={Hands} alt="Aperto de mão humana com uma robótica" />
       <img className="eventDate" src={EventDate} alt="Data do evento" />
       <img className="logoFis" src={LogoFis} alt="Logo Fis" />

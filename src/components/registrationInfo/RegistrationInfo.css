@@ -57,6 +57,14 @@
   top: 40.5%;
 }
 
+/* .geometricShapes13 {
+  display: none;
+}
+
+.geometricShapes14 {
+  display: none;
+} */
+
 .title {
   position: absolute;
   width: 497px;
@@ -171,21 +179,451 @@
 } */
 
 @media (max-width: 1200px) {
+  .women {
+    position: absolute;
+    left: 9%;
+  }
   
+  .geometricShapes7 {
+    position: absolute;
+    width: 265.04px;
+    height: 285.04px;
+    top: 8%;
+    left: 15%;
+  }
+  
+  .geometricShapes8 {
+    position: absolute;
+    width: 140px;
+    height: 135px;
+    left: 3%;
+  }
+  
+  .geometricShapes9 {
+    position: absolute;
+    width: 140px;
+    height: 145px;
+    left: 3%;
+    top: 21%;
+  }
+  
+  .geometricShapes10 {
+    position: absolute;
+    width: 130px;
+    top: 57.5%;
+    left: 26%;
+  }
+  
+  .geometricShapes11 {
+    position: absolute;
+    width: 313px;
+    height: 104px;
+    left: 32%;
+    top: 46%;
+  }
+  
+  .geometricShapes12 {
+    position: absolute;
+    width: 333.73px;
+    height: 332.67px;
+    left: 3%;
+    top: 35.5%;
+  }
+  
+  .title {
+    position: absolute;
+    left: 31%;
+    top: 12%;
+  
+    font-size: 2.2rem;
+  }
+  
+  .text {
+    position: absolute;
+    width: 360px;
+    left: 31%;
+    top: 26%;
+  
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.5rem;
+    color: #fff;
+  
+    z-index: 1;
+    text-align: left;
+  }
+  
+  .hands {
+    position: absolute;
+    width: 330px;
+    height: 320.16px;
+    left: 3%;
+    top: 35.5%;
+  }
+  
+  .logoFis {
+    width: 65px;
+    height: 65px;
+  
+    position: absolute;
+    left: 33.5%;
+    top: 48%;
+  }
+  
+  .eventDate {
+    position: absolute;
+    width: 130px;
+    height: 55px;
+    top: 48%;
+    left: 45%;
+  }
 }
 
 @media (max-width: 1024px) {
-
+  .women {
+    position: absolute;
+    width: 360.99px;
+    height: 330px;
+    left: 11%;
+  }
+  
+  .geometricShapes7 {
+    position: absolute;
+    width: 255.04px;
+    height: 265.04px;
+    top: 8%;
+    left: 16.5%;
+  }
+  
+  .geometricShapes8 {
+    position: absolute;
+    width: 130px;
+    height: 125px;
+    left: 3.5%;
+  }
+  
+  .geometricShapes9 {
+    position: absolute;
+    width: 130px;
+    height: 135px;
+    left: 3.5%;
+    top: 20%;
+  }
+  
+  .geometricShapes10 {
+    position: absolute;
+    width: 115px;
+    top: 56%;
+    left: 27%;
+  }
+  
+  .geometricShapes11 {
+    position: absolute;
+    width: 270px;
+    height: 95px;
+    left: 33.5%;
+    top: 46%;
+  }
+  
+  .geometricShapes12 {
+    position: absolute;
+    width: 303px;
+    height: 302.67px;
+    left: 3.5%;
+    top: 33.5%;
+  }
+  
+  .title {
+    position: absolute;
+    width: 290px;
+    left: 33.5%;
+    top: 12%;
+  
+    font-size: 1.7rem;
+  }
+  
+  .text {
+    position: absolute;
+    width: 290px;
+    left: 33.5%;
+    top: 22.5%;
+  }
+  
+  .hands {
+    position: absolute;
+    width: 303.90px;
+    height: 300px;
+    left: 3%;
+    top: 34%;
+  }
+  
+  .logoFis {
+    width: 60px;
+    height: 60px;
+  
+    position: absolute;
+    left: 35%;
+    top: 47.7%;
+  }
+  
+  .eventDate {
+    position: absolute;
+    width: 130px;
+    height: 55px;
+    top: 47.7%;
+    left: 45%;
+  }
 }
 
 @media (max-width: 768px) {
+  .women {
+    position: absolute;
+    width: 329px;
+    height: 290px;
+    top: 5%;
+    left: 14%;
+  }
   
+  .geometricShapes7 {
+    position: absolute;
+    width: 210.89px;
+    height: 235px;
+    top: 8%;
+    left: 22%;
+  }
+  
+  .geometricShapes8 {
+    position: absolute;
+    width: 120px;
+    height: 115px;
+    left: 6%;
+  }
+  
+  .geometricShapes9 {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 6%;
+    top: 19%;
+  }
+  
+  .geometricShapes10 {
+    position: absolute;
+    width: 110px;
+    top: 53.7%;
+    left: 6%;
+
+    transform: rotate(90deg);
+  }
+  
+  .geometricShapes11 {
+    display: none;
+  }
+  
+  .geometricShapes12 {
+    position: absolute;
+    width: 255.27px;
+    height: 258.89px;
+    left: 6%;
+    top: 31%;
+  }
+  
+  .geometricShapes13 {
+    position: absolute;
+    width: 120px;
+    height: 115px;
+    left: 62.5%;
+    top: 8%;
+  }
+
+  .geometricShapes14 {
+    position: absolute;
+    width: 120px;
+    height: 115px;
+    left: 78.87%;
+    top: 8%;
+  }
+
+  .filterBlur {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 170px;
+    top: 235px;
+
+    background: #2A2850;
+    filter: blur(78px);
+  }
+
+  .title {
+    position: absolute;
+    width: 500px;
+    left: 30.5%;
+    top: 21%;
+  
+    font-size: 3rem;
+  }
+  
+  .text {
+    position: absolute;
+    width: 400px;
+    left: 30.5%;
+    top: 45%;
+
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  
+  .hands {
+    position: absolute;
+    width: 259.27px;
+    height: 258.89px;
+    left: 5%;
+    top: 30%;
+  }
+  
+  .logoFis {
+    display: none;
+  }
+  
+  .eventDate {
+    display: none;
+  }
 }
 
 @media (max-width: 630px) {
+  .women {
+    position: absolute;
+    width: 300px;
+    height: 270px;
+    top: 5%;
+    left: 15%;
+  }
   
+  .geometricShapes7 {
+    position: absolute;
+    width: 200.89px;
+    height: 223px;
+    top: 8%;
+    left: 23%;
+  }
+  
+  .geometricShapes8 {
+    position: absolute;
+    width: 110px;
+    height: 105px;
+    left: 5%;
+  }
+  
+  .geometricShapes9 {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    left: 5%;
+    top: 18.5%;
+  }
+  
+  .geometricShapes10 {
+    position: absolute;
+    width: 110px;
+    top: 50.7%;
+    left: 5%;
+
+    transform: rotate(90deg);
+  }
+  
+  .geometricShapes11 {
+    display: none;
+  }
+  
+  .geometricShapes12 {
+    position: absolute;
+    width: 235.27px;
+    height: 238.89px;
+    left: 5%;
+    top: 29.5%;
+  }
+  
+  .geometricShapes13 {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    left: 65.4%;
+    top: 8%;
+  }
+
+  .geometricShapes14 {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    left: 83.87%;
+    top: 8%;
+  }
+
+  .title {
+    position: absolute;
+    width: 450px;
+    left: 33.5%;
+    top: 21%;
+  
+    font-size: 2.7rem;
+  }
+  
+  .text {
+    position: absolute;
+    width: 400px;
+    left: 33.5%;
+    top: 43%;
+
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+  }
+  
+  .hands {
+    position: absolute;
+    width: 235.27px;
+    height: 238.89px;
+    left: 5%;
+    top: 30%;
+  }
+  
+  .logoFis {
+    display: none;
+  }
+  
+  .eventDate {
+    display: none;
+  }
 }
 
 @media (max-width: 540px) {
+  .geometricShapes13 {
+    position: absolute;
+    left: 75.4%;
+  }
+
+  .geometricShapes14 {
+    position: absolute;
+    left: 97.87%;
+  }
+
+  .title {
+    position: absolute;
+    left: 37.5%;
+  }
   
+  .text {
+    position: absolute;
+    left: 37.5%;
+
+    line-height: 2rem;
+  }
+  
+  .logoFis {
+    display: none;
+  }
+  
+  .eventDate {
+    display: none;
+  }
 }
