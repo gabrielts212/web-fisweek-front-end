@@ -1,0 +1,63 @@
+
+  .container{
+  
+  }
+.main-footer {
+  background-color: black;
+  color: white;
+  padding-top: 25rem;
+  position: relative;
+  bottom: 0;
+  width: 1335px;
+  position: fixed;
+  min-height: 250px;
+  text-align: left;
+}
+.contact {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  left: 80px;
+  color: white;
+  top: 20px;
+}
+.networks {
+  position: absolute;
+  width: 203px;
+  height: 30px;
+  left: 1090px;
+  top: 170px;
+  font-style: normal;
+  color: white;
+}
+.sociais {
+  position: absolute;
+  left: 700px;
+  top: 200px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.social {
+  text-align: center;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: background 0.2linear;
+  background: white;
+  margin: 10px;
+}
+.sociais .social a {
+  color: #000;
+  font-size: 1.5rem;
+  transition: background 0.3 linear;
+}
+.text-fis {
+  position: absolute;
+  width: 355.71px;
+  height: 20px;
+  left: 1030px;
+  top: 350px;
+  justify-content: space-between
+}
