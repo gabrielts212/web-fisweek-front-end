@@ -78,6 +78,7 @@
 }
 
 .newsletter .content .social {
+  display: flex;
   margin-bottom: 20px;
   text-align: center;
 }

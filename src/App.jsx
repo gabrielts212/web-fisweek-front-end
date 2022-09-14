@@ -10,8 +10,8 @@ export default function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Pre />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/fisweek22/" element={<Pre />} />
+          <Route path="/fisweek22/home" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </div>
