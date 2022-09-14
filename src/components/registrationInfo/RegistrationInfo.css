@@ -510,9 +510,9 @@
     font-size: 1.5rem;
 
     overflow: hidden;
-    line-height: 1.16em;
-    max-height: 5.9em; /* aqui vc controla a altura da caixa de texto */
-    text-align: justify;
+    line-height: 1.25em;
+    max-height: 6.4em; /* aqui vc controla a altura da caixa de texto */
+    text-align: left;
   }
   
   .hands {
@@ -535,39 +535,39 @@
 @media (max-width: 630px) {
   .women {
     position: absolute;
-    width: 300px;
-    height: 270px;
+    width: 310px;
+    height: 295px;
     top: 5%;
-    left: 15%;
+    left: 16.5%;
   }
   
   .geometricShapes7 {
     position: absolute;
-    width: 200.89px;
-    height: 223px;
+    width: 210.89px;
+    height: 250px;
     top: 8%;
-    left: 23%;
+    left: 25%;
   }
   
   .geometricShapes8 {
     position: absolute;
-    width: 110px;
-    height: 105px;
+    width: 120px;
+    height: 115px;
     left: 5%;
   }
   
   .geometricShapes9 {
     position: absolute;
-    width: 110px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
     left: 5%;
-    top: 18.5%;
+    top: 20%;
   }
   
   .geometricShapes10 {
     position: absolute;
     width: 110px;
-    top: 50.7%;
+    top: 55%;
     left: 5%;
 
     transform: rotate(90deg);
@@ -582,14 +582,14 @@
     width: 235.27px;
     height: 238.89px;
     left: 5%;
-    top: 29.5%;
+    top: 33.5%;
   }
   
   .geometricShapes13 {
     position: absolute;
-    width: 110px;
-    height: 110px;
-    left: 65.4%;
+    width: 115px;
+    height: 115px;
+    left: 62%;
     top: 8%;
   }
 
@@ -597,27 +597,34 @@
     position: absolute;
     width: 110px;
     height: 110px;
-    left: 83.87%;
+    left: 82%;
     top: 8%;
+  }
+
+  .filterBlur {
+    position: absolute;
+    width: 350px;
+    height: 350px;
   }
 
   .title {
     position: absolute;
     width: 450px;
-    left: 33.5%;
-    top: 21%;
+    left: 27%;
+    top: 23%;
   
-    font-size: 2.7rem;
+    font-size: 2.8rem;
   }
   
   .text {
     position: absolute;
     width: 400px;
-    left: 33.5%;
-    top: 43%;
+    left: 31%;
+    top: 45.5%;
 
     font-size: 1.3rem;
-    line-height: 1.9rem;
+    line-height: 1.99rem;
+    max-height: 6.4em; /* aqui vc controla a altura da caixa de texto */
   }
   
   .hands {
@@ -625,7 +632,7 @@
     width: 235.27px;
     height: 238.89px;
     left: 5%;
-    top: 30%;
+    top: 33.5%;
   }
   
   .logoFis {
@@ -638,28 +645,98 @@
 }
 
 @media (max-width: 540px) {
-  .geometricShapes13 {
+  .women {
     position: absolute;
-    left: 75.4%;
+    width: 440px;
+    height: 410px;
+    top: 4%;
+    left: 26%;
+  }
+  
+  .geometricShapes7 {
+    position: absolute;
+    width: 290.89px;
+    height: 340px;
+    top: 8%;
+    left: 40%;
+  }
+  
+  .geometricShapes8 {
+    position: absolute;
+    width: 170px;
+    height: 155px;
+    left: 5%;
+  }
+  
+  .geometricShapes9 {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    left: 5%;
+    top: 24%;
+  }
+  
+  .geometricShapes10 {
+    position: absolute;
+    width: 140px;
+    top: 75%;
+    left: 5%;
+
+    transform: rotate(90deg);
+  }
+  
+  .geometricShapes11 {
+    display: none;
+  }
+  
+  .geometricShapes12 {
+    position: absolute;
+    width: 355.27px;
+    height: 355.89px;
+    left: 5%;
+    top: 44%;
+  }
+
+  .geometricShapes13 {
+    display: none;
   }
 
   .geometricShapes14 {
+    display: none;
+  }
+
+  .filterBlur {
     position: absolute;
-    left: 97.87%;
+    width: 350px;
+    height: 350px;
   }
 
   .title {
     position: absolute;
-    left: 37.5%;
+    top: 31%;
+    left: 17%;
+
+    font-size: 2.9rem;
   }
   
   .text {
     position: absolute;
-    left: 37.5%;
+    top: 55%;
+    left: 17%;
 
-    line-height: 2rem;
+    font-size: 1.7rem;
+    max-height: 9em; /* aqui vc controla a altura da caixa de texto */
+    line-height: 2.6rem;
   }
   
+  .hands {
+    position: absolute;
+    width: 355.27px;
+    height: 355.89px;
+    left: 5%;
+    top: 44%;
+  }
+
   .logoFis {
     display: none;
   }
@@ -668,3 +745,110 @@
     display: none;
   }
 }
+
+@media (max-width: 420px) {
+  .women {
+    position: absolute;
+    width: 570px;
+    height: 550px;
+    top: 3%;
+    left: 49%;
+  }
+  
+  .geometricShapes7 {
+    position: absolute;
+    width: 390.89px;
+    height: 470px;
+    top: 8%;
+    left: 70%;
+  }
+  
+  .geometricShapes8 {
+    position: absolute;
+    width: 225px;
+    height: 205px;
+    left: 13%;
+  }
+  
+  .geometricShapes9 {
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    left: 13%;
+    top: 30%;
+  }
+  
+  .geometricShapes10 {
+    position: absolute;
+    width: 170px;
+    top: 100%;
+    left: 13%;
+
+    transform: rotate(90deg);
+  }
+  
+  .geometricShapes11 {
+    display: none;
+  }
+  
+  .geometricShapes12 {
+    position: absolute;
+    width: 470.27px;
+    height: 470.89px;
+    left: 15%;
+    top: 57%;
+  }
+
+  .geometricShapes13 {
+    position: absolute;
+    top: 38%;
+    left: 93.4%;
+  }
+
+  .geometricShapes14 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 89%;
+    left: 125.87%;
+  }
+
+  .title {
+    position: absolute;
+    width: 650px;
+    top: 46%;
+    left: 12.5%;
+
+    font-size: 3.8rem;
+  }
+  
+  .text {
+    position: absolute;
+    width: 600px;
+    top: 71%;
+    left: 12.5%;
+
+    font-size: 2.5rem;
+    max-height: 6.3em; /* aqui vc controla a altura da caixa de texto */
+    line-height: 2.6rem;
+
+    text-align: center;
+  }
+  
+  .hands {
+    position: absolute;
+    width: 470.27px;
+    height: 470.89px;
+    left: 15%;
+    top: 57%;
+  }
+
+  .logoFis {
+    display: none;
+  }
+  
+  .eventDate {
+    display: none;
+  }
+}
+
