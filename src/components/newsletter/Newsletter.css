@@ -95,7 +95,44 @@
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .newsletter {
+    height: 740px;
+  }
 
+  .newsletter h2 {
+    font-size: 22px;
+    top: 192px;
+    width: 350px;
+  }
+
+  .newsletter .content {
+    left: 0;
+    top: 360px;
+    width: 350px;
+  }
+
+  .newsletter .content .social img {
+    margin: 2px;
+  }
+
+  .newsletter img.main {
+    height: 240px;
+    top: 40px;
+    left: 92px;
+  }
+
+  .newsletter img.shape1 {
+    height: 56px;
+    left: 60px;
+  }
+
+  .newsletter img.shape2 {
+    height: 92px;
+  }
+
+  .newsletter img.shape3 {
+    left: 412px;
+  }
 }
 
 /* Small devices (landscape phones, less than 768px) */

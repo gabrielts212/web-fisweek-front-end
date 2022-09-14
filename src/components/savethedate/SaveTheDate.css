@@ -45,7 +45,43 @@
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    .saveTheDate {
+        height: 540px;
+    }
+    
+    .saveTheDate img.logo {
+        left: 35px;
+        height: 42px;
+        top: 50px;
+    }
+    
+    .saveTheDate img.main {
+        height: 315px;
+        top: 140px;
+        left: 8px;
+    }
 
+    .saveTheDate img.date {
+        height: 140px;
+        left: 278px;
+        top: 258px;
+    }
+
+    .saveTheDate img.shape1 {
+        height: 140px;
+        top: 10px;
+    }
+    
+    .saveTheDate img.shape2 {
+        height: 124px;
+        top: 276px;
+    }
+
+    .saveTheDate img.shape3 {
+        left: 220px;
+        top: 448px;
+        height: 60px;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
