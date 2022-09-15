@@ -1,12 +1,10 @@
 .main-footer {
   background-color: black;
   color: white;
-  /* padding-top: 25rem; */
   position: relative;
   bottom: 0;
   width: 1335px;
-  position: fixed;
-  /* top: 800px; */
+  position:fixed;
   text-align: left;
   display: flex;
   height: 491px;
@@ -53,7 +51,7 @@
 }
 .sociais .social a:hover {
   font-weight: 700;
-  color: rgba(0, 0, 0, 0.611);
+  color: rgba(0, 0, 0, 0.541);
 }
 
 .text-fis {
@@ -94,7 +92,7 @@
     left: 70px;
   }
   .text-fis {
-    left: 76px;
+    left: 78px;
   }
   .text-fis2 {
     left: 199px;
@@ -109,24 +107,10 @@
     left: 70px;
   }
   .text-fis {
-    left: 450px;
-  }
-  .text-fis2 {
-    left: 570px;
-  }
-  .networks {
     left: 80px;
   }
-}
-@media (max-width: 1006px) {
-  .sociais {
-    left: 70px;
-  }
-  .text-fis {
-    left: 680px;
-  }
   .text-fis2 {
-    left: 800px;
+    left: 200px;
   }
   .networks {
     left: 80px;
@@ -136,17 +120,19 @@
 @media (max-width: 630px) {
   .sociais {
     left: 40px;
+    display:grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr ;
   }
   .text-fis {
-    left: 76px;
+    left: 50px;
   }
   .text-fis2 {
-    left: 199px;
+    left: 170px;
   }
   .networks {
     left: 50px;
   }
-
+  
   .contact {
     left: 50px;
   }
@@ -154,11 +140,9 @@
 
 @media (max-width: 540px) {
   .sociais {
-    left: 1px;
-  }
-  .sociais {
-    left: 1px;
-    flex-wrap: nowrap;
+    left: 10px;
+    /* display:grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr ; */
   }
   .networks {
     left: 20px;
@@ -174,13 +158,12 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .sociais {
-    left: 1px;
-  }
-  .sociais {
-    left: 1px;
+    left: 10px;
     flex-wrap: wrap;
+    /* display:grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr ; */
   }
   .networks {
     left: 20px;
@@ -195,13 +178,12 @@
     left: 145px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 375px) {
   .sociais {
-    left: 1px;
-  }
-  .sociais {
-    left: 1px;
+    left: 10px;
     flex-wrap: wrap;
+    /* display:grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr ; */
   }
   .networks {
     left: 20px;
