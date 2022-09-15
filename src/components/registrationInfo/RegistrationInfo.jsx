@@ -16,7 +16,7 @@ import './RegistrationInfo.css';
 
 export function RegistrationInfo() {
   return (
-    <div>
+    <div className="registrationInfo">
       <img className="women" src={Women} alt="Mulher Sorrindo" />
       <img className="geometricShapes7" src={GeometricShapes7} alt="Forma Geométrica" />
       <img className="geometricShapes8" src={GeometricShapes8} alt="Forma Geométrica" />

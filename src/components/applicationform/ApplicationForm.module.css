@@ -7,7 +7,7 @@
   background: #6777C4;
 
   position: absolute;
-  top: 7%;
+  top: 5%;
   left: 58%;
 
   text-align: center;
@@ -126,7 +126,7 @@ label {
     height: 650px;
 
     position: absolute;
-    left: 62.5%;
+    left: 61%;
   }  
 
   .applicationForm .captionTitle {
@@ -142,7 +142,7 @@ label {
     
     position: absolute;
     top: 40%;
-    left: 62.5%;
+    left: 61%;
   }
 
   .formCompleted h1 {
@@ -156,7 +156,7 @@ label {
     height: 590px;
 
     position: absolute;
-    left: 62.5%;
+    left: 61%;
   }  
 
   .applicationForm .captionTitle {
@@ -193,7 +193,7 @@ label {
     
     position: absolute;
     top: 39.3%;
-    left: 62.5%;
+    left: 61%;
   }
 
   .formCompleted h1 {
@@ -272,11 +272,11 @@ label {
   }
 
   .applicationForm {
-    /* display: none; */
+    display: none;
   }
 
   .modalOverlay {
-    /* display: none; */
+    display: none;
   }
 }
 
