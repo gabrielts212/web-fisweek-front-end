@@ -1,3 +1,4 @@
+import { TiktokLogo } from 'phosphor-react'
 import "./Footer.css";
 
 export function Footer() {
@@ -79,8 +80,8 @@ export function Footer() {
             <a
               href=" https://www.tiktok.com/@iniciativafis?lang=pt-BR"
               alt="tik tok"
-            >
-              <i className="fab fa-tiktok fa-fw fa-xl margin-right-md "></i>
+            > <TiktokLogo />
+              {/* <i className="fab fa-tiktok fa-fw fa-xl margin-right-md "></i> */}
             </a>
           </div>
         </div>
