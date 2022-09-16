@@ -1,51 +1,26 @@
-.applicationForm {
-  width: 432px;
-  height: 670px;
-
+.applicationForm, .applicationFormResult {
   border-radius: 7% 22% 7% 0 / 5% 13% 5% 70% ;
-
   background: #6777C4;
-
-  position: absolute;
-  top: 5%;
-  left: 58%;
-
+  top: 8%;
+  left: -8%;
   text-align: center;
+  position: relative;
+  padding: 20px 0;
 }
 
-label {
+.applicationFormResult {
+  margin-top: 200px;
+}
+
+.applicationForm label {
   color: #FFF;
 }
 
 .applicationForm .captionTitle {
   color: #FFF;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
-
-  margin-top: 33px;
-}
-
-.applicationForm input[type=text],
-.applicationForm input[type=email],
-.applicationForm input[type=number] {
-  width: 359px;
-  height: 51.2px;
-
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(50px);
-  /* Note: backdrop-filter has minimal browser support */
-  color: #FFF;
-  font-size: 1.1rem;
-  font-weight: 300;
-
-  outline: none;
-  border: none;
-
-  border-radius: 51px;
-  margin-bottom: 16.8px;
-  padding-left: 20px;
-
-  opacity: 0.92;
+  margin: 15px 0 16.8px;
 }
 
 .applicationForm input::placeholder {
@@ -55,7 +30,11 @@ label {
 }
 
 .applicationForm input:nth-child(1) {
-  margin-top: 30px;
+  margin-top: 7px;
+}
+
+.applicationForm .button {
+  margin: 20px 20px;
 }
 
 .applicationForm .formControl {
@@ -79,23 +58,17 @@ label {
   opacity: 0.92;
 }
 
-.applicationForm .button {
-  margin-top: 7px;
-}
-
 .formCompleted {
-  width: 432px;
-  height: 273px;
   background: #6777C4;
 
   border-radius: 8% 20% 8% 0 / 15% 35% 15% 77%;
 
-  position: absolute;
-  top: 38%;
-  left: 58%;
+  position: relative;
+  top: 31%;
 
   text-align: center;
   padding-top: 2rem;
+  margin-top: 100px;
 }
 
 .formCompleted h1 {
@@ -103,226 +76,10 @@ label {
   font-weight: 700;
   color: #FFF;
 
-  margin: 3rem;
+  margin-top: 0;
 }
 
-@media (max-width: 1440px) {
-  .applicationForm {
-    position: absolute;
-    top: 7%;
-    left: 63%;
-  }
-
-  .formCompleted {
-    position: absolute;
-    top: 38%;
-    left: 63%;
-  }
-}
-
-@media (max-width: 1200px) {
-  .applicationForm {
-    width: 410px;
-    height: 650px;
-
-    position: absolute;
-    left: 62%;
-  }  
-
-  .applicationForm .captionTitle {
-    margin-top: 30px;
-  }
-
-  .applicationForm .button {
-    margin-top: 2px;
-  }
-
-  .formCompleted {
-    width: 415px;
-    
-    position: absolute;
-    top: 40%;
-    left: 61%;
-  }
-
-  .formCompleted h1 {
-    font-size: 1.9rem;
-  }
-}
-
-@media (max-width: 1024px) {
-  .applicationForm {
-    width: 330px;
-    height: 580px;
-
-    position: absolute;
-    left: 62%;
-  }  
-
-  .applicationForm .captionTitle {
-    font-size: 1.6rem;
-    margin-top: 20px;
-  } 
-
-  .applicationForm input[type=text],
-  .applicationForm input[type=email],
-  .applicationForm input[type=number] {
-    width: 280px;
-    height: 45px;
-    font-size: .9rem;
-}
-
-  .applicationForm input::placeholder {
-    font-size: .9rem;
-  }
-
-  .applicationForm .formControl {
-    width: 280px;
-    height: 45px;
-    margin: 0 0 16.8px 0;
-    font-size: .9rem;
-  }
-
-  .applicationForm .button {
-    font-size: 2.4rem;
-  }
-
-  .formCompleted {
-    width: 350px;
-    height: 253px;;
-    
-    position: absolute;
-    top: 39.3%;
-    left: 61%;
-  }
-
-  .formCompleted h1 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 765px) {
-  .applicationForm {
-    width: 447px;
-    height: 684px;
-
-    position: absolute;
-    left: 21%;
-    
-    z-index: 999;
-  }  
-
-  .applicationForm .captionTitle {
-    font-size: 2rem;
-    margin-top: 2rem;
-  }
-
-  .applicationForm input[type=text],
-  .applicationForm input[type=email],
-  .applicationForm input[type=number] {
-    width: 359px;
-    height: 51.2px;
-
-    font-size: 1.1rem;
-  }
-
-  .applicationForm input::placeholder {
-    font-size: 1.1rem;
-  }
-
-  .modalOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(25, 23, 53, 0.71);
-    box-shadow: inset 0px 4px 78px rgba(0, 0, 0, 0.25);
-    z-index: 10;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .applicationForm .formControl {
-    width: 359px;
-    height: 51.2px;
-    margin: 0 0 16.8px 0;
-    font-size: 1.1rem;
-  }
-
-  .applicationForm .button {
-    margin-top: 15px;
-  }
-
-  .formCompleted {
-    position: absolute;
-    width: 447px;
-    height: 273px;;
-    
-    top: 39%;
-    left: 24%;
-
-    z-index: 999;
-  }
-
-  .formCompleted h1 {
-    font-size: 2rem;
-  }
-
-  .applicationForm {
-    display: none;
-  }
-
-  .modalOverlay {
-    display: none;
-  }
-}
-
-@media (max-width: 630px) {
-  .applicationForm {
-    position: absolute;
-    left: 15%;
-  }  
-
-  .applicationForm .captionTitle {
-    font-size: 2rem;
-    margin-top: 2.5rem;
-  }  
-
-  .formCompleted {
-    position: absolute;
-    left: 20%;
-  }
-}
-
-@media (max-width: 540px) {
-  .geometricShapes14 {
-    display: none;
-  }
-
-  .geometricShapes15 {
-    display: none;
-  }
-
-  .applicationForm {
-    position: absolute;
-    width: 432px;
-    height: 670px;
-    left: 10%;
-  }  
-
-  .formCompleted {
-    width: 420px;
-    
-    position: absolute;
-    top: 39.3%;
-    left: 11.7%;
-  }
-
-  .formCompleted h1 {
-    font-size: 1.8rem;
-  }
+.formCompleted img {
+  margin: 2.5rem 0;
 }
 
