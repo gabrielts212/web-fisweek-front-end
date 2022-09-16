@@ -19,3 +19,34 @@
     padding-left: 40px;
     width: 100%;
 }
+
+.textInput.round {
+    background-color: transparent;
+}
+
+.textInput.round input {
+    padding-left: 20px;
+}
+
+.round input[type=text],
+.round input[type=email],
+.round input[type=number] {
+  width: 359px;
+  height: 50px;
+
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(50px);
+  /* Note: backdrop-filter has minimal browser support */
+  color: #FFF;
+  font-size: 1.1rem;
+  font-weight: 300;
+
+  outline: none;
+  border: none;
+
+  border-radius: 51px;
+  margin-bottom: 16.8px;
+  /* padding-left: 20px; */
+
+  opacity: 0.92;
+}
