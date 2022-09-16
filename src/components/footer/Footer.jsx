@@ -86,7 +86,8 @@ export function Footer() {
         </div>
 
         <div className="social">
-          <a href="#" alt="spotify" target="_blank">
+          <a href="https://open.spotify.com/show/7aON0A01X0mw4dSWG6rbuc?si=c40d709dd5744e4a&nd=1" 
+          alt="spotify" target="_blank">
             <SpotifyLogo />
           </a>
         </div>

@@ -3,8 +3,6 @@
   color: white;
   position: relative;
   bottom: 0;
-  width: 1335px;
-  position:fixed;
   text-align: left;
   display: flex;
   height: 491px;
@@ -73,18 +71,17 @@
 
 @media (max-width: 1200px) {
   .sociais {
-    left: 600px;
+    left: 560px;
   }
   .text-fis {
-    left: 850px;
+    left: 810px;
   }
   .text-fis2 {
-    left: 970px;
+    left: 930px;
   }
   .networks {
-    left: 970px;
+    left: 930px;
   }
-
 }
 
 @media (max-width: 1024px) {
@@ -103,58 +100,59 @@
 }
 
 @media (max-width: 768px) {
+  .contact {
+    left: 30px;
+  }
   .sociais {
-    left: 70px;
+    left: 20px;
   }
   .text-fis {
-    left: 80px;
+    left: 40px;
   }
   .text-fis2 {
-    left: 200px;
+    left: 160px;
   }
   .networks {
-    left: 80px;
+    left: 30px;
   }
 }
 
 @media (max-width: 630px) {
   .sociais {
-    left: 40px;
-    display:grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr 2fr ;
+    left: 20px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
   }
   .text-fis {
-    left: 50px;
+    left: 30px;
   }
   .text-fis2 {
-    left: 170px;
+    left: 150px;
   }
   .networks {
-    left: 50px;
+    left: 30px;
   }
-  
+
   .contact {
-    left: 50px;
+    left: 30px;
   }
 }
 
 @media (max-width: 540px) {
   .sociais {
-    left: 10px;
-    /* display:grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr 2fr ; */
+    left: 20px;
   }
   .networks {
-    left: 20px;
+    left: 30px;
   }
   .contact {
-    left: 20px;
+    left: 30px;
   }
   .text-fis {
-    left: 25px;
+    left: 30px;
   }
   .text-fis2 {
-    left: 145px;
+    left: 150px;
   }
 }
 
@@ -162,8 +160,6 @@
   .sociais {
     left: 10px;
     flex-wrap: wrap;
-    /* display:grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr 2fr ; */
   }
   .networks {
     left: 20px;
@@ -182,8 +178,6 @@
   .sociais {
     left: 10px;
     flex-wrap: wrap;
-    /* display:grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr 2fr ; */
   }
   .networks {
     left: 20px;
@@ -192,9 +186,9 @@
     left: 20px;
   }
   .text-fis {
-    left: 25px;
+    left: 20px;
   }
   .text-fis2 {
-    left: 145px;
+    left: 140px;
   }
 }

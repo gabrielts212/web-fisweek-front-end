@@ -20,7 +20,7 @@ export function Home() {
                 <ConferenceBar />
             </Row>
             <Row>
-                {/* <Footer /> */}
+                <Footer />
             </Row>
         </Container>
     );
