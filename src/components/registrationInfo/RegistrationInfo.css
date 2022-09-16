@@ -274,15 +274,16 @@
   
   .title {
     position: absolute;
+    width: 400px;
     left: 47%;
     top: 14%;
   
-    font-size: 2.1rem;
+    font-size: 2rem;
   }
   
   .text {
     position: absolute;
-    width: 360px;
+    width: 340px;
     left: 47%;
     top: 31%;
   
@@ -353,16 +354,16 @@
   .geometricShapes10 {
     position: absolute;
     width: 110px;
-    top: 69.5%;
-    left: 41%;
+    top: 71.5%;
+    left: 40%;
   }
   
   .geometricShapes11 {
     position: absolute;
-    width: 210px;
-    height: 95px;
+    width: 200px;
+    height: 90px;
     left: 53%;
-    top: 57%;
+    top: 58.5%;
   }
   
   .geometricShapes12 {
@@ -378,12 +379,12 @@
     left: 51%;
     top: 13.5%;
   
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   
   .text {
     position: absolute;
-    width: 270px;
+    width: 265px;
     left: 51%;
     top: 26%;
   }
@@ -396,30 +397,30 @@
   }
   
   .logoFis {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
   
     position: absolute;
     left: 54.8%;
-    top: 58.9%;
+    top: 60.5%;
   }
   
   .eventDate {
     position: absolute;
     width: 100px;
     height: 47px;
-    top: 59.7%;
+    top: 60.7%;
     left: 67%;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 765px) {
   .women {
     position: absolute;
     width: 341px;
     height: 315px;
-    top: 5%;
-    left: 16%;
+    top: 4.7%;
+    left: 21%;
   }
   
   .geometricShapes7 {
@@ -427,7 +428,7 @@
     width: 220.89px;
     height: 270px;
     top: 8%;
-    left: 24%;
+    left: 33%;
   }
   
   .geometricShapes8 {
@@ -442,13 +443,13 @@
     width: 130px;
     height: 130px;
     left: 6%;
-    top: 21%;
+    top: 24%;
   }
   
   .geometricShapes10 {
     position: absolute;
     width: 110px;
-    top: 58.7%;
+    top: 70%;
     left: 6%;
 
     transform: rotate(90deg);
@@ -457,33 +458,23 @@
   .geometricShapes11 {
     display: none;
   }
-  
+
   .geometricShapes12 {
     position: absolute;
     width: 255.27px;
     height: 258.89px;
     left: 6%;
-    top: 35%;
+    top: 41%;
   }
   
   .geometricShapes13 {
-    display: block;
-    position: absolute;
-    width: 130px;
-    height: 125px;
-    left: 61%;
-    top: 8%;
+    display: none;
   }
 
   .geometricShapes14 {
-    display: block;
-    position: absolute;
-    width: 130px;
-    height: 125px;
-    left: 78.87%;
-    top: 8%;
+    display: none;
   }
-
+  
   .filterBlur {
     position: absolute;
     width: 500px;
@@ -497,18 +488,18 @@
 
   .title {
     position: absolute;
-    width: 500px;
-    left: 30.5%;
-    top: 23%;
+    width: 430px;
+    left: 17%;
+    top: 29%;
   
-    font-size: 3.2rem;
+    font-size: 2.8rem;
   }
   
   .text {
     position: absolute;
     width: 400px;
-    left: 30.5%;
-    top: 50%;
+    left: 17%;
+    top: 57.5%;
 
     font-size: 1.5rem;
 
@@ -523,7 +514,7 @@
     width: 259.27px;
     height: 258.89px;
     left: 6%;
-    top: 35%;
+    top: 41%;
   }
   
   .logoFis {
@@ -562,7 +553,7 @@
   }
   
   .geometricShapes10 {
-    top: 75%;
+    top: 76%;
   }
   
   .geometricShapes11 {
@@ -642,7 +633,7 @@
   }
   
   .geometricShapes10 {
-    top: 75%;
+    top: 76%;
   }
   
   .geometricShapes11 {

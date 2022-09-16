@@ -25,11 +25,11 @@ export function ApplicationForm() {
       <form onSubmit={handleFormSubmit} className={styles.applicationForm} action="POST">
         <label className={styles.captionTitle}>
           Faça sua inscrição
-          <input type="text" name="name" placeholder="Nome" />
-          <input type="text" name="name" placeholder="Sobrenome" />
-          <input type="email" name="email" placeholder="Email" />
-          <input type="text" name="name" placeholder="Conhecia a Iniciativa?" />
-          <input type="text" name="name" placeholder="Como soube do evento?" />
+          <input type="text" name="name" placeholder="Nome" required />
+          <input type="text" name="name" placeholder="Sobrenome" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="text" name="name" placeholder="Conhecia a Iniciativa?" required />
+          <input type="text" name="name" placeholder="Como soube do evento?" required />
           <div>
             <select className={styles.formControl}>
               <option>Qual evento gostaria de participar?</option>
