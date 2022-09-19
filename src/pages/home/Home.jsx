@@ -7,6 +7,7 @@ import { RegistrationInfo } from '../../components/registrationInfo/Registration
 import { Footer } from '../../components/footer/Footer';
 import { ConferenceBar } from '../../components/conferencebar/ConferenceBar';
 import { Leaders } from '../../components/leaders/Leaders';
+import { Programming } from '../../components/programming/Programming';
 
 import './Home.css';
 
@@ -18,16 +19,18 @@ export function Home() {
                 <Col xs={12} md={4}><ApplicationForm /></Col> */}
             </Row>
             <Row>
-                <ConferenceBar />
+                {/* <ConferenceBar /> */}
             </Row>
-
             <Row>
-                <Leaders/>
+                {/* <Leaders/> */}
             </Row>
-
+            <Row>
+                <Programming />
+            </Row>
             <Row>
                 {/* <Footer /> */}
             </Row>
         </Container>
     );
 }
+

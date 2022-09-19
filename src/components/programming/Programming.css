@@ -1,0 +1,62 @@
+.Programming {
+  background: linear-gradient(
+    180.04deg, rgba(186, 112, 134, 0) 
+    4.09%, rgba(199, 0, 249, 0.64) 
+    102.35%
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Programming header {
+  width: 401.58px;
+  height: 96.73px;
+  background: #6645F4;
+  border-radius: 379px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 3.5rem 0 5.5rem 0;
+}
+
+.Programming header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #FFF;
+  padding: 0 17px 0 36px;
+}
+
+.Programming header img {
+  width: 25%;
+}
+ 
+.Programming .daysOfTheWeek  {
+  display: flex;
+  gap: 43px;
+}
+
+.Programming .daysOfTheWeek .Days {
+  width: 128px;
+  height: 50px;
+  color: #DAD3FF;
+  border: 3px solid #DAD3FF;
+  border-radius: 49px;
+
+  font-size: 25px;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Programming .daysOfTheWeek .Every {
+  background: #DAD3FF;
+  color: #601D87;
+  font-weight: 600;
+}

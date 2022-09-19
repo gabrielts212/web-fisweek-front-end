@@ -1,0 +1,50 @@
+.Panels {
+  border-bottom: 5px solid #FFF;
+}
+
+.Panels .dates {
+  margin: 60px auto 0 -527px;
+  display: flex;
+  gap: 7px;
+}
+
+.Panels .date,
+.Panels .dateAndTime {
+  width: 179px;
+  height: 53px;
+  background: #FFF;
+  color: #2A2850;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 44px;
+
+  border-radius: 17% 0px / 53px 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Panels .dates .Utc3 {
+  width: 50px;
+  height: 21px;
+  background: #FF4063;
+  color: #FFF;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-left: -67px;
+  margin-top: -10px;
+}
+
+.Panels .Speakers p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #FFF;
+  margin: 2rem 0 0 -33rem;
+}
+
+.Panels .Speakers .panelFis {
+  width: 100px;
+  margin: 15px 0 50px -530px;
+}
