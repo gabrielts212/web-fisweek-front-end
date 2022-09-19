@@ -19,7 +19,7 @@ export function Home() {
                 <Col xs={12} md={4}><ApplicationForm /></Col> */}
             </Row>
             <Row>
-                <ConferenceBar />
+                {/* <ConferenceBar /> */}
             </Row>
             <Row>
                 {/* <Leaders/> */}
@@ -33,3 +33,4 @@ export function Home() {
         </Container>
     );
 }
+
