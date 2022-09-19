@@ -15,20 +15,20 @@ export function Home() {
     return (
         <Container>
             <Row>
-                <Col xs={12} md={8}><RegistrationInfo /></Col>
-                <Col xs={12} md={4}><ApplicationForm /></Col>
+                {/* <Col xs={12} md={8}><RegistrationInfo /></Col>
+                <Col xs={12} md={4}><ApplicationForm /></Col> */}
             </Row>
             <Row>
                 <ConferenceBar />
             </Row>
             <Row>
-                <Leaders/>
+                {/* <Leaders/> */}
             </Row>
             <Row>
                 <Programming />
             </Row>
             <Row>
-                <Footer />
+                {/* <Footer /> */}
             </Row>
         </Container>
     );
