@@ -1,0 +1,27 @@
+.images-leaders{
+position: absolute;
+width: 600.77px;
+height: 450.74px;
+/* left:1100px;
+top: 1291px; */
+display: flex;
+justify-content: space-between;
+}
+.images-leaders2{
+position: absolute;
+width: 708.77px;
+height: 442.74px;
+justify-content: space-between;
+/* left:1500px;
+top: 1291px; */
+display: flex;
+}
+.images-leaders3{
+position: absolute;
+width: 708.77px;
+height: 442.74px;
+/* justify-content: space-between; */
+/* left:2000px;
+top: 1291px; */
+display: flex;
+}
