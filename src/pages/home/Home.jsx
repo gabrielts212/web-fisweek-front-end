@@ -6,6 +6,7 @@ import { ApplicationForm } from '../../components/applicationform/ApplicationFor
 import { RegistrationInfo } from '../../components/registrationInfo/RegistrationInfo';
 import { Footer } from '../../components/footer/Footer';
 import { ConferenceBar } from '../../components/conferencebar/ConferenceBar';
+import { Leaders } from '../../components/leaders/Leaders';
 
 import './Home.css';
 
@@ -19,6 +20,11 @@ export function Home() {
             <Row>
                 <ConferenceBar />
             </Row>
+
+            <Row>
+                <Leaders/>
+            </Row>
+
             <Row>
                 <Footer />
             </Row>
