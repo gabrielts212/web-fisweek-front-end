@@ -7,6 +7,7 @@ import { RegistrationInfo } from '../../components/registrationInfo/Registration
 import { Footer } from '../../components/footer/Footer';
 import { ConferenceBar } from '../../components/conferencebar/ConferenceBar';
 import { Leaders } from '../../components/leaders/Leaders';
+import { Programming } from '../../components/programming/Programming';
 
 import './Home.css';
 
@@ -20,11 +21,12 @@ export function Home() {
             <Row>
                 <ConferenceBar />
             </Row>
-
             <Row>
                 <Leaders/>
             </Row>
-
+            <Row>
+                <Programming />
+            </Row>
             <Row>
                 <Footer />
             </Row>
