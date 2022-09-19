@@ -1,12 +1,15 @@
 import './Leaders.css'
-// import leader1 from '../../assets/images/';
+import Leader1 from '../../assets/images/leaders/leader1.png';
+import Rectangle from '../../assets/images/';
 
 export function Leaders() {
     return (  
 
-<div>
+<div className='Leaders'>
     <h1>AQUI</h1>
-    {/* <img className="leader1" src={leader1} alt="Forma Geométrica" /> */}
+    <img className="Leader1" src={Leader1} alt="image-leader" />
+    <img className="Leader1" src={Leader1} alt="image-leader" />
+    <img className="Leader1" src={Leader1} alt="image-leader" />
 
 </div>
 
