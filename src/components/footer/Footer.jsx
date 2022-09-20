@@ -93,7 +93,7 @@ export function Footer() {
         </div>
 
         <div className="social">
-          <a href=" https://t.me/iniciativafis" alt="telegram" target="_blank">
+          <a href="https://t.me/iniciativafis" alt="telegram" target="_blank">
             <TelegramLogo />
           </a>
         </div>

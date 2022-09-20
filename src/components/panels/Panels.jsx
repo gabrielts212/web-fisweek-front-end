@@ -1,4 +1,5 @@
 import PanelFis from '../../assets/images/programming/painel-fis.png'
+import PanelRectangle from '../../assets/images/programming/painel-rectangle.png'
 
 import './Panels.css'
 
@@ -14,6 +15,7 @@ export function Panels() {
       <section className="Speakers">
         <p>Os desafios de implementar políticas públicas de saúde durante uma pandemia</p>
         <img className="panelFis" src={PanelFis} alt="Painel da Fis" />
+        <img src={PanelRectangle} alt="Retangudo do Painel" />
       </section>
     </div>
   )

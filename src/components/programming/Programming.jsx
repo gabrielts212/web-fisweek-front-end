@@ -1,7 +1,6 @@
 import Eclipse from '../../assets/images/programming/eclipse.png'
 import { Panels } from '../panels/Panels'
 
-
 import './Programming.css'
 
 export function Programming() {
