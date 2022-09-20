@@ -12,23 +12,40 @@ export class ApplicationForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: undefined,
+            firstName: undefined,
+            lastName: undefined,
             email: undefined,
+            password: undefined,
+            birthDate: undefined,
+            company: undefined,
+            country: undefined,
+            gender: undefined,
+            already_knew: undefined,
+            language: undefined,
+            browserLanguage: undefined,
             submitted: false
         }
     }
 
     onButtonClick() {
-        // const { email, name, number } = this.state;
-        // axios.put('/server/fisweek/registrar', { nome: name, sobrenome: name, email: email, idade: number })
-        // .then(res => {
-        //     console.log(res);
-        //     this.setState({ submitted: true });
-        // })
-        // .catch(err => {
-        //     console.error(err);
-        //     this.setState({ submitted: true });
-        // });
+        const { email, firstName, lastName, alreadyKnew, howDidYouKnow, conference, age } = this.state;
+        axios.put('/server/fisweek/registrar', { 
+            nome: firstName, 
+            sobrenome: lastName, 
+            email: email, 
+            ja_conhecia: alreadyKnew, 
+            como_soube: howDidYouKnow,
+            evento: conference,
+            idade: age,
+        })
+        .then(res => {
+            console.log(res);
+            this.setState({ submitted: true });
+        })
+        .catch(err => {
+            console.error(err);
+            this.setState({ submitted: true });
+        });
         this.setState({ submitted: true });
     } 
 
@@ -48,7 +65,14 @@ export class ApplicationForm extends React.Component {
               <TextInput round name="name" placeholder="Nome" onChange={(e) => this.setState({ name: e.target.value})} required />
               <TextInput round name="name" placeholder="Sobrenome" onChange={(e) => this.setState({ name: e.target.value})} required />
               <TextInput round name="email" placeholder="Email" onChange={(e) => this.setState({ name: e.target.value})} required />
-              <TextInput round name="name" placeholder="Conhecia a Iniciativa?" onChange={(e) => this.setState({ name: e.target.value})} required />
+              <div>
+                <select className={styles.formControl}>
+                  <option>Conhecia a Iniciativa?</option>
+                  <option value="1">Sim</option>
+                  <option value="0">Não</option>
+                </select>
+              </div>
+
               <TextInput round name="name" placeholder="Como soube do evento?" onChange={(e) => this.setState({ name: e.target.value})} required />
               <div>
                 <select className={styles.formControl}>
