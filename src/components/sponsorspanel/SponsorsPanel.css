@@ -1,0 +1,84 @@
+.sponsorsPanel .Speakers {
+  margin: 3rem 0 15px 80px;
+}
+
+.sponsorsPanel .Speakers p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #FFF;
+}
+
+.sponsorsPanel .Speakers .groupPanel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  margin-bottom: 45px;
+}
+
+.Speakers .panelFis,
+.Speakers .panelSm,
+.Speakers .panelLygga,
+.Speakers .panelMeets {
+  width: 130px;
+  margin: 15px 0 50px 0;
+}
+
+.Speakers .panelRectangle {
+  Width: 980px;
+  Height: 139.07px;
+  background: rgba(103, 119, 196, 0.5);
+  border-radius: 147px;
+
+  margin-bottom: 40px;
+  padding: 10px 30px;
+}
+
+.Speakers .panelRectangle .avatarGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.Speakers .panelRectangle .Avatar {
+  Width: 135px;
+  Height: 128px;
+}
+
+.Speakers .panelRectangle .speakerGroup {
+  display: flex;
+  gap: 18px;
+  margin-top: -12px;
+}
+
+.Speakers .panelRectangle .speakerName {
+  width: 204px;
+  height: 52.4px;
+  background: #6645F4;
+  color: #FFF;
+  font-size: 15.5px;
+  font-weight: 700;
+
+  border-radius: 17% 0px / 53px 74px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.Speakers .panelRectangle .Moderator {
+  width: 100px;
+  height: 26.39px;
+  background: #FF4063;
+  color: #FFF;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  border-radius: 17% 0px / 53px 74px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 49rem;
+}
