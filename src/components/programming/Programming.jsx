@@ -20,6 +20,8 @@ export function Programming() {
         <div className="Days">Dia 11</div>
       </section>
 
+     
+     <Panels />
      <Panels />
     </div>
   )

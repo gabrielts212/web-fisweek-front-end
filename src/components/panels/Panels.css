@@ -1,14 +1,17 @@
 .Panels {
-  border-bottom: 5px solid #FFF;
+  width: 100%;
+  border-bottom-style: solid;
+  border-bottom-width: 100%;
+  border-bottom-color: #FFF;
 }
 
-.Panels .dates {
-  margin: 60px auto 0 -527px;
+.Panels .Dates {
+  margin: 80px auto 0 80px;
   display: flex;
   gap: 7px;
 }
 
-.Panels .date,
+.Panels .Date,
 .Panels .dateAndTime {
   width: 179px;
   height: 53px;
@@ -24,7 +27,7 @@
   justify-content: center;
 }
 
-.Panels .dates .Utc3 {
+.Panels .Dates .Utc3 {
   width: 50px;
   height: 21px;
   background: #FF4063;
@@ -35,20 +38,4 @@
   text-align: center;
   margin-left: -67px;
   margin-top: -10px;
-}
-
-.Panels .Speakers p {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #FFF;
-  margin: 2rem 0 0 -33rem;
-}
-
-.Panels .Speakers .panelFis {
-  width: 100px;
-  margin: 15px 0 50px -530px;
-}
-
-.Panels .Speakers .panelRectangle {
-  
 }
