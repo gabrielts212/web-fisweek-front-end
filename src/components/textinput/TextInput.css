@@ -31,7 +31,7 @@
 .round input[type=text],
 .round input[type=email],
 .round input[type=number] {
-  width: 359px;
+  width: 90%;
   height: 50px;
 
   background: rgba(0, 0, 0, 0.2);

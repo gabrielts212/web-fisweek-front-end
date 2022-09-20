@@ -4,10 +4,10 @@
   border-radius: 7% 22% 7% 0 / 5% 13% 5% 70% ;
   background: #6777C4;
   top: 8%;
-  left: -8%;
   text-align: center;
   position: relative;
   padding: 20px 0;
+  margin-bottom: 40px;
 }
 
 .applicationFormResult {
@@ -40,7 +40,7 @@
 }
 
 .applicationForm .formControl {
-  width: 359px;
+  width: 90%;
   height: 51.2px;
 
   background: rgba(0, 0, 0, 0.2);
@@ -100,8 +100,18 @@
 
 /* Large devices (desktops, less than 1200px) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .applicationForm input:nth-child(1) {
+    margin-top: 6px;
+  }
+
+  .applicationForm .captionTitle {
+    font-size: 20px;
+  }
 }
 
 /* X-Large devices (large desktops, less than 1400px) */
 @media (min-width: 1200px) and (max-width: 1399.98px) { 
+  .applicationForm .captionTitle {
+    font-size: 24px;
+  }
 }

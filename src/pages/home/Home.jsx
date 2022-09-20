@@ -25,7 +25,7 @@ export function Home() {
                 {/* <Leaders/> */}
             </Row>
             <Row>
-                <Programming />
+                {/* <Programming /> */}
             </Row>
             <Row>
                 <Footer />
