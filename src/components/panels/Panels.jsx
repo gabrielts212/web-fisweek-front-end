@@ -15,7 +15,7 @@ export function Panels() {
       <section className="Speakers">
         <p>Os desafios de implementar políticas públicas de saúde durante uma pandemia</p>
         <img className="panelFis" src={PanelFis} alt="Painel da Fis" />
-        <img src={PanelRectangle} alt="Retangudo do Painel" />
+        <img className="panelRectangle" src={PanelRectangle} alt="Retangudo do Painel" />
       </section>
     </div>
   )
