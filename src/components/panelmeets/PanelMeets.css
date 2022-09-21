@@ -1,0 +1,32 @@
+.panelMeets {
+  width: 100%;
+  border-bottom-style: solid;
+  border-bottom-width: 100%;
+  border-bottom-color: #FFF;
+}
+
+.registrationButton {
+  display: flex;
+  justify-content: center;
+  margin: 55px 0;
+}
+
+.registrationButton .buttonLink {
+  width: 379px;
+  height: 62.06px;
+  border-radius: 8rem;
+  border: 0;
+  background: #FF4063;
+  color: #FFF;
+
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 3.535rem;
+  text-align: center;
+
+  transition: .1s;
+}
+
+.registrationButton .buttonLink:hover {
+  filter: brightness(1.2);
+}
