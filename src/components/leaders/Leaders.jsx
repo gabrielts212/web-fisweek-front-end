@@ -8,59 +8,48 @@ import ImageFundo4 from "../../assets/images/leaders/Image-Fundo4.png";
 import ImageFundo5 from "../../assets/images/leaders/Image-Fundo5.png";
 import ImageFundo6 from "../../assets/images/leaders/Image-Fundo6.png";
 import Data from "../../assets/images/leaders/Data.png";
+import { AvatarLeaders } from "../avatarleaders/AvatarLeaders";
 
 export function Leaders() {
   return (
     <div className="Leaders">
       <div className="container">
-
-        <div className="text1">
-          <h3>Nome</h3>
-          <span>Cargo / Empresa</span>
-        </div>
-
-        <div className="fundo-data">
-          <img className="Data" src={Data} alt="imagem-geometrica" />
-        </div>
-
         <div className="leader-foto">
-          <img className="Leader1" src={Leader1} alt="imagem-lider" />
+          <AvatarLeaders src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Bill_Gates_2018.jpg/640px-Bill_Gates_2018.jpg" />
+
+          <AvatarLeaders src="https://avatars.githubusercontent.com/u/91156517?v=4" />
         </div>
 
-        <div className="fundo-text">
+        <div className="text-background">
           <img className="Rectangle" src={Rectangle} alt="imagem-geometrica" />
         </div>
 
-        {/* <div className="fundo-leader">
-          <img className="imagefundo" src={ImageFundo} alt="" />
-          <img className="imagefundo6" src={ImageFundo6} alt="" />
-          <img className="imagefundo5" src={ImageFundo5} alt="" />
-        </div> */}
-      </div>
+        <div className="text-background2">
+          <img className="Rectangle2" src={Rectangle} alt="imagem-geometrica" />
+        </div>
 
-      <div className="container">
-        
-        <div className="text1">
+        <div className="date-background">
+          <img className="Data" src={Data} alt="imagem-geometrica" />
+        </div>
+
+        <div className="date-background2">
+          <img className="Data2" src={Data} alt="imagem-geometrica" />
+        </div>
+
+        <div className="name-and-title">
+          <h3>Nome</h3>
+          <span>Cargo / Empresa</span>
+        </div>
+        <div className="name-and-title2">
           <h3>Nome</h3>
           <span>Cargo / Empresa</span>
         </div>
 
-        <div className="fundo-data">
-          <img className="Data" src={Data} alt="imagem-geometrica" />
+        <div className="fundo-leader">
+          <img className="image-fundo" src={ImageFundo} alt="imagem-geometrica" />
         </div>
-
-        <div>
-          <img className="Leader1" src={Leader1} alt="imagem-lider" />
-        </div>
-
-        <div className="fundo-text">
-          <img className="Rectangle" src={Rectangle} alt="imagem-geometrica" />
-        </div>
-        {/* <div className="fundo-text">
-          <img className="Rectangle" src={Rectangle} alt="imagem-geometrica" />
-          <img className="imagefundo2" src={ImageFundo2} alt="" />
-          <img className="imagefundo4" src={ImageFundo4} alt="" />
-        </div> */}
+        <img className="image-fundo6" src={ImageFundo6} alt="imagem-geometrica" />
+        
 
       </div>
     </div>
