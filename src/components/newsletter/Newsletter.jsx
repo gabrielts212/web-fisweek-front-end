@@ -1,6 +1,15 @@
 import React from 'react';
 import axios from 'axios';
 
+import { FacebookLogo } from "phosphor-react";
+import { InstagramLogo } from "phosphor-react";
+import { TwitterLogo } from "phosphor-react";
+import { YoutubeLogo } from "phosphor-react";
+import { LinkedinLogo } from "phosphor-react";
+import { SpotifyLogo } from "phosphor-react";
+import { TelegramLogo } from "phosphor-react";
+import { TiktokLogo } from "phosphor-react";
+
 import { Button } from '../button/Button';
 import { TextInput } from '../textinput/TextInput';
 
@@ -79,15 +88,58 @@ export class Newsletter extends React.Component {
                 <h3><img src={checked} className="checked" /><br/>Obrigado</h3>
                 <h4>Se conecte com a gente</h4>
                 <div className="social">
-                    <img src={youtube} />
-                    <img src={spotify} />
-                    <img src={instagram} />
-                    <img src={linkedIn} />
-                    <img src={twitter} />
-                    <img src={tikTok} />
-                    <img src={facebook} />
+                    <a 
+                        href="https://www.youtube.com/channel/UCfhxOWElbOLDkERStLYBNsg" 
+                        alt="youtube" 
+                        target="_blank">
+                        <img src={youtube} />
+                    </a>
+
+                    <a 
+                        href="https://open.spotify.com/show/7aON0A01X0mw4dSWG6rbuc?si=c40d709dd5744e4a&nd=1" 
+                        alt="spotify" 
+                        target="_blank">
+                        <img src={spotify} />
+                    </a>
+
+                    <a
+                        href="https://www.instagram.com/iniciativafis/"
+                        alt="instagram"
+                        target="_blank">
+                        <img src={instagram} />
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/company/iniciativafis/"
+                        alt="linkedin"
+                        target="_blank">
+                        <img src={linkedIn} />
+                    </a>
+
+                    <a
+                        href=" https://twitter.com/iniciativafis/"
+                        alt="twitter"
+                        target="_blank">
+                        <img src={twitter} />
+                    </a>
+                    
+                    <a
+                        href=" https://www.tiktok.com/@iniciativafis?lang=pt-BR"
+                        alt="tik tok"
+                        target="_blank">
+                        <img src={tikTok} />
+                    </a>
+
+                    <a
+                        href=" https://www.facebook.com/iniciativafis"
+                        alt="facebook"
+                        target="_blank">
+                        <img src={facebook} />
+                    </a>
                 </div>
-                <Button icon={telegram} text="INSCREVA-SE NO TELEGRAM" />
+                <a href="https://t.me/iniciativafis" alt="telegram" target="_blank">
+                    <Button icon={telegram} text="INSCREVA-SE NO TELEGRAM" />
+                </a>
             </div>
         );
     }

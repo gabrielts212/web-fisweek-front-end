@@ -1,7 +1,6 @@
 import Eclipse from '../../assets/images/programming/eclipse.png'
 import { Panels } from '../panels/Panels'
 
-
 import './Programming.css'
 
 export function Programming() {
@@ -21,6 +20,8 @@ export function Programming() {
         <div className="Days">Dia 11</div>
       </section>
 
+     
+     <Panels />
      <Panels />
     </div>
   )
