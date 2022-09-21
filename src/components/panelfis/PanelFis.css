@@ -1,14 +1,56 @@
-.sponsorsPanel .Speakers {
+.panelFis {
+  width: 100%;
+  border-bottom-style: solid;
+  border-bottom-width: 100%;
+  border-bottom-color: #FFF;
+}
+
+.Dates {
+  margin: 80px auto 0 80px;
+  display: flex;
+  gap: 7px;
+}
+
+.Dates .Date,
+.Dates .dateAndTime {
+  width: 179px;
+  height: 53px;
+  background: #FFF;
+  color: #2A2850;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 44px;
+
+  border-radius: 17% 0px / 53px 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Dates .Utc3 {
+  width: 50px;
+  height: 21px;
+  background: #FF4063;
+  color: #FFF;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-left: -67px;
+  margin-top: -10px;
+}
+
+.Speakers {
   margin: 3rem 0 15px 80px;
 }
 
-.sponsorsPanel .Speakers p {
+.Speakers p {
   font-size: 1.2rem;
   font-weight: 700;
   color: #FFF;
 }
 
-.sponsorsPanel .Speakers .groupPanel {
+.Speakers .groupPanel {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -16,10 +58,10 @@
   margin-bottom: 45px;
 }
 
-.Speakers .panelFis,
-.Speakers .panelSm,
-.Speakers .panelLygga,
-.Speakers .panelMeets {
+.Speakers .groupPanel .imgFis,
+.Speakers .groupPanel .imgSm,
+.Speakers .groupPanel .imgLygga,
+.Speakers .groupPanel .imgMeets {
   width: 130px;
   margin: 15px 0 50px 0;
 }
@@ -38,21 +80,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 60px;
-}
-
-.Speakers .panelRectangle .Avatar {
-  Width: 135px;
-  Height: 128px;
+  gap: 50px;
 }
 
 .Speakers .panelRectangle .speakerGroup {
   display: flex;
   gap: 18px;
-  margin-top: -12px;
+  margin-top: -20px;
 }
 
-.Speakers .panelRectangle .speakerName {
+.Speakers .panelRectangle .speakerGroup .speakerName {
   width: 204px;
   height: 52.4px;
   background: #6645F4;
@@ -62,6 +99,7 @@
 
   border-radius: 17% 0px / 53px 74px;
   display: flex;
+  justify-content: center;
   align-items: center;
   text-align: center;
 }

@@ -38,10 +38,10 @@ export function RegistrationInfo() {
         América Latina
       </h1>
 
-      <div className="text">
+      <div className="text d-none d-lg-block">
         <p>
           Vivencie uma super semana e impacte o Ecossistema da Saúde com a
-          gente!A #FISWEEK é a maior Experiência da Saúde na América
+          gente! A #FISWEEK é a maior Experiência da Saúde na América
           Latina. Aqui, nós reunimos lideranças, empresas e entidades com o
           objetivo de discutir todos os temas que impactam o setor em um evento
           totalmente digital e gratuito.
