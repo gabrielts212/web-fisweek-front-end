@@ -19,11 +19,11 @@ export function PanelFis() {
           
           <div className="panelRectangle">
             <div className="avatarGroup">
-              <Avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Kw7-4EnjzA97Ddbf6jfViZ3FZc7nsSKdMw&usqp=CAU"/>
-              <Avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Kw7-4EnjzA97Ddbf6jfViZ3FZc7nsSKdMw&usqp=CAU"/>
-              <Avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Kw7-4EnjzA97Ddbf6jfViZ3FZc7nsSKdMw&usqp=CAU"/>
-              <Avatar src="https://github.com/gustavoguanabara.png"/>
-              <Avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Kw7-4EnjzA97Ddbf6jfViZ3FZc7nsSKdMw&usqp=CAU"/>
+              <Avatar src="https://randomuser.me/api/portraits/men/61.jpg"/>
+              <Avatar src="https://randomuser.me/api/portraits/men/80.jpg"/>
+              <Avatar src="https://randomuser.me/api/portraits/men/20.jpg"/>
+              <Avatar src="https://randomuser.me/api/portraits/women/88.jpg"/>
+              <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
             </div>
 
             <div className="speakerGroup">

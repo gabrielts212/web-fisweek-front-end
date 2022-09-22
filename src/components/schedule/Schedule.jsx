@@ -4,11 +4,11 @@ import { PanelLygaa } from '../panellygga/PanelLygga'
 import { PanelMeets } from '../panelmeets/PanelMeets'
 import { PanelSm } from '../panelsm/PanelSm'
 
-import './Programming.css'
+import './Schedule.css'
 
-export function Programming() {
+export function Schedule() {
   return (
-    <div className="Programming">
+    <div className="Schedule">
       <header>
         <h1>Programação</h1>
         <img src={Eclipse} alt="Circulo vermelho" />

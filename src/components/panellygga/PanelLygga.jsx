@@ -19,11 +19,11 @@ export function PanelLygaa() {
 
           <div className="panelRectangle">
             <div className="avatarGroup">
-              <Avatar src="https://github.com/iniciativafis.png"/>
-              <Avatar src="https://github.com/iniciativafis.png"/>
-              <Avatar src="https://github.com/iniciativafis.png"/>
-              <Avatar src="https://github.com/iniciativafis.png"/>
-              <Avatar src="https://github.com/iniciativafis.png"/>
+              <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
+              <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
+              <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
+              <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
+              <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
             </div>
 
             <div className="speakerGroup">

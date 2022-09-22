@@ -19,11 +19,11 @@ export function PanelSm() {
 
           <div className="panelRectangle">
             <div className="avatarGroup">
-              <Avatar src="https://github.com/iniciativafis.png"/>
-              <Avatar src="https://github.com/iniciativafis.png"/>
-              <Avatar src="https://github.com/iniciativafis.png"/>
-              <Avatar src="https://github.com/iniciativafis.png"/>
-              <Avatar src="https://github.com/iniciativafis.png"/>
+              <Avatar src="https://randomuser.me/api/portraits/men/11.jpg"/>
+              <Avatar src="https://randomuser.me/api/portraits/women/51.jpg"/>
+              <Avatar src="https://randomuser.me/api/portraits/men/13.jpg"/>
+              <Avatar src="https://randomuser.me/api/portraits/men/91.jpg"/>
+              <Avatar src="https://randomuser.me/api/portraits/men/51.jpg"/>
             </div>
 
             <div className="speakerGroup">
