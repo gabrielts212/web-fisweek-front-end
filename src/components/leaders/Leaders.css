@@ -1,25 +1,37 @@
+.container{
+  background: linear-gradient(180deg, rgba(126, 112, 186, 0) 3.55%, #5837EA 100%);
+  width: 100%;
+}
+
 .text-background {
   height: 80px;
   width: 280px;
-  margin-top: 330px;
+  margin-top: 340px;
   position: absolute;
-  top: 960.98px;
+  top: 120px;
 }
 .text-background2 {
   height: 80px;
   width: 280px;
   margin-top: 330px;
   position: absolute;
-  top: 1450.98px;
+  top: 608.98px;
 }
-
+.text-background3 {
+  height: 80px;
+  width: 280px;
+  margin-top: 320px;
+  position:absolute;
+  top: 1100px;
+  left: 640px;
+}
 .date-background {
   padding-left: 250px;
   top: 20px;
   z-index: 1;
   margin-top: 80px;
   position: absolute;
-  top: 1090.98px;
+  top: 250.98px;
 }
 .date-background2 {
   padding-left: 250px;
@@ -27,7 +39,7 @@
   position: absolute;
   top: 1500.98px;
   z-index: 1;
-  top: 1570.98px;
+  top: 720px;
 }
 
 .name-and-title {
@@ -36,27 +48,33 @@
   position: absolute;
   padding-left: 20px;
   margin-top: 80px;
-  top: 1220.98px;
+  top: 400px;
 }
+
 .name-and-title2 {
   color: white;
   z-index: 1;
   position: absolute;
   padding-left: 20px;
-  top: 1800.98px;
+  top: 950px;
+}
+.name-and-title3 {
+  color: white;
+  z-index: 1;
+  position: absolute;
+  padding-left: 20px;
+  top: 1430px;
 }
 
-.image-fundo6 {
-  height:310px;
-  width: 300px;
+.event-date {
   position: absolute;
-  padding-left: 200px;
-  top: 1070.98px;
-  margin-left: 60px;
+  top: 1180px;
+  left: 1320px;
+  z-index: 1;
 }
-.fundo-leader {
+.date1 {
   position: absolute;
-  padding-left: 200px;
-  margin-top: 561px;
-  top: 1021px;
+  top: 580px;
+  left: 1020px;
+  z-index: 1;
 }

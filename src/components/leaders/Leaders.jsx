@@ -13,14 +13,26 @@ import { AvatarLeaders } from "../avatarleaders/AvatarLeaders";
 export function Leaders() {
   return (
     <div className="Leaders">
-      <div className="container">
-        <div className="leader-foto">
-          <AvatarLeaders src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Bill_Gates_2018.jpg/640px-Bill_Gates_2018.jpg" />
 
-          <AvatarLeaders src="https://avatars.githubusercontent.com/u/91156517?v=4" />
+        <div>
+      <div className="container">
+        <div className="leader-foto">    
+          <AvatarLeaders src="https://randomuser.me/api/portraits/men/13.jpg" />
+          <AvatarLeaders src="https://randomuser.me/api/portraits/men/27.jpg" />
+          <AvatarLeaders src="https://randomuser.me/api/portraits/men/61.jpg" />
+          <AvatarLeaders src="https://randomuser.me/api/portraits/men/55.jpg" />
+          <AvatarLeaders src="https://randomuser.me/api/portraits/men/91.jpg" />
+          <AvatarLeaders src="https://randomuser.me/api/portraits/men/40.jpg" />
         </div>
+      </div>
 
         <div className="text-background">
+          <img className="Rectangle" src={Rectangle} alt="imagem-geometrica" />
+        </div>
+        <div className="text-background2">
+          <img className="Rectangle" src={Rectangle} alt="imagem-geometrica" />
+        </div>
+        <div className="text-background3">
           <img className="Rectangle" src={Rectangle} alt="imagem-geometrica" />
         </div>
 
@@ -44,13 +56,21 @@ export function Leaders() {
           <h3>Nome</h3>
           <span>Cargo / Empresa</span>
         </div>
-
-        <div className="fundo-leader">
-          <img className="image-fundo" src={ImageFundo} alt="imagem-geometrica" />
+        <div className="name-and-title3">
+          <h3>Nome</h3>
+          <span>Cargo / Empresa</span>
         </div>
-        <img className="image-fundo6" src={ImageFundo6} alt="imagem-geometrica" />
-        
 
+        {/* <h1>07</h1>
+        <h1>08</h1> */}
+        <div className="fundo-leader">
+        </div>
+          <img className="image-fundo" src={ImageFundo} alt="imagem-geometrica" />
+          <img className="image-fundo2" src={ImageFundo2} alt="imagem-geometrica" />
+          <img className="image-fundo3" src={ImageFundo3} alt="imagem-geometrica" />
+          <img className="image-fundo4" src={ImageFundo4} alt="imagem-geometrica" />
+          <img className="image-fundo5" src={ImageFundo5} alt="imagem-geometrica" />
+          <img className="image-fundo6" src={ImageFundo6} alt="imagem-geometrica" />
       </div>
     </div>
   );

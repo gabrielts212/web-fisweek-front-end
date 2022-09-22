@@ -1,8 +1,10 @@
 .avatarLeaders {
     height: 300px;
     width: 300px;
-    margin-top: 80px;
+    margin-top:85px;
     border-radius: 100%;
     z-index: 1;
-    margin-bottom: 100px;
+    margin-bottom: 100px; 
+    justify-content: right;
+    align-items: right;
   }
