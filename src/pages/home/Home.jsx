@@ -22,10 +22,10 @@ export function Home() {
                 <ConferenceBar />
             </Row>
             <Row>
-                {/* <Col  xs={12} md={6}><Leaders/></Col> */}
+                <Col  xs={12} md={12}><Leaders/></Col>
             </Row>
             <Row>
-                <Schedule />
+                {/* <Schedule /> */}
             </Row>
             <Row>
                 {/* <Footer /> */}

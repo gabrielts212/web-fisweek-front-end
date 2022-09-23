@@ -15,7 +15,7 @@ export function Leaders() {
     <div className="Leaders">
 
         <div>
-      <div className="container">
+      <div>
         <div className="leader-foto">    
           <AvatarLeaders src="https://randomuser.me/api/portraits/men/13.jpg" />
           <AvatarLeaders src="https://randomuser.me/api/portraits/men/27.jpg" />
@@ -36,15 +36,37 @@ export function Leaders() {
           <img className="Rectangle" src={Rectangle} alt="imagem-geometrica" />
         </div>
 
-        <div className="text-background2">
+        <div className="text-background4">
           <img className="Rectangle2" src={Rectangle} alt="imagem-geometrica" />
         </div>
+
+        <div className="text-background5">
+          <img className="Rectangle2" src={Rectangle} alt="imagem-geometrica" />
+        </div>
+
+        <div className="text-background6">
+          <img className="Rectangle2" src={Rectangle} alt="imagem-geometrica" />
+        </div>
+
+
 
         <div className="date-background">
           <img className="Data" src={Data} alt="imagem-geometrica" />
         </div>
 
         <div className="date-background2">
+          <img className="Data2" src={Data} alt="imagem-geometrica" />
+        </div>
+        <div className="date-background3">
+          <img className="Data2" src={Data} alt="imagem-geometrica" />
+        </div>
+        <div className="date-background4">
+          <img className="Data2" src={Data} alt="imagem-geometrica" />
+        </div>
+        <div className="date-background5">
+          <img className="Data2" src={Data} alt="imagem-geometrica" />
+        </div>
+        <div className="date-background6">
           <img className="Data2" src={Data} alt="imagem-geometrica" />
         </div>
 
@@ -60,6 +82,18 @@ export function Leaders() {
           <h3>Nome</h3>
           <span>Cargo / Empresa</span>
         </div>
+        <div className="name-and-title4">
+          <h3>Nome</h3>
+          <span>Cargo / Empresa</span>
+        </div>
+        <div className="name-and-title5">
+          <h3>Nome</h3>
+          <span>Cargo / Empresa</span>
+        </div>
+        <div className="name-and-title6">
+          <h3>Nome</h3>
+          <span>Cargo / Empresa</span>
+        </div>
 
         {/* <h1>07</h1>
         <h1>08</h1> */}
@@ -67,10 +101,10 @@ export function Leaders() {
         </div>
           <img className="image-fundo" src={ImageFundo} alt="imagem-geometrica" />
           <img className="image-fundo2" src={ImageFundo2} alt="imagem-geometrica" />
-          <img className="image-fundo3" src={ImageFundo3} alt="imagem-geometrica" />
-          <img className="image-fundo4" src={ImageFundo4} alt="imagem-geometrica" />
+          <img className="image-fundo4" src={ImageFundo3} alt="imagem-geometrica" />
+          {/* <img className="image-fundo4" src={ImageFundo4} alt="imagem-geometrica" />
           <img className="image-fundo5" src={ImageFundo5} alt="imagem-geometrica" />
-          <img className="image-fundo6" src={ImageFundo6} alt="imagem-geometrica" />
+          <img className="image-fundo3" src={ImageFundo6} alt="imagem-geometrica" /> */}
       </div>
     </div>
   );
