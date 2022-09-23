@@ -1,11 +1,14 @@
 import Eclipse from '../../assets/images/programming/eclipse.png'
-import { Panels } from '../panels/Panels'
+import { PanelFis } from '../panelfis/PanelFis'
+import { PanelLygaa } from '../panellygga/PanelLygga'
+import { PanelMeets } from '../panelmeets/PanelMeets'
+import { PanelSm } from '../panelsm/PanelSm'
 
-import './Programming.css'
+import './Schedule.css'
 
-export function Programming() {
+export function Schedule() {
   return (
-    <div className="Programming">
+    <div className="Schedule">
       <header>
         <h1>Programação</h1>
         <img src={Eclipse} alt="Circulo vermelho" />
@@ -20,9 +23,11 @@ export function Programming() {
         <div className="Days">Dia 11</div>
       </section>
 
-     
-     <Panels />
-     <Panels />
+      <PanelFis />
+      <PanelSm />
+      <PanelLygaa />
+      <PanelMeets />
     </div>
   )
 }
+
