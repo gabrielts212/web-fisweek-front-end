@@ -19,11 +19,11 @@ export function PanelMeets() {
 
           <div className="panelRectangle">
             <div className="avatarGroup">
-              <Avatar src="https://randomuser.me/api/portraits/men/11.jpg"/>
-              <Avatar src="https://randomuser.me/api/portraits/men/11.jpg"/>
-              <Avatar src="https://randomuser.me/api/portraits/men/11.jpg"/>
-              <Avatar src="https://randomuser.me/api/portraits/men/11.jpg"/>
-              <Avatar src="https://randomuser.me/api/portraits/men/11.jpg"/>
+              <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
+              <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
+              <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
+              <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
+              <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
             </div>
 
             <div className="speakerGroup">
@@ -33,10 +33,10 @@ export function PanelMeets() {
               <div className="speakerName">Nome Sobrenome</div>
               <div className="speakerName">Nome Sobrenome</div>
             </div>
-
-            <div className="Moderator">Moderador</div>
           </div>
         </div>
+
+        <div className="Moderator">Moderador</div>
       </section>
 
       <div className="registrationButton">
