@@ -1,4 +1,4 @@
-.container{
+.Leaders{
   background: linear-gradient(180deg, rgba(126, 112, 186, 0) 3.55%, #5837EA 100%);
   width: 100%;
 }
@@ -9,24 +9,51 @@
   margin-top: 340px;
   position: absolute;
   top: 120px;
+  left: 750px;
 }
 .text-background2 {
   height: 80px;
   width: 280px;
   margin-top: 330px;
   position: absolute;
-  top: 608.98px;
+  top: 530px;
+  left: 750px;
 }
 .text-background3 {
   height: 80px;
   width: 280px;
-  margin-top: 320px;
+  margin-top: 300px;
   position:absolute;
-  top: 1100px;
-  left: 640px;
+  top: 160px;
+  left: 1150px;
 }
+.text-background4 {
+  height: 80px;
+  width: 280px;
+  margin-top: 300px;
+  position:absolute;
+  top: 560px;
+  left: 1150px;
+}
+.text-background5 {
+  height: 80px;
+  width: 280px;
+  margin-top: 300px;
+  position:absolute;
+  top: 160px;
+  left: 1500px;
+}
+.text-background6 {
+  height: 80px;
+  width: 280px;
+  margin-top: 300px;
+  position:absolute;
+  top: 560px;
+  left: 1500px;
+}
+
 .date-background {
-  padding-left: 250px;
+  padding-left: 350px;
   top: 20px;
   z-index: 1;
   margin-top: 80px;
@@ -34,47 +61,137 @@
   top: 250.98px;
 }
 .date-background2 {
-  padding-left: 250px;
+  padding-left: 780px;
   margin-top: 80px;
   position: absolute;
   top: 1500.98px;
   z-index: 1;
-  top: 720px;
+  top: 250px;
+}
+.date-background3 {
+  padding-left: 1160px;
+  margin-top: 80px;
+  position: absolute;
+  top: 1500.98px;
+  z-index: 1;
+  top: 250px;
+}
+.date-background4 {
+  padding-left: 350px;
+  margin-top: 80px;
+  position: absolute;
+  top: 1500.98px;
+  z-index: 1;
+  top: 650px;
+}
+.date-background5 {
+  padding-left: 770px;
+  margin-top: 80px;
+  position: absolute;
+  top: 1500.98px;
+  z-index: 1;
+  top: 650px;
+}
+.date-background6 {
+  padding-left: 1170px;
+  margin-top: 80px;
+  position: absolute;
+  top: 1500.98px;
+  z-index: 1;
+  top: 650px;
 }
 
 .name-and-title {
   color: white;
   z-index: 1;
   position: absolute;
-  padding-left: 20px;
-  margin-top: 80px;
-  top: 400px;
+  padding-left: 200px;
+  /* margin-top: 80px; */
+  top: 480px;
 }
-
 .name-and-title2 {
   color: white;
   z-index: 1;
   position: absolute;
-  padding-left: 20px;
-  top: 950px;
+  padding-left: 550px;
+  /* margin-top: 80px; */
+  top: 480px;
 }
 .name-and-title3 {
   color: white;
   z-index: 1;
   position: absolute;
-  padding-left: 20px;
-  top: 1430px;
+  padding-left: 910px;
+  /* margin-top: 80px; */
+  top: 480px;
+}
+.name-and-title4 {
+  color: white;
+  z-index: 1;
+  position: absolute;
+  padding-left: 200px;
+  /* margin-top: 80px; */
+  top: 880px;
+}
+.name-and-title5 {
+  color: white;
+  z-index: 1;
+  position: absolute;
+  padding-left: 550px;
+  /* margin-top: 80px; */
+  top: 880px;
+}
+.name-and-title6 {
+  color: white;
+  z-index: 1;
+  position: absolute;
+  padding-left: 910px;
+  /* margin-top: 80px; */
+  top: 880px;
 }
 
-.event-date {
+
+
+.image-fundo{
+  height: 310px;
   position: absolute;
+  padding-left: 270px;
+  /* margin-top: 80px; */
+  top: 235px;
+  z-index: -1;
+}
+.image-fundo2{
+  height: 310px;
+  position: absolute;
+  padding-left: 590px;
+  margin-top: 80px;
+  top: 159px;
+  z-index: -1;
+}
+.image-fundo3{
+  height: 310px;
+  position: absolute;
+  padding-left: 500px;
+  margin-top: 80px;
+  top: 159px;
+  z-index: -1;
+}
+
+
+
+/* .event-date {
+  position: relative;
   top: 1180px;
   left: 1320px;
   z-index: 1;
 }
 .date1 {
-  position: absolute;
+  position: relative;
   top: 580px;
-  left: 1020px;
+  left: 100px;
   z-index: 1;
+} */
+.leader-foto{
+  left: 20px;
+  
 }
