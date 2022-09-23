@@ -44,6 +44,7 @@ export class Newsletter extends React.Component {
     onButtonClick() {
         const { email, name } = this.state;
         axios.put('/server/fisweek/pre-registrar', { nome: name, email: email })
+        // axios.put('http://localhost:4000/pre-registrar', { nome: name, email: email })
         .then(res => {
             console.log(res);
             this.setState({ submitted: true });

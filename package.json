@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "debug": "vite --debug",
     "build": "vite build --base=/fisweek22/",
     "preview": "vite preview"
   },

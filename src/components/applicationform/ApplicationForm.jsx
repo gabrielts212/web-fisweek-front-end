@@ -33,8 +33,8 @@ export class ApplicationForm extends React.Component {
     onButtonClick() {
         const { email, firstName, lastName, alreadyKnew, howDidYouKnow, conference, age } = this.state;
         const isValidEmail = String(email).toLowerCase().match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/) !== null;
-        const isValidFirstName = firstName !== undefined && firstName !== "";
-        const isValidLastName = lastName !== undefined && lastName !== "";
+        const isValidFirstName = firstName !== undefined && firstName != "";
+        const isValidLastName = lastName !== undefined && lastName != "";
 
         if (isValidEmail && isValidFirstName && isValidLastName) {
             axios.put('/server/fisweek/registrar', { 
@@ -48,17 +48,14 @@ export class ApplicationForm extends React.Component {
             })
             .then(res => {
                 console.log(res);
-                this.setState({ submitted: true });
+                // this.setState({ submitted: true });
             })
             .catch(err => {
                 console.error(err);
-                this.setState({ submitted: true });
             });
-            this.setState({ submitted: true });
+            // this.setState({ submitted: true });
         }
-        else {
-            this.setState({ isValidEmail, isValidFirstName, isValidLastName });
-        }
+        this.setState({ isValidEmail, isValidFirstName, isValidLastName });
     } 
 
     render() {
