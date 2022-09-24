@@ -34,6 +34,7 @@ export class ApplicationForm extends React.Component {
         const isValidEmail = String(email).toLowerCase().match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/) !== null;
         const isValidFirstName = firstName !== undefined && firstName != "";
         const isValidLastName = lastName !== undefined && lastName != "";
+        this.setState({ isValidEmail, isValidFirstName, isValidLastName });
 
         if (isValidEmail && isValidFirstName && isValidLastName) {
             axios.put('/server/fisweek/registrar', { 
@@ -47,33 +48,31 @@ export class ApplicationForm extends React.Component {
             })
             .then(res => {
                 console.log(res);
-                // this.setState({ submitted: true });
             })
             .catch(err => {
                 console.error(err);
             });
-            // this.setState({ submitted: true });
+            this.setState({ submitted: true });
         }
-        this.setState({ isValidEmail, isValidFirstName, isValidLastName });
     } 
 
     render() {
         const { submitted } = this.state;
         return (
-                <div className={submitted ? styles.applicationFormResult : styles.applicationForm}>
-                    {submitted ? this.renderResult() : this.renderForm()}
-                </div>
+            <div className={submitted ? styles.applicationFormResult : styles.applicationForm}>
+                {submitted ? this.renderResult() : this.renderForm()}
+            </div>
         );
     }
 
     renderForm() {
-        const isValidEmail = this.state;
+        const { age, isValidEmail, isValidFirstName, isValidLastName } = this.state;
         return (
             <div>
               <label className={styles.captionTitle}>Faça sua inscrição</label>
-              <TextInput round placeholder="Nome" onChange={(e) => this.setState({ firstName: e.target.value})} required />
-              <TextInput round placeholder="Sobrenome" onChange={(e) => this.setState({ lastName: e.target.value})} required />
-              <TextInput round placeholder={isValidEmail ? "Email" : "Email inválido"} onChange={(e) => this.setState({ email: e.target.value})} required />
+              <TextInput round placeholder="Nome" error={!isValidFirstName} onChange={(e) => this.setState({ firstName: e.target.value})} required />
+              <TextInput round placeholder="Sobrenome" error={!isValidLastName} onChange={(e) => this.setState({ lastName: e.target.value})} required />
+              <TextInput round placeholder="Email" error={!isValidEmail} onChange={(e) => this.setState({ email: e.target.value})} required />
               <div>
                 <select className={styles.formControl} onChange={e => this.setState({ alreadyKnew: e.target.value })}>
                   <option>Conhecia a Iniciativa?</option>
@@ -92,7 +91,7 @@ export class ApplicationForm extends React.Component {
                   <option value="Startups">Startups</option>
                 </select>
               </div>
-              <TextInput round name="idade" placeholder="Idade" onChange={(e) => this.setState({ age: e.target.value})} />
+              <TextInput round name="idade" value={age} placeholder="Idade" maxLength={2} number onChange={(e) => this.setState({ age: isNaN(e.target.value) ? undefined : e.target.value})} />
               <Button text="CADASTRE-SE" onClick={this.onButtonClick.bind(this)} alt />
             </div>
         );

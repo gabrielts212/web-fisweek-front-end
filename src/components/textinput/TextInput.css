@@ -28,6 +28,10 @@
     padding-left: 20px;
 }
 
+.textInput.round input.error {
+    border: 2px solid red;
+}
+
 .round input[type=text],
 .round input[type=email],
 .round input[type=number] {
