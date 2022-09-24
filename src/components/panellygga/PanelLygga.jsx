@@ -28,15 +28,15 @@ export function PanelLygaa() {
 
             <div className="speakerGroup">
               <div className="speakerName">Nome Sobrenome</div>
-              <div className="speakerName">Npme Sobrenome</div>
+              <div className="speakerName">Nome Sobrenome</div>
               <div className="speakerName">Nome Sobrenome</div>
               <div className="speakerName">Nome Sobrenome</div>
               <div className="speakerName">Nome Sobrenome</div>
             </div>
-
-            <div className="Moderator">Moderador</div>
           </div>
         </div>
+
+        <div className="Moderator">Moderador</div>
       </section>
     </div>
   )

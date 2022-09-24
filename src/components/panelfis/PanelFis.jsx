@@ -16,27 +16,27 @@ export function PanelFis() {
         <p>Os desafios de implementar políticas públicas de saúde durante uma pandemia</p>
         <div className="groupPanel">
           <img className="imgFis" src={ImgFis} />
-          
+
           <div className="panelRectangle">
             <div className="avatarGroup">
-              <Avatar src="https://randomuser.me/api/portraits/men/61.jpg"/>
-              <Avatar src="https://randomuser.me/api/portraits/men/80.jpg"/>
-              <Avatar src="https://randomuser.me/api/portraits/men/20.jpg"/>
-              <Avatar src="https://randomuser.me/api/portraits/women/88.jpg"/>
+              <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
+              <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
+              <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
+              <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
               <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
             </div>
 
             <div className="speakerGroup">
               <div className="speakerName">Nome Sobrenome</div>
-              <div className="speakerName">Adalberto Campos Fernandes</div>
+              <div className="speakerName">Nome Sobrenome</div>
               <div className="speakerName">Nome Sobrenome</div>
               <div className="speakerName">Nome Sobrenome</div>
               <div className="speakerName">Nome Sobrenome</div>
             </div>
-
-            <div className="Moderator">Moderador</div>
           </div>
         </div>
+        
+        <div className="Moderator">Moderador</div>
       </section>
     </div>
   )
