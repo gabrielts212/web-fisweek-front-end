@@ -21,8 +21,7 @@ export class ApplicationForm extends React.Component {
             country: undefined,
             gender: undefined,
             already_knew: undefined,
-            language: undefined,
-            browserLanguage: undefined,
+            conference: undefined,
             isValidEmail: true,
             isValidFirstName: true,
             isValidLastName: true,
@@ -69,7 +68,6 @@ export class ApplicationForm extends React.Component {
 
     renderForm() {
         const isValidEmail = this.state;
-        console.log(isValidEmail)
         return (
             <div>
               <label className={styles.captionTitle}>Faça sua inscrição</label>
@@ -77,15 +75,15 @@ export class ApplicationForm extends React.Component {
               <TextInput round placeholder="Sobrenome" onChange={(e) => this.setState({ lastName: e.target.value})} required />
               <TextInput round placeholder={isValidEmail ? "Email" : "Email inválido"} onChange={(e) => this.setState({ email: e.target.value})} required />
               <div>
-                <select className={styles.formControl}>
+                <select className={styles.formControl} onChange={e => this.setState({ alreadyKnew: e.target.value })}>
                   <option>Conhecia a Iniciativa?</option>
                   <option value="1">Sim</option>
                   <option value="0">Não</option>
                 </select>
               </div>
-              <TextInput round name="name" placeholder="Como soube do evento?" onChange={(e) => this.setState({ name: e.target.value})} required />
+              <TextInput round name="name" placeholder="Como soube do evento?" onChange={(e) => this.setState({ howDidYouKnow: e.target.value})} required />
               <div>
-                <select className={styles.formControl}>
+                <select className={styles.formControl} onChange={e => this.setState({ conference: e.target.value })}>
                   <option>Qual evento gostaria de participar?</option>
                   <option value="Fis22">Fis22</option>
                   <option value="S/M22">S/M22</option>
@@ -94,7 +92,7 @@ export class ApplicationForm extends React.Component {
                   <option value="Startups">Startups</option>
                 </select>
               </div>
-              <TextInput round name="number" placeholder="Idade" onChange={(e) => this.setState({ name: e.target.value})} />
+              <TextInput round name="idade" placeholder="Idade" onChange={(e) => this.setState({ age: e.target.value})} />
               <Button text="CADASTRE-SE" onClick={this.onButtonClick.bind(this)} alt />
             </div>
         );
