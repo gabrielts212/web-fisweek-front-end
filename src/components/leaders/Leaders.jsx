@@ -1,12 +1,12 @@
 import "./Leaders.css";
-import Leader1 from "../../assets/images/leaders/Leader1.png";
+import Leader1 from "../../assets/images/leaders/leader1.png";
 import Rectangle from "../../assets/images/leaders/Rectangle.png";
-import ImageFundo from "../../assets/images/leaders/Image-Fundo.png";
-import ImageFundo2 from "../../assets/images/leaders/Image-Fundo2.png";
-import ImageFundo3 from "../../assets/images/leaders/Image-Fundo3.png";
-import ImageFundo4 from "../../assets/images/leaders/Image-Fundo4.png";
-import ImageFundo5 from "../../assets/images/leaders/Image-Fundo5.png";
-import ImageFundo6 from "../../assets/images/leaders/Image-Fundo6.png";
+import ImageFundo from "../../assets/images/leaders/image-fundo.png";
+import ImageFundo2 from "../../assets/images/leaders/image-fundo2.png";
+import ImageFundo3 from "../../assets/images/leaders/image-fundo3.png";
+import ImageFundo4 from "../../assets/images/leaders/image-fundo4.png";
+import ImageFundo5 from "../../assets/images/leaders/image-fundo5.png";
+import ImageFundo6 from "../../assets/images/leaders/image-fundo6.png";
 import Data from "../../assets/images/leaders/Data.png";
 import { AvatarLeaders } from "../avatarleaders/AvatarLeaders";
 
