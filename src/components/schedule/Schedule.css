@@ -69,8 +69,8 @@
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   .Schedule header {
-    width: 341.58px;
-    height: 70.73px;
+    width: 24rem;
+    height: 5rem;
   }
   
   .Schedule header h1 {

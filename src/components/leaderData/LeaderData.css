@@ -2,31 +2,33 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  position: relative;
 }
 
 .leaderData .avatarLeader {
-  width: 17rem;
-  height: 19rem;
-  margin: 3rem -1.5rem;
+  width: 15.5rem;
+  height: 17rem;
 
   position: absolute;
+  top: -2rem;
   z-index: 1;
 }
 
 .leaderData .pinkElement {
-  width: 10rem;
-  height: 19rem;
-  margin: 4rem 0 0 6.6rem;
+  width: 9.5rem;
+  height: 17rem;
+  margin: -3rem 0 0 8rem;
 }
 
-.leadersDate {
-  margin: 1rem 0 0 15rem;
+.leaderData .leadersDate {
+  margin: -2rem 0 0 15rem;
   position: absolute;
   z-index: 1;
 }
 
-.leadersDate .dateDay,
-.leadersDate .dateMonth {
+.leaderData .leadersDate .dateDay,
+.leaderData .leadersDate .dateMonth {
   width: 50px;
   height: 58px;
   background: #FFF;
@@ -40,13 +42,13 @@
   justify-content: center;
 }
 
-.leadersDate .dateMonth {
+.leaderData .leadersDate .dateMonth {
   border-top: 4px solid #2A2850;
 }
 
-.leadersInfo {
-  width: 17rem;
-  height: 5.3rem;
+.leaderData .leadersInfo {
+  width: 15rem;
+  height: 5rem;
   background: #6645F4;
   color: #FFF;
   border-radius: 0% 72% 1% 1% / 14% 209% 0% 0%;
@@ -55,19 +57,19 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin: 24rem 0 0 7rem;
+  margin: 17.5rem 0 0 7rem;
   padding: .5rem 0 0 1.3rem;
 
   position: absolute;
   z-index: 1;
 }
 
-.leadersInfo .leaderName {
+.leaderData .leadersInfo .leaderName {
   font-size: 1.1rem;
   font-weight: 700;
 }
 
-.leadersInfo .leaderOffice {
+.leaderData .leadersInfo .leaderOffice {
   font-size: 1rem;
   font-weight: 500;
 }

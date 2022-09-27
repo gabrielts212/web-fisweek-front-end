@@ -3,6 +3,10 @@ import "./Leaders.css";
 import { LeaderData } from "../leaderData/LeaderData";
 
 export function Leaders() {
+  const handleButtonClick = () => {
+    
+  }
+
   return (
     <div className="Leaders">
       <div className="leaderGroup">
@@ -13,6 +17,8 @@ export function Leaders() {
         <LeaderData />
         <LeaderData />
       </div>
+
+      <button className="showLeaders" onClick={handleButtonClick}>Ver todos os líderes</button>
     </div>
   );
 }
