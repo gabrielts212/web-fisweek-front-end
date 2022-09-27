@@ -1,5 +1,6 @@
 {
-  "name": "eventos-frontend",
+  "name": "web-fisweek-frontend",
+  "homepage": ".",
   "private": true,
   "version": "0.0.0",
   "type": "module",
