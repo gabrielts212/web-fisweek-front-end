@@ -7,11 +7,19 @@
 
 /* ====== @MEDIA QUERY ========= */
 
-/* X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+/* XX-Small devices (portrait phones, less than 549px) */
+@media (max-width: 549px) {
   .avatar {
-    Width: 100%;
-    Height: 100%;
+    Width: 100px;
+    Height: 100px;
+  }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (min-width: 550px) and (max-width: 575.98px) {
+  .avatar {
+    Width: 120px;
+    Height: 120px;
   }
 }
 

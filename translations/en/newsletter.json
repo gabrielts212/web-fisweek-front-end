@@ -1,0 +1,18 @@
+{
+  "front": {
+    "h2": "THE BIGGEST HEALTH CONTENT GENERATION IN LATIN AMERICA IS BACK!",
+    "h3": " Stay Tuned"
+  },
+  "inputs": {
+    "nome": "Name",
+    "email": "E-mail"
+  },
+  "botoes": {
+    "cadastre-se": "SUSCRIBE",
+    "inscreva-se no telegram": "INSCREVA-SE NO TELEGRAM"
+  },
+  "verse": {
+    "h3": "Obrigado",
+    "h4": "Se conecte com a gente"
+  }
+}
