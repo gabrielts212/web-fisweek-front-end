@@ -8,6 +8,7 @@ import { Footer } from '../../components/footer/Footer';
 import { ConferenceBar } from '../../components/conferencebar/ConferenceBar';
 import { Leaders } from '../../components/leaders/Leaders';
 import { Schedule } from '../../components/schedule/Schedule';
+import { Time } from '../../components/time/Time';
 
 import './Home.css';
 
@@ -15,20 +16,25 @@ export function Home() {
     return (
         <Container>
             <Row>
-                <Col  xs={12} md={8}><RegistrationInfo /></Col>
-                <Col xs={12} md={4}><ApplicationForm /></Col>
+                {/* <Col xs={12} md={8}><RegistrationInfo /></Col>
+                <Col xs={12} md={4}><ApplicationForm /></Col> */}
             </Row>
             <Row>
                 <ConferenceBar />
             </Row>
             <Row>
-                {/* <Col  xs={12} md={12}><Leaders/></Col> */}
+                <Col xs={12} md={12}><Leaders/></Col>
             </Row>
+            <Row>
+                <Time />
+            </Row>
+            
             <Row>
                 {/* <Schedule /> */}
             </Row>
+
             <Row>
-                <Footer />
+                {/* <Footer /> */}
             </Row>
         </Container>
     );
