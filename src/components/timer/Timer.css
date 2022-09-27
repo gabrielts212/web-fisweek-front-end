@@ -1,0 +1,47 @@
+.countdownContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #ffffff;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.textTimer {
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 1;
+  margin: 0.1rem;
+  font-weight: 600;
+}
+.countdownEl {
+  text-align: center;
+}
+.countdownEl span {
+  font-size: 1.9rem;
+}
+.separation {
+  font-weight: 600;
+  margin-top: -35px;
+  font-size: 4rem;
+  padding: 15px;
+}
+.stopwatchDate {
+  font-weight: 500;
+}
+
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .textTimer{
+    font-size: 3rem;
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+ 
+  .textTimer {
+    font-size: 3rem;
+  }
+
+}
+}
