@@ -28,8 +28,10 @@ import telegram from '../../assets/images/icons/telegram.png';
 import tikTok from '../../assets/images/newsletter/tik-tok.png';
 import twitter from '../../assets/images/newsletter/twitter.png';
 import user from '../../assets/images/icons/user.png';
+import { useTranslation } from 'react-i18next';
 
 import './Newsletter.css';
+import { LanguageSwitcher } from '../LanguageSwitcher';
 
 export class Newsletter extends React.Component { 
     constructor(props) {
@@ -57,11 +59,14 @@ export class Newsletter extends React.Component {
     } 
 
     render() {
+        const { t } = useTranslation()
+
         const { submitted } = this.state;
         return (
             <div className="newsletter">
+                <LanguageSwitcher />
                 <img className="main" src={main} alt="Aperto de mãos de um robô com um humano" />
-                <h2>A MAIOR EXPERIÊNCIA EM GERAÇÃO DE CONTEÚDO DO SETOR DA SAÚDE NA AMÉRICA LATINA VOLTOU!</h2>
+                <h2>{t("welcome")}</h2>
                 <img className="shape1" src={shape1} alt="Forma Geomêtrica" />
                 <img className="shape2" src={shape2} alt="Forma Geomêtrica" />
                 <img className="shape3" src={shape3} alt="Forma Geomêtrica" />
@@ -73,21 +78,25 @@ export class Newsletter extends React.Component {
     }
 
     renderForm() {
+        const { t } = useTranslation()
+
         return (
             <div>
-                <h3>Fique por dentro</h3>
-                <TextInput name="name" placeholder="Nome" icon={user} onChange={(e) => this.setState({ name: e.target.value})} />
-                <TextInput name="email" placeholder="E-mail" icon={email} onChange={(e) => this.setState({ email: e.target.value})} />
-                <Button text="CADASTRE-SE" onClick={this.onButtonClick.bind(this)} />
+                <h3>{t("knowMore")}</h3>
+                <TextInput name="name" placeholder={t("name")} icon={user} onChange={(e) => this.setState({ name: e.target.value})} />
+                <TextInput name="email" placeholder={t("email")} icon={email} onChange={(e) => this.setState({ email: e.target.value})} />
+                <Button text={t("register")} onClick={this.onButtonClick.bind(this)} />
             </div>
         );
     }
 
     renderResult() {
+        const { t } = useTranslation()
+
         return (
             <div>
-                <h3><img src={checked} className="checked" /><br/>Obrigado</h3>
-                <h4>Se conecte com a gente</h4>
+                <h3><img src={checked} className="checked" /><br/>{t("feedback")}</h3>
+                <h4>{t("invitation")}</h4>
                 <div className="social">
                     <a 
                         href="https://www.youtube.com/channel/UCfhxOWElbOLDkERStLYBNsg" 
@@ -139,7 +148,7 @@ export class Newsletter extends React.Component {
                     </a>
                 </div>
                 <a href="https://t.me/iniciativafis" alt="telegram" target="_blank">
-                    <Button icon={telegram} text="INSCREVA-SE NO TELEGRAM" />
+                    <Button icon={telegram} text={t("subscribeTelegram")} />
                 </a>
             </div>
         );

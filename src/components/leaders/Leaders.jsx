@@ -4,7 +4,7 @@ import { LeaderData } from "../leaderData/LeaderData";
 
 export function Leaders() {
   const handleButtonClick = () => {
-    
+    console.log('Clicou!')
   }
 
   return (
