@@ -35,18 +35,20 @@ export function Timer() {
   );
 }
 
-const second = 1000;
-const minute = second * 60;
-const hour = minute * 60;
-const day = hour * 24;
+let second = 1000;
+let minute = second * 60;
+let hour = minute * 60;
+let day = hour * 24;
 
-let count_down = new Date("01/01/2024 00:00:00").getTime();
+let timer;
+
+let count_down = new Date("12/01/2022 17:50:00").getTime();
 let x = setInterval(() => countDown(), second);
 
 function countDown() {
   let now = new Date(Date.now()).getTime();
   let diff = count_down - now;
-
+  
   document.getElementById("days").innerText = Math.floor(diff / day);
   document.getElementById("hours").innerText = Math.floor((diff % day) / hour);
   document.getElementById("minutes").innerText = Math.floor(
@@ -56,8 +58,8 @@ function countDown() {
     (diff % minute) / second
   );
 
-  if (seconds.innerText < 10) {
-    seconds.innerText = `0${seconds.innerText}`;
+  if (days.innerText < 10) {
+    days.innerText = `0${days.innerText}`;
   }
   if (hours.innerText < 10) {
     hours.innerText = `0${hours.innerText}`;
@@ -65,10 +67,12 @@ function countDown() {
   if (minutes.innerText < 10) {
     minutes.innerText = `0${minutes.innerText}`;
   }
-}
-function resetCountdown() {
-  clearInterval(x);
-  let date_end = document.form_main.date_end.value;
-  count_down = new Date(`${date_end} 00:00:00`).getTime();
-  x = setInterval(() => countDown(), second);
+  if (seconds.innerText < 10) {
+    seconds.innerText = `0${seconds.innerText}`;
+  }
+  
+  if ( hour == 0 && minute == 0 && second == 0 && day  == 0) {
+    timer = timer  + 2;
+  }
+
 }
