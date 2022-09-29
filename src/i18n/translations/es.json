@@ -7,6 +7,35 @@
     "register": "REGISTRARSE",
     "subscribeTelegram": "SUSCRIBETE A NUESTRO TELEGRAM",
     "feedback": "Gracias!",
-    "invitation": "Conéctate a nosotros!"
+    "invitation": "Conéctate a nosotros",
+
+    "subscription": "La mayor experiencia en el Sector de la Salud de Latinoamérica ",
+    "text": "¡Ven a hacer parte de una super semana y genera impacto en el Ecosistema de la Salud con nosotros! El #FISWEEK es la mayor experiencia en el sector de la Salud en Latinoamérica. Aquí, reunimos líderes, empresas y entidades con el objetivo de discutir los temas que impactan el sector en un solo evento, ¡totalmente digital y grátis!",
+    "form": "Suscríbete",
+
+    "inputs": {
+      "name": "Nombre",
+      "lastName": "Apellido",
+      "email": "E-mail",
+      "Did you know the Initiative": "¿Conocías Iniciativa FIS",
+      "yes": "si",
+      "not": "no",
+      "How did you hear about the event?": "¿Cómo supiste del evento",
+      "Social networks": "Redes Sociales",
+      "Recommendation": "Recomendación",
+      "Invitation by FIS": "Invitación de FIS",
+      "E-mail marketing": "E-mail Marketing",
+      "Magazines and portals": "Revistas y Portales",
+      "Others": "Otro(s)",
+      "Which event would you like to attend": "¿De qué evento te gustaría participar?",
+      "age": "Edad",
+      "Registration completed!": "Suscripción concluida"
+    },
+
+    "button": {
+      "register": "SUSCRIBETE"
+    },
+
+    "date": " Del 7 al 11 de noviembre"
   }
 }

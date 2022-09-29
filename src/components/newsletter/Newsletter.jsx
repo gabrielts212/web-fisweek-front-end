@@ -29,12 +29,12 @@ import tikTok from '../../assets/images/newsletter/tik-tok.png';
 import twitter from '../../assets/images/newsletter/twitter.png';
 import user from '../../assets/images/icons/user.png';
 
-// import { useTranslation } from 'react-i18next';
-// import { LanguageSwitcher } from '../LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
+import { LanguageSwitcher } from '../LanguageSwitcher';
 
 import './Newsletter.css';
 
-export class Newsletter extends React.Component { 
+export class Newsletter extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
