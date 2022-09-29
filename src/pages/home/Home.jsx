@@ -9,6 +9,7 @@ import { ConferenceBar } from '../../components/conferencebar/ConferenceBar';
 import { Leaders } from '../../components/leaders/Leaders';
 import { Schedule } from '../../components/schedule/Schedule';
 import { Timer } from '../../components/timer/Timer';
+import { Header } from '../../components/header/Header';
 
 import './Home.css';
 
@@ -16,6 +17,12 @@ export function Home() {
     return (
         <Container>
             <Row>
+<<<<<<< Updated upstream
+=======
+               <Header />
+            </Row>
+            <Row>
+>>>>>>> Stashed changes
                 <Col xs={12} md={8}><RegistrationInfo /></Col>
                 <Col xs={12} md={4}><ApplicationForm /></Col>
             </Row>

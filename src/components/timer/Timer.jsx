@@ -42,7 +42,7 @@ let day = hour * 24;
 
 let timer;
 
-let count_down = new Date("12/01/2022 17:50:00").getTime();
+let count_down = new Date("11/07/2022 00:00:00").getTime();
 let x = setInterval(() => countDown(), second);
 
 function countDown() {
