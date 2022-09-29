@@ -80,15 +80,25 @@ export class ApplicationForm extends React.Component {
                   <option value="0">Não</option>
                 </select>
               </div>
-              <TextInput round name="name" placeholder="Como soube do evento?" onChange={(e) => this.setState({ howDidYouKnow: e.target.value})} required />
+              <div>
+                <select className={styles.formControl} onChange={e => this.setState({ howDidYouKnow: e.target.value })}>
+                  <option>Como soube do evento?</option>
+                  <option value="Social Networks">Redes Sociais</option>
+                  <option value="Recommendation">Indicação</option>
+                  <option value="Invitation by Fis">Convite pela Fis</option>
+                  <option value="E-mail marketing">Email Marketing</option>
+                  <option value="Magazines and Portals">Revistas e Portais</option>
+                  <option value="Others">Outros</option>
+                  <option value=""></option>
+                </select>
+              </div>
               <div>
                 <select className={styles.formControl} onChange={e => this.setState({ conference: e.target.value })}>
                   <option>Qual evento gostaria de participar?</option>
-                  <option value="Fis22">Fis22</option>
-                  <option value="S/M22">S/M22</option>
-                  <option value="Lygga">Lygga</option>
-                  <option value="com .Meets22">com .Meets22</option>
-                  <option value="Startups">Startups</option>
+                  <option value="Fis22">#FIS22</option>
+                  <option value="S/M22">#SYM22</option>
+                  <option value="Lygga">#LYGGA22</option>
+                  <option value="com .Meets22">#COMMEETS22</option>
                 </select>
               </div>
               <TextInput round name="idade" value={age} placeholder="Idade" maxLength={2} number onChange={(e) => this.setState({ age: isNaN(e.target.value) ? undefined : e.target.value})} />

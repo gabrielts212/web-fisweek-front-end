@@ -28,10 +28,11 @@ import telegram from '../../assets/images/icons/telegram.png';
 import tikTok from '../../assets/images/newsletter/tik-tok.png';
 import twitter from '../../assets/images/newsletter/twitter.png';
 import user from '../../assets/images/icons/user.png';
-import { useTranslation } from 'react-i18next';
+
+// import { useTranslation } from 'react-i18next';
+// import { LanguageSwitcher } from '../LanguageSwitcher';
 
 import './Newsletter.css';
-import { LanguageSwitcher } from '../LanguageSwitcher';
 
 export class Newsletter extends React.Component { 
     constructor(props) {
@@ -59,7 +60,7 @@ export class Newsletter extends React.Component {
     } 
 
     render() {
-        const { t } = useTranslation()
+        const { t } = useTranslation();
 
         const { submitted } = this.state;
         return (
@@ -78,7 +79,7 @@ export class Newsletter extends React.Component {
     }
 
     renderForm() {
-        const { t } = useTranslation()
+        const { t } = useTranslation();
 
         return (
             <div>
@@ -91,7 +92,7 @@ export class Newsletter extends React.Component {
     }
 
     renderResult() {
-        const { t } = useTranslation()
+        const { t } = useTranslation();
 
         return (
             <div>
