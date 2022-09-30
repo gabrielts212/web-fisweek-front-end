@@ -42,37 +42,39 @@ let day = hour * 24;
 
 let timer;
 
-let count_down = new Date("11/07/2022 00:00:00").getTime();
+let count_down = new Date("09/30/2022 12:54:00").getTime();
 let x = setInterval(() => countDown(), second);
 
 function countDown() {
   let now = new Date(Date.now()).getTime();
   let diff = count_down - now;
-  
-  document.getElementById("days").innerText = Math.floor(diff / day);
-  document.getElementById("hours").innerText = Math.floor((diff % day) / hour);
-  document.getElementById("minutes").innerText = Math.floor(
-    (diff % hour) / minute
-  );
-  document.getElementById("seconds").innerText = Math.floor(
-    (diff % minute) / second
-  );
+  if(diff > 0){
 
-  if (days.innerText < 10) {
-    days.innerText = `0${days.innerText}`;
-  }
-  if (hours.innerText < 10) {
-    hours.innerText = `0${hours.innerText}`;
-  }
-  if (minutes.innerText < 10) {
-    minutes.innerText = `0${minutes.innerText}`;
-  }
-  if (seconds.innerText < 10) {
-    seconds.innerText = `0${seconds.innerText}`;
-  }
-  
-  if ( hour == 0 && minute == 0 && second == 0 && day  == 0) {
-    timer = timer  + 2;
-  }
-
+    document.getElementById("days").innerText = Math.floor(diff / day);
+    document.getElementById("hours").innerText = Math.floor((diff % day) / hour);
+    document.getElementById("minutes").innerText = Math.floor(
+      (diff % hour) / minute
+      );
+      document.getElementById("seconds").innerText = Math.floor(
+        (diff % minute) / second
+        );
+        
+        if (days.innerText < 10) {
+          days.innerText = `0${days.innerText}`;
+        }
+        if (hours.innerText < 10) {
+          hours.innerText = `0${hours.innerText}`;
+        }
+        if (minutes.innerText < 10) {
+          minutes.innerText = `0${minutes.innerText}`;
+        }
+        if (seconds.innerText < 10) {
+          seconds.innerText = `0${seconds.innerText}`;
+        }
+        
+        if ( hour == 0 && minute == 0 && second == 0 && day  == 0) {
+          timer = timer  + 2;
+        }
+      }
+        
 }

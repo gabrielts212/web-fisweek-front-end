@@ -1,12 +1,23 @@
 
 .headerFis{
-    width: 180px;
-    height: 50px;
+    width: 160px;
+    height: 40px;
     margin: 20px;
 }
 .nav-link{
     color: white;
 }
-.navbar-collapse{
-    padding-left: 15rem;
+/* .navbar-collapse{
+    padding: 1rem;
+    
+} */
+.teste{
+    margin-left: 50px;
 }
+
+.collapse{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
