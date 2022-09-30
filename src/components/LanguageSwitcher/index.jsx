@@ -4,6 +4,8 @@ import en from '../../assets/images/flags/en.png'
 import es from '../../assets/images/flags/es.png'
 import pt from '../../assets/images/flags/pt.png'
 
+import './styles.css'
+
 const languageOptions = [
   {
     name: "Português",
@@ -35,7 +37,7 @@ export const LanguageSwitcher = () => {
           }}
         >
 
-          <img src={languageOptions.flag} alt={languageOptions.name} />
+          <img className="imgButton" src={languageOptions.flag} alt={languageOptions.name} />
         </button>
       ))}
     </div>

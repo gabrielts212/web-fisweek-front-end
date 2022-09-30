@@ -1,0 +1,16 @@
+.languageSwitcher {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.languageSwitcher > button {
+  cursor: pointer;
+  background-color:#3f3d7300;
+  border: none;
+}
+
+.languageSwitcher .imgButton {
+  width: 3rem;
+  height: 3rem;
+}
