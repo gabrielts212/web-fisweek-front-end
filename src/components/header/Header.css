@@ -11,3 +11,7 @@
     display: flex;
     justify-content: flex-end;
 }
+
+.navbar-toggler {
+    display: none;
+}

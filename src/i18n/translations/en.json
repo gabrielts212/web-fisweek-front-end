@@ -11,31 +11,30 @@
 
     "subscription": "The biggest latin american health experience",
     "text": "Participate in a super week and make a change in the Health Ecosystem with us! #FISWEEK is the biggest experience available in the Latin American health sector. Here, we join in leaders, enterprises and entities with the goal of exchanging knowledge about the subjects that concern the health system. All of that in just one event, 100% online and free!",
+    "eventDate": "Del 7 al 11 de nov",
     "form": "Suscribe",
 
     "inputs": {
       "name": "Name",
       "lastName": "Lastname",
       "email": "E-mail",
-      "Did you know the Initiative": "Did you know Iniciativa FIS",
+      "initiative": "Did you know Iniciativa FIS",
       "yes": "yes",
       "not": "not",
-      "How did you hear about the event?": "How did you hear about the event",
-      "Social networks": "Social Media",
+      "HowDidYouHearAboutTheEvent?": "How did you hear about the event",
+      "SocialNetworks": "Social Media",
       "Recommendation": "Recommendation",
-      "Invitation by FIS": "FIS invitation",
-      "E-mail marketing": "Email marketing",
-      "Magazines and portals": "Magazines",
+      "InvitationByFis": "FIS invitation",
+      "E-mailMarketing": "Email marketing",
+      "MagazinesAndPortals": "Magazines",
       "Others": "Other ",
-      "Which event would you like to attend": "Which event would you like to be part ofr",
+      "WhichEventWouldYouLikeToAttend": "Which event would you like to be part ofr",
       "age": "Age ",
-      "Registration completed!": "Subscription concluded"
+      "RegistrationCompleted!": "Subscription concluded"
     },
 
     "button": {
       "register": "SUSCRIBE"
-    },
-    
-    "date": "From november 7th to 11th"
+    }
   }
 }

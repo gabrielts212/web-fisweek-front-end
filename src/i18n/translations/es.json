@@ -11,31 +11,30 @@
 
     "subscription": "La mayor experiencia en el Sector de la Salud de Latinoamérica ",
     "text": "¡Ven a hacer parte de una super semana y genera impacto en el Ecosistema de la Salud con nosotros! El #FISWEEK es la mayor experiencia en el sector de la Salud en Latinoamérica. Aquí, reunimos líderes, empresas y entidades con el objetivo de discutir los temas que impactan el sector en un solo evento, ¡totalmente digital y grátis!",
+    "eventDate": "From nov 7th to 11th ",
     "form": "Suscríbete",
 
     "inputs": {
       "name": "Nombre",
       "lastName": "Apellido",
       "email": "E-mail",
-      "Did you know the Initiative": "¿Conocías Iniciativa FIS",
+      "initiative": "¿Conocías Iniciativa FIS",
       "yes": "si",
       "not": "no",
-      "How did you hear about the event?": "¿Cómo supiste del evento",
-      "Social networks": "Redes Sociales",
+      "HowDidYouHearAboutTheEvent?": "¿Cómo supiste del evento",
+      "SocialNetworks": "Redes Sociales",
       "Recommendation": "Recomendación",
-      "Invitation by FIS": "Invitación de FIS",
-      "E-mail marketing": "E-mail Marketing",
-      "Magazines and portals": "Revistas y Portales",
+      "InvitationByFis": "Invitación de FIS",
+      "E-mailMarketing": "E-mail Marketing",
+      "MagazinesAndPortals": "Revistas y Portales",
       "Others": "Otro(s)",
-      "Which event would you like to attend": "¿De qué evento te gustaría participar?",
+      "WhichEventWouldYouLikeToAttend": "¿De qué evento te gustaría participar?",
       "age": "Edad",
-      "Registration completed!": "Suscripción concluida"
+      "RegistrationCompleted!": "Suscripción concluida"
     },
 
     "button": {
       "register": "SUSCRIBETE"
-    },
-
-    "date": " Del 7 al 11 de noviembre"
+    }
   }
 }

@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import { ApplicationForm } from '../../components/applicationform/ApplicationForm';
+import ApplicationForm from '../../components/applicationform/ApplicationForm';
 import { RegistrationInfo } from '../../components/registrationInfo/RegistrationInfo';
 import { Footer } from '../../components/footer/Footer';
 import { ConferenceBar } from '../../components/conferencebar/ConferenceBar';
@@ -30,7 +30,7 @@ export function Home() {
                 {/* <Col xs={12} md={12}><Leaders/></Col> */}
             </Row>
             <Row>
-                <Timer />
+                {/* <Timer /> */}
             </Row>
             <Row>
                 {/* <Schedule /> */}

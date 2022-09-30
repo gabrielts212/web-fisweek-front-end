@@ -6,9 +6,11 @@ import { TextInput } from '../textinput/TextInput';
 
 import RegistrationVerified from '../../assets/images/registration-verified.png';
 
+import { withTranslation } from 'react-i18next';
+
 import styles from './ApplicationForm.module.css';
 
-export class ApplicationForm extends React.Component { 
+class ApplicationForm extends React.Component { 
     constructor(props) {
         super(props);
         this.state = {
@@ -67,42 +69,42 @@ export class ApplicationForm extends React.Component {
 
     renderForm() {
         const { age, isValidEmail, isValidFirstName, isValidLastName } = this.state;
+        const { t } = this.props;
         return (
             <div>
-              <label className={styles.captionTitle}>Faça sua inscrição</label>
-              <TextInput round placeholder="Nome" error={!isValidFirstName} onChange={(e) => this.setState({ firstName: e.target.value})} required />
-              <TextInput round placeholder="Sobrenome" error={!isValidLastName} onChange={(e) => this.setState({ lastName: e.target.value})} required />
-              <TextInput round placeholder="Email" error={!isValidEmail} onChange={(e) => this.setState({ email: e.target.value})} required />
+              <label className={styles.captionTitle}>{t('form')}</label>
+              <TextInput round placeholder={t("inputs.name")} error={!isValidFirstName} onChange={(e) => this.setState({ firstName: e.target.value})} required />
+              <TextInput round placeholder={t("inputs.lastName")} error={!isValidLastName} onChange={(e) => this.setState({ lastName: e.target.value})} required />
+              <TextInput round placeholder={t("email")} error={!isValidEmail} onChange={(e) => this.setState({ email: e.target.value})} required />
               <div>
                 <select className={styles.formControl} onChange={e => this.setState({ alreadyKnew: e.target.value })}>
-                  <option>Conhecia a Iniciativa?</option>
-                  <option value="1">Sim</option>
-                  <option value="0">Não</option>
+                  <option>{t("inputs.initiative")}</option>
+                  <option value="1">{t("inputs.yes")}</option>
+                  <option value="0">{t("inputs.not")}</option>
                 </select>
               </div>
               <div>
                 <select className={styles.formControl} onChange={e => this.setState({ howDidYouKnow: e.target.value })}>
-                  <option>Como soube do evento?</option>
-                  <option value="Social Networks">Redes Sociais</option>
-                  <option value="Recommendation">Indicação</option>
-                  <option value="Invitation by Fis">Convite pela Fis</option>
-                  <option value="E-mail marketing">Email Marketing</option>
-                  <option value="Magazines and Portals">Revistas e Portais</option>
-                  <option value="Others">Outros</option>
-                  <option value=""></option>
+                  <option>{t("inputs.HowDidYouHearAboutTheEvent?")}</option>
+                  <option value="Social Networks">{t("inputs.SocialNetworks")}</option>
+                  <option value="Recommendation">{t("inputs.Recommendation")}</option>
+                  <option value="Invitation by Fis">{t("inputs.InvitationByFis")}</option>
+                  <option value="E-mail marketing">{t("inputs.E-mailMarketing")}</option>
+                  <option value="Magazines and Portals">{t("inputs.MagazinesAndPortals")}</option>
+                  <option value="Others">{t("inputs.Others")}</option>
                 </select>
               </div>
               <div>
                 <select className={styles.formControl} onChange={e => this.setState({ conference: e.target.value })}>
-                  <option>Qual evento gostaria de participar?</option>
+                  <option>{t("inputs.WhichEventWouldYouLikeToAttend")}</option>
                   <option value="Fis22">#FIS22</option>
                   <option value="S/M22">#SYM22</option>
                   <option value="Lygga">#LYGGA22</option>
                   <option value="com .Meets22">#COMMEETS22</option>
                 </select>
               </div>
-              <TextInput round name="idade" value={age} placeholder="Idade" maxLength={2} number onChange={(e) => this.setState({ age: isNaN(e.target.value) ? undefined : e.target.value})} />
-              <Button text="CADASTRE-SE" onClick={this.onButtonClick.bind(this)} alt />
+              <TextInput round name="idade" value={age} placeholder={t("inputs.age")} maxLength={2} number onChange={(e) => this.setState({ age: isNaN(e.target.value) ? undefined : e.target.value})} />
+              <Button text={t("register")} onClick={this.onButtonClick.bind(this)} alt />
             </div>
         );
     }
@@ -110,9 +112,11 @@ export class ApplicationForm extends React.Component {
     renderResult() {
         return (
             <div className={styles.formCompleted}>
-              <h1>Cadastro concluído!</h1>
+              <h1>{t("RegistrationCompleted!")}</h1>
               <img src={RegistrationVerified} alt="RegistrationVerified" />
             </div>
         );
     }
 }
+
+export default withTranslation()(ApplicationForm)

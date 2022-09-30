@@ -51,7 +51,7 @@
   width: 363px;
   height: 124px;
   left: 44%;
-  top: 60%;
+  top: 59%;
 }
 
 .geometricShapes12 {
@@ -72,12 +72,12 @@
 
 .title {
   position: absolute;
-  width: 497px;
+  width: auto;
   left: 44.9%;
   top: 13%;
 
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   color: #fff;
 
   z-index: 1;
@@ -93,11 +93,11 @@
   position: absolute;
   width: 385px;
   left: 44.9%;
-  top: 32%;
+  top: 31%;
 
   font-weight: 500;
-  font-size: 20px;
-  line-height: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
   color: #fff;
 
   z-index: 1;
@@ -124,19 +124,25 @@
 
   position: absolute;
   left: 46%;
-  top: 62%;
+  top: 61%;
  
   z-index: 1;
 }
 
 .eventDate {
   position: absolute;
-  width: 140px;
-  height: 60px;
-  top: 63.5%;
-  left: 65%;
+  width: 160px;
+  height: 70px;
+  top: 61.3%;
+  left: 63%;
  
   z-index: 1;
+
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Bahnschrift';
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
@@ -150,6 +156,7 @@
     width: 80px;
     height: auto;
     left: 240px;
+    font-size: 1rem;
 }
 
   .geometricShapes8 {
@@ -220,7 +227,9 @@
   }
 
   .eventDate {
-    top: 410px;
+    top: 430px;
+    left: 24rem;
+    font-size: 1.8rem;
   }
 
   .geometricShapes8 {
@@ -240,7 +249,7 @@
   .geometricShapes10 {
     position: absolute;
     width: 130px;
-    top: 512px;
+    top: 525px;
     left: 200px;
   }
 
@@ -248,7 +257,7 @@
     width: 288px;
     height: 106px;
     left: 228px;
-    top: 390px;
+    top: 405px;
   }
 
   .geometricShapes12 {
@@ -268,7 +277,7 @@
     height: 85px;
     position: absolute;
     left: 240px;
-    top: 400px;
+    top: 412px;
   }
 
   .title {
@@ -292,8 +301,9 @@
   }
 
   .eventDate {
-    left: 135px;
-    top: 415px;
+    left: 10rem;
+    top: 31rem;
+    font-size: 1.5rem;
   }
 
   .geometricShapes7 {
@@ -346,8 +356,8 @@
 
   .title {
     width: 330px;
-    font-size: 30px;
-    top: 280px;
+    font-size: 2.1rem;
+    top: 19rem;
     left: 5px;
   }  
 
@@ -366,8 +376,9 @@
   }
 
   .eventDate {
-    left: 390px;
-    top: 438px;
+    left: 28rem;
+    top: 31.5rem;
+    font-size: 1.8rem;
   }
 
   .geometricShapes10 {
@@ -378,7 +389,7 @@
   .geometricShapes11 {
     height: 100px;
     left: 260px;
-    top: 420px;
+    top: 418px;
     width: 320px;
   }
 
@@ -395,21 +406,22 @@
   }
 
   .logoFis {
-    top: 432px;
+    top: 430px;
     height: 76px;
     left: 280px;
     width: auto;    
   }
 
   .title {
-    width: 330px;
-    font-size: 30px;
+    width: auto;
+    top: 12%;
+    font-size: 2rem;
   }  
 
   .text {
-    font-size: 18px;
-    line-height: 1.3rem;
-    top: 210px;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    top: 15rem;
     width: 340px;
   }
 }
@@ -421,7 +433,9 @@
   }
 
   .eventDate {
-    top: 450px;
+    top: 443px;
+    left: 67%;
+    font-size: 2rem;
   }
 
   .geometricShapes10 {
@@ -448,8 +462,8 @@
   }
 
   .title {
-    width: 390px;
-    font-size: 36px;
+    width: auto;
+    font-size: 2.3rem;
   }
 
   .text {
