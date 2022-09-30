@@ -12,11 +12,16 @@ import Hands from "../../assets/images/hands.png";
 import EventDate from "../../assets/images/eventDate.png";
 import LogoFis from "../../assets/images/logo-fis.png";
 
+import { useTranslation } from 'react-i18next';
+
 import './RegistrationInfo.css';
 
 export function RegistrationInfo() {
+  const { t } = useTranslation();
+
   return (
     <div className="registrationInfo">
+
       <img className="women" src={Women} alt="Mulher Sorrindo" />
       <img className="geometricShapes7" src={GeometricShapes7} alt="Forma Geométrica" />
       <img className="geometricShapes8" src={GeometricShapes8} alt="Forma Geométrica" />
@@ -32,19 +37,12 @@ export function RegistrationInfo() {
       <img className="logoFis" src={LogoFis} alt="Logo Fis" />
 
       <h1 className="title">
-        A maior experiência 
-        <br /> 
-        da área da saúde da 
-        América Latina
+        {t("subscription")}
       </h1>
 
       <div className="text d-none d-lg-block">
         <p>
-          Vivencie uma super semana e impacte o Ecossistema da Saúde com a
-          gente! A #FISWEEK é a maior Experiência da Saúde na América
-          Latina. Aqui, nós reunimos lideranças, empresas e entidades com o
-          objetivo de discutir todos os temas que impactam o setor em um evento
-          totalmente digital e gratuito.
+          {t("text")}
         </p>
       </div>
     </div>

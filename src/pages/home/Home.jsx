@@ -17,12 +17,9 @@ export function Home() {
     return (
         <Container>
             <Row>
-<<<<<<< Updated upstream
-=======
                <Header />
             </Row>
             <Row>
->>>>>>> Stashed changes
                 <Col xs={12} md={8}><RegistrationInfo /></Col>
                 <Col xs={12} md={4}><ApplicationForm /></Col>
             </Row>

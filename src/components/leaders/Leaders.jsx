@@ -1,10 +1,12 @@
 import "./Leaders.css";
 
 import { LeaderData } from "../leaderData/LeaderData";
+import { useState } from "react";
 
 export function Leaders() {
+
   const handleButtonClick = () => {
-    console.log('Clicou!')
+    // console.log('Clicou!')
   }
 
   return (
