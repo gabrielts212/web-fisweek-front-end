@@ -11,7 +11,7 @@ import FilterBlur from "../../assets/images/filter-blur.png";
 import Hands from "../../assets/images/hands.png";
 import LogoFis from "../../assets/images/logo-fis.png";
 
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 import './RegistrationInfo.css';
 

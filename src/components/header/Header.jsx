@@ -1,10 +1,9 @@
 import "./Header.css";
 import HeaderFis from "../../assets/images/header/header-fis.png";
 import bg from "../../assets/images/header/bg.png";
-// import { LanguageSwitcher } from '../LanguageSwitcher';
+import { LanguageSwitcher } from '../LanguageSwitcher';
 
 export function Header() {
-
   return (
     <div className="background-header" style={{ backgroundImage: `url(${bg})` }}>
 
