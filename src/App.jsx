@@ -10,8 +10,8 @@ export default function App() {
     <HashRouter>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Pre />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/savethedate" element={<Pre />} />
         </Routes>
       </div>
     </HashRouter>
