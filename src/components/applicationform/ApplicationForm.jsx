@@ -110,6 +110,7 @@ class ApplicationForm extends React.Component {
     }
 
     renderResult() {
+        const { t } = this.props;
         return (
             <div className={styles.formCompleted}>
               <h1>{t("RegistrationCompleted!")}</h1>
