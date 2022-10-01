@@ -39,7 +39,7 @@
   .leaderGroup{
     height: 30rem;
     display: flex;
-    Width: 100%;
+    width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
   }
