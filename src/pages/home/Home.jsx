@@ -10,6 +10,7 @@ import { Leaders } from '../../components/leaders/Leaders';
 import { Schedule } from '../../components/schedule/Schedule';
 import { Timer } from '../../components/timer/Timer';
 import { Header } from '../../components/header/Header';
+import { Testimonials } from '../../components/testimonials/Testimonials';
 
 import './Home.css';
 
@@ -27,7 +28,7 @@ export function Home() {
                 {/* <ConferenceBar /> */}
             </Row>
             <Row>
-                <Col xs={12} md={12}><Leaders/></Col>
+                {/* <Col xs={12} md={12}><Leaders/></Col> */}
             </Row>
             <Row>
                 {/* <Timer /> */}
@@ -36,9 +37,13 @@ export function Home() {
                 {/* <Schedule /> */}
             </Row>
             <Row>
+                <Testimonials />
+            </Row>
+            <Row>
                 {/* <Footer /> */}
             </Row>
         </Container>
     );
 }
+
 
