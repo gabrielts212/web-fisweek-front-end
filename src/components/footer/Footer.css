@@ -1,4 +1,4 @@
-.main-footer {
+.Footer {
   background-color: black;
   color: white;
   position: relative;
@@ -7,6 +7,7 @@
   display: flex;
   height: 491px;
 }
+
 .contact {
   position: absolute;
   width: 300px;
@@ -15,6 +16,7 @@
   color: white;
   top: 40px;
 }
+
 .networks {
   position: absolute;
   width: 203px;
@@ -24,14 +26,16 @@
   font-style: normal;
   color: white;
 }
+
 .sociais {
   position: absolute;
   left: 700px;
-  top:300px;
+  top: 300px;
   text-align: center;
   display: flex;
   justify-content: space-between;
 }
+
 .social {
   text-align: center;
   border-radius: 8px;
@@ -42,11 +46,13 @@
   background: white;
   margin: 10px;
 }
+
 .sociais .social a {
   color: #000;
   font-size: 1.5rem;
   transition: background 0.3 linear;
 }
+
 .sociais .social a:hover {
   font-weight: 700;
   color: rgba(0, 0, 0, 0.541);
@@ -59,47 +65,105 @@
   left: 990px;
   top: 433px;
   justify-content: space-between;
+
+  font-style: italic;
+  font-weight: 300;
 }
+
 .text-fis2 {
   position: absolute;
   width: 355.71px;
   height: 20px;
-  left: 1110px;
-  top: 430px;
+  left: 69.5rem;
+  top: 26.5rem;
   justify-content: space-between;
+
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
-@media (max-width: 1200px) {
+/* ====== @MEDIA QUERY ========= */
+
+/* XX-Small devices (portrait phones, less than 549px) */
+@media (max-width: 549px) {
   .sociais {
-    left: 560px;
+    left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
   }
+
   .text-fis {
-    left: 810px;
+    left: 1rem;
   }
+
   .text-fis2 {
-    left: 930px;
+    left: 1rem;
+    top: 32.5rem;
   }
+
   .networks {
-    left: 930px;
+    left: 30px;
+  }
+
+  .contact {
+    left: 30px;
   }
 }
 
-@media (max-width: 1024px) {
+/* X-Small devices (portrait phones, less than 576px) */
+@media (min-width: 550px) and (max-width: 575.98px) {
   .sociais {
-    left: 70px;
+    left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
   }
+
   .text-fis {
-    left: 78px;
+    left: 30px;
   }
+
   .text-fis2 {
-    left: 199px;
+    left: 10rem;
+    top: 30.7rem;
   }
+
   .networks {
-    left: 80px;
+    left: 30px;
+  }
+
+  .contact {
+    left: 30px;
   }
 }
 
-@media (max-width: 768px) {
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .sociais {
+    left: 20px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+  }
+
+  .text-fis {
+    left: 30px;
+  }
+
+  .text-fis2 {
+    left: 10rem;
+    top: 30.7rem;
+  }
+
+  .networks {
+    left: 30px;
+  }
+
+  .contact {
+    left: 30px;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
   .contact {
     left: 30px;
   }
@@ -110,85 +174,48 @@
     left: 40px;
   }
   .text-fis2 {
-    left: 160px;
+    left: 10.5rem;
+    top: 30.7rem;
   }
   .networks {
     left: 30px;
   }
 }
 
-@media (max-width: 630px) {
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
   .sociais {
-    left: 20px;
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    left: 70px;
   }
   .text-fis {
-    left: 30px;
+    left: 78px;
   }
   .text-fis2 {
-    left: 150px;
+    left: 13.5rem;
+    top: 30.7rem;
   }
   .networks {
-    left: 30px;
-  }
-
-  .contact {
-    left: 30px;
+    left: 80px;
   }
 }
 
-@media (max-width: 540px) {
+/* X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
   .sociais {
-    left: 20px;
+    left: 560px;
   }
-  .networks {
-    left: 30px;
-  }
-  .contact {
-    left: 30px;
-  }
+
   .text-fis {
-    left: 30px;
+    left: 810px;
   }
+
   .text-fis2 {
-    left: 150px;
+    left: 66rem;
+    top: 30.5rem;
+  }
+
+  .networks {
+    left: 930px;
   }
 }
 
-@media (max-width: 425px) {
-  .sociais {
-    left: 10px;
-    flex-wrap: wrap;
-  }
-  .networks {
-    left: 20px;
-  }
-  .contact {
-    left: 20px;
-  }
-  .text-fis {
-    left: 25px;
-  }
-  .text-fis2 {
-    left: 145px;
-  }
-}
-@media (max-width: 375px) {
-  .sociais {
-    left: 10px;
-    flex-wrap: wrap;
-  }
-  .networks {
-    left: 20px;
-  }
-  .contact {
-    left: 20px;
-  }
-  .text-fis {
-    left: 20px;
-  }
-  .text-fis2 {
-    left: 140px;
-  }
-}

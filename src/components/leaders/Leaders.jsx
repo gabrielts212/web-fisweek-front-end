@@ -1,6 +1,6 @@
 import "./Leaders.css";
 
-import { LeaderData } from "../leaderData/LeaderData";
+import { LeaderData } from "../leaderdata/LeaderData";
 import { useState } from "react";
 
 export function Leaders() {

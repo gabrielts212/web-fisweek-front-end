@@ -1,7 +1,7 @@
 import "./Header.css";
 import HeaderFis from "../../assets/images/header/header-fis.png";
 import bg from "../../assets/images/header/bg.png";
-import { LanguageSwitcher } from '../LanguageSwitcher';
+import { LanguageSwitcher } from '../languageswitcher';
 
 export function Header() {
   return (

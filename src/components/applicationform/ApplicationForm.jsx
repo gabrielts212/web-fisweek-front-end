@@ -113,7 +113,7 @@ class ApplicationForm extends React.Component {
         const { t } = this.props;
         return (
             <div className={styles.formCompleted}>
-              <h1>{t("RegistrationCompleted!")}</h1>
+              <h1>{t("inputs.RegistrationCompleted!")}</h1>
               <img src={RegistrationVerified} alt="RegistrationVerified" />
             </div>
         );

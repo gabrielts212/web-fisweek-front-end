@@ -6,11 +6,12 @@ import { LinkedinLogo } from "phosphor-react";
 import { SpotifyLogo } from "phosphor-react";
 import { TelegramLogo } from "phosphor-react";
 import { TiktokLogo } from "phosphor-react";
+
 import "./Footer.css";
 
 export function Footer() {
   return (
-    <div className="main-footer">
+    <div className="Footer">
       <div className="contact">
         <h4>Precisa de ajuda?</h4>
         <p>faleconosco@fis.org.br</p>
@@ -86,8 +87,11 @@ export function Footer() {
         </div>
 
         <div className="social">
-          <a href="https://open.spotify.com/show/7aON0A01X0mw4dSWG6rbuc?si=c40d709dd5744e4a&nd=1" 
-          alt="spotify" target="_blank">
+          <a
+            href="https://open.spotify.com/show/7aON0A01X0mw4dSWG6rbuc?si=c40d709dd5744e4a&nd=1"
+            alt="spotify"
+            target="_blank"
+          >
             <SpotifyLogo />
           </a>
         </div>
@@ -108,11 +112,12 @@ export function Footer() {
           </a>
         </div>
       </div>
+
       <div className="text-fis">
-        <p>POWERED BY </p>
+        <span>POWERED BY</span>
       </div>
       <div className="text-fis2">
-        <h4>INICIATIVAFIS</h4>
+        <span>INICIATIVAFIS</span>
       </div>
     </div>
   );
