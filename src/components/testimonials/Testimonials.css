@@ -1,0 +1,35 @@
+.Testimonials {
+  background: linear-gradient(
+    180deg, rgba(126, 112, 186, 0) 
+    0%, #5837EA 93.23%
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Testimonials header {
+  width: 511.58px;
+  height: 106.73px;
+  background: #6645F4;
+  border-radius: 379px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 3.5rem 0 5.5rem 0;
+}
+
+.Testimonials header h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #FFF;
+  padding: 0 17px 0 93px;
+}
+
+.Testimonials header img {
+  width: 21%;
+}

@@ -5,7 +5,6 @@ import { LanguageSwitcher } from '../languageswitcher';
 
 export function Header() {
   return (
-    <div className="background-header" style={{ backgroundImage: `url(${bg})` }}>
     <div className="background-header">
       {/* style={{ backgroundImage: `url(${bg})` }} */}
       <nav class="navbar navbar-expand-lg navbar bg">

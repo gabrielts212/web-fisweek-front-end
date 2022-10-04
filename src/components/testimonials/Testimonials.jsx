@@ -1,3 +1,5 @@
+import EclipseBlue from '../../assets/images/testimonials/eclipse-blue.png'
+
 import './Testimonials.css'
 
 export function Testimonials() {
