@@ -3,6 +3,7 @@ import CircleTestimonial from '../../assets/images/testimonials/circle-testimoni
 import ManBackground from '../../assets/images/testimonials/man-background.png'
 import Man from '../../assets/images/testimonials/man.png'
 import Depositions from '../../assets/images/testimonials/depositions.png'
+import Cite from '../../assets/images/testimonials/cite.png'
 
 import './Testimonials.css'
 
@@ -21,9 +22,35 @@ export function Testimonials() {
       </section>
 
       <section className="DepositionsGroup">
-        <img className="Depositions" src={Depositions} alt="Depoimentos" />
-        <img className="Depositions" src={Depositions} alt="Depoimentos" />
-        <img className="Depositions" src={Depositions} alt="Depoimentos" />
+        <div className="Depositions">
+          <p className="citeDepositions">
+            Nossa grande contribuição para a Inovação na Saúde. 
+            Um evento feito para ser destaque no setor, com grandes lideranças, 
+            trocas de experiências e muito conteúdo e interação.
+          </p>
+          <img className="citeImg" src={Cite} />
+          <span className="DepositionsName">Vera Valente</span>
+        </div>
+
+        <div className="Depositions">
+          <p className="citeDepositions">
+            Nossa grande contribuição para a Inovação na Saúde. 
+            Um evento feito para ser destaque no setor, com grandes lideranças, 
+            trocas de experiências e muito conteúdo e interação.
+          </p>
+          <img className="citeImg" src={Cite} />
+          <span className="DepositionsName">Nome Pessoa</span>
+        </div>
+
+        <div className="Depositions">
+          <p className="citeDepositions">
+            Nossa grande contribuição para a Inovação na Saúde. 
+            Um evento feito para ser destaque no setor, com grandes lideranças, 
+            trocas de experiências e muito conteúdo e interação.
+          </p>
+          <img className="citeImg" src={Cite} />
+          <span className="DepositionsName">Nome Pessoa</span>
+        </div>
       </section>
 
       <div className="registrationButton">
@@ -32,3 +59,4 @@ export function Testimonials() {
     </div>
   )
 }
+

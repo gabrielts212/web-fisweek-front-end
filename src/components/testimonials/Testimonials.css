@@ -68,8 +68,33 @@
 .DepositionsGroup .Depositions {
   width: 50rem;
   height: 17rem;
+  background: #706CA3;
+  backdrop-filter: blur(5px);
+  border-radius: 8rem;
 }
 
 .DepositionsGroup .Depositions:nth-child(3) {
   margin-bottom: 1rem;
+}
+
+.Depositions .citeDepositions {
+  width: 30rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  color: #FFF;
+  margin: 3rem 0 1rem 10rem;
+}
+
+.Depositions .citeImg {
+  margin: -2rem 0 0 9rem;
+}
+
+.Depositions .DepositionsName {
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.7;
+  color: #5DCDE3;
+  margin: 0 0 0 15rem;
 }
