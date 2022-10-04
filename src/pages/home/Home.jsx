@@ -37,7 +37,10 @@ export function Home() {
                 {/* <Schedule /> */}
             </Row>
             <Row>
-                {/* <Footer /> */}
+                {/* <Testimonials /> */}
+            </Row>
+            <Row>
+                <Footer />
             </Row>
         </Container>
     );
