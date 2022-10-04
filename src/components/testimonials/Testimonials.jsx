@@ -1,5 +1,5 @@
 import EclipseBlue from '../../assets/images/testimonials/eclipse-blue.png'
-import Circle from '../../assets/images/testimonials/Circle.png'
+import CircleTestimonial from '../../assets/images/testimonials/circle-testimonial.png'
 import ManBackground from '../../assets/images/testimonials/man-background.png'
 import Man from '../../assets/images/testimonials/man.png'
 import Depositions from '../../assets/images/testimonials/depositions.png'
@@ -17,7 +17,7 @@ export function Testimonials() {
       <section className="testimonialsImages">
         <img className="ManBackground" src={ManBackground} />
         <img className="Man" src={Man} alt="Homem segurando tablet" />
-        <img className="Circle" src={Circle} alt="Circulo" />
+        <img className="circleTestimonial" src={CircleTestimonial} alt="Circulo" />
       </section>
 
       <section className="DepositionsGroup">
