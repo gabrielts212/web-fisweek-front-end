@@ -8,6 +8,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  position: relative;
+  height: 1452px;
 }
 
 .Testimonials header {
@@ -20,7 +23,7 @@
   align-items: center;
   justify-content: center;
 
-  margin: 3.5rem 0 5.5rem 0;
+  margin: 4.5rem 0 5.5rem 0;
 }
 
 .Testimonials header h1 {
@@ -32,4 +35,41 @@
 
 .Testimonials header img {
   width: 21%;
+}
+
+.testimonialsImages .ManBackground {
+  width: 19rem;
+  height: 40rem;
+  margin-left: -38rem;
+}
+
+.testimonialsImages .Man {
+  width: 19rem;
+  height: 40.2rem;
+  margin-left: -19rem;
+}
+
+.testimonialsImages .Circle {
+  width: 19rem;
+  height: 19rem;
+
+  position: absolute;
+  top: 59.5rem;
+  left: 3.8rem;
+}
+
+.DepositionsGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin: -40rem 0 0 20rem;
+}
+
+.DepositionsGroup .Depositions {
+  width: 50rem;
+  height: 17rem;
+}
+
+.DepositionsGroup .Depositions:nth-child(3) {
+  margin-bottom: 1rem;
 }
