@@ -1,6 +1,6 @@
 import "./Header.css";
 import HeaderFis from "../../assets/images/header/header-fis.png";
-import { LanguageSwitcher } from '../languageswitcher';
+import { LanguageSwitcher } from "../languageswitcher";
 
 export function Header() {
   return (
@@ -23,7 +23,7 @@ export function Header() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="/Leaders">
+              <a className="nav-link" href="#">
                 LÍDERES <span className="sr-only">(current)</span>
               </a>
             </li>
