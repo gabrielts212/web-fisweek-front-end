@@ -82,11 +82,6 @@
 
   z-index: 1;
   text-align: left;
-  text-shadow:
-  0.05em 0 #2A2850,
-  0 0.05em #2A2850,
-  -0.05em 0 #2A2850,
-  0 -0.05em #2A2850;
 }
 
 .text {
@@ -102,12 +97,6 @@
 
   z-index: 1;
   text-align: left;
-
-  text-shadow:
-    0.05em 0 #2A2850,
-    0 0.05em #2A2850,
-    -0.05em 0 #2A2850,
-    0 -0.05em #2A2850;
 }
 
 .hands {
