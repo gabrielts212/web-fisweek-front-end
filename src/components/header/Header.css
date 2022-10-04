@@ -3,15 +3,91 @@
     height: 40px;
     margin: 20px;
 }
+.background-header{
+    background-color: #3f3d73;
+}
 .nav-link{
     color: white;
+    font-weight: 500;
+    margin:5px;
+    font-size: 15px;
 }
-
 .collapse{
     display: flex;
     justify-content: flex-end;
 }
 
-.navbar-toggler {
-    display: none;
+.navbar-toggler-icon{
+    /* background-color: white; */
+    display: flex;
 }
+.navbar-toggler{
+    display: flex;
+    margin-top: 15px;
+}
+
+.navbar-nav{ 
+    text-align: right;
+    cursor: pointer;
+    margin-right: 25px;
+    margin-top: 20px;  
+    /* padding:-0.5rem ; */
+    /* margin: rem; */
+    /* height: 0px; */
+    /* right: 30px; */
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 360px) and (max-width: 576px) {
+    .headerFis{
+        width: 100px;
+        height:40px ;
+        margin:10px;
+    }
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .headerFis{
+        width: 100px;
+        height:40px ;
+        margin:10px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .saveTheDate img.main {
+        height: 450px;
+    }
+
+    .saveTheDate img.date {
+        left: 365px;
+        top: 412px;
+    }
+
+    .saveTheDate img.shape3 {
+        left: 234px;
+    }
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+    .saveTheDate img.main {
+        height: 520px;
+    }
+
+    .saveTheDate img.date {
+        left: 450px;
+        top: 412px;
+    }
+
+    .saveTheDate img.shape3 {
+        left: 322px;
+    }
+}
+
