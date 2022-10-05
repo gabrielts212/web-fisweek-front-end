@@ -18,7 +18,7 @@ export function Home() {
     return (
         <Container>
             <Row>
-               {/* <Header /> */}
+               <Header />
             </Row>
             <Row>
                 {/* <Col xs={12} md={8}><RegistrationInfo /></Col>
