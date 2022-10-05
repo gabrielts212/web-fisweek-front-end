@@ -2,8 +2,7 @@ import EclipseBlue from '../../assets/images/testimonials/eclipse-blue.png'
 import CircleTestimonial from '../../assets/images/testimonials/circle-testimonial.png'
 import ManBackground from '../../assets/images/testimonials/man-background.png'
 import Man from '../../assets/images/testimonials/man.png'
-import Depositions from '../../assets/images/testimonials/depositions.png'
-import Cite from '../../assets/images/testimonials/cite.png'
+import CiteImg from '../../assets/images/testimonials/cite.png'
 
 import './Testimonials.css'
 
@@ -12,7 +11,7 @@ export function Testimonials() {
     <div className="Testimonials">
       <header>
         <h1>Depoimentos</h1>
-        <img src={EclipseBlue} alt="Circulo azul" />
+        <img src={EclipseBlue} alt="Circulo Azul" />
       </header>
 
       <section className="testimonialsImages">
@@ -28,7 +27,7 @@ export function Testimonials() {
             Um evento feito para ser destaque no setor, com grandes lideranças, 
             trocas de experiências e muito conteúdo e interação.
           </p>
-          <img className="citeImg" src={Cite} />
+          <img className="citeImg" src={CiteImg} />
           <span className="DepositionsName">Vera Valente</span>
         </div>
 
@@ -38,7 +37,7 @@ export function Testimonials() {
             Um evento feito para ser destaque no setor, com grandes lideranças, 
             trocas de experiências e muito conteúdo e interação.
           </p>
-          <img className="citeImg" src={Cite} />
+          <img className="citeImg" src={CiteImg} />
           <span className="DepositionsName">Nome Pessoa</span>
         </div>
 
@@ -48,7 +47,7 @@ export function Testimonials() {
             Um evento feito para ser destaque no setor, com grandes lideranças, 
             trocas de experiências e muito conteúdo e interação.
           </p>
-          <img className="citeImg" src={Cite} />
+          <img className="citeImg" src={CiteImg} />
           <span className="DepositionsName">Nome Pessoa</span>
         </div>
       </section>

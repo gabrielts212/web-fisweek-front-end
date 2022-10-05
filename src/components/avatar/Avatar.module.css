@@ -10,8 +10,8 @@
 /* XX-Small devices (portrait phones, less than 549px) */
 @media (max-width: 549px) {
   .avatar {
-    width: 100px;
-    height: 100px;
+    width: 115px;
+    height: 115px;
   }
 }
 

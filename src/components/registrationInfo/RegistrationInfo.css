@@ -122,7 +122,7 @@
   position: absolute;
   width: 15rem;
   height: 70px;
-  top: 61%;
+  top: 61.2%;
   left: 56.5%;
  
   z-index: 1;
@@ -140,7 +140,7 @@
   }
 
   .eventDate {
-    top: 29rem;
+    top: 29.1rem;
     width: 10rem;
     height: auto;
     left: 11rem;
@@ -197,6 +197,7 @@
     left: 9rem;
     top: 18rem;
     font-size: 1.8rem;
+    z-index: 999;
   }
 
   .women {

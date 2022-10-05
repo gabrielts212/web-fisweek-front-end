@@ -10,7 +10,7 @@
   flex-direction: column;
 
   position: relative;
-  height: 1452px;
+  height: 100%;
 }
 
 .Testimonials header {
@@ -97,4 +97,403 @@
   line-height: 1.7;
   color: #5DCDE3;
   margin: 0 0 0 15rem;
+}
+
+
+/* ====== @MEDIA QUERY ========= */
+
+/* XX-Small devices (portrait phones, less than 392px) */
+@media (max-width: 391px) {
+  .Testimonials header {
+    width: 351.58px;
+    height: 70.73px;
+  }
+  
+  .Testimonials header h1 {
+    font-size: 2.1rem;
+    padding-left: 58px;
+  }
+  
+  .Testimonials header img {
+    width: 20%;
+  }
+  
+  .testimonialsImages .ManBackground {
+    width: 8rem;
+    height: 15rem;
+    margin: -4rem 0 0 -12.5rem;
+  }
+  
+  .testimonialsImages .Man {
+    width: 8.2rem;
+    height: 16.2rem;
+    margin: -2rem 0 0 -8.1rem;
+  }
+  
+  .testimonialsImages .circleTestimonial {
+    width: 8rem;
+    height: 8rem;
+  
+    position: absolute;
+    top: 30rem;
+    left: 1rem;
+  }
+  
+  .DepositionsGroup {
+    gap: 1.5rem;
+    margin: -17rem 0 0 9rem;
+
+    height: 28rem;
+    flex-direction: row;
+    width: 62%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .DepositionsGroup .Depositions {
+    width: 25rem;
+    height: 26rem;
+    border-radius: 5rem;
+  }
+
+  .Depositions .citeDepositions {
+    width: 18rem;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin: 2.3rem 4.5rem 1rem 2.5rem;
+  }
+  
+  .Depositions .citeImg {
+    margin: -3rem 0 0 2.5rem;
+    width: 4rem;
+  }
+  
+  .Depositions .DepositionsName {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0 0 0 3.5rem;
+  }
+
+  .Testimonials .registrationButton .buttonLink {
+    margin: -2rem 0 -1rem;
+  }
+}
+
+/* X-Small devices (portrait phones, less than 550px) */
+@media (min-width: 392px) and (max-width: 549.98px) {
+  .Testimonials header {
+    width: 351.58px;
+    height: 70.73px;
+  }
+  
+  .Testimonials header h1 {
+    font-size: 2.1rem;
+    padding-left: 58px;
+  }
+  
+  .Testimonials header img {
+    width: 20%;
+  }
+  
+  .testimonialsImages .ManBackground {
+    width: 8rem;
+    height: 15rem;
+    margin: -4rem 0 0 -13.5rem;
+  }
+  
+  .testimonialsImages .Man {
+    width: 8.2rem;
+    height: 16.2rem;
+    margin: -2rem 0 0 -8.1rem;
+  }
+  
+  .testimonialsImages .circleTestimonial {
+    width: 8rem;
+    height: 8rem;
+  
+    position: absolute;
+    top: 30rem;
+    left: 1.5rem;
+  }
+  
+  .DepositionsGroup {
+    gap: 1.5rem;
+    margin: -17rem 0 0 9rem;
+
+    height: 28rem;
+    flex-direction: row;
+    width: 62%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .DepositionsGroup .Depositions {
+    width: 25rem;
+    height: 26rem;
+    border-radius: 5rem;
+  }
+
+  .Depositions .citeDepositions {
+    width: 18rem;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin: 2.3rem 4.5rem 1rem 2.5rem;
+  }
+  
+  .Depositions .citeImg {
+    margin: -3rem 0 0 2.5rem;
+    width: 4rem;
+  }
+  
+  .Depositions .DepositionsName {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0 0 0 3.5rem;
+  }
+
+  .Testimonials .registrationButton .buttonLink {
+    margin: -2rem 0 -1rem;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 550px) and (max-width: 767.98px) {  
+  .Testimonials header {
+    width: 351.58px;
+    height: 70.73px;
+  }
+  
+  .Testimonials header h1 {
+    font-size: 2.1rem;
+    padding-left: 58px;
+  }
+  
+  .Testimonials header img {
+    width: 20%;
+  }
+
+  .testimonialsImages .ManBackground {
+    width: 8rem;
+    height: 15rem;
+    margin: -5rem 0 0 -18rem;
+  }
+  
+  .testimonialsImages .Man {
+    width: 8.2rem;
+    height: 16.2rem;
+    margin: -1rem 0 0 -8.1rem;
+  }
+  
+  .testimonialsImages .circleTestimonial {
+    width: 8rem;
+    height: 8rem;
+  
+    position: absolute;
+    top: 31rem;
+    left: 1.5rem;
+  }
+  
+  .DepositionsGroup {
+    gap: 1.5rem;
+    margin: -18.5rem 0 0 10rem;
+
+    height: 28rem;
+    flex-direction: row;
+    width: 70%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .DepositionsGroup .Depositions {
+    width: 27rem;
+    height: 27rem;
+    border-radius: 5rem;
+  }
+
+  .Depositions .citeDepositions {
+    width: 18rem;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin: 2.3rem 4.5rem 1rem 3.5rem;
+  }
+  
+  .Depositions .citeImg {
+    margin: -3rem 0 0 2.5rem;
+    width: 5rem;
+  }
+  
+  .Depositions .DepositionsName {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0 0 0 5.5rem;
+  }
+
+  .Testimonials .registrationButton .buttonLink {
+    margin: -2rem 0 -1rem;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .Testimonials header {
+    width: 391.58px;
+    height: 86.73px;
+  }
+  
+  .Testimonials header h1 {
+    font-size: 2.3rem;
+    padding-left: 68px;
+  }
+  
+  .Testimonials header img {
+    width: 22%;
+  }
+
+  .testimonialsImages .ManBackground {
+    width: 13rem;
+    height: 28rem;
+    margin-left: -25rem;
+  }
+  
+  .testimonialsImages .Man {
+    width: 13.2rem;
+    height: 28.2rem;
+    margin-left: -13.1rem;
+  }
+  
+  .testimonialsImages .circleTestimonial {
+    width: 13rem;
+    height: 13rem;
+  
+    position: absolute;
+    top: 46rem;
+    left: 1rem;
+  }
+  
+  .DepositionsGroup {
+    gap: 2rem;
+    margin: -28.5rem 0 0 14rem;
+  }
+
+  .DepositionsGroup .Depositions {
+    width: 35rem;
+    height: 13rem;
+  }
+  
+  .Depositions .citeDepositions {
+    width: 25rem;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin: 2.3rem 0 1rem 5rem;
+  }
+  
+  .Depositions .citeImg {
+    margin: -2rem 0 0 4.5rem;
+    width: 2rem;
+  }
+  
+  .Depositions .DepositionsName {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0 0 0 13rem;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .Testimonials header {
+    width: 391.58px;
+    height: 86.73px;
+  }
+  
+  .Testimonials header h1 {
+    font-size: 2.3rem;
+    padding-left: 68px;
+  }
+  
+  .Testimonials header img {
+    width: 22%;
+  }
+
+  .testimonialsImages .ManBackground {
+    width: 16rem;
+    height: 35rem;
+    margin-left: -32rem;
+  }
+  
+  .testimonialsImages .Man {
+    width: 16.2rem;
+    height: 35.2rem;
+    margin-left: -16.1rem;
+  }
+  
+  .testimonialsImages .circleTestimonial {
+    width: 16rem;
+    height: 16rem;
+  
+    position: absolute;
+    top: 53rem;
+    left: 3rem;
+  }
+  
+  .DepositionsGroup {
+    gap: 3rem;
+    margin: -36rem 0 0 18rem;
+  }
+
+  .DepositionsGroup .Depositions {
+    width: 45rem;
+    height: 16rem;
+  }
+  
+  .Depositions .citeDepositions {
+    margin: 3rem 0 1rem 8rem;
+  }
+  
+  .Depositions .citeImg {
+    margin: -2rem 0 0 7.2rem;
+    width: 3rem;
+  }
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+  .Testimonials header {
+    width: 441.58px;
+    height: 96.73px;
+  }
+  
+  .Testimonials header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .Testimonials header img {
+    width: 22%;
+  }
+
+  .testimonialsImages .ManBackground {
+    width: 18rem;
+  }
+  
+  .testimonialsImages .Man {
+    width: 18.5rem;
+    margin-left: -18.3rem;
+  }
+  
+  .testimonialsImages .circleTestimonial {
+    width: 17rem;
+    height: 17rem;
+  
+    position: absolute;
+    top: 59rem;
+    left: 3.5rem;
+  }
+  
+  .DepositionsGroup .Depositions {
+    height: 16rem;
+  }
+  
+  .Depositions .citeImg {
+    width: 3rem;
+  }
 }
