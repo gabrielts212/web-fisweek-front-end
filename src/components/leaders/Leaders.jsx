@@ -11,7 +11,7 @@ export function Leaders() {
   }
 
   return (
-    <div className="Leaders" id='leaders'>
+    <div className="Leaders" id="leaders">
       <div className="leaderGroup">
       <LeaderData />
       <LeaderData />

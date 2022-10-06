@@ -3,8 +3,15 @@ import "./Header.css";
 import HeaderFis from "../../assets/images/header/header-fis.png";
 import { LanguageSwitcher } from "../languageswitcher";
 import { Link } from "react-scroll";
+import React, { useState } from 'react'
+import { FaBars, FaTimes } from 'react-icons/fa'
 
-export function Header() {
+const Header = () => {
+
+    const [click, setClick] = useState(false)
+    const handleClick = () => setClick(!click)
+    const closeMenu = () => setClick(false)
+
   return (
     <div>
       <nav>
@@ -12,34 +19,76 @@ export function Header() {
         <div className="flagsMenu">
           <LanguageSwitcher />
         </div>
-        <div className="menu-btn">
-          <i className="fa fa-bars fa-2x" onclick="menuShow()"></i>
+        <div className='menu-btn' onClick={handleClick}>
+                    {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
+                        : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
         </div>
 
-        <ul className="options">
+        <ul className={click ? "nav ul.open" : "nav ul li a"}>
           <li>
             <a href="#">
-                <Link to="leaders" spy={true} smooth={true} offset={50} duration={500}>LÍDERES</Link> 
+              <Link
+                to="leaders"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                onClick={closeMenu}>
+                LÍDERES
+              </Link>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <Link
+                to="events"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                onClick={closeMenu}>
+                EVENTOS
+              </Link>
             </a>
           </li>
           <li>
             <a href="#">
-                <Link to="events" spy={true} smooth={true} offset={50} duration={500}>EVENTOS</Link>
+              <Link
+                to="schedule"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                onClick={closeMenu}>
+                PROGRAMAÇÃO
+              </Link>
             </a>
           </li>
           <li>
             <a href="#">
-                <Link to="schedule" spy={true} smooth={true} offset={50} duration={500}>PROGRAMAÇÃO</Link>
+              <Link
+                to="testimonials"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                onClick={closeMenu} >
+                DEPOIMENTOS
+              </Link>
             </a>
           </li>
           <li>
             <a href="#">
-                <Link to="testimonials" spy={true} smooth={true} offset={50} duration={500}>DEPOIMENTOS</Link>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-                <Link to="startups" spy={true} smooth={true} offset={50} duration={500}>STARTUPS</Link>
+              <Link
+                to="startups"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                onClick={closeMenu}>
+                STARTUPS
+              </Link>
             </a>
           </li>
         </ul>
@@ -47,3 +96,5 @@ export function Header() {
     </div>
   );
 }
+
+export default Header

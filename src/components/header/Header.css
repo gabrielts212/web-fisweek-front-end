@@ -2,9 +2,11 @@
   margin-left: -80px;
   height: 60px;
   width: 200px;
+  margin-bottom: 15px;
 }
 .flagsMenu{
-  margin-left: 90px;
+  margin-left: 100px;
+  margin-bottom: 12px;
 }
 nav{
   display: flex;
@@ -35,7 +37,7 @@ nav ul li a{
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
-  padding: 1px 15px;
+  padding: 1px 10px;
   border-radius: 5px;
   letter-spacing: 1px;
   transition: all 0.3s ease;
@@ -52,86 +54,183 @@ nav .menu-btn i{
   display: none;
   margin-bottom: -10px;
 }
-@media (max-width: 920px) {
-    nav .menu-btn i{
-        display: block;
-    }
-    nav ul{
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        /* background-color: #003840; */
-        height: 100vh;
-        width: 100%;
-        text-align: center;
-        display: block;
-        transition: all 0.3s ease;
-    }
-    nav ul.open{
-        left: 0;
-    }
-    nav ul li{
-        width: 100%;
-        margin: 50px 0;
-    }
-    nav ul li a {
-        font-size: 23px;
-    }
-    nav ul li a.active,
-    nav ul li a:hover{
-        background: none;
-    }   
-}
+
 
 /* Small devices (landscape phones, less than 768px) */
 @media (min-width: 360px) and (max-width: 576px) {
-  .headerFis {
-    width: 120px;
-    height: 45px;
-    margin: 2px;
+  .flagsMenu{
+    margin-left: 5px;
+    margin-top: 20px;
   }
+  .headerFis {
+    width: 90px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: -90px;
+  }
+  nav .menu-btn i{
+    display: block;
+    margin-bottom: 1px;
+    margin-top: 20px;
+    margin-right: -30px;
+}
+nav ul{
+    position: relative;
+    top: 80px;
+    left: -100%;
+    background-color: red;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+}
+nav ul.open{
+    left: 0;
+}
+nav ul li{
+    width: 100%;
+    margin: 50px 0;
+}
+nav ul li a {
+    font-size: 23px;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    background: none;
+}
 }
 /* Small devices (landscape phones, less than 768px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .headerFis {
-    width: 100px;
-    height: 40px;
-    margin: 10px;
+  .flagsMenu{
+    margin-left: 30px;
+    margin-top: 20px;
   }
+  .headerFis {
+    width: 160px;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: -80px;
+  }
+  nav .menu-btn i{
+    display: block;
+    margin-bottom: 1px;
+    margin-top: 23px;
+}
+nav ul{
+    /* position: relative; */
+    top: 80px;
+    left: -100%;
+    background-color: red;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+}
+nav ul.open{
+    left: 0;
+}
+nav ul li{
+    width: 100%;
+    margin: 50px 0;
+}
+nav ul li a {
+    font-size: 23px;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    background: none;
+} 
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .flagsMenu{
+    margin-left: 210px;
+    margin-top: 20px;
+  }
+  .headerFis {
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+  }
+  nav .menu-btn i{
+    display: block;
+    margin-bottom: 1px;
+    margin-top: 20px;
 }
-
+nav ul{
+    position: relative;
+    top: 80px;
+    left: -100%;
+    background-color: red;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+}
+nav ul.open{
+    left: 0;
+}
+nav ul li{
+    width: 100%;
+    margin: 50px 0;
+}
+nav ul li a {
+    font-size: 23px;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    background: none;
+} 
+}
 /* Large devices (desktops, less than 1200px) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .saveTheDate img.main {
-    height: 450px;
+  nav ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 1px 10px;
+    border-radius: 5px;
+    letter-spacing: 0.1px;
+    transition: all 0.3s ease;
+    margin-left: -15px;
   }
-
-  .saveTheDate img.date {
-    left: 365px;
-    top: 412px;
+  .flagsMenu{
+    margin-left: 19px;
+    margin-bottom: 12px;
+  } 
+  .headerFis{
+    margin-left: -85px;
+    height: 40px;
+    width: 145px;
+    margin-bottom: 15px;
   }
-
-  .saveTheDate img.shape3 {
-    left: 234px;
+  .options{
+    padding: 0;
+    margin-right: -55px;
+    margin-bottom: -10px;
   }
 }
-
 /* X-Large devices (large desktops, less than 1400px) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
-  .saveTheDate img.main {
-    height: 520px;
-  }
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 1px 10px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  margin-left: -17px;
+}
+.flagsMenu{
+  margin-left: 20px;
+  margin-bottom: 12px;
+}
 
-  .saveTheDate img.date {
-    left: 450px;
-    top: 412px;
-  }
-
-  .saveTheDate img.shape3 {
-    left: 322px;
-  }
 }
