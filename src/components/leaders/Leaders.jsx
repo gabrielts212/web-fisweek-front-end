@@ -11,7 +11,7 @@ export function Leaders() {
   }
 
   return (
-    <div className="Leaders">
+    <div className="Leaders" id='leaders'>
       <div className="leaderGroup">
       <LeaderData />
       <LeaderData />
@@ -19,7 +19,7 @@ export function Leaders() {
       <LeaderData />
       <LeaderData />
       <LeaderData />
-
+      
       { showLeaders ? <LeaderData /> : null }
       </div>
 

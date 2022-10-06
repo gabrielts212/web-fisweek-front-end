@@ -3,12 +3,16 @@ import CircleTestimonial from '../../assets/images/testimonials/circle-testimoni
 import ManBackground from '../../assets/images/testimonials/man-background.png'
 import Man from '../../assets/images/testimonials/man.png'
 import CiteImg from '../../assets/images/testimonials/cite.png'
+import { RegistrationInfo } from '../registrationInfo/RegistrationInfo'
+
+import { Link } from "react-scroll";
 
 import './Testimonials.css'
 
 export function Testimonials() {
+
   return (
-    <div className="Testimonials">
+    <div className="Testimonials" id='testimonials'>
       <header>
         <h1>Depoimentos</h1>
         <img src={EclipseBlue} alt="Circulo Azul" />
@@ -53,9 +57,12 @@ export function Testimonials() {
       </section>
 
       <div className="registrationButton">
-        <button className="buttonLink">Quero me cadastrar</button>
+        <a href="#">
+          <Link to="registrationInfo" spy={true} smooth={true} offset={50} duration={500}>
+            <button className="buttonLink">Quero me cadastrar</button>
+          </Link> 
+        </a>
       </div>
     </div>
   )
 }
-

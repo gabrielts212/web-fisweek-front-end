@@ -1,42 +1,49 @@
 import "./Header.css";
+
 import HeaderFis from "../../assets/images/header/header-fis.png";
 import { LanguageSwitcher } from "../languageswitcher";
-
-var ul = document.querySelector('nav ul');
-var menuBtn = document.querySelector('.menu-btn i');
-  function menuShow() {
-      if (ul.classNameList.contains('open')) {
-          ul.classNameList.remove('open');
-      }else{
-          ul.classNameList.add('open');
-      }
-  }
+import { Link } from "react-scroll";
 
 export function Header() {
   return (
     <div>
-<body>
-    <nav>
-
+      <nav>
         <img className="headerFis" src={HeaderFis} alt="image header" />
         <div className="flagsMenu">
-        <LanguageSwitcher />
+          <LanguageSwitcher />
         </div>
         <div className="menu-btn">
-            <i className="fa fa-bars fa-2x" onclick="menuShow()"></i>
+          <i className="fa fa-bars fa-2x" onclick="menuShow()"></i>
         </div>
-        
-        <ul className="options">
-            <li> <a href="#"> LÍDERES </a> </li>
-            <li> <a href="#"> EVENTOS</a> </li>
-            <li> <a href="#"> PROGRAMAÇÃO</a> </li>
-            <li> <a href="#"> DEPOIMENTOS </a> </li>
-            <li> <a href="#"> STARTUPS </a> </li>
-        </ul>
 
-    </nav>
-    <script src="main.js"></script>
-</body>
-</div>
- );
-  }
+        <ul className="options">
+          <li>
+            <a href="#">
+                <Link to="leaders" spy={true} smooth={true} offset={50} duration={500}>LÍDERES</Link> 
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <Link to="events" spy={true} smooth={true} offset={50} duration={500}>EVENTOS</Link>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <Link to="schedule" spy={true} smooth={true} offset={50} duration={500}>PROGRAMAÇÃO</Link>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <Link to="testimonials" spy={true} smooth={true} offset={50} duration={500}>DEPOIMENTOS</Link>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <Link to="startups" spy={true} smooth={true} offset={50} duration={500}>STARTUPS</Link>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  );
+}

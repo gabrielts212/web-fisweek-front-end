@@ -1,6 +1,9 @@
 import ImgMeets from '../../assets/images/programming/painel-meets.png'
 import { Avatar } from '../avatar/Avatar'
 
+import { RegistrationInfo } from '../registrationInfo/RegistrationInfo'
+import { Link } from "react-scroll";
+
 import './PanelMeets.css'
 
 export function PanelMeets() {
@@ -40,7 +43,11 @@ export function PanelMeets() {
       </section>
 
       <div className="registrationButton">
-        <button className="buttonLink">Quero me cadastrar</button>
+        <a href="#">
+          <Link to="registrationInfo" spy={true} smooth={true} offset={50} duration={500}>
+            <button className="buttonLink">Quero me cadastrar</button>
+          </Link> 
+        </a>
       </div>
     </div>
   )

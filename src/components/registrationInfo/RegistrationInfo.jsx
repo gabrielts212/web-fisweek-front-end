@@ -19,7 +19,7 @@ export function RegistrationInfo() {
   const { t } = useTranslation();
 
   return (
-    <div className="registrationInfo">
+    <div className="registrationInfo" id="registrationInfo">
 
       <img className="women" src={Women} alt="Mulher Sorrindo" />
       <img className="geometricShapes7" src={GeometricShapes7} alt="Forma Geométrica" />

@@ -8,7 +8,7 @@ import './Schedule.css'
 
 export function Schedule() {
   return (
-    <div className="Schedule">
+    <div className="Schedule" id='schedule'>
       <header>
         <h1>Programação</h1>
         <img src={Eclipse} alt="Circulo vermelho" />
