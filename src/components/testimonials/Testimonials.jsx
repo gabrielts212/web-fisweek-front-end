@@ -2,6 +2,7 @@ import EclipseBlue from '../../assets/images/testimonials/eclipse-blue.png'
 import CircleTestimonial from '../../assets/images/testimonials/circle-testimonial.png'
 import ManBackground from '../../assets/images/testimonials/man-background.png'
 import Man from '../../assets/images/testimonials/man.png'
+import Depositions from '../../assets/images/testimonials/depositions.png'
 import CiteImg from '../../assets/images/testimonials/cite.png'
 import { RegistrationInfo } from '../registrationInfo/RegistrationInfo'
 
@@ -26,6 +27,7 @@ export function Testimonials() {
 
       <section className="DepositionsGroup">
         <div className="Depositions">
+          <img className="depositionsImg" src={Depositions} />
           <p className="citeDepositions">
             Nossa grande contribuição para a Inovação na Saúde. 
             Um evento feito para ser destaque no setor, com grandes lideranças, 
@@ -36,6 +38,7 @@ export function Testimonials() {
         </div>
 
         <div className="Depositions">
+          <img className="depositionsImg" src={Depositions} />
           <p className="citeDepositions">
             Nossa grande contribuição para a Inovação na Saúde. 
             Um evento feito para ser destaque no setor, com grandes lideranças, 
@@ -46,6 +49,7 @@ export function Testimonials() {
         </div>
 
         <div className="Depositions">
+          <img className="depositionsImg" src={Depositions} />
           <p className="citeDepositions">
             Nossa grande contribuição para a Inovação na Saúde. 
             Um evento feito para ser destaque no setor, com grandes lideranças, 

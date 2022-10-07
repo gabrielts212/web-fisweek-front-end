@@ -3,25 +3,25 @@ import "./Header.css";
 import HeaderFis from "../../assets/images/header/header-fis.png";
 import { LanguageSwitcher } from "../languageswitcher";
 import { Link } from "react-scroll";
-import React, { useState } from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa'
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
-const Header = () => {
-
-    const [click, setClick] = useState(false)
-    const handleClick = () => setClick(!click)
-    const closeMenu = () => setClick(false)
+export function Header() {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+  const closeMenu = () => setClick(false);
 
   return (
     <div>
       <nav>
         <img className="headerFis" src={HeaderFis} alt="image header" />
-        <div className="flagsMenu">
-          <LanguageSwitcher />
-        </div>
-        <div className='menu-btn' onClick={handleClick}>
-                    {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
-                        : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
+        <LanguageSwitcher />
+        <div className="menu-btn" onClick={handleClick}>
+          {click ? (
+            <FaTimes size={30} style={{ color: "#ffffff" }} />
+          ) : (
+            <FaBars size={30} style={{ color: "#ffffff" }} />
+          )}
         </div>
 
         <ul className={click ? "nav ul.open" : "nav ul li a"}>
@@ -33,7 +33,8 @@ const Header = () => {
                 smooth={true}
                 offset={50}
                 duration={500}
-                onClick={closeMenu}>
+                onClick={closeMenu}
+              >
                 LÍDERES
               </Link>
             </a>
@@ -47,7 +48,8 @@ const Header = () => {
                 smooth={true}
                 offset={50}
                 duration={500}
-                onClick={closeMenu}>
+                onClick={closeMenu}
+              >
                 EVENTOS
               </Link>
             </a>
@@ -60,7 +62,8 @@ const Header = () => {
                 smooth={true}
                 offset={50}
                 duration={500}
-                onClick={closeMenu}>
+                onClick={closeMenu}
+              >
                 PROGRAMAÇÃO
               </Link>
             </a>
@@ -73,7 +76,8 @@ const Header = () => {
                 smooth={true}
                 offset={50}
                 duration={500}
-                onClick={closeMenu} >
+                onClick={closeMenu}
+              >
                 DEPOIMENTOS
               </Link>
             </a>
@@ -86,7 +90,8 @@ const Header = () => {
                 smooth={true}
                 offset={50}
                 duration={500}
-                onClick={closeMenu}>
+                onClick={closeMenu}
+              >
                 STARTUPS
               </Link>
             </a>
@@ -96,5 +101,3 @@ const Header = () => {
     </div>
   );
 }
-
-export default Header

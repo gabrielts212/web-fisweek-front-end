@@ -9,6 +9,9 @@ import MetricsThree from "../../assets/images/eventsfis/metrics-three.png";
 import MetricsFour from "../../assets/images/eventsfis/metrics-four.png"; 
 import MetricsFive from "../../assets/images/eventsfis/metrics-five.png"; 
 
+import { RegistrationInfo } from '../registrationInfo/RegistrationInfo'
+import { Link } from "react-scroll";
+
 import "./EventsFis.css";
 
 export function EventsFis() {
@@ -31,7 +34,11 @@ export function EventsFis() {
               trocas de experiências e muito conteúdo e interação. 100% digital
               e gratuito e com a cara da #IniciativaFIS.
             </p>
-            <button>Cadastrar</button>
+            <a href="#">
+              <Link to="registrationInfo" spy={true} smooth={true} offset={50} duration={500}>
+                <button>Cadastrar</button>
+              </Link> 
+            </a>
           </div>
 
           <div className="lyggaGroup">
@@ -47,7 +54,11 @@ export function EventsFis() {
               trocas de experiências e muito conteúdo e interação. 100% digital
               e gratuito e com a cara da #IniciativaFIS.
             </p>
-            <button>Cadastrar</button>
+            <a href="#">
+              <Link to="registrationInfo" spy={true} smooth={true} offset={50} duration={500}>
+                <button>Cadastrar</button>
+              </Link> 
+            </a>
           </div>
         </div>
 
@@ -65,7 +76,11 @@ export function EventsFis() {
               trocas de experiências e muito conteúdo e interação. 100% digital
               e gratuito e com a cara da #IniciativaFIS.
             </p>
-            <button>Cadastrar</button>
+            <a href="#">
+              <Link to="registrationInfo" spy={true} smooth={true} offset={50} duration={500}>
+                <button>Cadastrar</button>
+              </Link> 
+            </a>
           </div>
 
           <div className="commeetsGroup">
@@ -81,7 +96,11 @@ export function EventsFis() {
               trocas de experiências e muito conteúdo e interação. 100% digital
               e gratuito e com a cara da #IniciativaFIS.
             </p>
-            <button>Cadastrar</button>
+            <a href="#">
+              <Link to="registrationInfo" spy={true} smooth={true} offset={50} duration={500}>
+                <button>Cadastrar</button>
+              </Link> 
+            </a>
           </div>
         </div>
       </div>

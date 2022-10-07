@@ -4,26 +4,32 @@ import { LeaderData } from "../leaderdata/LeaderData";
 import { useState } from "react";
 
 export function Leaders() {
-  const [showLeaders, setShowLeaders] = useState(false)
+  const [showLeaders, setShowLeaders] = useState(false);
 
   const handleButtonClick = () => {
-    setShowLeaders(true)
-  }
+    setShowLeaders(true);
+  };
 
   return (
     <div className="Leaders" id="leaders">
       <div className="leaderGroup">
-      <LeaderData />
-      <LeaderData />
-      <LeaderData />
-      <LeaderData />
-      <LeaderData />
-      <LeaderData />
-      
-      { showLeaders ? <LeaderData /> : null }
+        <LeaderData />
+        <LeaderData />
+        <LeaderData />
+        <LeaderData />
+        <LeaderData />
+        <LeaderData />
+
+        {showLeaders ? <LeaderData /> : null}
       </div>
 
-      <button className="showLeaders" onClick={handleButtonClick} hidden={showLeaders}>Ver todos os líderes</button>
+      <button
+        className="showLeaders"
+        onClick={handleButtonClick}
+        hidden={showLeaders}
+      >
+        Ver todos os líderes
+      </button>
     </div>
   );
 }

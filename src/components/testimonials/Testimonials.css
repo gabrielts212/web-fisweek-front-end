@@ -39,13 +39,13 @@
 
 .testimonialsImages .ManBackground {
   width: 19rem;
-  height: 40rem;
+  height: 41rem;
   margin-left: -38rem;
 }
 
 .testimonialsImages .Man {
   width: 19rem;
-  height: 40.2rem;
+  height: 41.2rem;
   margin-left: -19rem;
 }
 
@@ -55,22 +55,19 @@
 
   position: absolute;
   top: 59.5rem;
-  left: 3.8rem;
+  left: 3.5rem;
 }
 
 .DepositionsGroup {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
-  margin: -40rem 0 0 20rem;
+  gap: 7rem;
+  margin: -41rem 0 0 20rem;
 }
 
-.DepositionsGroup .Depositions {
+.DepositionsGroup .Depositions .depositionsImg {
   width: 50rem;
-  height: 17rem;
-  background: #706CA3;
-  backdrop-filter: blur(5px);
-  border-radius: 8rem;
+  height: 18rem;
 }
 
 .DepositionsGroup .Depositions:nth-child(3) {
@@ -84,7 +81,7 @@
   line-height: 1.5;
   text-align: center;
   color: #FFF;
-  margin: 3rem 0 1rem 10rem;
+  margin: -14.5rem 0 1rem 10rem;
 }
 
 .Depositions .citeImg {
@@ -99,6 +96,9 @@
   margin: 0 0 0 15rem;
 }
 
+.Testimonials .registrationButton .buttonLink {
+  margin: 3rem 0 1rem;
+}
 
 /* ====== @MEDIA QUERY ========= */
 
@@ -146,25 +146,28 @@
     height: 28rem;
     flex-direction: row;
     width: 62%;
-    overflow-x: auto;
+    overflow-x: scroll;
     overflow-y: hidden;
   }
 
-  .DepositionsGroup .Depositions {
+  .DepositionsGroup::-webkit-scrollbar {
+    display: none;
+  }
+
+  .DepositionsGroup .Depositions .depositionsImg {
     width: 25rem;
     height: 26rem;
-    border-radius: 5rem;
   }
 
   .Depositions .citeDepositions {
     width: 18rem;
     font-size: 1.4rem;
     line-height: 1.5;
-    margin: 2.3rem 4.5rem 1rem 2.5rem;
+    margin: -24.3rem 4.5rem 1rem 3.5rem;
   }
   
   .Depositions .citeImg {
-    margin: -3rem 0 0 2.5rem;
+    margin: -3rem 0 0 3.5rem;
     width: 4rem;
   }
   
@@ -223,25 +226,28 @@
     height: 28rem;
     flex-direction: row;
     width: 62%;
-    overflow-x: auto;
+    overflow-x: scroll;
     overflow-y: hidden;
   }
 
-  .DepositionsGroup .Depositions {
+  .DepositionsGroup::-webkit-scrollbar {
+    display: none;
+  } 
+
+  .DepositionsGroup .Depositions .depositionsImg {
     width: 25rem;
     height: 26rem;
-    border-radius: 5rem;
   }
 
   .Depositions .citeDepositions {
-    width: 18rem;
+    width: 17rem;
     font-size: 1.4rem;
     line-height: 1.5;
-    margin: 2.3rem 4.5rem 1rem 2.5rem;
+    margin: -24.3rem 4.5rem 1rem 4.5rem;
   }
   
   .Depositions .citeImg {
-    margin: -3rem 0 0 2.5rem;
+    margin: -4rem 0 0 3.5rem;
     width: 4rem;
   }
   
@@ -300,26 +306,29 @@
     height: 28rem;
     flex-direction: row;
     width: 70%;
-    overflow-x: auto;
+    overflow-x: scroll;
     overflow-y: hidden;
   }
 
-  .DepositionsGroup .Depositions {
+  .DepositionsGroup::-webkit-scrollbar {
+    display: none;
+  }
+
+  .DepositionsGroup .Depositions .depositionsImg {
     width: 27rem;
     height: 27rem;
-    border-radius: 5rem;
   }
 
   .Depositions .citeDepositions {
-    width: 18rem;
+    width: 19rem;
     font-size: 1.4rem;
     line-height: 1.5;
-    margin: 2.3rem 4.5rem 1rem 3.5rem;
+    margin: -22.8rem 4.5rem 1rem 4.5rem;
   }
   
   .Depositions .citeImg {
-    margin: -3rem 0 0 2.5rem;
-    width: 5rem;
+    margin: 0 0 0 3.5rem;
+    width: 4rem;
   }
   
   .Depositions .DepositionsName {
@@ -371,11 +380,11 @@
   }
   
   .DepositionsGroup {
-    gap: 2rem;
-    margin: -28.5rem 0 0 14rem;
+    gap: 4rem;
+    margin: -29.5rem 0 0 14rem;
   }
 
-  .DepositionsGroup .Depositions {
+  .DepositionsGroup .Depositions .depositionsImg {
     width: 35rem;
     height: 13rem;
   }
@@ -384,7 +393,7 @@
     width: 25rem;
     font-size: 1.1rem;
     line-height: 1.4;
-    margin: 2.3rem 0 1rem 5rem;
+    margin: -10.7rem 0 1rem 5rem;
   }
   
   .Depositions .citeImg {
@@ -396,6 +405,10 @@
     font-size: 1.5rem;
     line-height: 1.5;
     margin: 0 0 0 13rem;
+  }
+
+  .Testimonials .registrationButton .buttonLink {
+    margin: 0 0 0;
   }
 }
 
@@ -437,22 +450,26 @@
   }
   
   .DepositionsGroup {
-    gap: 3rem;
+    gap: 5rem;
     margin: -36rem 0 0 18rem;
   }
 
-  .DepositionsGroup .Depositions {
+  .DepositionsGroup .Depositions .depositionsImg {
     width: 45rem;
     height: 16rem;
   }
-  
+
   .Depositions .citeDepositions {
-    margin: 3rem 0 1rem 8rem;
+    margin: -13.5rem 0 1rem 8rem;
   }
   
   .Depositions .citeImg {
     margin: -2rem 0 0 7.2rem;
     width: 3rem;
+  }
+
+  .Testimonials .registrationButton .buttonLink {
+    margin: 1rem 0 0;
   }
 }
 
@@ -496,4 +513,9 @@
   .Depositions .citeImg {
     width: 3rem;
   }
+
+  .Testimonials .registrationButton .buttonLink {
+    margin: 2rem 0 0;
+  }
 }
+
