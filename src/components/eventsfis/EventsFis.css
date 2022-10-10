@@ -120,3 +120,239 @@
   font-size: 1.4rem;
   font-weight: 700;
 }
+
+
+/* ====== @MEDIA QUERY ========= */
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (min-width: 375px) and (max-width: 575.98px) {
+  .eventsFis .eventGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .eventGroup .fisGroup,
+  .eventGroup .lyggaGroup,
+  .eventGroup .smGroup,
+  .eventGroup .commeetsGroup {
+    width: 26rem;
+    height: 26rem;
+    
+    display: flex;
+    gap: 3rem;
+    margin-top: 6rem;
+  }
+
+  .eventGroup img {
+    margin: 2.5rem 0 -.3rem 0;
+  }
+
+  .eventGroup .fisGroup img,
+  .eventGroup .lyggaGroup img {
+    width: 11rem;
+  }
+
+  .eventGroup .smGroup img,
+  .eventGroup .commeetsGroup img {
+    width: 9.5rem;
+  }
+
+  .eventGroup p {
+    width: 22rem;
+    font-size: 1.4rem;
+  }
+
+  .eventGroup a {
+    margin-top: -1rem;
+  }
+
+  .eventGroup button {
+    width: 10rem;
+    height: 2.7rem;
+    font-size: 1.3rem;
+    margin: -2rem 0 2rem 0;
+  }
+
+  .metricsGroup .metricsOne,
+  .metricsGroup .metricsTwo,
+  .metricsGroup .metricsThree,
+  .metricsGroup .metricsFour,
+  .metricsGroup .metricsFive {
+    display: none;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {  
+  .eventsFis .eventGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .eventGroup .fisGroup,
+  .eventGroup .lyggaGroup,
+  .eventGroup .smGroup,
+  .eventGroup .commeetsGroup {
+    width: 27rem;
+    height: 27rem;
+    
+    display: flex;
+    gap: 3rem;
+    margin-top: 6rem;
+  }
+
+  .eventGroup img {
+    margin: 2.5rem 0 -.3rem 0;
+  }
+
+  .eventGroup .fisGroup img,
+  .eventGroup .lyggaGroup img {
+    width: 11rem;
+  }
+
+  .eventGroup .smGroup img,
+  .eventGroup .commeetsGroup img {
+    width: 9.5rem;
+  }
+
+  .eventGroup p {
+    width: 22rem;
+    font-size: 1.3rem;
+  }
+
+  .eventGroup button {
+    width: 10rem;
+    height: 2.7rem;
+    font-size: 1.3rem;
+    margin: -2rem 0 2rem 0;
+  }
+
+  .metricsGroup .metricsOne,
+  .metricsGroup .metricsTwo,
+  .metricsGroup .metricsThree,
+  .metricsGroup .metricsFour,
+  .metricsGroup .metricsFive {
+    display: none;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .eventGroup .fisGroup,
+  .eventGroup .lyggaGroup,
+  .eventGroup .smGroup,
+  .eventGroup .commeetsGroup {
+    width: 22rem;
+    height: 22rem;
+    margin-top: 3rem;
+  }
+
+  .eventGroup img {
+    margin: 2.5rem 0 -.3rem 0;
+  }
+
+  .eventGroup .fisGroup img,
+  .eventGroup .lyggaGroup img {
+    width: 10rem;
+  }
+
+  .eventGroup .smGroup img,
+  .eventGroup .commeetsGroup img {
+    width: 9.5rem;
+  }
+
+  .eventGroup p {
+    width: 20rem;
+    font-size: 1.2rem;
+  }
+
+  .eventGroup button {
+    width: 9rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+  }
+
+  .metricsGroup .metricsOne img,
+  .metricsGroup .metricsTwo img,
+  .metricsGroup .metricsThree img,
+  .metricsGroup .metricsFour img,
+  .metricsGroup .metricsFive img {
+    width: 8rem;
+  }
+
+  .metricsGroup .metricsOne h1 {
+    font-size: 2rem;
+    margin: -7rem 0 0 0;
+  }
+ 
+  .metricsGroup .metricsTwo h1,
+  .metricsGroup .metricsThree h1,
+  .metricsGroup .metricsFour h1,
+  .metricsGroup .metricsFive h1 {
+    font-size: 2rem;
+    margin: -6rem 0 0 0;
+  }
+
+  .metricsGroup .metricsOne span,
+  .metricsGroup .metricsTwo span,
+  .metricsGroup .metricsThree span,
+  .metricsGroup .metricsFour span,
+  .metricsGroup .metricsFive span {
+    font-size: 1rem;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .eventGroup .fisGroup,
+  .eventGroup .lyggaGroup,
+  .eventGroup .smGroup,
+  .eventGroup .commeetsGroup {
+    width: 30rem;
+    height: 30rem;
+   
+    margin-top: 3rem;
+  }
+
+  .metricsGroup .metricsOne img,
+  .metricsGroup .metricsTwo img,
+  .metricsGroup .metricsThree img,
+  .metricsGroup .metricsFour img,
+  .metricsGroup .metricsFive img {
+    width: 11.5rem;
+  }
+
+  .metricsGroup .metricsOne h1 {
+    font-size: 3rem;
+    margin: -9.7rem 0 0 0;
+  }
+ 
+  .metricsGroup .metricsTwo h1,
+  .metricsGroup .metricsThree h1,
+  .metricsGroup .metricsFour h1,
+  .metricsGroup .metricsFive h1 {
+    font-size: 3rem;
+    margin: -8.7rem 0 0 0;
+  }
+
+  .metricsGroup .metricsOne span,
+  .metricsGroup .metricsTwo span,
+  .metricsGroup .metricsThree span,
+  .metricsGroup .metricsFour span,
+  .metricsGroup .metricsFive span {
+    font-size: 1.3rem;
+  }
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+  .metricsGroup .metricsOne img,
+  .metricsGroup .metricsTwo img,
+  .metricsGroup .metricsThree img,
+  .metricsGroup .metricsFour img,
+  .metricsGroup .metricsFive img {
+    width: 13rem;
+  }
+}

@@ -1,15 +1,9 @@
 import "./Leaders.css";
 
 import { LeaderData } from "../leaderdata/LeaderData";
-import { useState } from "react";
+import { AllTheLeaders } from "../alltheleaders/allTheLeaders";
 
 export function Leaders() {
-  const [showLeaders, setShowLeaders] = useState(false);
-
-  const handleButtonClick = () => {
-    setShowLeaders(true);
-  };
-
   return (
     <div className="Leaders" id="leaders">
       <div className="leaderGroup">
@@ -19,17 +13,9 @@ export function Leaders() {
         <LeaderData />
         <LeaderData />
         <LeaderData />
-
-        {showLeaders ? <LeaderData /> : null}
       </div>
 
-      <button
-        className="showLeaders"
-        onClick={handleButtonClick}
-        hidden={showLeaders}
-      >
-        Ver todos os líderes
-      </button>
+      <button className="showLeaders">Ver todos os líderes</button>
     </div>
   );
 }
