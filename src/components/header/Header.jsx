@@ -18,7 +18,9 @@ export function Header() {
         <div className="imageFis">
         <img className="headerFis" src={HeaderFis} alt="image header" />
         </div>
+        <div className="flags">
           <LanguageSwitcher />
+        </div>
         
         <div className='hamburger' onClick={handleClick}>
                     {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
@@ -86,7 +88,7 @@ export function Header() {
           <li className='navItem'>
             <a href="#">
               <Link
-                to="startups"
+                to="Startups"
                 spy={true}
                 smooth={true}
                 offset={50}

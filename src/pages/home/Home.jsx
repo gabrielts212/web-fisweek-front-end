@@ -12,6 +12,7 @@ import { Timer } from '../../components/timer/Timer';
 import { Header } from '../../components/header/Header';
 import { Testimonials } from '../../components/testimonials/Testimonials';
 import { EventsFis } from '../../components/eventsfis/EventsFis';
+import { Startups } from '../../components/startups/Startups';
 
 import { AllTheLeaders } from '../../components/alltheleaders/AllTheLeaders';
 
@@ -24,14 +25,14 @@ export function Home() {
                {/* <Header /> */}
             </Row>
             <Row>
-                {/* <Col xs={12} md={8}><RegistrationInfo /></Col>
-                <Col xs={12} md={4}><ApplicationForm /></Col> */}
+                <Col xs={12} md={8}><RegistrationInfo /></Col>
+                <Col xs={12} md={4}><ApplicationForm /></Col>
             </Row>
             <Row>
                 {/* <ConferenceBar /> */}
             </Row>
             <Row>
-                {/* <Col xs={12} md={12}><Leaders/></Col> */}
+                <Col xs={12} md={12}><Leaders/></Col>
             </Row>
             <Row>
                 {/* <Timer /> */}
@@ -46,7 +47,10 @@ export function Home() {
                 {/* <Schedule /> */}
             </Row>
             <Row>
-                {/* <Testimonials /> */}
+                <Testimonials />
+            </Row>
+            <Row>
+                {/* <Startups /> */}
             </Row>
             <Row>
                 <Footer />

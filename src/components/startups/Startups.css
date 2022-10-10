@@ -1,0 +1,17 @@
+.Startups {
+  width: 100%;
+  height: 100%;
+}
+.startupsImage {
+  margin-left: -406px;
+  height: 1494px;
+  width: 1794px;
+}
+.textStartups {
+  color: white;
+  margin-top: -100px;
+}
+.text2Startups {
+  font-size: 13px;
+  color: white;
+}
