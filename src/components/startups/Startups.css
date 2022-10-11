@@ -1,17 +1,125 @@
 .Startups {
   width: 100%;
   height: 100%;
+  text-align: center;
 }
 .startupsImage {
-  margin-left: -406px;
+  margin-left: -405px;
   height: 1494px;
   width: 1794px;
 }
-.textStartups {
-  color: white;
-  margin-top: -100px;
+/* .Startups .eventsLogo {
+  width: 21rem;
+  height: 6rem;
+  margin: 2.5rem 0 2rem 0;
+} */
+.Startups .eventBeehive{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top:-500px;
+  margin-left: 300px;
 }
-.text2Startups {
-  font-size: 13px;
-  color: white;
+.eventBeehive,
+.eventBeehive,
+.eventBeehive.smBeehive,
+.eventBeehive {
+  width: 32rem;
+  height: 32rem;
+  border-radius: 22% 8% 8% 0 / 17% 7% 7% 70%;
+  background: #706CA3;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+.eventBeehive,
+.eventBeehive{
+  margin-top: 5rem;
+}
+.eventBeehive img {
+  height: auto;
+  margin: 1rem 0 3rem 0;
+}
+.eventBeehive img,
+.eventBeehive img {
+  width: 13rem;
+}
+.eventBeehive.smBeehive img,
+.eventBeehive img {
+  width: 12rem;
+}
+.eventBeehive p {
+  width: 25rem;
+  height: 13rem;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin-top: -1rem;
+}
+.eventBeehive p::-webkit-scrollbar {
+  display: none;
+}
+.eventBeehive a {
+  margin-top: -1rem;
+}
+.eventBeehive button {
+  width: 10rem;
+  height: 2.7rem;
+  border-radius: 8rem;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2A2850;
+  margin: 1rem 0 -0.5rem 0;
+}
+
+.eventBeehive button:hover {
+  filter: brightness(1.2);
+}
+
+/* Small devices (landscape phones, less than 360px) */
+@media (min-width: 360px) and (max-width: 550.98px) {
+
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (min-width: 550px) and (max-width: 575.98px) {
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .startupsImage {
+    margin-left: -310px;
+    height: 1494px;
+    width: 1350px;
+    margin-bottom: 50px;
+  }
+}
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .startupsImage {
+    margin-left: -487px;
+    height: 1494px;
+    width: 2140px;
+    margin-bottom: 50px;
+  }
+  
+  
 }
