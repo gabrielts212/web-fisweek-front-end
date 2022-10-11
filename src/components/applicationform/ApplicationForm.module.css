@@ -1,4 +1,5 @@
-.applicationForm, .applicationFormResult {
+.applicationForm, 
+.applicationFormResult {
   border-radius: 7% 22% 7% 0 / 5% 13% 5% 70%;
   background: #6777C4;
   top: 8%;
@@ -58,6 +59,20 @@
   opacity: 0.92;
 }
 
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.applicationForm .options {
+  background: #53609E;
+}
+
+.applicationForm .optionsValue{
+  background: #5F76FF;
+}
+
 .formCompleted {
   background: #6777C4;
 
@@ -82,6 +97,7 @@
 .formCompleted img {
   margin: 2.5rem 0;
 }
+
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {

@@ -38,22 +38,19 @@ export function Home() {
                 {/* <Timer /> */}
             </Row>
             <Row>
-              <Col xs={12} md={12}><AllTheLeaders /></Col>
-            </Row>
-            <Row>
                 {/* <EventsFis /> */}
             </Row>
             <Row>
                 {/* <Schedule /> */}
             </Row>
             <Row>
-                <Testimonials />
+                {/* <Testimonials /> */}
             </Row>
             <Row>
                 {/* <Startups /> */}
             </Row>
             <Row>
-                <Footer />
+                {/* <Footer /> */}
             </Row>
         </Container>
     );

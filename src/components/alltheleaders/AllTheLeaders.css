@@ -1,4 +1,4 @@
-.allTheLeaders{
+.allTheLeaders {
   background: #4a2bd173;
   filter: blur(.03rem);
 
@@ -96,4 +96,244 @@
 
   margin-right: 2.5rem;
   margin-bottom: 6rem;
+}
+
+
+/* ====== @MEDIA QUERY ========= */
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (min-width: 375px) and (max-width: 575.98px) {
+  .allTheLeaders header {
+    width: 24rem;
+    height: 5rem;
+  }
+  
+  .allTheLeaders header h1 {
+    font-size: 2rem;
+    padding-left: 8rem;
+  }
+
+  .allTheLeaders header img {
+    width: 21%;
+  }
+  
+  .allTheLeaders .daysOfTheWeek  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .allTheLeaders .daysOfTheWeek .Days {
+    width: 88px;
+    height: 37px;
+    font-size: 19px;
+  }
+
+  .allTheLeaders input[type=text] {
+    width: 24rem;
+    height: 37px;
+    
+    font-size: 17px;
+    padding-left: 1.5rem;
+    margin: 2.5rem 0 -1rem .4rem;
+  }
+  
+  .allTheLeaders .iconSearch {
+    width: 1.5rem;
+    margin: -2.3rem 0 0 21.8rem;
+  }
+
+  .allTheLeaders .leaderDataGroup {
+    height: 30rem;
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-right: 1rem;
+  }
+
+  .allTheLeaders::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {  
+  .allTheLeaders header {
+    width: 351.58px;
+    height: 70.73px;
+  }
+  
+  .allTheLeaders header h1 {
+    font-size: 2.1rem;
+    padding-left: 8rem;
+  }
+
+  .allTheLeaders header img {
+    width: 20%;
+  }
+  
+  .allTheLeaders .daysOfTheWeek  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .allTheLeaders .daysOfTheWeek .Days {
+    width: 98px;
+    height: 37px;
+    font-size: 20px;
+  }
+
+  .allTheLeaders input[type=text] {
+    width: 26rem;
+    height: 37px;
+    
+    font-size: 18px;
+    padding-left: 1.5rem;
+    margin: 2.5rem 0 -1rem .4rem;
+  }
+  
+  .allTheLeaders .iconSearch {
+    width: 1.5rem;
+    margin: -2.3rem 0 0 23.8rem;
+  }
+
+  .allTheLeaders .leaderDataGroup {
+    height: 30rem;
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-right: 1rem;
+  }
+
+  .allTheLeaders::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .allTheLeaders header {
+    width: 391.58px;
+    height: 86.73px;
+  }
+  
+  .allTheLeaders header h1 {
+    font-size: 2.3rem;
+    padding-left: 8rem;
+  }
+
+  .allTheLeaders header img {
+    width: 22%;
+  }
+  
+  .allTheLeaders .daysOfTheWeek  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .allTheLeaders .daysOfTheWeek .Days {
+    width: 108px;
+    height: 40px;
+    font-size: 21px;
+  }
+
+  .allTheLeaders input[type=text] {
+    width: 33.7rem;
+    height: 45px;
+    
+    font-size: 21px;
+    padding-left: 2rem;
+    margin: 2.5rem 0 2rem -.5rem;
+  }
+  
+  .allTheLeaders .iconSearch {
+    margin: -8.9rem 0 0 29.5rem;
+  }
+
+  .allTheLeaders .leaderDataGroup {
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 2.7rem;
+    margin-top: -2rem;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .allTheLeaders header {
+    width: 391.58px;
+    height: 86.73px;
+  }
+  
+  .allTheLeaders header h1 {
+    font-size: 2.3rem;
+    padding-left: 8rem;
+  }
+
+  .allTheLeaders header img {
+    width: 22%;
+  }
+  
+  .allTheLeaders .daysOfTheWeek  {
+    gap: 20px;
+  }
+
+  .allTheLeaders .daysOfTheWeek .Days {
+    width: 108px;
+    height: 40px;
+    font-size: 21px;
+  }
+
+  .allTheLeaders input[type=text] {
+    width: 53.7rem;
+    height: 45px;
+    
+    font-size: 21px;
+    padding-left: 2rem;
+    margin: 2.5rem 0 2rem .5rem;
+  }
+  
+  .allTheLeaders .iconSearch {
+    margin: -8.9rem 0 0 50.5rem;
+  }
+
+  .allTheLeaders .leaderDataGroup {
+    gap: 2rem;
+    margin-right: 3rem;
+    margin-bottom: 6rem;
+  }
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+  .allTheLeaders header {
+    width: 441.58px;
+    height: 96.73px;
+  }
+  
+  .allTheLeaders header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .allTheLeaders header img {
+    width: 22%;
+  }
+  
+  .allTheLeaders .daysOfTheWeek .Days {
+    width: 118px;
+    height: 45px;
+    font-size: 22px;
+  }
+
+  .allTheLeaders input[type=text] {
+    width: 66rem;
+  }
+  
+  .allTheLeaders .iconSearch {
+    margin: -9.2rem 0 0 62rem;
+  }
 }

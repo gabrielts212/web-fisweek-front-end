@@ -78,29 +78,30 @@ class ApplicationForm extends React.Component {
               <TextInput round placeholder={t("email")} error={!isValidEmail} onChange={(e) => this.setState({ email: e.target.value})} required />
               <div>
                 <select className={styles.formControl} onChange={e => this.setState({ alreadyKnew: e.target.value })}>
-                  <option>{t("inputs.initiative")}</option>
-                  <option value="1">{t("inputs.yes")}</option>
-                  <option value="0">{t("inputs.not")}</option>
+                  <option className={styles.options}>{t("inputs.initiative")}</option>
+                  <option value="1" className={styles.optionsValue}>{t("inputs.yes")}</option>
+                  <option value="0" className={styles.optionsValue}>{t("inputs.not")}</option>
                 </select>
               </div>
               <div>
                 <select className={styles.formControl} onChange={e => this.setState({ howDidYouKnow: e.target.value })}>
-                  <option>{t("inputs.HowDidYouHearAboutTheEvent?")}</option>
-                  <option value="Social Networks">{t("inputs.SocialNetworks")}</option>
-                  <option value="Recommendation">{t("inputs.Recommendation")}</option>
-                  <option value="Invitation by Fis">{t("inputs.InvitationByFis")}</option>
-                  <option value="E-mail marketing">{t("inputs.E-mailMarketing")}</option>
-                  <option value="Magazines and Portals">{t("inputs.MagazinesAndPortals")}</option>
-                  <option value="Others">{t("inputs.Others")}</option>
+                  <option className={styles.options}>{t("inputs.HowDidYouHearAboutTheEvent?")}</option>
+                  <option value="Social Networks" className={styles.optionsValue}>{t("inputs.SocialNetworks")}</option>
+                  <option value="Recommendation" className={styles.optionsValue}>{t("inputs.Recommendation")}</option>
+                  <option value="Invitation by Fis" className={styles.optionsValue}>{t("inputs.InvitationByFis")}</option>
+                  <option value="E-mail marketing" className={styles.optionsValue}>{t("inputs.E-mailMarketing")}</option>
+                  <option value="Magazines and Portals" className={styles.optionsValue}>{t("inputs.MagazinesAndPortals")}</option>
+                  <option value="Others" className={styles.optionsValue}>{t("inputs.Others")}</option>
                 </select>
               </div>
               <div>
                 <select className={styles.formControl} onChange={e => this.setState({ conference: e.target.value })}>
-                  <option>{t("inputs.WhichEventWouldYouLikeToAttend")}</option>
-                  <option value="Fis22">#FIS22</option>
-                  <option value="S/M22">#SYM22</option>
-                  <option value="Lygga">#LYGGA22</option>
-                  <option value="com .Meets22">#COMMEETS22</option>
+                  <option className={styles.options}>{t("inputs.WhichEventWouldYouLikeToAttend")}</option>
+                  <option value="Fis22" className={styles.optionsValue}>#FIS22</option>
+                  <option value="S/M22" className={styles.optionsValue}>#SYM22</option>
+                  <option value="Lygga" className={styles.optionsValue}>#LYGGA22</option>
+                  <option value="com .Meets22" className={styles.optionsValue}>#COMMEETS22</option>
+                  <option value="all" className={styles.optionsValue}>Todos</option>
                 </select>
               </div>
               <TextInput round name="idade" value={age} placeholder={t("inputs.age")} maxLength={2} number onChange={(e) => this.setState({ age: isNaN(e.target.value) ? undefined : e.target.value})} />

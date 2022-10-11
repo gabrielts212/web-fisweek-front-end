@@ -12,7 +12,7 @@ export function LeaderData() {
   return (
     <div className="leaderData">
       <img className="avatarLeader" src={AvatarLeader} />
-      <img className="pinkElement" src={PinkElement} />
+      <img className="panel" src={PinkElement} />
 
       <div className="leadersDate">
         <span className="dateDay">07</span>
