@@ -34,9 +34,10 @@
 }
 .header .navMenu a {
   color: #ffffff;
-  padding: 0;
-  margin-right:50px;
+  padding-left: 10px;
+  margin-right:60px;
   text-decoration: none;
+  margin-left: -12px;
 }
 .header .navMenu {
   display: flex;

@@ -2,12 +2,11 @@
   background-color: black;
   color: white;
   position: relative;
-  bottom: 0;
+  bottom: -78px;
   text-align: left;
   display: flex;
   height: 491px;
 }
-
 .contact {
   position: absolute;
   width: 300px;
@@ -29,7 +28,7 @@
 
 .sociais {
   position: absolute;
-  left: 700px;
+  left: 655px;
   top: 300px;
   text-align: center;
   display: flex;
@@ -43,7 +42,7 @@
   height: 40px;
   cursor: pointer;
   transition: background 0.2linear;
-  background: white;
+  /* background: white; */
   margin: 10px;
 }
 
@@ -202,7 +201,7 @@
 /* X-Large devices (large desktops, less than 1400px) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .sociais {
-    left: 560px;
+    left: 475px;
   }
 
   .text-fis {

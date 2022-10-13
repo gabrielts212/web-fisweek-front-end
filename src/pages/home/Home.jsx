@@ -41,16 +41,16 @@ export function Home() {
                 {/* <EventsFis /> */}
             </Row>
             <Row>
-                {/* <Schedule /> */}
+                <Schedule />
             </Row>
             <Row>
-                {/* <Testimonials /> */}
+                <Testimonials />
             </Row>
             <Row>
-                {/* <Startups /> */}
+                <Startups />
             </Row>
             <Row>
-                {/* <Footer /> */}
+                <Footer />
             </Row>
         </Container>
     );
