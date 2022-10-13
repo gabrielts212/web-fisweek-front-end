@@ -6,29 +6,30 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 export function Header() {
-
-    const [click, setClick] = useState(false)
-    const handleClick = () => setClick(!click)
-    const closeMenu = () => setClick(false)
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+  const closeMenu = () => setClick(false);
 
   return (
-    <div className='header'>
-      <nav className='navbar'>
-
+    <div className="header">
+      <nav className="navbar">
         <div className="imageFis">
-        <img className="headerFis" src={HeaderFis} alt="image header" />
+          <img className="headerFis" src={HeaderFis} alt="image header" />
         </div>
         <div className="flags">
           <LanguageSwitcher />
         </div>
-        
-        <div className='hamburger' onClick={handleClick}>
-                    {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
-                        : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
+
+        <div className="hamburger" onClick={handleClick}>
+          {click ? (
+            <FaTimes size={30} style={{ color: "#ffffff" }} />
+          ) : (
+            <FaBars size={30} style={{ color: "#ffffff" }} />
+          )}
         </div>
 
         <ul className={click ? "navMenu active" : "navMenu"}>
-          <li className='navItem'>
+          <li className="navItem">
             <a href="#">
               <Link
                 to="leaders"
@@ -43,7 +44,7 @@ export function Header() {
             </a>
           </li>
 
-          <li className='navItem'>
+          <li className="navItem">
             <a href="#">
               <Link
                 to="events"
@@ -57,7 +58,7 @@ export function Header() {
               </Link>
             </a>
           </li>
-          <li className='navItem'>
+          <li className="navItem">
             <a href="#">
               <Link
                 to="schedule"
@@ -71,7 +72,7 @@ export function Header() {
               </Link>
             </a>
           </li>
-          <li className='navItem'>
+          <li className="navItem">
             <a href="#">
               <Link
                 to="testimonials"
@@ -85,7 +86,7 @@ export function Header() {
               </Link>
             </a>
           </li>
-          <li className='navItem'>
+          <li className="navItem">
             <a href="#">
               <Link
                 to="Startups"

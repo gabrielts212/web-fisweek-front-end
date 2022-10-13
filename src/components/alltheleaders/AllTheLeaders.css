@@ -144,12 +144,10 @@
   }
 
   .allTheLeaders .leaderDataGroup {
-    height: 30rem;
-    display: flex;
-    width: 100%;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    margin-right: 1rem;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    margin-right: 2.7rem;
+    margin-top: 2rem;
   }
 
   .allTheLeaders::-webkit-scrollbar {
@@ -200,12 +198,10 @@
   }
 
   .allTheLeaders .leaderDataGroup {
-    height: 30rem;
-    display: flex;
-    width: 100%;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    margin-right: 1rem;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    margin-right: 2.7rem;
+    margin-top: 2rem;
   }
 
   .allTheLeaders::-webkit-scrollbar {

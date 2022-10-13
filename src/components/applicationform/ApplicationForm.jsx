@@ -7,6 +7,7 @@ import { TextInput } from '../textinput/TextInput';
 import RegistrationVerified from '../../assets/images/registration-verified.png';
 
 import { withTranslation } from 'react-i18next';
+import { CaretDown } from "phosphor-react";
 
 import styles from './ApplicationForm.module.css';
 
@@ -82,6 +83,7 @@ class ApplicationForm extends React.Component {
                   <option value="1" className={styles.optionsValue}>{t("inputs.yes")}</option>
                   <option value="0" className={styles.optionsValue}>{t("inputs.not")}</option>
                 </select>
+                <CaretDown className={styles.arrowDownOne} size={22} />
               </div>
               <div>
                 <select className={styles.formControl} onChange={e => this.setState({ howDidYouKnow: e.target.value })}>
@@ -93,8 +95,9 @@ class ApplicationForm extends React.Component {
                   <option value="Magazines and Portals" className={styles.optionsValue}>{t("inputs.MagazinesAndPortals")}</option>
                   <option value="Others" className={styles.optionsValue}>{t("inputs.Others")}</option>
                 </select>
+                <CaretDown className={styles.arrowDownTwo} size={22} />
               </div>
-              <div>
+              {/* <div>
                 <select className={styles.formControl} onChange={e => this.setState({ conference: e.target.value })}>
                   <option className={styles.options}>{t("inputs.WhichEventWouldYouLikeToAttend")}</option>
                   <option value="Fis22" className={styles.optionsValue}>#FIS22</option>
@@ -103,7 +106,32 @@ class ApplicationForm extends React.Component {
                   <option value="com .Meets22" className={styles.optionsValue}>#COMMEETS22</option>
                   <option value="all" className={styles.optionsValue}>Todos</option>
                 </select>
+                <CaretDown className={styles.arrowDownThree} size={22} />
+              </div> */}
+
+              <TextInput round placeholder={t("inputs.WhichEventWouldYouLikeToAttend")} onChange={(e) => this.setState({ conference: e.target.value})} />
+              <div className={styles.checkboxGroup}>
+                <div>
+                  <input className={styles.inputFis} type="checkbox" round onChange={(e) => this.setState({ conference: e.target.value})} /> #FIS22
+                </div>
+
+                <div>
+                  <input className={styles.inputLygga} type="checkbox" round onChange={(e) => this.setState({ conference: e.target.value})} /> #LYGGA22
+                </div>
+
+                <div>
+                  <input className={styles.inputSym} type="checkbox" round onChange={(e) => this.setState({ conference: e.target.value})} /> #SYM22
+                </div>
+
+                <div>
+                  <input className={styles.inputCommeets} type="checkbox" round onChange={(e) => this.setState({ conference: e.target.value})} /> #COMMEETS22
+                </div>
+
+                <div>
+                  <input className={styles.inputAll} type="checkbox" round onChange={(e) => this.setState({ conference: e.target.value})} /> Todos
+                </div>
               </div>
+
               <TextInput round name="idade" value={age} placeholder={t("inputs.age")} maxLength={2} number onChange={(e) => this.setState({ age: isNaN(e.target.value) ? undefined : e.target.value})} />
               <Button text={t("register")} onClick={this.onButtonClick.bind(this)} alt />
             </div>

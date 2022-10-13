@@ -22,7 +22,7 @@ export function Home() {
     return (
         <Container>
             <Row>
-               {/* <Header /> */}
+               <Header />
             </Row>
             <Row>
                 <Col xs={12} md={8}><RegistrationInfo /></Col>
@@ -32,16 +32,13 @@ export function Home() {
                 {/* <ConferenceBar /> */}
             </Row>
             <Row>
-                <Col xs={12} md={12}><Leaders/></Col>
+                {/* <Col xs={12} md={12}><Leaders/></Col> */}
             </Row>
             <Row>
                 {/* <Timer /> */}
             </Row>
             <Row>
-              {/* <Col xs={12} md={12}><AllTheLeaders /></Col> */}
-            </Row>
-            <Row>
-                <EventsFis />
+                {/* <EventsFis /> */}
             </Row>
             <Row>
                 {/* <Schedule /> */}

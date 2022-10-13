@@ -69,8 +69,52 @@ select {
   background: #53609E;
 }
 
-.applicationForm .optionsValue{
+.applicationForm .optionsValue {
   background: #5F76FF;
+}
+
+.applicationForm .arrowDownOne {
+  position: absolute;
+  color: #FFF;
+  top: 20.7rem;
+  left: 22.3rem;
+}
+
+.applicationForm .arrowDownTwo {
+  position: absolute;
+  color: #FFF;
+  top: 25rem;
+  left: 22.3rem;
+}
+
+.applicationForm .checkboxGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: .5rem;
+
+  font-size: 1.1rem;
+  color: #FFF;
+}
+
+.applicationForm .checkboxGroup .inputFis {
+  margin-left: -2rem;
+}
+
+.applicationForm .checkboxGroup .inputLygga {
+  margin-left: -10rem;
+}
+
+.applicationForm .checkboxGroup .inputSym {
+  margin-left: -1.4rem;
+}
+
+.applicationForm .checkboxGroup .inputCommeets {
+  margin-left: -7.2rem;
+}
+
+.applicationForm .checkboxGroup .inputAll {
+  margin: 0 0 1.3rem -2.5rem;
 }
 
 .formCompleted {
