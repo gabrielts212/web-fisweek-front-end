@@ -1,4 +1,6 @@
 import ImgLygga from '../../assets/images/programming/painel-lygga.png'
+import PanelRectangle from '../../assets/images/programming/panel-rectangle.png'
+import ImgRectangle from '../../assets/images/programming/img-rectangle.png'
 import { Avatar } from '../avatar/Avatar'
 
 import './PanelLygga.css'
@@ -27,11 +29,10 @@ export function PanelLygaa() {
             </div>
 
             <div className="speakerGroup">
-              <div className="speakerName">Nome Sobrenome</div>
-              <div className="speakerName">Nome Sobrenome</div>
-              <div className="speakerName">Nome Sobrenome</div>
-              <div className="speakerName">Nome Sobrenome</div>
-              <div className="speakerName">Nome Sobrenome</div>
+             <img className="imgRectangle" src={ImgRectangle} alt="" />
+             <span className="speakerName" src={ImgRectangle}>
+                Alberto Campos Fernandes
+             </span>
             </div>
           </div>
         </div>

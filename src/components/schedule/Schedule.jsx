@@ -4,9 +4,31 @@ import { PanelLygaa } from '../panellygga/PanelLygga'
 import { PanelMeets } from '../panelmeets/PanelMeets'
 import { PanelSm } from '../panelsm/PanelSm'
 
+import { RegistrationInfo } from '../registrationInfo/RegistrationInfo'
+import { Link } from "react-scroll";
+
+import axios from 'axios';
+import { useState } from "react";
+import { useEffect } from "react";
+
 import './Schedule.css'
 
 export function Schedule() {
+  const [schedule, setSchedule] = useState([])
+
+  const returnsSchedule = (value) => {
+    
+  }
+
+  const scheduleFiltered = schedule.filter(returnsSchedule);
+  const getData = async () => {
+    let result = await axios.post("searchNew");
+    setSchedule(result.data);
+  };
+  useEffect(() => {
+    getData()
+  }, [])
+
   return (
     <div className="Schedule" id='schedule'>
       <header>
@@ -23,11 +45,64 @@ export function Schedule() {
         <div className="Days">Dia 11</div>
       </section>
 
+      <div className="ScheduleGroup">
+        {scheduleFiltered.map((panel) => {
+            return (
+              <>
+                <PanelFis 
+                  datas={panel.Dates}
+                  paragrago={panel.paragraph}
+                  img={panel.imgFis}
+                  avatarGrupo={panel.avatarGroup}
+                  nomes={panel.speakerGroup}
+                  moderador={panel.Moderator}
+                />
+                <PanelSm 
+                  datas={panel.Dates}
+                  paragrago={panel.paragraph}
+                  img={panel.imgFis}
+                  avatarGrupo={panel.avatarGroup}
+                  nomes={panel.speakerGroup}
+                  moderador={panel.Moderator}
+                />
+                <PanelLygaa 
+                  datas={panel.Dates}
+                  paragrago={panel.paragraph}
+                  img={panel.imgFis}
+                  avatarGrupo={panel.avatarGroup}
+                  nomes={panel.speakerGroup}
+                  moderador={panel.Moderator}
+                />
+                <PanelMeets 
+                  datas={panel.Dates}
+                  paragrago={panel.paragraph}
+                  img={panel.imgFis}
+                  avatarGrupo={panel.avatarGroup}
+                  nomes={panel.speakerGroup}
+                  moderador={panel.Moderator}
+                />
+              </>
+            );
+          })}
+      </div>
       <PanelFis />
       <PanelSm />
       <PanelLygaa />
       <PanelMeets />
+
+      <a href="http://127.0.0.1:5173/fisweek22/#/schedulepage" target="_blank">
+        <button className="showShedule">Ver programação completa</button>
+      </a>
+
+      <div className="registrationButton">
+        <a href="#">
+          <Link to="registrationInfo" spy={true} smooth={true} offset={50} duration={500}>
+            <button className="buttonLink">Quero me cadastrar</button>
+          </Link> 
+        </a>
+      </div>
     </div>
   )
 }
+
 

@@ -1,8 +1,7 @@
 import ImgMeets from '../../assets/images/programming/painel-meets.png'
+import PanelRectangle from '../../assets/images/programming/panel-rectangle.png'
+import ImgRectangle from '../../assets/images/programming/img-rectangle.png'
 import { Avatar } from '../avatar/Avatar'
-
-import { RegistrationInfo } from '../registrationInfo/RegistrationInfo'
-import { Link } from "react-scroll";
 
 import './PanelMeets.css'
 
@@ -30,25 +29,16 @@ export function PanelMeets() {
             </div>
 
             <div className="speakerGroup">
-              <div className="speakerName">Nome Sobrenome</div>
-              <div className="speakerName">Nome Sobrenome</div>
-              <div className="speakerName">Nome Sobrenome</div>
-              <div className="speakerName">Nome Sobrenome</div>
-              <div className="speakerName">Nome Sobrenome</div>
+             <img className="imgRectangle" src={ImgRectangle} alt="" />
+             <span className="speakerName" src={ImgRectangle}>
+                Alberto Campos Fernandes
+             </span>
             </div>
           </div>
         </div>
 
         <div className="Moderator">Moderador</div>
       </section>
-
-      <div className="registrationButton">
-        <a href="#">
-          <Link to="registrationInfo" spy={true} smooth={true} offset={50} duration={500}>
-            <button className="buttonLink">Quero me cadastrar</button>
-          </Link> 
-        </a>
-      </div>
     </div>
   )
 }

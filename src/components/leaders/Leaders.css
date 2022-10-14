@@ -13,6 +13,10 @@
   margin-bottom: 7rem;
 }
 
+a {
+  margin: 0 auto;
+}
+
 .showLeaders {
   width: 20rem;
   height: auto;
@@ -24,8 +28,7 @@
 
   font-size: 1.4rem;
   font-weight: 600;
-  margin: 0 auto 3rem;
-
+  margin-bottom: 3rem;
   transition: .1s;
 }
 

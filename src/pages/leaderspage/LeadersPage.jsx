@@ -6,9 +6,9 @@ import { Header } from '../../components/header/Header';
 import { AllTheLeaders } from '../../components/alltheleaders/AllTheLeaders';
 import { Footer } from '../../components/footer/Footer';
 
-import './LinkHome.css';
+import './LeadersPage.css';
 
-export function LinkHome() {
+export function LeadersPage() {
     return (
         <Container>
             <Row>

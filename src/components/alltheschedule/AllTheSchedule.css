@@ -1,0 +1,301 @@
+.allTheSchedule {
+  background: linear-gradient(
+    180.04deg, rgba(186, 112, 134, 0) 
+    4.09%, rgba(199, 0, 249, 0.64) 
+    152.35%
+  );
+
+  filter: blur(.03rem);
+
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 7rem;
+}
+
+.allTheSchedule header {
+  width: 511.58px;
+  height: 106.73px;
+  background: #6645F4;
+  border-radius: 379px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 1rem 0 5.5rem 0;
+}
+
+.allTheSchedule header h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #FFF;
+  padding: 0 1.3rem 0 5rem;
+}
+
+.allTheSchedule header img {
+  width: 21%;
+}
+ 
+.allTheSchedule .daysOfTheWeek  {
+  display: flex;
+  gap: 43px;
+}
+
+.allTheSchedule .daysOfTheWeek .Days {
+  width: 128px;
+  height: 50px;
+  color: #DAD3FF;
+  border: 3px solid #DAD3FF;
+  border-radius: 49px;
+
+  font-size: 25px;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.allTheSchedule .daysOfTheWeek .Every {
+  background: #DAD3FF;
+  color: #601D87;
+  font-weight: 600;
+}
+
+.allTheSchedule input[type=text] {
+  width: 61.5rem;
+  height: 50px;
+  background: #4a2bd100;
+  border: 3px solid #DAD3FF;
+  border-radius: 49px;
+
+  font-size: 25px;
+  font-weight: 500;
+  padding-left: 2rem;
+  margin: 2.5rem 0 2rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.allTheSchedule input::placeholder {
+  color: #DAD3FF;
+}
+
+.allTheSchedule .iconSearch {
+  color: #DAD3FF;
+  margin: -8.7rem 0 0 58rem;
+}
+
+
+/* ====== @MEDIA QUERY ========= */
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (min-width: 375px) and (max-width: 575.98px) {
+  .allTheSchedule header {
+    width: 24rem;
+    height: 5rem;
+  }
+  
+  .allTheSchedule header h1 {
+    font-size: 2rem;
+    padding-left: 8rem;
+  }
+
+  .allTheSchedule header img {
+    width: 21%;
+  }
+  
+  .allTheSchedule .daysOfTheWeek  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .allTheSchedule .daysOfTheWeek .Days {
+    width: 88px;
+    height: 37px;
+    font-size: 19px;
+  }
+
+  .allTheSchedule input[type=text] {
+    width: 24rem;
+    height: 37px;
+    
+    font-size: 17px;
+    padding-left: 1.5rem;
+    margin: 2.5rem 0 -1rem .4rem;
+  }
+  
+  .allTheSchedule .iconSearch {
+    width: 1.5rem;
+    margin: -2.3rem 0 0 21.8rem;
+  }
+
+  .allTheSchedule::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {  
+  .allTheSchedule header {
+    width: 351.58px;
+    height: 70.73px;
+  }
+  
+  .allTheSchedule header h1 {
+    font-size: 2.1rem;
+    padding-left: 8rem;
+  }
+
+  .allTheSchedule header img {
+    width: 20%;
+  }
+  
+  .allTheSchedule .daysOfTheWeek  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .allTheSchedule .daysOfTheWeek .Days {
+    width: 98px;
+    height: 37px;
+    font-size: 20px;
+  }
+
+  .allTheSchedule input[type=text] {
+    width: 26rem;
+    height: 37px;
+    
+    font-size: 18px;
+    padding-left: 1.5rem;
+    margin: 2.5rem 0 -1rem .4rem;
+  }
+  
+  .allTheSchedule .iconSearch {
+    width: 1.5rem;
+    margin: -2.3rem 0 0 23.8rem;
+  }
+
+  .allTheSchedule::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .allTheSchedule header {
+    width: 391.58px;
+    height: 86.73px;
+  }
+  
+  .allTheSchedule header h1 {
+    font-size: 2.3rem;
+    padding-left: 8rem;
+  }
+
+  .allTheSchedule header img {
+    width: 22%;
+  }
+  
+  .allTheSchedule .daysOfTheWeek  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .allTheSchedule .daysOfTheWeek .Days {
+    width: 108px;
+    height: 40px;
+    font-size: 21px;
+  }
+
+  .allTheSchedule input[type=text] {
+    width: 33.7rem;
+    height: 45px;
+    
+    font-size: 21px;
+    padding-left: 2rem;
+    margin: 2.5rem 0 2rem -.5rem;
+  }
+  
+  .allTheSchedule .iconSearch {
+    margin: -8.9rem 0 0 29.5rem;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .allTheSchedule header {
+    width: 391.58px;
+    height: 86.73px;
+  }
+  
+  .allTheSchedule header h1 {
+    font-size: 2.3rem;
+    padding-left: 8rem;
+  }
+
+  .allTheSchedule header img {
+    width: 22%;
+  }
+  
+  .allTheSchedule .daysOfTheWeek  {
+    gap: 20px;
+  }
+
+  .allTheSchedule .daysOfTheWeek .Days {
+    width: 108px;
+    height: 40px;
+    font-size: 21px;
+  }
+
+  .allTheSchedule input[type=text] {
+    width: 53.7rem;
+    height: 45px;
+    
+    font-size: 21px;
+    padding-left: 2rem;
+    margin: 2.5rem 0 2rem .5rem;
+  }
+  
+  .allTheSchedule .iconSearch {
+    margin: -8.9rem 0 0 50.5rem;
+  }
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+  .allTheSchedule header {
+    width: 441.58px;
+    height: 96.73px;
+  }
+  
+  .allTheSchedule header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .allTheSchedule header img {
+    width: 22%;
+  }
+  
+  .allTheSchedule .daysOfTheWeek .Days {
+    width: 118px;
+    height: 45px;
+    font-size: 22px;
+  }
+
+  .allTheSchedule input[type=text] {
+    width: 66rem;
+  }
+  
+  .allTheSchedule .iconSearch {
+    margin: -9.2rem 0 0 62rem;
+  }
+}

@@ -1,4 +1,6 @@
 import ImgFis from '../../assets/images/programming/painel-fis.png'
+import PanelRectangle from '../../assets/images/programming/panel-rectangle.png'
+import ImgRectangle from '../../assets/images/programming/img-rectangle.png'
 import { Avatar } from '../avatar/Avatar'
 
 import './PanelFis.css'
@@ -13,11 +15,12 @@ export function PanelFis() {
       </section>
 
       <section className="Speakers">
-        <p>Os desafios de implementar políticas públicas de saúde durante uma pandemia</p>
+        <p className="paragraph">Os desafios de implementar políticas públicas de saúde durante uma pandemia</p>
         <div className="groupPanel">
           <img className="imgFis" src={ImgFis} />
 
-          <div className="panelRectangle">
+          <img className="panelRectangle" src={PanelRectangle} />
+          <div className="panelData">
             <div className="avatarGroup">
               <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
               <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
@@ -27,11 +30,10 @@ export function PanelFis() {
             </div>
 
             <div className="speakerGroup">
-              <div className="speakerName">Nome Sobrenome</div>
-              <div className="speakerName">Nome Sobrenome</div>
-              <div className="speakerName">Nome Sobrenome</div>
-              <div className="speakerName">Nome Sobrenome</div>
-              <div className="speakerName">Nome Sobrenome</div>
+             <img className="imgRectangle" src={ImgRectangle} alt="" />
+             <span className="speakerName" src={ImgRectangle}>
+                Alberto Campos Fernandes
+             </span>
             </div>
           </div>
         </div>

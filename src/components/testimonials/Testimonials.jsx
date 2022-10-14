@@ -4,8 +4,8 @@ import ManBackground from '../../assets/images/testimonials/man-background.png'
 import Man from '../../assets/images/testimonials/man.png'
 import Depositions from '../../assets/images/testimonials/depositions.png'
 import CiteImg from '../../assets/images/testimonials/cite.png'
-import { RegistrationInfo } from '../registrationInfo/RegistrationInfo'
 
+import { RegistrationInfo } from '../registrationInfo/RegistrationInfo'
 import { Link } from "react-scroll";
 
 import './Testimonials.css'
