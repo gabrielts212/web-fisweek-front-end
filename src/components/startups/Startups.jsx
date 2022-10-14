@@ -1,5 +1,5 @@
 import "./Startups.css";
-// import { Link } from "react-scroll";
+
 import StartupsImage from "../../assets/images/startups/StartupsImage.png";
 import BEEHIVE from "../../assets/images/startups/BEEHIVE.png";
 import { useState } from "react";
@@ -9,7 +9,7 @@ import Eclipse from "../../assets/images/startups/eclipse.png";
 Modal.setAppElement("#root");
 
 export function Startups() {
-  // function Startups() {
+
   const [modalIsOpen, setIsOpen] = useState(false);
 
   function openModal() {
@@ -20,16 +20,13 @@ export function Startups() {
   }
 
   return (
-    <div className="Startups" id="events3">
-      <div className="StartupsImage" id="Startups">
+    <div className="Startups">
+        <img className="startupsImage" src={StartupsImage} />
         <header>
           <h1>Startups</h1>
           <img src={Eclipse} alt="Circulo vermelho" />
         </header>
-      </div>
-
-      <img className="startupsImage" src={StartupsImage} alt="image startups" />
-
+    
       <div className="eventBeehive">
         <div className="smBeehive">
           <img src={BEEHIVE} alt="BEEHIVE" />
@@ -54,10 +51,47 @@ export function Startups() {
             overlayClassName="modal-overlay"
             className="modal-content"
           >
-            <h1>Formulario aqui</h1>
-            <button className="buttonModal" onClick={closeModal}>
-              OK
-            </button>
+
+            <form className="formStartups" action="POST">
+              <label className="caption-title">
+                <input type="text" name="name" placeholder="Nome da Startup" />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Nome do Representante"
+                />
+                <input type="text" name="name" placeholder="Email" />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Telefone de Contato"
+                />
+                <div>
+                  <select className="form-control">
+                    <option>Selecione um País</option>
+                    <option value="">Brasil</option>
+                    <option value="">Espanha</option>
+                    <option value="">Estados Unidos</option>  
+                  </select>
+                </div>
+
+                <input type="text" name="name" placeholder="Cidade" />
+                <input type="text" name="name" placeholder="Site/URL" />
+                <textarea
+                  id=""
+                  name=""
+                  rows="8"
+                  cols="35"
+                ></textarea>
+
+                <button className="buttonDeck" type="submit">Faça o upload do seu Deck</button>
+
+                <button className="buttonModal" onClick={closeModal} type="submit">
+                  OK
+                </button>
+              </label>
+            </form>
+
           </Modal>
         </div>
         <span> O evento será online e presencial </span>

@@ -1,23 +1,21 @@
 .Startups {
-  width: 100%;
-  height: 100%;
   text-align: center;
+  position: relative;
 }
 .startupsImage {
-  margin-top: -300px;
-  margin-left: -10px;
-  height: 2000px;
-  width: 1320px;
+  width: 100%;
+  height: 100%;
+  /* background-color: #fff; */
 }
 .Startups .eventBeehive {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  margin-top: -550px;
-  margin-left: 400px;
+  margin: -41rem 0 0 26rem;
+  position: absolute;
+  z-index: 999;
 }
-.eventBeehive,
 .eventBeehive,
 .eventBeehive.smBeehive,
 .eventBeehive {
@@ -33,7 +31,6 @@
   gap: 3rem;
   margin-top: 2rem;
 }
-.eventBeehive,
 .eventBeehive {
   margin-top: 5rem;
 }
@@ -41,12 +38,10 @@
   height: auto;
   margin: 1rem 0 3rem 0;
 }
-.eventBeehive img,
 .eventBeehive img {
   width: 13rem;
 }
-.eventBeehive.smBeehive img,
-.eventBeehive img {
+.eventBeehive.smBeehive img {
   width: 12rem;
 }
 .eventBeehive p {
@@ -74,28 +69,28 @@
   color: #2a2850;
   margin: 1rem 0 -0.5rem 0;
 }
-
-.eventBeehive button:hover {
-  filter: brightness(1.2);
+.Startups header {
+  width: 511.58px;
+  height: 106.73px;
+  background: #525ba9;
+  border-radius: 379px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -136rem 0 0 23rem;
+  position: absolute;
+  z-index: 999;
 }
-.buttonModal {
-  width: 5rem;
-  height: 2.7rem;
-  border-radius: 8rem;
-  border: none;
-  font-size: 1.5rem;
+.Startups header h1 {
+  font-size: 2.7rem;
   font-weight: 700;
-  color: #2a2850;
-  /* margin: 1rem 0 .5rem 0; */
+  color: #fff;
+  padding: 0 17px 0 93px;
+  margin-left: 55px;
 }
-.modal-content {
-  width: 90%;
-  max-width: 400px;
-  background-color: white;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: -1800px;
-  margin-left: 5px;
+.Startups header img {
+  width: 21%;
+  margin-left: 50px;
 }
 .modal-overlay {
   background: #2a28509e;
@@ -108,43 +103,235 @@
   align-items: center;
   justify-content: center;
 }
-.StartupsImage {
-  display: flex;
+.modal-content {
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: -1800px;
+  margin-left: -385px;
+  z-index: 9999;
+  width: 450px;
+  height: 684px;
+  border-radius: 7% 10% 12% 1%;
+  background: #53507d;
+  position: absolute;
+  left: 63%;
+}
+.formStartups{
+  position: relative;
+  margin-top: 100px;
+  border-radius: 10px;
+  padding: 60px;
+  width: min-content;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  /* border-top: 3px solid #fff; */
 }
-.StartupsImage header {
-  width: 511.58px;
-  height: 106.73px;
-  background: #525ba9;
-  border-radius: 379px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 3.5rem 0 5.5rem 0;
+.caption-title{
+  width: 100%;
+  height: 50px;
+  outline: none;
+  padding: 1px;
+  font-size: 15px;
+  margin-top: -120px;
+
 }
-.StartupsImage header h1 {
-  font-size: 2.7rem;
-  font-weight: 700;
-  color: #fff;
-  padding: 0 17px 0 93px;
-  margin-left: 55px;
+.caption-title input{
+  padding: 5px;
+  padding-left: 100px;
+  background-color:  #454267;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+  color: #2a2850;
 }
-.StartupsImage header img {
-  width: 21%;
-  margin-left: 50px;
+.buttonModal{
+  width: 5rem;
+  height: 2.5rem;
+  border-radius: 8rem;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2a2850;
+  margin: 1rem 0 -1.5rem 0;
+  margin-left: 100px;
+}
+.buttonDeck{
+  width: 18rem;
+  height: 2.7rem;
+  border-radius: 8rem;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2a2850;
+  margin: 1rem 0 -2.5rem 5;
 }
 
 /* Small devices (landscape phones, less than 360px) */
 @media (min-width: 360px) and (max-width: 550.98px) {
+  .startupsImage {
+    margin-top: -300px;
+    margin-left: -10px;
+    height: 1000px;
+    width: 360px;
+    /* background-color: red; */
+  }
+  .StartupsImage header {
+    width: 211.58px;
+    height: 95.73px;
+    background: #525ba9;
+    border-radius: 379px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem -2px 11.5rem 0;
+  }
+  .StartupsImage header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    /* padding: 0 20px 10 93px; */
+    margin-left: -80px;
+  }
+  .StartupsImage header img {
+    width: 40%;
+    margin-left: -10px;
+  }
+  .eventBeehive,
+  .eventBeehive,
+  .eventBeehive.smBeehive,
+  .eventBeehive {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 22% 8% 8% 0 / 17% 7% 7% 70%;
+    background: #706ca3;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+  .Startups .eventBeehive {
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    /* margin-top: 7rem; */
+    margin-top: -310px;
+    margin-left: -6px;
+    margin-bottom: 50px;
+  }
 }
 /* X-Small devices (portrait phones, less than 576px) */
 @media (min-width: 550px) and (max-width: 575.98px) {
+   .startupsImage {
+    margin-top: -300px;
+    margin-left: -10px;
+    height: 1000px;
+    width: 540px;
+    /* background-color: red; */
+  }
+  .StartupsImage header {
+    width: 211.58px;
+    height: 95.73px;
+    background: #525ba9;
+    border-radius: 379px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem -2px 11.5rem 0;
+  }
+  .StartupsImage header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    /* padding: 0 20px 10 93px; */
+    margin-left: -80px;
+  }
+  .StartupsImage header img {
+    width: 40%;
+    margin-left: -10px;
+  }
+  .eventBeehive,
+  .eventBeehive,
+  .eventBeehive.smBeehive,
+  .eventBeehive {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 22% 8% 8% 0 / 17% 7% 7% 70%;
+    background: #706ca3;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+  .Startups .eventBeehive {
+    width: 27rem;
+    height: 27rem;
+    display: flex;
+    /* margin-top: 7rem; */
+    margin-top: -310px;
+    margin-left: 60px;
+    margin-bottom: 50px;
+  }
 }
 /* Small devices (landscape phones, less than 768px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .startupsImage {
+    margin-top: -300px;
+    margin-left: -10px;
+    height: 1000px;
+    width: 540px;
+    /* background-color: red; */
+  }
+  .StartupsImage header {
+    width: 211.58px;
+    height: 95.73px;
+    background: #525ba9;
+    border-radius: 379px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem -2px 11.5rem 0;
+  }
+  .StartupsImage header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    /* padding: 0 20px 10 93px; */
+    margin-left: -80px;
+  }
+  .StartupsImage header img {
+    width: 40%;
+    margin-left: -10px;
+  }
+  .eventBeehive,
+  .eventBeehive,
+  .eventBeehive.smBeehive,
+  .eventBeehive {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 22% 8% 8% 0 / 17% 7% 7% 70%;
+    background: #706ca3;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+  .Startups .eventBeehive {
+    width: 27rem;
+    height: 27rem;
+    display: flex;
+    /* margin-top: 7rem; */
+    margin-top: -310px;
+    margin-left: 60px;
+    margin-bottom: 50px;
+  }
 }
 /* Medium devices (tablets, less than 992px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -153,7 +340,6 @@
     margin-left: -10px;
     height: 1900px;
     width: 720px;
-    
   }
 
   .StartupsImage header img {
@@ -178,7 +364,6 @@
     margin-left: -10px;
     height: 2000px;
     width: 960px;
-   
   }
 
   .StartupsImage header img {
@@ -201,7 +386,6 @@
     margin-left: -10px;
     height: 2000px;
     width: 1140px;
-    
   }
 
   .StartupsImage header img {
