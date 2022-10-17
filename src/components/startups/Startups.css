@@ -5,21 +5,19 @@
 .startupsImage {
   width: 100%;
   height: 100%;
-  /* background-color: #fff; */
 }
 .Startups .eventBeehive {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  margin: -41rem 0 0 26rem;
+  margin: -40rem 0 0 26rem;
   position: absolute;
-  z-index: 999;
 }
 .eventBeehive,
 .eventBeehive.smBeehive,
 .eventBeehive {
-  width: 32rem;
+  width: 30rem;
   height: 32rem;
   border-radius: 22% 8% 8% 0 / 17% 7% 7% 70%;
   background: #706ca3;
@@ -77,9 +75,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: -136rem 0 0 23rem;
+  margin: -130rem 0 0 23rem;
   position: absolute;
-  z-index: 999;
 }
 .Startups header h1 {
   font-size: 2.7rem;
@@ -93,55 +90,80 @@
   margin-left: 50px;
 }
 .modal-overlay {
-  background: #2a28509e;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  inset: 0px;
+  background-color: rgba(18, 12, 12, 0.75);
 }
 .modal-content {
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: -1800px;
-  margin-left: -385px;
-  z-index: 9999;
-  width: 450px;
   height: 684px;
   border-radius: 7% 10% 12% 1%;
-  background: #53507d;
+  width: 481px;
+  z-index: 999;
   position: absolute;
-  left: 63%;
+  background: #53507d;
+  padding-left: 20px;
+  margin-left:19px;
 }
 .formStartups{
   position: relative;
-  margin-top: 100px;
+  margin-top: 80px;
   border-radius: 10px;
   padding: 60px;
   width: min-content;
   align-items: center;
 }
-.caption-title{
+.captionTitle{
   width: 100%;
   height: 50px;
   outline: none;
   padding: 1px;
   font-size: 15px;
   margin-top: -120px;
-
 }
-.caption-title input{
-  padding: 5px;
-  padding-left: 100px;
-  background-color:  #454267;
-  border-radius: 20px;
-  margin-bottom: 5px;
-  display: block;
-  font-weight: bold;
-  color: #2a2850;
+.captionTitle input{
+  width: 100%;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(50px);
+  color: #FFF;
+  font-size: 1.1rem;
+  font-weight: 300;
+  outline: none;
+  border: none;
+  border-radius: 51px;
+  margin-bottom: 10.8px;
+  padding-left: 20px;
+  opacity: 0.92;
+}
+.formSelect {
+    width: 100%;
+    height: 40.2px;
+    border: none;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color:gray;
+    background: #454267;
+    opacity: 0.92;
+    border-radius: 20px;
+    margin-bottom:12px;
+}
+.textArea{
+  background: #454267;
+}
+.buttonDeck{
+  width: 18rem;
+  height: 2.7rem;
+  border-radius: 8rem;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-left: 10px;
+  background-color:#2A2850 ;
 }
 .buttonModal{
   width: 5rem;
@@ -154,53 +176,51 @@
   margin: 1rem 0 -1.5rem 0;
   margin-left: 100px;
 }
-.buttonDeck{
-  width: 18rem;
-  height: 2.7rem;
-  border-radius: 8rem;
-  border: none;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #2a2850;
-  margin: 1rem 0 -2.5rem 5;
+.startupsImageSmall {
+  width: 100%;
+  height: 100%;
+  display: none;
 }
 
 /* Small devices (landscape phones, less than 360px) */
 @media (min-width: 360px) and (max-width: 550.98px) {
-  .startupsImage {
-    margin-top: -300px;
-    margin-left: -10px;
-    height: 1000px;
-    width: 360px;
-    /* background-color: red; */
+  
+  .Startups header h1 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #fff;
+    padding: 0 0px 0 180px;
+    margin-left: -150px;
   }
-  .StartupsImage header {
-    width: 211.58px;
-    height: 95.73px;
+  .Startups header img {
+    width: 21%;
+    margin-left: 20px;
+  }
+  .Startups header {
+    width: 200px;
+    height: 47px;
     background: #525ba9;
     border-radius: 379px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2.5rem -2px 11.5rem 0;
+    margin: -21rem 0 0 4.5rem;
+    position: absolute;
+    /* z-index: 888; */
   }
-  .StartupsImage header h1 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #fff;
-    /* padding: 0 20px 10 93px; */
-    margin-left: -80px;
+  .modal-content {
+    height: 684px;
+    border-radius: 7% 10% 12% 1%;
+    width: 451px;
+    z-index: 999;
+    position: absolute;
+    background: #53507d;
+    padding-left: 20px;
+    margin-left:-10px;
   }
-  .StartupsImage header img {
-    width: 40%;
-    margin-left: -10px;
-  }
-  .eventBeehive,
-  .eventBeehive,
-  .eventBeehive.smBeehive,
   .eventBeehive {
     width: 25rem;
-    height: 25rem;
+    height: 29rem;
     border-radius: 22% 8% 8% 0 / 17% 7% 7% 70%;
     background: #706ca3;
     color: #fff;
@@ -208,55 +228,169 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 3rem;
+    /* gap: 3rem; */
     margin-top: 2rem;
   }
   .Startups .eventBeehive {
-    width: 25rem;
-    height: 25rem;
+    width: 17rem;
+    height: 21rem;
     display: flex;
-    /* margin-top: 7rem; */
-    margin-top: -310px;
-    margin-left: -6px;
-    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: -150px;
+    margin-left: 50px;
   }
+  .eventBeehive p {
+    width: 16rem;
+    height: 13rem;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-top: -1rem;}
+
+  .startupsImageSmall {
+    width: 100%;
+    height: 65%;
+    display: block;
+  }
+  .startupsImage {
+    width: 100%;
+    height: 100%;
+    /* background-color: #fff; */
+    display: none;
+  }
+  .eventBeehive img {
+    width: 10rem;
+    margin: 4rem 0 2rem 0;
+  }
+  .captionTitle input{
+    width: 95%;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(50px);
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 300;
+    outline: none;
+    border: none;
+    border-radius: 51px;
+    margin-bottom: 4.8px;
+    padding-left: 20px;
+    opacity: 0.92;
+  }
+  .formStartups{
+    position: relative;
+    margin-top: 126px;
+    border-radius: 10px;
+    padding: 0px;
+    width: min-content;
+    align-items: center;
+  }
+  .captionTitle{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    padding: 1px;
+    font-size: 15px;
+    margin-top: -120px;
+  }
+  .modal-content {
+    height: 450px;
+    border-radius: 7% 10% 12% 1%;
+    width: 300px;
+    z-index: 999;
+    position: absolute;
+    background: #53507d;
+    padding-left: 20px;
+    margin-left:-31px;
+  }
+ .formSelect {
+    width: 95%;
+    height: 29px;
+    border: none;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color:gray;
+    background: #454267;
+    opacity: 0.92;
+    border-radius: 20px;
+    margin-bottom:12px;
+}
+.buttonDeck{
+  width: 17rem;
+  height: 1.7rem;
+  border-radius: 8rem;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-left: 10px;
+  background-color:#2A2850 ;
+}
+.buttonModal{
+  width: 4rem;
+  height: 2rem;
+  border-radius: 8rem;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2a2850;
+  margin: 0.5rem 0 -1.5rem 0;
+  margin-left: 100px;
+}
+.eventBeehive button {
+  width: 10rem;
+  height: 2.7rem;
+  border-radius: 8rem;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2a2850;
+  margin: -1rem 0 4rem 0;
+}
 }
 /* X-Small devices (portrait phones, less than 576px) */
 @media (min-width: 550px) and (max-width: 575.98px) {
-   .startupsImage {
-    margin-top: -300px;
-    margin-left: -10px;
-    height: 1000px;
-    width: 540px;
-    /* background-color: red; */
+   
+  .Startups header h1 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: #fff;
+    padding: 0 20px 0 50px;
+    margin-left: 19px;
   }
-  .StartupsImage header {
-    width: 211.58px;
-    height: 95.73px;
+  .Startups header img {
+    width: 21%;
+    margin-left: 20px;
+  }
+  .Startups header {
+    width: 350px;
+    height: 89px;
     background: #525ba9;
     border-radius: 379px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2.5rem -2px 11.5rem 0;
+    margin: -42rem 0 0 5.9rem;
+    position: absolute;
+    /* z-index: 888; */
   }
-  .StartupsImage header h1 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #fff;
-    /* padding: 0 20px 10 93px; */
-    margin-left: -80px;
+  .modal-content {
+    height: 684px;
+    border-radius: 7% 10% 12% 1%;
+    width: 451px;
+    z-index: 999;
+    position: absolute;
+    background: #53507d;
+    padding-left: 20px;
+    margin-left:-10px;
   }
-  .StartupsImage header img {
-    width: 40%;
-    margin-left: -10px;
-  }
-  .eventBeehive,
-  .eventBeehive,
-  .eventBeehive.smBeehive,
   .eventBeehive {
     width: 25rem;
-    height: 25rem;
+    height: 29rem;
     border-radius: 22% 8% 8% 0 / 17% 7% 7% 70%;
     background: #706ca3;
     color: #fff;
@@ -264,55 +398,72 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 3rem;
+    /* gap: 3rem; */
     margin-top: 2rem;
   }
   .Startups .eventBeehive {
-    width: 27rem;
-    height: 27rem;
+    width: 25rem;
+    height: 28rem;
     display: flex;
-    /* margin-top: 7rem; */
-    margin-top: -310px;
-    margin-left: 60px;
-    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: -313px;
+    margin-left: 90px;
+  }
+  .startupsImageSmall {
+    width: 100%;
+    height: 85%;
+    /* background-color: #fff; */
+    display: block;
+    padding: -10px;
+  }
+  .startupsImage {
+    width: 100%;
+    height: 100%;
+    /* background-color: #fff; */
+    display: none;
   }
 }
 /* Small devices (landscape phones, less than 768px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .startupsImage {
-    margin-top: -300px;
-    margin-left: -10px;
-    height: 1000px;
-    width: 540px;
-    /* background-color: red; */
+  
+  .Startups header h1 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: #fff;
+    padding: 0 20px 0 50px;
+    margin-left: 19px;
   }
-  .StartupsImage header {
-    width: 211.58px;
-    height: 95.73px;
+  .Startups header img {
+    width: 21%;
+    margin-left: 20px;
+  }
+  .Startups header {
+    width: 350px;
+    height: 89px;
     background: #525ba9;
     border-radius: 379px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2.5rem -2px 11.5rem 0;
+    margin: -42rem 0 0 5.9rem;
+    position: absolute;
+    /* z-index: 888; */
   }
-  .StartupsImage header h1 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #fff;
-    /* padding: 0 20px 10 93px; */
-    margin-left: -80px;
+  .modal-content {
+    height: 684px;
+    border-radius: 7% 10% 12% 1%;
+    width: 451px;
+    z-index: 999;
+    position: absolute;
+    background: #53507d;
+    padding-left: 20px;
+    margin-left:-10px;
   }
-  .StartupsImage header img {
-    width: 40%;
-    margin-left: -10px;
-  }
-  .eventBeehive,
-  .eventBeehive,
-  .eventBeehive.smBeehive,
   .eventBeehive {
     width: 25rem;
-    height: 25rem;
+    height: 27rem;
     border-radius: 22% 8% 8% 0 / 17% 7% 7% 70%;
     background: #706ca3;
     color: #fff;
@@ -324,73 +475,199 @@
     margin-top: 2rem;
   }
   .Startups .eventBeehive {
-    width: 27rem;
-    height: 27rem;
     display: flex;
-    /* margin-top: 7rem; */
-    margin-top: -310px;
-    margin-left: 60px;
-    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: -300px;
+    margin-left: 90px;
+  }
+  .startupsImageSmall {
+    width: 100%;
+    height: 85%;
+    /* background-color: #fff; */
+    display: block;
+  }
+  .startupsImage {
+    width: 100%;
+    height: 100%;
+    /* background-color: #fff; */
+    display: none;
   }
 }
 /* Medium devices (tablets, less than 992px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .startupsImage {
-    margin-top: -300px;
-    margin-left: -10px;
-    height: 1900px;
-    width: 720px;
+  
+  .Startups header h1 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: #fff;
+    padding: 0 20px 0 50px;
+    margin-left: 19px;
   }
-
-  .StartupsImage header img {
+  .Startups header img {
     width: 21%;
-    margin-left: 70px;
+    margin-left: 20px;
+  }
+  .Startups header {
+    width: 350px;
+    height: 89px;
+    background: #525ba9;
+    border-radius: 379px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -55rem 0 0 12rem;
+    position: absolute;
+    /* z-index: 888; */
+  }
+  .modal-content {
+    height: 684px;
+    border-radius: 7% 10% 12% 1%;
+    width: 451px;
+    z-index: 999;
+    position: absolute;
+    background: #53507d;
+    padding-left: 20px;
+    margin-left:-10px;
+  }
+  .eventBeehive {
+    width: 25rem;
+    height: 27rem;
+    border-radius: 22% 8% 8% 0 / 17% 7% 7% 70%;
+    background: #706ca3;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
   }
   .Startups .eventBeehive {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    margin-top: -550px;
-    margin-left: 130px;
-    height: 400px;
-    width: 400px;
+    margin-top: -300px;
+    margin-left: 185px;
+  }
+  .startupsImageSmall {
+    width: 100%;
+    height: 85%;
+    /* background-color: #fff; */
+    display: block;
+  }
+  .startupsImage {
+    width: 100%;
+    height: 100%;
+    /* background-color: #fff; */
+    display: none;
   }
 }
 /* Large devices (desktops, less than 1200px) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .startupsImage {
-    margin-top: -300px;
-    margin-left: -10px;
-    height: 2000px;
-    width: 960px;
-  }
-
-  .StartupsImage header img {
+@media (min-width: 992px ) and (max-width: 1199.98px) {
+ 
+  .Startups header img {
     width: 21%;
-    margin-left: 71px;
+    margin-left: 70px;
+  }
+  .Startups header {
+    width: 511.58px;
+    height: 106.73px;
+    background: #525ba9;
+    border-radius: 379px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -111rem 0 0 16rem;
+    position: absolute;
+    /* z-index: 888; */
+  }
+  .modal-content {
+    height: 684px;
+    border-radius: 7% 10% 12% 1%;
+    width: 481px;
+    z-index: 999;
+    position: absolute;
+    background: #53507d;
+    padding-left: 20px;
+    margin-left:-50px;
+  }
+  .eventBeehive {
+    width: 29rem;
+    height: 32rem;
+    border-radius: 22% 8% 8% 0 / 17% 7% 7% 70%;
+    background: #706ca3;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
   }
   .Startups .eventBeehive {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    margin-top: -550px;
-    margin-left: 250px;
+    margin-top: -483px;
+    margin-left: 260px;
+  }
+  .startupsImage {
+    width: 100%;
+    height: 100%;
+    /* background-color: #fff; */
+  }
+  .startupsImageSmall {
+    width: 100%;
+    height: 100%;
+    /* background-color: #fff; */
+    display: none;
   }
 }
 /* X-Large devices (large desktops, less than 1400px) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
-  .startupsImage {
-    margin-top: -300px;
-    margin-left: -10px;
-    height: 2000px;
-    width: 1140px;
-  }
-
-  .StartupsImage header img {
+ 
+  .Startups header img {
     width: 21%;
-    margin-left: 71px;
+    margin-left: 70px;
+  }
+  .Startups header {
+    width: 511.58px;
+    height: 106.73px;
+    background: #525ba9;
+    border-radius: 379px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -133rem 0 0 23rem;
+    position: absolute;
+    /* z-index: 888; */
+  }
+  .modal-content {
+    height: 684px;
+    border-radius: 7% 10% 12% 1%;
+    width: 481px;
+    z-index: 999;
+    position: absolute;
+    background: #53507d;
+    padding-left: 20px;
+    margin-left:-50px;
+  }
+  .eventBeehive {
+    width: 29rem;
+    height: 32rem;
+    border-radius: 22% 8% 8% 0 / 17% 7% 7% 70%;
+    background: #706ca3;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
   }
   .Startups .eventBeehive {
     display: flex;
@@ -399,5 +676,17 @@
     gap: 3rem;
     margin-top: -550px;
     margin-left: 350px;
+  }
+
+  .startupsImage {
+    width: 100%;
+    height: 100%;
+    /* background-color: #fff; */
+  }
+  .startupsImageSmall {
+    width: 100%;
+    height: 100%;
+    /* background-color: #fff; */
+    display: none;
   }
 }

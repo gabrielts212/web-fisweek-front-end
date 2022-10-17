@@ -1,6 +1,7 @@
 import "./Startups.css";
 
 import StartupsImage from "../../assets/images/startups/StartupsImage.png";
+import StartupsImageSmall from "../../assets/images/startups/StartupsImageSmall.png";
 import BEEHIVE from "../../assets/images/startups/BEEHIVE.png";
 import { useState } from "react";
 import Modal from "react-modal";
@@ -9,7 +10,6 @@ import Eclipse from "../../assets/images/startups/eclipse.png";
 Modal.setAppElement("#root");
 
 export function Startups() {
-
   const [modalIsOpen, setIsOpen] = useState(false);
 
   function openModal() {
@@ -21,12 +21,13 @@ export function Startups() {
 
   return (
     <div className="Startups">
-        <img className="startupsImage" src={StartupsImage} />
-        <header>
-          <h1>Startups</h1>
-          <img src={Eclipse} alt="Circulo vermelho" />
-        </header>
-    
+      <img className="startupsImage" src={StartupsImage} />
+      <img className="startupsImageSmall" src={StartupsImageSmall} />
+      <header>
+        <h1>Startups</h1>
+        <img src={Eclipse} alt="Circulo" />
+      </header>
+
       <div className="eventBeehive">
         <div className="smBeehive">
           <img src={BEEHIVE} alt="BEEHIVE" />
@@ -41,7 +42,7 @@ export function Startups() {
             experiências e muito conteúdo e interação. 100% digital e gratuito e
             com a cara da #IniciativaFIS.
           </p>
-          <button className="btn-first" onClick={openModal}>
+          <button onClick={openModal}>
             Cadastrar
           </button>
           <Modal
@@ -51,51 +52,70 @@ export function Startups() {
             overlayClassName="modal-overlay"
             className="modal-content"
           >
-
             <form className="formStartups" action="POST">
-              <label className="caption-title">
-                <input type="text" name="name" placeholder="Nome da Startup" />
+              <label className="captionTitle">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Nome da Startup"
+                  required
+                />
                 <input
                   type="text"
                   name="name"
                   placeholder="Nome do Representante"
+                  required
                 />
-                <input type="text" name="name" placeholder="Email" />
+                <input type="Email" name="name" placeholder="Email" required />
                 <input
-                  type="text"
+                  type="number"
                   name="name"
                   placeholder="Telefone de Contato"
+                  required
                 />
                 <div>
-                  <select className="form-control">
+                  <select className="formSelect">
                     <option>Selecione um País</option>
-                    <option value="">Brasil</option>
-                    <option value="">Espanha</option>
-                    <option value="">Estados Unidos</option>  
+                    <option value="Brasil">Brasil</option>
+                    <option value="Espanha">Espanha</option>
+                    <option value="Estados Unidos">Estados Unidos</option>
                   </select>
                 </div>
 
-                <input type="text" name="name" placeholder="Cidade" />
-                <input type="text" name="name" placeholder="Site/URL" />
+                <input type="text" name="name" placeholder="Cidade" required />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Site/URL"
+                  required
+                />
                 <textarea
+                  className="textArea"
                   id=""
                   name=""
-                  rows="8"
-                  cols="35"
+                  rows="5"
+                  cols="30"
                 ></textarea>
 
-                <button className="buttonDeck" type="submit">Faça o upload do seu Deck</button>
+                <button className="buttonDeck" type="submit">
+                  Faça o upload do seu Deck
+                </button>
 
-                <button className="buttonModal" onClick={closeModal} type="submit">
+                <button
+                  className="buttonModal"
+                  onClick={closeModal}
+                  type="submit"
+                >
                   OK
                 </button>
               </label>
             </form>
-
           </Modal>
         </div>
-        <span> O evento será online e presencial </span>
+        {/* <span> O evento será online e presencial </span> */}
       </div>
     </div>
   );
 }
+
+// className="eventLocation"

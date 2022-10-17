@@ -42,10 +42,10 @@ export function Home() {
                 <Schedule />
             </Row>
             <Row>
-                {/* <Testimonials /> */}
+                <Testimonials />
             </Row>
             <Row>
-                {/* <Startups /> */}
+                <Startups />
             </Row>
             <Row>
                 {/* <Footer /> */}
