@@ -20,20 +20,20 @@ export function PanelLygaa() {
           <img className="imgLygga" src={ImgLygga} />
 
           <div className="panelRectangle">
-            <div className="avatarGroup">
+            {/* <div className="avatarGroup">
               <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
               <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
               <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
               <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
               <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
-            </div>
+            </div> */}
 
-            <div className="speakerGroup">
+            {/* <div className="speakerGroup">
              <img className="imgRectangle" src={ImgRectangle} alt="" />
              <span className="speakerName" src={ImgRectangle}>
                 Alberto Campos Fernandes
              </span>
-            </div>
+            </div> */}
           </div>
         </div>
 

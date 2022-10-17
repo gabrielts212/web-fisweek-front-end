@@ -1,9 +1,9 @@
-import ImgFis from '../../assets/images/programming/painel-fis.png'
-import PanelRectangle from '../../assets/images/programming/panel-rectangle.png'
+import ImgFis from "../../assets/images/programming/painel-fis.png";
+import PanelRectangle from "../../assets/images/programming/panel-rectangle.png";
 import ImgRectangle from '../../assets/images/programming/img-rectangle.png'
-import { Avatar } from '../avatar/Avatar'
+import { Avatar } from "../avatar/Avatar";
 
-import './PanelFis.css'
+import "./PanelFis.css";
 
 export function PanelFis() {
   return (
@@ -15,33 +15,46 @@ export function PanelFis() {
       </section>
 
       <section className="Speakers">
-        <p className="paragraph">Os desafios de implementar políticas públicas de saúde durante uma pandemia</p>
+        <p className="paragraph">
+          Os desafios de implementar políticas públicas de saúde durante uma
+          pandemia
+        </p>
         <div className="groupPanel">
           <img className="imgFis" src={ImgFis} />
 
           <img className="panelRectangle" src={PanelRectangle} />
-          <div className="panelData">
-            <div className="avatarGroup">
-              <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
-              <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
-              <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
-              <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
-              <Avatar src="https://randomuser.me/api/portraits/men/21.jpg"/>
-            </div>
 
-            <div className="speakerGroup">
-             <img className="imgRectangle" src={ImgRectangle} alt="" />
-             <span className="speakerName" src={ImgRectangle}>
-                Alberto Campos Fernandes
-             </span>
-            </div>
+          <div className="avatarGroup">
+            <Avatar
+              name="Nome Sobrenome"
+              background={ImgRectangle}
+              src="https://randomuser.me/api/portraits/men/21.jpg"
+            />
+            <Avatar
+              name="Nome Sobrenome"
+              background={ImgRectangle}
+              src="https://randomuser.me/api/portraits/men/21.jpg"
+            />
+            <Avatar
+              name="Nome Sobrenome"
+              background={ImgRectangle}
+              src="https://randomuser.me/api/portraits/men/21.jpg"
+            />
+            <Avatar
+              name="Nome Sobrenome"
+              background={ImgRectangle}
+              src="https://randomuser.me/api/portraits/men/21.jpg"
+            />
+            <Avatar
+              name="Nome Sobrenome"
+              background={ImgRectangle}
+              moderador="Moderador"
+              src="https://randomuser.me/api/portraits/men/21.jpg"
+            />
+            <div className="Moderator">Moderador</div>
           </div>
         </div>
-        
-        <div className="Moderator">Moderador</div>
       </section>
     </div>
-  )
+  );
 }
-
-

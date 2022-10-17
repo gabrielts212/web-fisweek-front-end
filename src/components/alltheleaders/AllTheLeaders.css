@@ -1,5 +1,5 @@
 .allTheLeaders {
-  background: #4a2bd173;
+  background: #4a2bd118;
   filter: blur(.03rem);
 
   height: 100%;
@@ -63,7 +63,7 @@
 .allTheLeaders input[type=text] {
   width: 61.5rem;
   height: 50px;
-  background: #4a2bd123;
+  background: #4a2bd100;
   border: 3px solid #DAD3FF;
   border-radius: 49px;
 

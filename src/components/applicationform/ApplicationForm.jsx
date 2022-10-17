@@ -50,10 +50,12 @@ class ApplicationForm extends React.Component {
                 idade: age,
             })
             .then(res => {
-                console.log(res);
+                console.log(res)
+                console.log("Oi!");
             })
             .catch(err => {
                 console.error(err);
+                console.error("aiaiaia");
             });
             this.setState({ submitted: true });
         }
@@ -97,18 +99,7 @@ class ApplicationForm extends React.Component {
                 </select>
                 <CaretDown className={styles.arrowDownTwo} size={22} />
               </div>
-              {/* <div>
-                <select className={styles.formControl} onChange={e => this.setState({ conference: e.target.value })}>
-                  <option className={styles.options}>{t("inputs.WhichEventWouldYouLikeToAttend")}</option>
-                  <option value="Fis22" className={styles.optionsValue}>#FIS22</option>
-                  <option value="S/M22" className={styles.optionsValue}>#SYM22</option>
-                  <option value="Lygga" className={styles.optionsValue}>#LYGGA22</option>
-                  <option value="com .Meets22" className={styles.optionsValue}>#COMMEETS22</option>
-                  <option value="all" className={styles.optionsValue}>Todos</option>
-                </select>
-                <CaretDown className={styles.arrowDownThree} size={22} />
-              </div> */}
-
+              
               <TextInput round placeholder={t("inputs.WhichEventWouldYouLikeToAttend")} onChange={(e) => this.setState({ conference: e.target.value})} />
               <div className={styles.checkboxGroup}>
                 <div>
