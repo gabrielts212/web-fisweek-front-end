@@ -6,11 +6,21 @@ import BEEHIVE from "../../assets/images/startups/BEEHIVE.png";
 import { useState } from "react";
 import Modal from "react-modal";
 
+// import { useForm } from 'react-hook-form';
+
 import Eclipse from "../../assets/images/startups/eclipse.png";
 Modal.setAppElement("#root");
 
 export function Startups() {
   const [modalIsOpen, setIsOpen] = useState(false);
+  // const { register, handleSubmit } = useForm();
+  //   const [data, setData] = useState("");
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   formState: { errors },
+  // } = useForm();
+
 
   function openModal() {
     setIsOpen(true);
@@ -18,6 +28,16 @@ export function Startups() {
   function closeModal() {
     setIsOpen(false);
   }
+
+// const ReactHookForm: Startups = () => {
+//   const {
+//     register,
+//     handleSubmit,
+//     formState: { errors, isDirty, isValid }
+//   } = useForm({
+//     mode: 'onChange'
+//   })
+
 
   return (
     <div className="Startups">
@@ -52,7 +72,7 @@ export function Startups() {
             overlayClassName="modal-overlay"
             className="modal-content"
           >
-            <form className="formStartups" action="POST">
+            <form className="formStartups">
               <label className="captionTitle">
                 <input
                   type="text"
@@ -117,5 +137,6 @@ export function Startups() {
     </div>
   );
 }
+
 
 // className="eventLocation"

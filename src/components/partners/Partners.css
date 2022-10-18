@@ -1,0 +1,22 @@
+
+.header {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: -77px;
+    left: 0;
+    /* background-color: #3F3D73; */
+  }
+
+  .Partners  h1 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: #fff;
+    padding: 0 17px 0 93px;
+    margin-left: 500px;
+  }
+  .Partners img {
+    width: 10%;
+    margin-left: 820px;
+    margin-bottom: -20px;
+  }

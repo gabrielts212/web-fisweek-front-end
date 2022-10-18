@@ -13,6 +13,7 @@ import { Header } from '../../components/header/Header';
 import { Testimonials } from '../../components/testimonials/Testimonials';
 import { EventsFis } from '../../components/eventsfis/EventsFis';
 import { Startups } from '../../components/startups/Startups';
+// import { Partners} from '../../components/partners/Diamond';
 
 import './Home.css';
 
@@ -48,7 +49,10 @@ export function Home() {
                 {/* <Startups /> */}
             </Row>
             <Row>
-                {/* <Footer /> */}
+                {/* <Partners/> */}
+            </Row>
+            <Row>
+                <Footer />
             </Row>
         </Container>
     );
