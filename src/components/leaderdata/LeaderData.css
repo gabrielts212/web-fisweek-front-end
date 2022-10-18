@@ -10,6 +10,7 @@
 .leaderData .avatarLeader {
   width: 15.5rem;
   height: 17rem;
+  border-radius: 100%;
 
   position: absolute;
   top: -2rem;

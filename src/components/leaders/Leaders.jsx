@@ -1,40 +1,38 @@
-import "./Leaders.css";
-
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 import { LeaderData } from "../leaderdata/LeaderData";
-import { useState } from "react";
-import { useEffect } from "react";
+
+import "./Leaders.css";
 
 export function Leaders() {
   const [leader, setLeader] = useState([])
- 
-  const returnsLeaders = (value) => {
-    
-  }
-
-  const leaderFiltered = leader.filter(returnsLeaders);
-  const getData = async () => {
-    let result = await axios.post("searchNew");
-    setLeader(result.data);
-  };
-  useEffect(() => {
-    getData()
-  }, [])
   
+  useEffect(() => {
+		axios.get('https://fis.org.br/server/fisweek/lideres')
+		.then((response) => {
+			setLeader(response.data.leader)
+		}).catch((err) => {
+			console.error(err)
+		})
+
+	}), []
+
   return (
     <div className="Leaders" id="leaders">
       <div className="leaderGroup">
-        {leaderFiltered.map((leader) => {
+        {leader.map((leader, key ) => {
             return (
-              <LeaderData 
-                nome={leader.leaderName}
-                descricao={leader.leaderOffice}
-                paineis={leader.panel}
-                img={leader.avatarLeader}
-                dataDia={leader.dateDay}
-                dataMes={leader.dateMonth}
-              />
+              <div key={key}>
+                 <LeaderData
+                  nome={leader.leaderName}
+                  descricao={leader.leaderOffice}
+                  paineis={leader.panel}
+                  img={leader.avatarLeader}
+                  dataDia={leader.dateDay}
+                  dataMes={leader.dateMonth}
+                />
+              </div>
             );
           })}
       </div>
@@ -44,3 +42,4 @@ export function Leaders() {
     </div>
   );
 }
+

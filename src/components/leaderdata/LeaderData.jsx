@@ -1,6 +1,5 @@
 import "./LeaderData.css";
 
-import AvatarLeader from "../../assets/images/leaders/avatar-leader.png";
 import PinkElement from "../../assets/images/leaders/pink-element.png";
 import yellowElement from "../../assets/images/leaders/yellow-element.png";
 import blueElement from "../../assets/images/leaders/blue-element.png";
@@ -11,7 +10,7 @@ import greenElement from "../../assets/images/leaders/green-element.png";
 export function LeaderData() {
   return (
     <div className="leaderData">
-      <img className="avatarLeader" src={AvatarLeader} />
+      <img className="avatarLeader" src={`https://randomuser.me/api/portraits/men/11.jpg`} />
       <img className="panel" src={PinkElement} />
 
       <div className="leadersDate">
@@ -26,3 +25,5 @@ export function LeaderData() {
     </div>
   );
 }
+
+

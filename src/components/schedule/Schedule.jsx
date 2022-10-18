@@ -85,11 +85,7 @@ export function Schedule() {
             );
           })}
       </div>
-      <PanelFis />
-      <PanelSm />
-      <PanelLygaa />
-      <PanelMeets />
-
+      
       <a href="http://127.0.0.1:5173/fisweek22/#/schedulepage" target="_blank">
         <button className="showShedule">Ver programação completa</button>
       </a>
