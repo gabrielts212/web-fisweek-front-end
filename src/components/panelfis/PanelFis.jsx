@@ -48,7 +48,6 @@ export function PanelFis() {
             <Avatar
               name="Nome Sobrenome"
               background={ImgRectangle}
-              moderador="Moderador"
               src="https://randomuser.me/api/portraits/men/21.jpg"
             />
             <div className="Moderator">Moderador</div>

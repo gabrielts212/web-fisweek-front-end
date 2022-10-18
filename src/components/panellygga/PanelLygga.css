@@ -3,4 +3,6 @@
   border-bottom-style: solid;
   border-bottom-width: 100%;
   border-bottom-color: #FFF;
+
+  position: relative;
 }

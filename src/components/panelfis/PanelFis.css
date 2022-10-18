@@ -57,7 +57,7 @@
   align-items: center;
   gap: 1rem;
 
-  margin-bottom: 45px;
+  margin-bottom: 4.5rem;
 }
 
 .Speakers .groupPanel .imgFis,
@@ -143,7 +143,7 @@
   } 
 
   .Speakers .groupPanel {
-    margin-left: -20px;
+    margin: 0 0 3.5rem -20px;
   }
 
   .Speakers .groupPanel .imgFis,
@@ -172,10 +172,12 @@
   }
   
   .Speakers .Moderator {
-    width: 95px;
+    width: 80px;
     height: 26.39px;
     font-size: 12px;
-    margin: -3.1rem 0 2rem 13rem;
+    margin: 18rem 0 2rem 44rem;
+
+    position: absolute;
   }  
 }
 
@@ -214,7 +216,7 @@
   } 
 
   .Speakers .groupPanel {
-    margin-left: -20px;
+    margin: 0 0 3.5rem -20px;
   }
 
   .Speakers .groupPanel .imgFis,
@@ -243,10 +245,12 @@
   }
   
   .Speakers .Moderator {
-    width: 95px;
+    width: 80px;
     height: 26.39px;
     font-size: 12px;
-    margin: -3.1rem 0 2rem 16rem;
+    margin: 18rem 0 2rem 44rem;
+
+    position: absolute;
   }  
 }
 
@@ -284,6 +288,10 @@
     margin-bottom: 30px;
   } 
 
+  .Speakers .groupPanel {
+    margin-bottom: 3.5rem;
+  }
+
   .Speakers .groupPanel .imgFis,
   .Speakers .groupPanel .imgSm,
   .Speakers .groupPanel .imgLygga,
@@ -310,10 +318,12 @@
   }
   
   .Speakers .Moderator {
-    width: 95px;
+    width: 80px;
     height: 26.39px;
     font-size: 12px;
-    margin: -3.1rem 0 2rem 29.9rem;
+    margin: 17.5rem 0 2rem 41rem;
+
+    position: absolute;
   }  
 }
 
@@ -378,7 +388,7 @@
   }
   
   .Speakers .Moderator {
-    width: 95px;
+    width: 80px;
     height: 26.39px;
     font-size: 12px;
     margin: 18.5rem 0 2rem 45rem;
@@ -419,6 +429,10 @@
     font-size: 1.1rem;
   } 
 
+  .Speakers .groupPanel {
+    margin-bottom: 3.5rem;
+  }
+
   .Speakers .groupPanel .imgFis,
   .Speakers .groupPanel .imgSm,
   .Speakers .groupPanel .imgLygga,
@@ -440,7 +454,7 @@
   }
   
   .Speakers .Moderator {
-    width: 95px;
+    width: 80px;
     height: 26.39px;
     font-size: 12px;
     margin: 16rem 0 2rem 33rem;
@@ -498,7 +512,7 @@
   }
   
   .Speakers .Moderator {
-    width: 120px;
+    width: 100px;
     height: 26.39px;
     font-size: 12px;
     margin: 17rem 0 2rem 45rem;
@@ -536,6 +550,10 @@
     margin-left: 50px;
   }
   
+  .Speakers .groupPanel {
+    margin-bottom: 3.5rem;
+  }
+
   .Speakers .groupPanel .imgFis,
   .Speakers .groupPanel .imgSm,
   .Speakers .groupPanel .imgLygga,

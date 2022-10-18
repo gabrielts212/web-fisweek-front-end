@@ -30,7 +30,7 @@ export function Home() {
                 {/* <ConferenceBar /> */}
             </Row>
             <Row>
-                {/* <Col xs={12} md={12}><Leaders/></Col> */}
+                <Col xs={12} md={12}><Leaders/></Col>
             </Row>
             <Row>
                 {/* <Timer /> */}
@@ -42,10 +42,10 @@ export function Home() {
                 <Schedule />
             </Row>
             <Row>
-                <Testimonials />
+                {/* <Testimonials /> */}
             </Row>
             <Row>
-                <Startups />
+                {/* <Startups /> */}
             </Row>
             <Row>
                 {/* <Footer /> */}

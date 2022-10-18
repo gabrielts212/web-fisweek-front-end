@@ -103,7 +103,7 @@
   
   .allTheSchedule header h1 {
     font-size: 2rem;
-    padding-left: 8rem;
+    padding: 0 1.3rem 0 6rem;
   }
 
   .allTheSchedule header img {
@@ -150,7 +150,7 @@
   
   .allTheSchedule header h1 {
     font-size: 2.1rem;
-    padding-left: 8rem;
+    padding: 0 1.3rem 0 6rem;
   }
 
   .allTheSchedule header img {
@@ -197,7 +197,7 @@
   
   .allTheSchedule header h1 {
     font-size: 2.3rem;
-    padding-left: 8rem;
+    padding: 0 1.3rem 0 6rem;
   }
 
   .allTheSchedule header img {
@@ -239,7 +239,7 @@
   
   .allTheSchedule header h1 {
     font-size: 2.3rem;
-    padding-left: 8rem;
+    padding: 0 1.3rem 0 6rem;
   }
 
   .allTheSchedule header img {
@@ -279,6 +279,7 @@
   
   .allTheSchedule header h1 {
     font-size: 2.5rem;
+    padding: 0 1.3rem 0 6rem;
   }
   
   .allTheSchedule header img {
