@@ -1,27 +1,27 @@
-// import "./Partners.css";
+// import "./style.jsx";
 // import Eclipse2 from "../../assets/images/patrocinadores/eclipse2.png";
-
+import React from "react";
 
 import Carousel from "react-multi-carousel";
 
-import americas from "../../assets/images/patrocinadores/diamond/americas.svg";
-import amil from "../../assets/images/patrocinadores/diamond/amil.svg";
-import astra_zeneca from "../../assets/images/patrocinadores/diamond/astra_zeneca.png";
-import blessing from "../../assets/images/patrocinadores/diamond/Blessing.png";
-import cortex_med from "../../assets/images/patrocinadores/diamond/cortex_med.svg";
-import med_rio from "../../assets/images/patrocinadores/diamond/med_rio.svg";
-import microsoft from "../../assets/images/patrocinadores/diamond/microsoft.png";
-import pronep from "../../assets/images/patrocinadores/diamond/pronep.png";
-import rede_hospital_casa from "../../assets/images/patrocinadores/diamond/rede_hospital_casa.svg";
-import roche from "../../assets/images/patrocinadores/diamond/roche.svg";
-import seegene from "../../assets/images/patrocinadores/diamond/seegene.svg";
-import sodexo from "../../assets/images/patrocinadores/diamond/sodexo.png";
-import senac from "../../assets/images/patrocinadores/diamond/senac.png";
-import white_martins from "../../assets/images/patrocinadores/diamond/white_martins.png";
-import oncoclinicas from "../../assets/images/patrocinadores/diamond/Oncoclinicas.png";
+import Americas from "../../assets/images/patrocinadores/diamond/americas.svg";
+import Amil from "../../assets/images/patrocinadores/diamond/amil.svg";
+// import AstraZeneca from "../../assets/images/patrocinadores/diamond/astra_zeneca.png";
+// import Blessing from "../../assets/images/patrocinadores/diamond/blessing.png";
+// import CortexMed from "../../assets/images/patrocinadores/diamond/cortex-med.svg";
+// import Med_rio from "../../assets/images/patrocinadores/diamond/med_rio.svg";
+// import Microsoft from "../../assets/images/patrocinadores/diamond/microsoft.png";
+// import Pronep from "../../assets/images/patrocinadores/diamond/pronep.png";
+// import Rede_hospital_casa from "../../assets/images/patrocinadores/diamond/rede_hospital_casa.svg";
+// import Roche from "../../assets/images/patrocinadores/diamond/roche.svg";
+// import Seegene from "../../assets/images/patrocinadores/diamond/seegene.svg";
+// import Sodexo from "../../assets/images/patrocinadores/diamond/sodexo.png";
+// import Senac from "../../assets/images/patrocinadores/diamond/senac.png";
+// import White_martins from "../../assets/images/patrocinadores/diamond/white_martins.png";
+// import Oncoclinicas from "../../assets/images/patrocinadores/diamond/Oncoclinicas.png";
 
 
-export function Partners(props) {
+export function Partners() {
     const responsive = {
       superLargeDesktop: {
         
@@ -42,19 +42,17 @@ export function Partners(props) {
       },
     };
 
-
-  return (
     // <div className="Partners">
 
     //   <div>
     //   <div className="header">
-    //   <h1>Partners</h1>
     //     <img src={Eclipse2} alt="Circulo" />
+    //   <h1>Partners</h1>
     //   </div>
     //   </div>
-
-      <Diamond>
-      <Title>{props.lang.TITLE_1}</Title>
+    
+  return (
+      // <Partners>
       <div className="carousel">
         <Carousel
           infinite
@@ -69,29 +67,30 @@ export function Partners(props) {
           responsive={responsive}
         >
           <a href="https://www.americasmed.com.br/" target="_blank">
-            <img src={americas} alt={"Logo do parceiro "} />
+            <img src={Americas} alt={"Logo do parceiro "} />
           </a>
           <a href="http://www.amil.com.br/institucional/#/" target="_blank">
-            <img src={amil} alt={"Logo do parceiro "} />
+            <img src={Amil} alt={"Logo do parceiro "} />
           </a>
-          <a href="https://www.astrazeneca.com.br/">
-            <img src={astra_zeneca} alt={"Logo do parceiro "} />
-          </a>
+          {/* <a href="https://www.astrazeneca.com.br/">
+            <img src={AstraZeneca} alt={"Logo do parceiro "} />
+          </a> */}
 
-          <a href="https://laboratorioblessing.com.br/" target="_blank">
-            <img src={blessing} alt={"Logo do parceiro "} />
-          </a>
-          <a href="https://cortex.med.br/">
-            <img src={cortex_med} alt={"Logo do parceiro "} />
-          </a>
+          {/* <a href="https://laboratorioblessing.com.br/" target="_blank">
+            <img src={Blessing} alt={"Logo do parceiro "} />
+          </a> */}
+
+          {/* <a href="https://cortex.med.br/">
+            <img src={CortexMed} alt={"Logo do parceiro "} />
+          </a> */}
 
 
-          <a href="https://medriocheck-up.com.br/" target="_blank">
-            <img src={med_rio} alt={"Logo do parceiro "} />
+          {/* <a href="https://medriocheck-up.com.br/" target="_blank">
+            <img src={Med_rio} alt={"Logo do parceiro "} />
           </a>
 
           <a href="https://grupooncoclinicas.com/" target="_blank">
-            <img src={oncoclinicas} alt={"Logo do parceiro "} />
+            <img src={Oncoclinicas} alt={"Logo do parceiro "} />
           </a>
 
           <a href="https://www.pronep.com.br" target="_blank">
@@ -118,10 +117,11 @@ export function Partners(props) {
 
           <a href="https://www.praxair.com.br/" target="_blank">
             <img src={white_martins} alt={"Logo do parceiro "} />
-          </a>
+          </a> */}
         </Carousel>
       </div>
-    </Diamond>
+
+    // </Partners>
 
     // </div>
   );

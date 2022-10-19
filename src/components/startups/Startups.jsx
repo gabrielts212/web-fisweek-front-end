@@ -6,21 +6,22 @@ import BEEHIVE from "../../assets/images/startups/BEEHIVE.png";
 import { useState } from "react";
 import Modal from "react-modal";
 
-// import { useForm } from 'react-hook-form';
+import { useForm } from "react-hook-form";
 
 import Eclipse from "../../assets/images/startups/eclipse.png";
 Modal.setAppElement("#root");
 
 export function Startups() {
   const [modalIsOpen, setIsOpen] = useState(false);
-  // const { register, handleSubmit } = useForm();
-  //   const [data, setData] = useState("");
-  // const {
-  //   register,
-  //   handleSubmit,
-  //   formState: { errors },
-  // } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
+  function createUser(data) {
+    console.log("ok", data);
+  }
 
   function openModal() {
     setIsOpen(true);
@@ -28,16 +29,6 @@ export function Startups() {
   function closeModal() {
     setIsOpen(false);
   }
-
-// const ReactHookForm: Startups = () => {
-//   const {
-//     register,
-//     handleSubmit,
-//     formState: { errors, isDirty, isValid }
-//   } = useForm({
-//     mode: 'onChange'
-//   })
-
 
   return (
     <div className="Startups">
@@ -62,9 +53,7 @@ export function Startups() {
             experiências e muito conteúdo e interação. 100% digital e gratuito e
             com a cara da #IniciativaFIS.
           </p>
-          <button onClick={openModal}>
-            Cadastrar
-          </button>
+          <button onClick={openModal}>Cadastrar</button>
           <Modal
             isOpen={modalIsOpen}
             onRequestClose={closeModal}
@@ -72,25 +61,45 @@ export function Startups() {
             overlayClassName="modal-overlay"
             className="modal-content"
           >
-            <form className="formStartups">
+            <form className="formStartups" onSubmit={handleSubmit(createUser)}>
               <label className="captionTitle">
                 <input
                   type="text"
                   name="name"
                   placeholder="Nome da Startup"
+                  {...register("Startup", {
+                    required: true,
+                  })}
                   required
                 />
+
                 <input
                   type="text"
                   name="name"
                   placeholder="Nome do Representante"
+                  {...register("Representante", {
+                    required: true,
+                  })}
                   required
                 />
-                <input type="Email" name="name" placeholder="Email" required />
+
+                <input
+                  type="Email"
+                  name="Email"
+                  placeholder="Email"
+                  {...register("Email", {
+                    required: true,
+                  })}
+                  required
+                />
+
                 <input
                   type="number"
                   name="name"
                   placeholder="Telefone de Contato"
+                  {...register("Telefone", {
+                    required: true,
+                  })}
                   required
                 />
                 <div>
@@ -102,11 +111,23 @@ export function Startups() {
                   </select>
                 </div>
 
-                <input type="text" name="name" placeholder="Cidade" required />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Cidade"
+                  {...register("cidade", {
+                    required: true,
+                  })}
+                  required
+                />
+
                 <input
                   type="text"
                   name="name"
                   placeholder="Site/URL"
+                  {...register("Site", {
+                    required: true,
+                  })}
                   required
                 />
                 <textarea
@@ -117,15 +138,11 @@ export function Startups() {
                   cols="30"
                 ></textarea>
 
-                <button className="buttonDeck" type="submit">
+                <button className="buttonDeck">
                   Faça o upload do seu Deck
                 </button>
 
-                <button
-                  className="buttonModal"
-                  onClick={closeModal}
-                  type="submit"
-                >
+                <button className="buttonModal" type="submit">
                   OK
                 </button>
               </label>
@@ -138,5 +155,14 @@ export function Startups() {
   );
 }
 
-
 // className="eventLocation"
+
+// onClick={closeModal}
+
+// const {
+//   register,
+//   handleSubmit,
+//   formState: { errors, isDirty, isValid }
+// } = useForm({
+//   mode: 'onChange'
+// })
