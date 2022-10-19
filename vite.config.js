@@ -8,6 +8,20 @@ export default defineConfig({
   })],
   server: {
     proxy: {
+      "/server/fisweek/lideres": {
+        target: "http://127.0.0.1:3000",
+        changeOrigin: true,
+        secure: false,
+        ws: true,
+        rewrite: path => path.replace(/^\/server/, '')  
+      },
+      "/server/fisweek/painel": {
+        target: "http://127.0.0.1:3000",
+        changeOrigin: true,
+        secure: false,
+        ws: true,
+        rewrite: path => path.replace(/^\/server/, '')
+      },
       "/server/fisweek": {
         target: "http://127.0.0.1:4000",
         changeOrigin: true,

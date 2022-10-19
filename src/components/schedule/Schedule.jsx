@@ -86,7 +86,7 @@ export function Schedule() {
           })}
       </div>
       
-      <a href="http://127.0.0.1:5173/fisweek22/#/schedulepage" target="_blank">
+      <a href="/fisweek22/#/allTheSchedule" target="_blank">
         <button className="showShedule">Ver programação completa</button>
       </a>
 

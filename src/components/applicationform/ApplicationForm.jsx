@@ -51,11 +51,9 @@ class ApplicationForm extends React.Component {
             })
             .then(res => {
                 console.log(res)
-                console.log("Oi!");
             })
             .catch(err => {
                 console.error(err);
-                console.error("aiaiaia");
             });
             this.setState({ submitted: true });
         }

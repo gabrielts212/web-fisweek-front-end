@@ -1,26 +1,35 @@
 import "./LeaderData.css";
 
-import PinkElement from "../../assets/images/leaders/pink-element.png";
-import yellowElement from "../../assets/images/leaders/yellow-element.png";
-import blueElement from "../../assets/images/leaders/blue-element.png";
-import purpleElement from "../../assets/images/leaders/purple-element.png";
-import redElement from "../../assets/images/leaders/red-element.png";
-import greenElement from "../../assets/images/leaders/green-element.png";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 export function LeaderData() {
+  const [leader, setLeader] = useState([])
+  const [err, setErr] = useState([])
+  
+  useEffect(() => {
+		axios.get('/server/fisweek/lideres')
+		.then((response) => {
+			setLeader(response.data)
+		}).catch((err) => {
+			setErr(err)
+		})
+
+	}), []
+  
   return (
     <div className="leaderData">
-      <img className="avatarLeader" src={`https://randomuser.me/api/portraits/men/11.jpg`} />
-      <img className="panel" src={PinkElement} />
+      <img className="avatarLeader" src={leader.imagem} />
+      <img className="panel" src={leader.paineis} />
 
       <div className="leadersDate">
-        <span className="dateDay">07</span>
-        <span className="dateMonth">08</span>
+        <span className="dateDay">{leader.data}</span>
+        <span className="dateMonth">{leader.data}</span>
       </div>
 
       <div className="leadersInfo">
-        <h4 className="leaderName">Nome Completo</h4>
-        <span className="leaderOffice">Cargo / Empresa</span>
+        <h4 className="leaderName">{leader.tratamento}</h4>
+        <span className="leaderOffice">{leader.descricao}</span>
       </div>
     </div>
   );

@@ -52,7 +52,7 @@ export function Home() {
                 {/* <Partners/> */}
             </Row>
             <Row>
-                <Footer />
+                {/* <Footer /> */}
             </Row>
         </Container>
     );
