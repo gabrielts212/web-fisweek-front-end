@@ -1,24 +1,24 @@
 // import "./style.jsx";
 // import Eclipse2 from "../../assets/images/patrocinadores/eclipse2.png";
 import React from "react";
-
+import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
 
 import Americas from "../../assets/images/patrocinadores/diamond/americas.svg";
 import Amil from "../../assets/images/patrocinadores/diamond/amil.svg";
-// import AstraZeneca from "../../assets/images/patrocinadores/diamond/astra_zeneca.png";
-// import Blessing from "../../assets/images/patrocinadores/diamond/blessing.png";
-// import CortexMed from "../../assets/images/patrocinadores/diamond/cortex-med.svg";
-// import Med_rio from "../../assets/images/patrocinadores/diamond/med_rio.svg";
+import AstraZeneca from "../../assets/images/patrocinadores/diamond/astra-zeneca.svg";
+import Blessing from "../../assets/images/patrocinadores/diamond/Blessing.png";
+import CortexMed from "../../assets/images/patrocinadores/diamond/cortex-med.svg";
+import MedRio from "../../assets/images/patrocinadores/diamond/med-rio.svg";
 // import Microsoft from "../../assets/images/patrocinadores/diamond/microsoft.png";
-// import Pronep from "../../assets/images/patrocinadores/diamond/pronep.png";
-// import Rede_hospital_casa from "../../assets/images/patrocinadores/diamond/rede_hospital_casa.svg";
-// import Roche from "../../assets/images/patrocinadores/diamond/roche.svg";
-// import Seegene from "../../assets/images/patrocinadores/diamond/seegene.svg";
-// import Sodexo from "../../assets/images/patrocinadores/diamond/sodexo.png";
-// import Senac from "../../assets/images/patrocinadores/diamond/senac.png";
-// import White_martins from "../../assets/images/patrocinadores/diamond/white_martins.png";
-// import Oncoclinicas from "../../assets/images/patrocinadores/diamond/Oncoclinicas.png";
+import Pronep from "../../assets/images/patrocinadores/diamond/pronep.png";
+import RedeHospitalCasa from "../../assets/images/patrocinadores/diamond/rede-hospital-casa.svg";
+import Roche from "../../assets/images/patrocinadores/diamond/roche.svg";
+import Seegene from "../../assets/images/patrocinadores/diamond/seegene.svg";
+import Sodexo from "../../assets/images/patrocinadores/diamond/sodexo.png";
+import Senac from "../../assets/images/patrocinadores/diamond/senac.png";
+import WhiteMartins from "../../assets/images/patrocinadores/diamond/white-martins.png";
+import Oncoclinicas from "../../assets/images/patrocinadores/diamond/Oncoclinicas.png";
 
 
 export function Partners() {
@@ -72,21 +72,21 @@ export function Partners() {
           <a href="http://www.amil.com.br/institucional/#/" target="_blank">
             <img src={Amil} alt={"Logo do parceiro "} />
           </a>
-          {/* <a href="https://www.astrazeneca.com.br/">
+          <a href="https://www.astrazeneca.com.br/">
             <img src={AstraZeneca} alt={"Logo do parceiro "} />
-          </a> */}
+          </a>
 
-          {/* <a href="https://laboratorioblessing.com.br/" target="_blank">
+          <a href="https://laboratorioblessing.com.br/" target="_blank">
             <img src={Blessing} alt={"Logo do parceiro "} />
-          </a> */}
+          </a>
 
-          {/* <a href="https://cortex.med.br/">
+          <a href="https://cortex.med.br/">
             <img src={CortexMed} alt={"Logo do parceiro "} />
-          </a> */}
+          </a>
 
 
-          {/* <a href="https://medriocheck-up.com.br/" target="_blank">
-            <img src={Med_rio} alt={"Logo do parceiro "} />
+          <a href="https://medriocheck-up.com.br/" target="_blank">
+            <img src={MedRio} alt={"Logo do parceiro "} />
           </a>
 
           <a href="https://grupooncoclinicas.com/" target="_blank">
@@ -94,31 +94,32 @@ export function Partners() {
           </a>
 
           <a href="https://www.pronep.com.br" target="_blank">
-            <img src={pronep} alt={"Logo do parceiro "} />
+            <img src={Pronep} alt={"Logo do parceiro "} />
           </a>
           <a href="https://www.redehospitalcasa.com.br/" target="_blank">
-            <img src={rede_hospital_casa} alt={"Logo do parceiro "} />
+            <img src={RedeHospitalCasa} alt={"Logo do parceiro "} />
           </a>
           <a href="https://www.roche.com.br/">
-            <img src={roche} alt={"Logo do parceiro "} />
+            <img src={Roche} alt={"Logo do parceiro "} />
           </a>
 
           <a href="https://seegenebrazil.com.br/" target="_blank">
-            <img src={seegene} alt={"Logo do parceiro "} />
+            <img src={Seegene} alt={"Logo do parceiro "} />
           </a>
 
           <a href="https://www.senac.br/" target="_blank">
-            <img src={senac} alt={"Logo do parceiro "} />
+            <img src={Senac} alt={"Logo do parceiro "} />
           </a>
 
           <a href="https://br.sodexo.com/" target="_blank">
-            <img src={sodexo} alt={"Logo do parceiro "} />
+            <img src={Sodexo} alt={"Logo do parceiro "} />
           </a>
 
           <a href="https://www.praxair.com.br/" target="_blank">
-            <img src={white_martins} alt={"Logo do parceiro "} />
-          </a> */}
+            <img src={WhiteMartins} alt={"Logo do parceiro "} />
+          </a>
         </Carousel>
+        
       </div>
 
     // </Partners>
