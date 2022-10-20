@@ -49,13 +49,9 @@ export function Home() {
                 {/* <Startups /> */}
             </Row>
             <Row>
-<<<<<<< Updated upstream
-                {/* <Partners/> */}
-=======
                 <Partners/>
                 <Partners/>
                 <Partners/>
->>>>>>> Stashed changes
             </Row>
             <Row>
                 <Footer />
