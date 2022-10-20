@@ -1,14 +1,10 @@
 import "./AllTheLeaders.css";
 
-import { useState } from 'react';
-
 import EclipseYellow from '../../assets/images/leaders/eclipse-yellow.png';
 import { LeaderData } from "../leaderdata/LeaderData";
 import { MagnifyingGlass } from "phosphor-react";
 
 export function AllTheLeaders() {
-  const [allTheleader, setAllTheleader] = useState([])
-  
   return (
     <div className="allTheLeaders">
       <header>
@@ -31,19 +27,9 @@ export function AllTheLeaders() {
       </div>
 
       <div className="leaderDataGroup">
-        {allTheleader.map((leader, key ) => {
-            return (
-              <div key={key}>
-                 <LeaderData
-                  nome={leader.tratamento}
-                  descricao={leader.descricao}
-                  paineis={leader.paineis}
-                  img={leader.imagem}
-                />
-              </div>
-            );
-          })}
+        <LeaderData />
       </div>
     </div>
   );
 }
+

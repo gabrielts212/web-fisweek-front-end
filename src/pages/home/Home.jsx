@@ -31,7 +31,7 @@ export function Home() {
                 {/* <ConferenceBar /> */}
             </Row>
             <Row>
-                {/* <Col xs={12} md={12}><Leaders/></Col> */}
+                <Col xs={12} md={12}><Leaders/></Col>
             </Row>
             <Row>
                 {/* <Timer /> */}
@@ -49,7 +49,7 @@ export function Home() {
                 {/* <Startups /> */}
             </Row>
             <Row>
-                <Partners/>
+                {/* <Partners/> */}
             </Row>
             <Row>
                 {/* <Footer /> */}

@@ -15,7 +15,7 @@ export default defineConfig({
         ws: true,
         rewrite: path => path.replace(/^\/server/, '')  
       },
-      "/server/fisweek/painel": {
+      "/server/fisweek/painel/buscar": {
         target: "http://127.0.0.1:3000",
         changeOrigin: true,
         secure: false,
