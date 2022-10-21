@@ -49,9 +49,7 @@ export function Home() {
                 {/* <Startups /> */}
             </Row>
             <Row>
-                <Partners/>
-                <Partners/>
-                <Partners/>
+                {/* <Partners/> */}
             </Row>
             <Row>
                 <Footer />

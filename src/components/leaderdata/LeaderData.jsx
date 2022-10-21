@@ -7,7 +7,7 @@ import axios from "axios";
 export function LeaderData() {
   const [leader, setLeader] = useState([]);
   const [date, setDate] = useState([]);
-  const [err, setErr] = useState([])
+  const [err, setErr] = useState([]);
 
   useEffect(() => {
     axios
@@ -19,7 +19,8 @@ export function LeaderData() {
         setErr(err);
       });
   }),
- 
+    [];
+
   useEffect(() => {
     axios
       .get("/server/fisweek/painel/buscar")
@@ -28,30 +29,34 @@ export function LeaderData() {
       })
       .catch((err) => {
         setErr(err);
-    });
-  }), [];
+      });
+  }),
+    [];
 
   return (
     <div>
-      {leader.map((leader, key) => {
+      {leader.slice(0, 2).map((leader, key) => {
         return (
           <div className="leaderData" key={key}>
-            <img className="avatarLeader" src={leader.imagem} />
-            <img className="panel" src={leader.paineis} />
-            
+            <img
+              className="avatarLeader"
+              src={`https://fis.org.br/server/biblioteca/imagens/${leader.img}`}
+            />
+            <img className="panel" 
+              src={`https://fis.org.br/server/biblioteca/imagens/${leader.paineis}`}
+            />
+
             {date.map((d, key) => {
               return (
-                <div className="leaderData" key={key}>
-                  <div className="leadersDate">
-                    <span className="dateDay">{d.data}</span>
-                    <span className="dateMonth">{d.data}</span>
-                  </div>
+                <div className="leadersDate" key={key}>
+                  <span className="dateDay">{d.data[9]}</span>
+                  <span className="dateMonth">{d.data[6]}</span>
                 </div>
-              )
+              );
             })}
 
             <div className="leadersInfo">
-              <h4 className="leaderName">{leader.tratamento}</h4>
+              <h4 className="leaderName">{leader.nome}</h4>
               <span className="leaderOffice">{leader.descricao.BR}</span>
             </div>
           </div>
@@ -60,6 +65,3 @@ export function LeaderData() {
     </div>
   );
 }
-
-
-          
