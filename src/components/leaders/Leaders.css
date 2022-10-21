@@ -1,6 +1,7 @@
 .Leaders {
   display: flex;
   flex-direction: column;
+  background-color: #333;
 }
 
 .leaderGroup {
@@ -8,9 +9,7 @@
   display: grid;
   place-items: center;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 3rem;
-
-  margin-bottom: 7rem;
+  margin-bottom: -3rem;
 }
 
 a {
@@ -40,18 +39,16 @@ a {
 /* ====== @MEDIA QUERY ========= */
 
 /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {  
-  .leaderGroup{
-    height: 30rem;
+@media (max-width: 767.98px) { 
+  .leaderGroup {
+    height: 68rem;
     display: flex;
     width: 100%;
     overflow-x: scroll;
     overflow-y: hidden;
-  }
-
-  .leaderGroup::-webkit-scrollbar {
-    display: none;
-  }
+    padding-left: 6rem;
+    gap: 10rem;
+  }  
 
   .showLeaders {
     width: 17rem;
@@ -63,15 +60,19 @@ a {
 /* Medium devices (tablets, less than 992px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .leaderGroup {
-    height: 90rem;
-    grid-template-columns: 1fr 1fr;
-    margin-right: 2rem;
+    height: 68rem;
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-left: 6rem;
+    gap: 8rem;
   }  
 }
 
 /* Large devices (desktops, less than 1200px) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .leaderGroup {
-    margin-right: 2rem;
-  }  
+    margin-right: -2rem;
+  }
 }

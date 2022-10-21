@@ -145,15 +145,50 @@ select {
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .applicationForm .arrowDownOne {
+    position: absolute;
+    color: #FFF;
+    top: 23.7rem;
+    left: 33rem;
+  }
+  
+  .applicationForm .arrowDownTwo {
+    position: absolute;
+    color: #FFF;
+    top: 28.5rem;
+    left: 33rem;
+  }
 }
 
 /* Small devices (landscape phones, less than 768px) */
-@media (min-width: 576px) and (max-width: 767.98px) {    
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  .applicationForm .arrowDownOne {
+    position: absolute;
+    color: #FFF;
+    top: 23.7rem;
+    left: 32rem;
+  }
+  
+  .applicationForm .arrowDownTwo {
+    position: absolute;
+    color: #FFF;
+    top: 28.5rem;
+    left: 32rem;
+  }
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-
+  .applicationForm .arrowDownOne {
+    position: absolute;
+    color: #FFF;
+    top: 21.7rem;
+    left: 12.5rem;
+  }
+  
+  .applicationForm .arrowDownTwo {
+   display: none;
+  }
 }
 
 /* Large devices (desktops, less than 1200px) */
@@ -165,11 +200,39 @@ select {
   .applicationForm .captionTitle {
     font-size: 20px;
   }
+
+  .applicationForm .arrowDownOne {
+    position: absolute;
+    color: #FFF;
+    top: 22.7rem;
+    left: 17.5rem;
+  }
+  
+  .applicationForm .arrowDownTwo {
+    position: absolute;
+    color: #FFF;
+    top: 27.5rem;
+    left: 17.5rem;
+  }
 }
 
 /* X-Large devices (large desktops, less than 1400px) */
 @media (min-width: 1200px) and (max-width: 1399.98px) { 
   .applicationForm .captionTitle {
     font-size: 24px;
+  }
+
+  .applicationForm .arrowDownOne {
+    position: absolute;
+    color: #FFF;
+    top: 23.5rem;
+    left: 21.5rem;
+  }
+  
+  .applicationForm .arrowDownTwo {
+    position: absolute;
+    color: #FFF;
+    top: 28rem;
+    left: 21.5rem;
   }
 }
