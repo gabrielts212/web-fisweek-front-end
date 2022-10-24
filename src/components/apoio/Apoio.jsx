@@ -1,116 +1,103 @@
-// import React from "react";
+import React from "react";
 import Carousel from "react-multi-carousel";
-// import "react-multi-carousel/lib/styles.css";
+import "react-multi-carousel/lib/styles.css";
+
+import "./Apoio.css"
+
+import Abimed from "../../assets/images/Partners/apoio/abimed.svg";
+import Abcis from "../../assets/images/Partners/apoio/abcis.svg";
+import Abimo from "../../assets/images/Partners/apoio/abimo.svg";
+import Abo20 from "../../assets/images/Partners/apoio/ABO20.png";
+import Abrafarma from "../../assets/images/Partners/apoio/abrafarma.svg";
+import Abramed from "../../assets/images/Partners/apoio/abramed.svg";
+import Abramge from "../../assets/images/Partners/apoio/abramge.svg";
+import Abrasp from "../../assets/images/Partners/apoio/abrasp.svg";
+import Abstartups from "../../assets/images/Partners/apoio/abstartups.svg";
+import Acate from "../../assets/images/Partners/apoio/acate.svg";
+import Ahcrj from "../../assets/images/Partners/apoio/ahcrj.svg";
+import Aherj from "../../assets/images/Partners/apoio/aherj.svg";
+import Anahp_2 from "../../assets/images/Partners/apoio/anahp_2.svg";
+import Anm from "../../assets/images/Partners/apoio/anm.svg";
+import Biominas from "../../assets/images/Partners/apoio/biominas.svg";
+import Brasscom from "../../assets/images/Partners/apoio/brasscom.svg";
+import Camara_rio from "../../assets/images/Partners/apoio/camara_rio.svg";
+import Cbexs from "../../assets/images/Partners/apoio/cbexs.svg";
+import Cnsaude from "../../assets/images/Partners/apoio/cnsaude.svg";
+import Cremerj from "../../assets/images/Partners/apoio/cremerj.svg";
+import Cubo from "../../assets/images/Partners/apoio/cubo.svg";
+import Eretz from "../../assets/images/Partners/apoio/eretz.svg";
+import Fbah from "../../assets/images/Partners/apoio/fbah.svg";
+import Fbh from "../../assets/images/Partners/apoio/fbh.svg";
+import Febase from "../../assets/images/Partners/apoio/febase.svg";
+import Feherj from "../../assets/images/Partners/apoio/feherj.svg";
+import Fehoesp from "../../assets/images/Partners/apoio/fehoesp.svg";
+import Fehosul from "../../assets/images/Partners/apoio/fehosul.svg";
+import Hospitalar from "../../assets/images/Partners/apoio/hospitalar.svg";
+import Institutosante from "../../assets/images/Partners/apoio/institutosante.png";
+import I2h from "../../assets/images/Partners/apoio/i2h.svg";
+import Iess from "../../assets/images/Partners/apoio/iess.svg";
+import Inei from "../../assets/images/Partners/apoio/inei.svg";
+import Israel from "../../assets/images/Partners/apoio/israel.svg";
+import Nead from "../../assets/images/Partners/apoio/nead.svg";
+import Porto_digital from "../../assets/images/Partners/apoio/porto_digital.svg";
+import Sbis from "../../assets/images/Partners/apoio/sbis.svg";
+import Sind_hosp from "../../assets/images/Partners/apoio/sind_hosp.svg";
+import Sind_hosp_rj from "../../assets/images/Partners/apoio/sind_hosp_rj.svg";
+import Sind_hosp_sp from "../../assets/images/Partners/apoio/sind_hosp_sp.svg";
+import Sindihospa from "../../assets/images/Partners/apoio/sindihospa.svg";
+// import Sindessmat from "../../assets/images/Partners/apoio/sindessmat.svg";
+import Sindusfarma from "../../assets/images/Partners/apoio/sindusfarma.svg";
+import Sp_gov from "../../assets/images/Partners/apoio/sp_gov.svg";
+import Uff from "../../assets/images/Partners/apoio/uff.svg";
+import Sbh from "../../assets/images/Partners/apoio/sbh.svg";
 
 
-// import { Title } from "../../../components/text";
-
-import abimed from "../../../../images/patrocinadores/apoio/abimed.svg";
-import abcis from "../../../../images/patrocinadores/apoio/abcis.svg";
-// import abes from "../../../../images/patrocinadores/apoio/abes.svg";
-import abimo from "../../../../images/patrocinadores/apoio/abimo.svg";
-import abo20 from "../../../../images/patrocinadores/apoio/ABO20.png";
-import abrafarma from "../../../../images/patrocinadores/apoio/abrafarma.svg";
-import abramed_2 from "../../../../images/patrocinadores/apoio/abramed_2.svg";
-import abramge_2 from "../../../../images/patrocinadores/apoio/abramge_2.svg";
-import abrasp from "../../../../images/patrocinadores/apoio/abrasp.svg";
-import abstartups from "../../../../images/patrocinadores/apoio/abstartups.svg";
-import acate from "../../../../images/patrocinadores/apoio/acate.svg";
-import ahcrj from "../../../../images/patrocinadores/apoio/ahcrj.svg";
-import aherj from "../../../../images/patrocinadores/apoio/aherj.svg";
-import anahp_2 from "../../../../images/patrocinadores/apoio/anahp_2.svg";
-import anm from "../../../../images/patrocinadores/apoio/anm.svg";
-// import assespro from "../../../../images/patrocinadores/apoio/assespro.svg";
-import biominas from "../../../../images/patrocinadores/apoio/biominas.svg";
-import brasscom from "../../../../images/patrocinadores/apoio/brasscom.svg";
-import camara_rio from "../../../../images/patrocinadores/apoio/camara_rio.svg";
-import cbexs from "../../../../images/patrocinadores/apoio/cbexs.svg";
-import cnsaude from "../../../../images/patrocinadores/apoio/cnsaude.svg";
-import cremerj from "../../../../images/patrocinadores/apoio/cremerj.svg";
-import cubo from "../../../../images/patrocinadores/apoio/cubo.svg";
-import eretz from "../../../../images/patrocinadores/apoio/eretz.svg";
-import fbah from "../../../../images/patrocinadores/apoio/fbah.svg";
-import fbh from "../../../../images/patrocinadores/apoio/fbh.svg";
-import febase from "../../../../images/patrocinadores/apoio/febase.svg";
-import feherj from "../../../../images/patrocinadores/apoio/feherj.svg";
-import fehoesp from "../../../../images/patrocinadores/apoio/fehoesp.svg";
-import fehosul from "../../../../images/patrocinadores/apoio/fehosul.svg";
-import hospitalar from "../../../../images/patrocinadores/apoio/hospitalar.svg";
-import institutosante from "../../../../images/patrocinadores/apoio/institutosante.png";
-import i2h from "../../../../images/patrocinadores/apoio/i2h.svg";
-import iess from "../../../../images/patrocinadores/apoio/iess.svg";
-import inei from "../../../../images/patrocinadores/apoio/inei.svg";
-import israel from "../../../../images/patrocinadores/apoio/israel.svg";
-import nead from "../../../../images/patrocinadores/apoio/nead.svg";
-import porto_digital from "../../../../images/patrocinadores/apoio/porto_digital.svg";
-import sbis from "../../../../images/patrocinadores/apoio/sbis.svg";
-import sind_hosp from "../../../../images/patrocinadores/apoio/sind_hosp.svg";
-import sind_hosp_rj from "../../../../images/patrocinadores/apoio/sind_hosp_rj.svg";
-import sind_hosp_sp from "../../../../images/patrocinadores/apoio/sind_hosp_sp.svg";
-import sindihospa from "../../../../images/patrocinadores/apoio/sindihospa.svg";
-import sindessmat from "../../../../images/patrocinadores/apoio/sindessmat.svg";
-import sindusfarma from "../../../../images/patrocinadores/apoio/sindusfarma.svg";
-import sp_gov from "../../../../images/patrocinadores/apoio/sp_gov.svg";
-import uff from "../../../../images/patrocinadores/apoio/uff.svg";
-import sbh from "../../../../images/patrocinadores/apoio/sbh.svg";
-
-export default function ApoioComponent(props) {
+export  function Apoio() {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
+      
       breakpoint: { max: 4000, min: 3000 },
-      items: 6,
+      items: 4,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 6,
+      items: 3,
     },
     tablet: {
       breakpoint: { max: 768, min: 464 },
-      items: 4,
+      items: 2,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 3,
+      items: 1,
     },
   };
-
+  
   return (
-    <Apoio>
-      <Title>{props.lang.TITLE_3}</Title>
-      <div className="carousel" id="apoio-carousel">
-        <Carousel
+      <div id="apoio-carousel">
+      <h2 className="apoio">Apoio</h2>
+      <Carousel
           infinite
           autoPlay
           autoPlaySpeed={2500}
           customTransition="1000ms ease-in-out"
           draggable={false}
-          customLeftArrow={<button className="teste left"></button>}
-          customRightArrow={<button className="teste right"></button>}
+          customLeftArrow={
+          <button className="apoiobutton left" aria-label="Move Banner Left"><i class="fa fa-close"></i></button>}
+          customRightArrow={
+            <button className="apoiobutton right" aria-label="Move Banner Right"><i class="fa fa-close"></i></button>
+          }
           responsive={responsive}
         >
+          
           <img
-            src={abcis}
+            src={Abcis}
             alt={"Logo do parceiro "}
             className="apoio-partner"
           />
-
-          {/* 
-          
-           <a href="https://www.abes.org.br" target="_blank">
+<a href="https://abimed.org.br/" target="_blank">
             <img
-              src={abes}
-              alt={"Logo do parceiro "}
-              className="apoio-partner"
-            />
-          </a>
-          
-          
-          */}
-
-          <a href="https://abimed.org.br/" target="_blank">
-            <img
-              src={abimed}
+              src={Abimed}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -118,7 +105,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://abimo.org.br/" target="_blank">
             <img
-              src={abimo}
+              src={Abimo}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -126,7 +113,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://www.ixconference.com.br/" target="_blank">
             <img
-              src={abo20}
+              src={Abo20}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -134,7 +121,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://www.abrafarma.com.br" target="_blank">
             <img
-              src={abrafarma}
+              src={Abrafarma}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -142,7 +129,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://abramed.org.br/" target="_blank">
             <img
-              src={abramed_2}
+              src={Abramed}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -153,7 +140,7 @@ export default function ApoioComponent(props) {
             target="_blank"
           >
             <img
-              src={abramge_2}
+              src={Abramge}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -161,7 +148,7 @@ export default function ApoioComponent(props) {
 
           <a href="http://www.abrasp.org.br/" target="_blank">
             <img
-              src={abrasp}
+              src={Abrasp}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -169,7 +156,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://abstartups.com.br/" target="_blank">
             <img
-              src={abstartups}
+              src={Abstartups}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -177,7 +164,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://www.acate.com.br/" target="_blank">
             <img
-              src={acate}
+              src={Acate}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -185,7 +172,7 @@ export default function ApoioComponent(props) {
 
           <a href="http://www.ahcrj.com.br/" target="_blank">
             <img
-              src={ahcrj}
+              src={Ahcrj}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -193,7 +180,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://www.aherj.com.br" target="_blank">
             <img
-              src={aherj}
+              src={Aherj}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -201,7 +188,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://www.anahp.com.br/" target="_blank">
             <img
-              src={anahp_2}
+              src={Anahp_2}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -209,27 +196,16 @@ export default function ApoioComponent(props) {
 
           <a href="https://www.gov.br/anm/pt-br" target="_blank">
             <img
-              src={anm}
+              src={Anm}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
           </a>
 
-          {/* 
-          
-          
-          <img
-            src={assespro}
-            alt={"Logo do parceiro "}
-            className="apoio-partner"
-          />
-          
-          
-          */}
 
           <a href="https://biominas.org.br/" target="_blank">
             <img
-              src={biominas}
+              src={Biominas}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -237,7 +213,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://brasscom.org.br/" target="_blank">
             <img
-              src={brasscom}
+              src={Brasscom}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -245,7 +221,7 @@ export default function ApoioComponent(props) {
 
           <a href="http://www.camara.rio/" target="_blank">
             <img
-              src={camara_rio}
+              src={Camara_rio}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -253,7 +229,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://cbexs.com.br/" target="_blank">
             <img
-              src={cbexs}
+              src={Cbexs}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -261,7 +237,7 @@ export default function ApoioComponent(props) {
 
           <a href="http://cnsaude.org.br/" target="_blank">
             <img
-              src={cnsaude}
+              src={Cnsaude}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -269,7 +245,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://www.israeltrade.org.br" target="_blank">
             <img
-              src={israel}
+              src={Israel}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -277,7 +253,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://www.cremerj.org.br/" target="_blank">
             <img
-              src={cremerj}
+              src={Cremerj}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -285,7 +261,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://cubo.network/" target="_blank">
             <img
-              src={cubo}
+              src={Cubo}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -293,7 +269,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://eretz.bio/" target="_blank">
             <img
-              src={eretz}
+              src={Eretz}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -301,7 +277,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://www.fbah.org.br" target="_blank">
             <img
-              src={fbah}
+              src={Fbah}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -309,7 +285,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://www.fbh.com.br/" target="_blank">
             <img
-              src={fbh}
+              src={Fbh}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -317,7 +293,7 @@ export default function ApoioComponent(props) {
 
           <a href="http://cnsaude.org.br/federacoes/febase/" target="_blank">
             <img
-              src={febase}
+              src={Febase}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -325,7 +301,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://www.sindherj.com.br." target="_blank">
             <img
-              src={feherj}
+              src={Feherj}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -333,7 +309,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://fehoesp360.org.br/" target="_blank">
             <img
-              src={fehoesp}
+              src={Fehoesp}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -341,7 +317,7 @@ export default function ApoioComponent(props) {
 
           <a href="http://www.fehosul.org.br/" target="_blank">
             <img
-              src={fehosul}
+              src={Fehosul}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -349,7 +325,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://www.hospitalar.com/pt/home.html" target="_blank">
             <img
-              src={hospitalar}
+              src={Hospitalar}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -357,7 +333,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://www.i2h.com.br/" target="_blank">
             <img
-              src={i2h}
+              src={I2h}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -365,7 +341,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://www.iess.org.br/" target="_blank">
             <img
-              src={iess}
+              src={Iess}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -373,7 +349,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://ineidf.com.br/" target="_blank">
             <img
-              src={inei}
+              src={Inei}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -381,7 +357,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://institutosante.com.br/" target="_blank">
             <img
-              src={institutosante}
+              src={Institutosante}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -389,7 +365,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://www.neadsaude.org.br/" target="_blank">
             <img
-              src={nead}
+              src={Nead}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -400,7 +376,7 @@ export default function ApoioComponent(props) {
             target="_blank"
           >
             <img
-              src={porto_digital}
+              src={Porto_digital}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -408,7 +384,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://www.saopaulo.sp.gov.br/" target="_blank">
             <img
-              src={sp_gov}
+              src={Sp_gov}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -416,7 +392,7 @@ export default function ApoioComponent(props) {
 
           <a href="http://sbis.org.br/">
             <img
-              src={sbis}
+              src={Sbis}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -424,7 +400,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://sindihospa.com.br/">
             <img
-              src={sindihospa}
+              src={Sindihospa}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -432,7 +408,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://sindhospe.org.br" target="_blank">
             <img
-              src={sind_hosp_sp}
+              src={Sind_hosp_sp}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -443,7 +419,7 @@ export default function ApoioComponent(props) {
             target="_blank"
           >
             <img
-              src={sind_hosp}
+              src={Sind_hosp}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -451,7 +427,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://www.sindhrio.org.br" target="_blank">
             <img
-              src={sind_hosp_rj}
+              src={Sind_hosp_rj}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -459,7 +435,7 @@ export default function ApoioComponent(props) {
 
           <a href="http://sbhdf.org.br/sindicato/">
             <img
-              src={sbh}
+              src={Sbh}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -467,7 +443,7 @@ export default function ApoioComponent(props) {
 
           <a href="https://sindusfarma.org.br/" target="_blank">
             <img
-              src={sindusfarma}
+              src={Sindusfarma}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
@@ -475,13 +451,15 @@ export default function ApoioComponent(props) {
 
           <a href="https://www.uff.br/">
             <img
-              src={uff}
+              src={Uff}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
           </a>
+
+          
         </Carousel>
       </div>
-    </Apoio>
+    
   );
 }

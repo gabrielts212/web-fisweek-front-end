@@ -135,10 +135,24 @@ export function Startups() {
                   id=""
                   name=""
                   rows="5"
-                  cols="30"
+                  cols="28"
                 ></textarea>
 
+                
+              <label htmlFor="deck" className="custom-upload" >
+               
+              </label>
                 <button className="buttonDeck">
+
+              <input className="custom-upload"
+                type="file"
+                // id="deck"
+                // name="deck"
+                // ref={filesElement}
+                // onChange={(e) => setFile(e.target.value)}
+                // accept="application/pdf"
+              />  
+
                   Faça o upload do seu Deck
                 </button>
 

@@ -1,22 +1,214 @@
+.PartnersHeader
+ header {
+  width: 500.58px;
+  height: 106.73px;
+  background: #525ba9;
+  border-radius: 379px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-left: 380px;
+  margin-bottom: 40px;
+  margin-top: 80px;
+}
+.PartnersHeader
+ header h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 0 17px 0 93px;
+  margin-left: 55px;
+}
+.PartnersHeader
+ header img {
+  width: 21%;
+  margin-left: 55px;
+}
 
-.header {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    top: -77px;
-    left: 0;
-    /* background-color: #3F3D73; */
-  }
+@media (max-width: 549px) {
+  .PartnersHeader
+  header {
+   width: 350.58px;
+   height: 80px;
+   background: #525ba9;
+   border-radius: 379px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   margin-left: 95px;
+   margin-bottom: 40px;
+   margin-top: 80px;
+ }
+ .PartnersHeader
+ header h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 0 17px 0 93px;
+  margin-left: -28px;
+}
+.PartnersHeader
+ header img {
+  width: 20%;
+  margin-left: 33px;
+}
+}
 
-  .Partners  h1 {
-    font-size: 2.7rem;
-    font-weight: 700;
-    color: #fff;
-    padding: 0 17px 0 93px;
-    margin-left: 500px;
-  }
-  .Partners img {
-    width: 10%;
-    margin-left: 820px;
-    margin-bottom: -20px;
-  }
+/* X-Small devices (portrait phones, less than 576px) */
+@media (min-width: 550px) and (max-width: 575.98px) {
+  .PartnersHeader
+  header {
+   width: 350.58px;
+   height: 80px;
+   background: #525ba9;
+   border-radius: 379px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   margin-left: 95px;
+   margin-bottom: 40px;
+   margin-top: 80px;
+ }
+ .PartnersHeader
+ header h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 0 17px 0 93px;
+  margin-left: -28px;
+}
+.PartnersHeader
+ header img {
+  width: 20%;
+  margin-left: 33px;
+}
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .PartnersHeader
+  header {
+   width: 350.58px;
+   height: 80px;
+   background: #525ba9;
+   border-radius: 379px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   margin-left: 95px;
+   margin-bottom: 40px;
+   margin-top: 80px;
+ }
+ .PartnersHeader
+ header h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 0 17px 0 93px;
+  margin-left: -28px;
+}
+.PartnersHeader
+ header img {
+  width: 20%;
+  margin-left: 33px;
+}
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .PartnersHeader
+  header {
+   width: 430.58px;
+   height: 90px;
+   background: #525ba9;
+   border-radius: 379px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   margin-left: 140px;
+   margin-bottom: 40px;
+   margin-top: 80px;
+ }
+ .PartnersHeader
+ header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 0 17px 0 93px;
+  margin-left: 15px;
+}
+.PartnersHeader
+ header img {
+  width: 20%;
+  margin-left: 50px;
+}
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .PartnersHeader
+ header {
+  width: 500.58px;
+  height: 106.73px;
+  background: #525ba9;
+  border-radius: 379px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-left: 260px;
+  margin-bottom: 40px;
+  margin-top: 80px;
+}
+.PartnersHeader
+ header h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 0 17px 0 93px;
+  margin-left: 55px;
+}
+.PartnersHeader
+ header img {
+  width: 21%;
+  margin-left: 55px;
+}
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .PartnersHeader
+ header {
+  width: 500.58px;
+  height: 106.73px;
+  background: #525ba9;
+  border-radius: 379px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-left: 329px;
+  margin-bottom: 40px;
+  margin-top: 80px;
+}
+.PartnersHeader
+ header h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 0 17px 0 93px;
+  margin-left: 55px;
+}
+.PartnersHeader
+ header img {
+  width: 21%;
+  margin-left: 55px;
+}
+}

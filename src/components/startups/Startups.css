@@ -98,7 +98,7 @@
   background-color: rgba(18, 12, 12, 0.75);
 }
 .modal-content {
-  height: 684px;
+  height: 650px;
   border-radius: 7% 10% 12% 1%;
   width: 481px;
   z-index: 999;
@@ -109,7 +109,7 @@
 }
 .formStartups{
   position: relative;
-  margin-top: 80px;
+  margin-top: 100px;
   border-radius: 10px;
   padding: 60px;
   width: min-content;
@@ -181,6 +181,21 @@
   height: 100%;
   display: none;
 }
+input[type="file"] {
+  display: none;
+}
+.custom-upload {
+  min-width: 224px;
+  padding: 13px 4px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  margin-top: 132px;
+  margin-left: -230px;
+}
+
 
 /* Small devices (landscape phones, less than 360px) */
 @media (min-width: 360px) and (max-width: 550.98px) {
@@ -206,7 +221,7 @@
     margin: -24rem 0 0 6rem;
     position: absolute;
   }
-  .modal-content {
+  /* .modal-content {
     height: 684px;
     border-radius: 7% 10% 12% 1%;
     width: 451px;
@@ -215,7 +230,8 @@
     background: #53507d;
     padding-left: 20px;
     margin-left:-10px;
-  }
+    margin-bottom: 300px;
+  } */
   .eventBeehive {
     width: 22rem;
     height: 25rem;
@@ -271,7 +287,7 @@
   }
   .formStartups{
     position: relative;
-    margin-top: 126px;
+    margin-top: 150px;
     border-radius: 10px;
     padding: 0px;
     width: min-content;
@@ -286,14 +302,15 @@
     margin-top: -120px;
   }
   .modal-content {
-    height: 450px;
+    height: 490px;
     border-radius: 7% 10% 12% 1%;
-    width: 300px;
+    width: 290px;
     z-index: 999;
     position: absolute;
     background: #53507d;
     padding-left: 20px;
     margin-left:-31px;
+    margin-bottom: 300px;
   }
  .formSelect {
     width: 95%;
@@ -310,13 +327,13 @@
 }
 .buttonDeck{
   width: 17rem;
-  height: 1.7rem;
+  height: 2rem;
   border-radius: 8rem;
   border: none;
   font-size: 1.1rem;
   font-weight: 600;
   color: #fff;
-  margin-left: 10px;
+  margin-left: 3px;
   background-color:#2A2850 ;
 }
 .buttonModal{
@@ -380,14 +397,73 @@
     /* z-index: 888; */
   }
   .modal-content {
-    height: 684px;
+    height: 650px;
     border-radius: 7% 10% 12% 1%;
-    width: 451px;
+    width: 400px;
     z-index: 999;
     position: absolute;
     background: #53507d;
+    padding-left: 80px;
+    margin-left:10px;
+    margin-bottom: 20px;
+  }
+  .captionTitle input{
+    width: 100%;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(50px);
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 300;
+    outline: none;
+    border: none;
+    border-radius: 51px;
+    margin-bottom: 10px;
     padding-left: 20px;
-    margin-left:-10px;
+    opacity: 0.92;
+  }
+  .formSelect {
+    width: 100%;
+    height: 40px;
+    border: none;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color:gray;
+    background: #454267;
+    opacity: 0.92;
+    border-radius: 20px;
+    margin-bottom:12px;
+}
+  .formStartups{
+    position: relative;
+    margin-top: 170px;
+    border-radius: 10px;
+    padding: 0px;
+    width: min-content;
+    align-items: center;
+  }
+  .buttonModal{
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 8rem;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2a2850;
+    margin: 1.5rem 0 -1.5rem 0;
+    margin-left: 85px;
+  }
+  .buttonDeck{
+    width: 17rem;
+    height: 2.8rem;
+    border-radius: 8rem;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 3px;
+    background-color:#2A2850 ;
   }
   .eventBeehive {
     width: 22rem;
@@ -457,14 +533,59 @@
     /* z-index: 888; */
   }
   .modal-content {
-    height: 684px;
+    height: 690px;
     border-radius: 7% 10% 12% 1%;
-    width: 451px;
+    width: 420px;
     z-index: 999;
     position: absolute;
     background: #53507d;
     padding-left: 20px;
     margin-left:-10px;
+    margin-bottom: 80px;
+  }
+  .buttonModal{
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 8rem;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2a2850;
+    margin: 1.5rem 0 -1.5rem 0;
+    margin-left: 85px;
+  }
+  .buttonDeck{
+    width: 17rem;
+    height: 2.8rem;
+    border-radius: 8rem;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 3px;
+    background-color:#2A2850 ;
+  }
+  .formSelect {
+    width: 100%;
+    height: 40px;
+    border: none;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color:gray;
+    background: #454267;
+    opacity: 0.92;
+    border-radius: 20px;
+    margin-bottom:12px;
+}
+  .formStartups{
+    position: relative;
+    margin-top: 170px;
+    border-radius: 10px;
+    padding: 0px;
+    width: min-content;
+    align-items: center;
+    margin-left: 60px;
   }
   .eventBeehive {
     width: 22rem;
@@ -546,14 +667,58 @@
     /* z-index: 888; */
   }
   .modal-content {
-    height: 684px;
+    height: 700px;
     border-radius: 7% 10% 12% 1%;
-    width: 451px;
+    width: 400px;
     z-index: 999;
     position: absolute;
     background: #53507d;
+    padding-left: 0px;
+    margin-left:10px;
+  }
+  .buttonModal{
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 8rem;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2a2850;
+    margin: 1.5rem 0 -1.5rem 0;
+    margin-left: 85px;
+  }
+  .buttonDeck{
+    width: 17rem;
+    height: 2.8rem;
+    border-radius: 8rem;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 3px;
+    background-color:#2A2850 ;
+  }
+  .formSelect {
+    width: 100%;
+    height: 40px;
+    border: none;
     padding-left: 20px;
-    margin-left:-10px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color:gray;
+    background: #454267;
+    opacity: 0.92;
+    border-radius: 20px;
+    margin-bottom:12px;
+}
+  .formStartups{
+    position: relative;
+    margin-top: 170px;
+    border-radius: 10px;
+    padding: 0px;
+    width: min-content;
+    align-items: center;
+    margin-left: 83px;
   }
   .eventBeehive {
     width: 25rem;
@@ -608,14 +773,58 @@
     /* z-index: 888; */
   }
   .modal-content {
-    height: 684px;
+    height: 700px;
     border-radius: 7% 10% 12% 1%;
-    width: 481px;
+    width: 420px;
     z-index: 999;
     position: absolute;
     background: #53507d;
+    padding-left: 0px;
+    margin-left:5px;
+  }
+  .buttonModal{
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 8rem;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2a2850;
+    margin: 1.5rem 0 -1.5rem 0;
+    margin-left: 85px;
+  }
+  .buttonDeck{
+    width: 17rem;
+    height: 2.8rem;
+    border-radius: 8rem;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 3px;
+    background-color:#2A2850 ;
+  }
+  .formSelect {
+    width: 100%;
+    height: 40px;
+    border: none;
     padding-left: 20px;
-    margin-left:-50px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color:gray;
+    background: #454267;
+    opacity: 0.92;
+    border-radius: 20px;
+    margin-bottom:12px;
+}
+  .formStartups{
+    position: relative;
+    margin-top: 170px;
+    border-radius: 10px;
+    padding: 0px;
+    width: min-content;
+    align-items: center;
+    margin-left: 83px;
   }
   .eventBeehive {
     width: 29rem;
@@ -678,6 +887,60 @@
     background: #53507d;
     padding-left: 20px;
     margin-left:-50px;
+  }
+  .modal-content {
+    height: 700px;
+    border-radius: 7% 10% 12% 1%;
+    width: 450px;
+    z-index: 999;
+    position: absolute;
+    background: #53507d;
+    padding-left: 0px;
+    margin-left:-80px;
+  }
+  .buttonModal{
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 8rem;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2a2850;
+    margin: 1.5rem 0 -1.5rem 0;
+    margin-left: 85px;
+  }
+  .buttonDeck{
+    width: 17rem;
+    height: 2.8rem;
+    border-radius: 8rem;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 3px;
+    background-color:#2A2850 ;
+  }
+  .formSelect {
+    width: 100%;
+    height: 40px;
+    border: none;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color:gray;
+    background: #454267;
+    opacity: 0.92;
+    border-radius: 20px;
+    margin-bottom:12px;
+}
+  .formStartups{
+    position: relative;
+    margin-top: 170px;
+    border-radius: 10px;
+    padding: 0px;
+    width: min-content;
+    align-items: center;
+    margin-left: 100px;
   }
   .eventBeehive {
     width: 29rem;

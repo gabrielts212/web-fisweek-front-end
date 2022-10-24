@@ -13,7 +13,9 @@ import { Header } from '../../components/header/Header';
 import { Testimonials } from '../../components/testimonials/Testimonials';
 import { EventsFis } from '../../components/eventsfis/EventsFis';
 import { Startups } from '../../components/startups/Startups';
-import { Partners} from '../../components/partners/Diamond';
+import { Partners} from '../../components/partners/Partners';
+import { Gold} from '../../components/gold/Gold';
+import { Apoio} from '../../components/apoio/Apoio';
 
 import './Home.css';
 
@@ -31,7 +33,7 @@ export function Home() {
                 {/* <ConferenceBar /> */}
             </Row>
             <Row>
-                <Col xs={12} md={12}><Leaders/></Col>
+                {/* <Col xs={12} md={12}><Leaders/></Col> */}
             </Row>
             <Row>
                 {/* <Timer /> */}
@@ -49,7 +51,7 @@ export function Home() {
                 {/* <Startups /> */}
             </Row>
             <Row>
-                {/* <Partners/> */}
+                <Partners/>
             </Row>
             <Row>
                 <Footer />

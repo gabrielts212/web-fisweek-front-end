@@ -1,0 +1,148 @@
+import React from "react";
+import "react-multi-carousel/lib/styles.css";
+import Carousel from "react-multi-carousel";
+
+import "./gold.css";
+
+import Abramed from "../../assets/images/Partners/gold/abramed.svg";
+import Abramge from "../../assets/images/Partners/gold/abramgenacional.png";
+import Anahp from "../../assets/images/Partners/gold/anahp.svg";
+import Berith from "../../assets/images/Partners/gold/berith.png";
+import Berkeley from "../../assets/images/Partners/gold/berkeley.svg";
+import Bradesco from "../../assets/images/Partners/gold/bradesco.svg";
+import Firjan from "../../assets/images/Partners/gold/firjan.svg";
+import Ibkl from "../../assets/images/Partners/gold/ibkl.svg";
+import Jj from "../../assets/images/Partners/gold/j&j.svg";
+import Materdei from "../../assets/images/Partners/gold/materdei.png";
+import Pfizer from "../../assets/images/Partners/gold/pfizer.png";
+import Rede_dor from "../../assets/images/Partners/gold/rededor.png";
+import Sabin from "../../assets/images/Partners/gold/sabin.svg";
+import Sinapse from "../../assets/images/Partners/gold/sinapse.svg";
+import Vventures from "../../assets/images/Partners/gold/vventures.svg";
+import Fena_saude from "../../assets/images/Partners/gold/fenasaude.png";
+import Careon from "../../assets/images/Partners/gold/Careon.png";
+import Fleury from "../../assets/images/Partners/gold/grupo fleury.png";
+// import Gsk from "../../assets/images/Partners/gold/gsk.png";
+
+export function Gold() {
+    const responsive = {
+      superLargeDesktop: {
+        
+        breakpoint: { max: 4000, min: 3000 },
+        items: 4,
+      },
+      desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 3,
+      },
+      tablet: {
+        breakpoint: { max: 768, min: 464 },
+        items: 2,
+      },
+      mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1,
+      },
+    };
+
+    
+    return (
+    <div className="gold">
+      <h2 className="h2Gold">Parceiros Gold</h2>
+      <div className="borderGold"></div>
+
+        <Carousel
+          infinite
+          autoPlay
+          autoPlaySpeed={2500}
+          customTransition="1000ms ease-in-out"
+          draggable={false}
+          customLeftArrow={<button className="apoiobutton left" aria-label="Move Banner Left"><i class="fa fa-close"></i></button>}
+          customRightArrow={
+            <button className="apoiobutton right" aria-label="Move Banner Right"><i class="fa fa-close"></i></button>
+          }
+          responsive={responsive}
+        >
+          <a href="https://www.abramed.org.br" target="_blank">
+            <img className="" src={Abramed} alt={"Logo do parceiro "} />
+          </a>
+
+          <a href="https://abramge.com.br/portal/index.php/pt-BR/">
+            <img className="gold-partner" src={Abramge} alt={"Logo do parceiro "} />
+          </a>
+
+          <a href="https://www.anahp.com.br/">
+            <img className="gold-partner" src={Anahp} alt={"Logo do parceiro "} />
+          </a>
+
+          <a href="https://www.berithadv.com.br/">
+            <img className="gold-partner" src={Berith} alt={"Logo do parceiro "} />
+          </a>
+
+          <a href="https://www.berkeley.edu/">
+            <img className="gold-partner" src={Berkeley} alt={"Logo do parceiro "} />
+          </a>
+
+          <a href="https://banco.bradesco/html/classic/index.shtm">
+            <img className="gold-partner" src={Bradesco} alt={"Logo do parceiro "} />
+          </a>
+
+          <a href="https://careonbrasil.com.br/">
+            <img className="gold-partner" src={Careon} alt={"Logo do parceiro "} />
+          </a>
+
+          <a href="https://www.fenasaude.org.br/" target="_blank">
+            <img className="gold-partner" src={Fena_saude} alt={"Logo do parceiro "} />
+          </a>
+          <a
+            href="https://www.firjan.com.br/sesi/empresas/qualidade-de-vida/check-up-saude/"
+            target="_blank"
+          >
+            <img className="gold-partner" src={Firjan} alt={"Logo do parceiro "} />
+          </a>
+
+          <a href="https://www.grupofleury.com.br/SitePages/Home.aspx" target="_blank">
+            <img className="gold-partner" src={Fleury} alt={"Logo do parceiro "} />
+          </a>
+
+          <a href="http://ibkl.com.br/" target="_blank">
+            <img className="gold-partner" src={Ibkl} alt={"Logo do parceiro "} />
+          </a>
+          <a href="https://www.jnjbrasil.com.br/">
+            <img className="gold-partner" src={Jj} alt={"Logo do parceiro"} />
+          </a>
+
+          <a href="https://www.materdei.com.br/">
+            <img className="gold-partner" src={Materdei} alt={"Logo do parceiro "} />
+          </a>
+
+          <a href="https://www.pfizer.com.br/">
+            <img className="gold-partner" src={Pfizer} alt={"Logo do parceiro "} />
+          </a>
+
+          {/* <a
+            href="https://br.gsk.com/pt-br/?cc=br_psea_ac_not_applicable_45566&gclid=CjwKCAjwzaSLBhBJEiwAJSRoknpi1MW9t0Nqo4gxAaKJZDOmFNwkbhQoXp8AwkWN66do1Z_1vQCA8BoCTicQAvD_BwE"
+            target="_blank"
+          >
+            <img className="gold-partner" src={Gsk} alt={"Logo do parceiro "} />
+          </a> */}
+
+          <a href="https://www.rededorsaoluiz.com.br/" target="_blank">
+            <img className="gold-partner" src={Rede_dor} alt={"Logo do parceiro "} />
+          </a>
+
+          <a className="https://www.sabin.com.br/">
+            <img className="gold-partner" src={Sabin} alt={"Logo do parceiro "} />
+          </a>
+
+          <a href="https://sinapsesaude.com.br/">
+            <img className="gold-partner" src={Sinapse} alt={"Logo do parceiro "} />
+          </a>
+
+          <a href="#">
+            <img className="gold-partner" src={Vventures} alt={"Logo do parceiro "} />
+          </a>
+        </Carousel> 
+    </div>
+  );
+}

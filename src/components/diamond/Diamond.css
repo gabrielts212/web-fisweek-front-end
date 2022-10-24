@@ -1,0 +1,28 @@
+button.diamondbutton{
+  top: 40%;
+  position: absolute;
+  outline: 0;
+  transition: all 500ms;
+  border-radius: 35px;
+  z-index: 500;
+  border: 0;
+  font-size: 25px;
+  line-height: 1;
+  opacity: 0.75;
+}
+button.left {
+  transform: translate(-30%, -50%);
+  /* left: -6px; */
+}
+button.right {
+  right: -3px;
+  transform: translate(40%, -50%);
+}
+.diamond {
+  color: #fff;
+}
+
+.borderDiamond{
+  position: relative;
+  border-bottom: 5px solid #0139FF;
+}

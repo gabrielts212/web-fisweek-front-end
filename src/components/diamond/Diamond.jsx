@@ -1,68 +1,56 @@
-// import "./style.jsx";
-// import Eclipse2 from "../../assets/images/patrocinadores/eclipse2.png";
-import React from "react";
-import "react-multi-carousel/lib/styles.css";
+import "./Diamond.css";
 import Carousel from "react-multi-carousel";
 
-import Americas from "../../assets/images/patrocinadores/diamond/americas.svg";
-import Amil from "../../assets/images/patrocinadores/diamond/amil.svg";
-import AstraZeneca from "../../assets/images/patrocinadores/diamond/astra-zeneca.svg";
-import Blessing from "../../assets/images/patrocinadores/diamond/Blessing.png";
-import CortexMed from "../../assets/images/patrocinadores/diamond/cortex-med.svg";
-import MedRio from "../../assets/images/patrocinadores/diamond/med-rio.svg";
-// import Microsoft from "../../assets/images/patrocinadores/diamond/microsoft.png";
-import Pronep from "../../assets/images/patrocinadores/diamond/pronep.png";
-import RedeHospitalCasa from "../../assets/images/patrocinadores/diamond/rede-hospital-casa.svg";
-import Roche from "../../assets/images/patrocinadores/diamond/roche.svg";
-import Seegene from "../../assets/images/patrocinadores/diamond/seegene.svg";
-import Sodexo from "../../assets/images/patrocinadores/diamond/sodexo.png";
-import Senac from "../../assets/images/patrocinadores/diamond/senac.png";
-import WhiteMartins from "../../assets/images/patrocinadores/diamond/white-martins.png";
-import Oncoclinicas from "../../assets/images/patrocinadores/diamond/Oncoclinicas.png";
+import Americas from "../../assets/images/Partners/diamond/americas.svg";
+import Amil from "../../assets/images/Partners/diamond/amil.svg";
+import AstraZeneca from "../../assets/images/Partners/diamond/astra-zeneca.svg";
+import Blessing from "../../assets/images/Partners/diamond/Blessing.png";
+import CortexMed from "../../assets/images/Partners/diamond/cortex-med.svg";
+import MedRio from "../../assets/images/Partners/diamond/med-rio.svg";
+// import Microsoft from "../../assets/images/Partners/diamond/microsoft.png";
+import Pronep from "../../assets/images/Partners/diamond/pronep.png";
+import RedeHospitalCasa from "../../assets/images/Partners/diamond/rede-hospital-casa.svg";
+import Roche from "../../assets/images/Partners/diamond/roche.svg";
+import Seegene from "../../assets/images/Partners/diamond/seegene.svg";
+import Sodexo from "../../assets/images/Partners/diamond/sodexo.png";
+import Senac from "../../assets/images/Partners/diamond/senac.png";
+import WhiteMartins from "../../assets/images/Partners/diamond/white-martins.png";
+import Oncoclinicas from "../../assets/images/Partners/diamond/Oncoclinicas.png";
 
-
-export function Partners() {
+export function Diamond(){
     const responsive = {
-      superLargeDesktop: {
-        
-        breakpoint: { max: 4000, min: 3000 },
-        items: 4,
-      },
-      desktop: {
-        breakpoint: { max: 3000, min: 1024 },
-        items: 3,
-      },
-      tablet: {
-        breakpoint: { max: 768, min: 464 },
-        items: 2,
-      },
-      mobile: {
-        breakpoint: { max: 464, min: 0 },
-        items: 1,
-      },
-    };
+        superLargeDesktop: {
+          breakpoint: { max: 4000, min: 3000 },
+          items: 4,
+        },
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 3,
+        },
+        tablet: {
+          breakpoint: { max: 768, min: 464 },
+          items: 2,
+        },
+        mobile: {
+          breakpoint: { max: 464, min: 0 },
+          items: 1,
+        },
+      };
 
-    // <div className="Partners">
+    return(
+      <div className="diamond">
+        <h2>Parceiros Diamond</h2>
+        <div className="borderDiamond"></div>
 
-    //   <div>
-    //   <div className="header">
-    //     <img src={Eclipse2} alt="Circulo" />
-    //   <h1>Partners</h1>
-    //   </div>
-    //   </div>
-    
-  return (
-      // <Partners>
-      <div className="carousel">
         <Carousel
           infinite
           autoPlay
           autoPlaySpeed={2500}
           customTransition="1000ms ease-in-out"
           draggable={false}
-          customLeftArrow={<button className="teste left" aria-label="Move Banner Left"></button>}
+          customLeftArrow={<button className="diamondbutton left" aria-label="Move Banner Left"><i class="fa fa-close"></i></button>}
           customRightArrow={
-            <button className="teste right" aria-label="Move Banner Right"></button>
+            <button className="diamondbutton right" aria-label="Move Banner Right"><i class="fa fa-close"></i></button>
           }
           responsive={responsive}
         >
@@ -83,7 +71,6 @@ export function Partners() {
           <a href="https://cortex.med.br/">
             <img src={CortexMed} alt={"Logo do parceiro "} />
           </a>
-
 
           <a href="https://medriocheck-up.com.br/" target="_blank">
             <img src={MedRio} alt={"Logo do parceiro "} />
@@ -119,11 +106,6 @@ export function Partners() {
             <img src={WhiteMartins} alt={"Logo do parceiro "} />
           </a>
         </Carousel>
-        
       </div>
-
-    // </Partners>
-
-    // </div>
-  );
+    )
 }

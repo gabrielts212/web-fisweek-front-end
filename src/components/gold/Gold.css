@@ -1,0 +1,28 @@
+button.apoiobutton {
+  top: 40%;
+  position: absolute;
+  outline: 0;
+  transition: all 500ms;
+  border-radius: 35px;
+  z-index: 500;
+  border: 0;
+  font-size: 25px;
+  line-height: 1;
+  opacity: 0.75;
+}
+button.left {
+  transform: translate(-30%, -50%);
+}
+button.right {
+  transform: translate(40%, -50%);
+}
+
+.h2Gold {
+  color: #fff;
+}
+
+.borderGold {
+  position: relative;
+  border-bottom: 5px solid #F2BB16;
+  background-color: #fff;
+}
