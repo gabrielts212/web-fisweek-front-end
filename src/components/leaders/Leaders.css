@@ -1,7 +1,6 @@
 .Leaders {
   display: flex;
   flex-direction: column;
-  background-color: #333;
 }
 
 .leaderGroup {
