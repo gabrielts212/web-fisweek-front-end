@@ -3,8 +3,21 @@ import "./AllTheLeaders.css";
 import EclipseYellow from '../../assets/images/leaders/eclipse-yellow.png';
 import { LeaderData } from "../leaderdata/LeaderData";
 import { MagnifyingGlass } from "phosphor-react";
+import { useState } from "react";
+
+const days = [
+  'Todos',
+  'Dia 7',
+  'Dia 8',
+  'Dia 9',
+  'Dia 10',
+  'Dia 11',
+];
 
 export function AllTheLeaders() {
+  const [search, setSearch] = useState('')
+  console.log(search)
+
   return (
     <div className="allTheLeaders">
       <header>
@@ -22,8 +35,19 @@ export function AllTheLeaders() {
       </section>
 
       <div>
-        <input type="text" placeholder="Pesquise por nome ou evento" />
+        <input 
+          type="text" 
+          value={search}
+          onChange={(e) => setSearch(e.target.value)} 
+          placeholder="Pesquise por nome ou evento" />
+
         <MagnifyingGlass className="iconSearch" size={32}/>
+
+        <ul>
+          {days.map((dt) => {
+            <li key={dt}>{dt}</li>
+          })}
+        </ul>
       </div>
 
       <div className="leaderDataGroup">

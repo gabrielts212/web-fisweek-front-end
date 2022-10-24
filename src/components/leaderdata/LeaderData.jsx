@@ -1,8 +1,9 @@
-import "./LeaderData.css";
-
 import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import moment from 'moment';
+
+import "./LeaderData.css";
 
 export function LeaderData() {
   const [leader, setLeader] = useState([]);
@@ -40,17 +41,15 @@ export function LeaderData() {
           <div className="leaderData" key={key}>
             <img
               className="avatarLeader"
-              src={`https://fis.org.br/server/biblioteca/imagens/${leader.img}`}
+              src={`https://fis.org.br/server/biblioteca/imagens/${leader.imagem}`}
             />
-            <img className="panel" 
-              src={`https://fis.org.br/server/biblioteca/imagens/${leader.paineis}`}
-            />
+            <img className="panel" src={leader.paineis}/>
 
             {date.map((d, key) => {
               return (
                 <div className="leadersDate" key={key}>
-                  <span className="dateDay">{d.data[9]}</span>
-                  <span className="dateMonth">{d.data[6]}</span>
+                  <span className="dateDay">{moment(d.data).format("DD")}</span>
+                  <span className="dateMonth ">{moment(d.data).format("MM")}</span>
                 </div>
               );
             })}
