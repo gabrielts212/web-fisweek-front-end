@@ -94,7 +94,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3rem;
 
-  margin-right: 2.5rem;
+  margin-right: 0;
   margin-bottom: 6rem;
 }
 

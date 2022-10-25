@@ -4,6 +4,7 @@
 }
 
 .leaderGroup {
+  display: flex;
   height: auto;
   display: grid;
   place-items: center;

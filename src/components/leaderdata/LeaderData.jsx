@@ -6,7 +6,7 @@ import moment from 'moment';
 import "./LeaderData.css";
 
 export function LeaderData() {
-  const [leader, setLeader] = useState([]);
+  const [leaders, setLeaders] = useState([]);
   const [date, setDate] = useState([]);
   const [err, setErr] = useState([]);
 
@@ -14,7 +14,7 @@ export function LeaderData() {
     axios
       .get("/server/fisweek/lideres")
       .then((response) => {
-        setLeader(response.data);
+        setLeaders(response.data);
       })
       .catch((err) => {
         setErr(err);
@@ -36,18 +36,18 @@ export function LeaderData() {
 
   return (
     <div>
-      {leader.slice(0, 2).map((leader, key) => {
+      {leaders.slice(0, 2).map((leader, key) => {
         return (
-          <div className="leaderData" key={key}>
+          <div className="leaderData" key={key._id}>
             <img
               className="avatarLeader"
               src={`https://fis.org.br/server/biblioteca/imagens/${leader.imagem}`}
             />
             <img className="panel" src={leader.paineis}/>
 
-            {date.map((d, key) => {
+            {date.map((d) => {
               return (
-                <div className="leadersDate" key={key}>
+                <div className="leadersDate">
                   <span className="dateDay">{moment(d.data).format("DD")}</span>
                   <span className="dateMonth ">{moment(d.data).format("MM")}</span>
                 </div>
@@ -64,3 +64,4 @@ export function LeaderData() {
     </div>
   );
 }
+
