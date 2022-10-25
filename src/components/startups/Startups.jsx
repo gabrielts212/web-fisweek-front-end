@@ -142,16 +142,15 @@ export function Startups() {
               <label htmlFor="deck" className="custom-upload" >
                
               </label>
-                <button className="buttonDeck">
-
-              <input className="custom-upload"
+              <input
                 type="file"
-                // id="deck"
-                // name="deck"
-                // ref={filesElement}
-                // onChange={(e) => setFile(e.target.value)}
-                // accept="application/pdf"
-              />  
+                id="deck"
+                name="deck"
+                ref={handleSubmit}
+                onChange={(e) => setFile(e.target.value)}
+                accept="application/pdf"
+              /> 
+                <button className="buttonDeck">
 
                   Faça o upload do seu Deck
                 </button>
@@ -169,14 +168,3 @@ export function Startups() {
   );
 }
 
-// className="eventLocation"
-
-// onClick={closeModal}
-
-// const {
-//   register,
-//   handleSubmit,
-//   formState: { errors, isDirty, isValid }
-// } = useForm({
-//   mode: 'onChange'
-// })

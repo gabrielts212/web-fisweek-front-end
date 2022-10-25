@@ -6,16 +6,16 @@ button.apoiobutton {
   border-radius: 35px;
   z-index: 500;
   border: 0;
-  font-size: 25px;
+  font-size: 10px;
   line-height: 1;
   opacity: 0.75;
 }
 button.left {
-  transform: translate(-30%, -50%);
+  transform: translate(10%, -30%);
 }
 button.right {
   right: -3px;
-  transform: translate(40%, -50%);
+  transform: translate(40%, -30%);
 }
 .apoio {
   color: #fff;

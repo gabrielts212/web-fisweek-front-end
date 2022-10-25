@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 
 import "./Apoio.css"
 
@@ -83,9 +84,9 @@ export  function Apoio() {
           customTransition="1000ms ease-in-out"
           draggable={false}
           customLeftArrow={
-          <button className="apoiobutton left" aria-label="Move Banner Left"><i class="fa fa-close"></i></button>}
+          <button className="apoiobutton left" aria-label="Move Banner Left"><MdChevronLeft size={20} /></button>}
           customRightArrow={
-            <button className="apoiobutton right" aria-label="Move Banner Right"><i class="fa fa-close"></i></button>
+            <button className="apoiobutton right" aria-label="Move Banner Right"><MdChevronRight size={20} /></button>
           }
           responsive={responsive}
         >

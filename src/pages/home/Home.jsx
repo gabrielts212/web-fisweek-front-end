@@ -11,6 +11,7 @@ import { Schedule } from '../../components/schedule/Schedule';
 import { Timer } from '../../components/timer/Timer';
 import { Header } from '../../components/header/Header';
 import { Testimonials } from '../../components/testimonials/Testimonials';
+import { Institutional } from '../../components/institutional/Institutional';
 import { EventsFis } from '../../components/eventsfis/EventsFis';
 import { Startups } from '../../components/startups/Startups';
 import { Partners} from '../../components/partners/Partners';
@@ -39,6 +40,9 @@ export function Home() {
                 {/* <Timer /> */}
             </Row>
             <Row>
+                {/* <Institutional /> */}
+            </Row>
+            <Row>
                 {/* <EventsFis /> */}
             </Row>
             <Row>
@@ -48,7 +52,7 @@ export function Home() {
                 {/* <Testimonials /> */}
             </Row>
             <Row>
-                {/* <Startups /> */}
+                <Startups />
             </Row>
             <Row>
                 {/* <Partners/> */}

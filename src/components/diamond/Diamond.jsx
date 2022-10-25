@@ -1,5 +1,6 @@
 import "./Diamond.css";
 import Carousel from "react-multi-carousel";
+import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 
 import Americas from "../../assets/images/Partners/diamond/americas.svg";
 import Amil from "../../assets/images/Partners/diamond/amil.svg";
@@ -48,9 +49,9 @@ export function Diamond(){
           autoPlaySpeed={2500}
           customTransition="1000ms ease-in-out"
           draggable={false}
-          customLeftArrow={<button className="diamondbutton left" aria-label="Move Banner Left"><i class="fa fa-close"></i></button>}
+          customLeftArrow={<button className="diamondbutton left" aria-label="Move Banner Left"><MdChevronLeft size={20} /></button>}
           customRightArrow={
-            <button className="diamondbutton right" aria-label="Move Banner Right"><i class="fa fa-close"></i></button>
+            <button className="diamondbutton right" aria-label="Move Banner Right"><MdChevronRight size={20} /></button>
           }
           responsive={responsive}
         >
