@@ -6,11 +6,11 @@ export function Leaders() {
   return (
     <div className="Leaders" id="leaders">
       <div className="leaderGroup">
-        <LeaderData />
-        {/* <LeaderData />
-        <LeaderData /> */}
+        <LeaderData 
+          showAll={false}
+        />
       </div>
-      
+
       <a href="/fisweek22/#/leaderspage" target="_blank">
         <button className="showLeaders">Ver todos os líderes</button>
       </a>

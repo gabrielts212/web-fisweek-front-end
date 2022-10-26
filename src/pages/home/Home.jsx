@@ -15,8 +15,8 @@ import { Institutional } from '../../components/institutional/Institutional';
 import { EventsFis } from '../../components/eventsfis/EventsFis';
 import { Startups } from '../../components/startups/Startups';
 import { Partners} from '../../components/partners/Partners';
-import { Gold} from '../../components/gold/Gold';
-import { Apoio} from '../../components/apoio/Apoio';
+import { Gold } from '../../components/gold/Gold';
+import { Support } from '../../components/support/Support';
 
 import './Home.css';
 
@@ -52,7 +52,7 @@ export function Home() {
                 {/* <Testimonials /> */}
             </Row>
             <Row>
-                <Startups />
+                {/* <Startups /> */}
             </Row>
             <Row>
                 {/* <Partners/> */}

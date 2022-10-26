@@ -8,7 +8,7 @@ import Eclipse2 from "../../assets/images/Partners/eclipse2.png";
 
 import { Diamond } from "../diamond/Diamond";
 import { Gold } from "../gold/Gold";
-import { Apoio } from "../apoio/Apoio";
+import { Support } from "../support/Support";
 
 export function Partners() {
   return (
@@ -21,7 +21,7 @@ export function Partners() {
 
         <Diamond />
         <Gold />
-        <Apoio />
+        <Support />
       </div>
     </div>
   );

@@ -101,23 +101,23 @@ class ApplicationForm extends React.Component {
               <TextInput round placeholder={t("inputs.WhichEventWouldYouLikeToAttend")} onChange={(e) => this.setState({ conference: e.target.value})} />
               <div className={styles.checkboxGroup}>
                 <div>
-                  <input className={styles.inputFis} type="checkbox" round onChange={(e) => this.setState({ conference: e.target.value})} /> #FIS22
+                  <input className={styles.inputFis} type="checkbox" onChange={(e) => this.setState({ conference: e.target.value})} /> #FIS22
                 </div>
 
                 <div>
-                  <input className={styles.inputLygga} type="checkbox" round onChange={(e) => this.setState({ conference: e.target.value})} /> #LYGGA22
+                  <input className={styles.inputLygga} type="checkbox" onChange={(e) => this.setState({ conference: e.target.value})} /> #LYGGA22
                 </div>
 
                 <div>
-                  <input className={styles.inputSym} type="checkbox" round onChange={(e) => this.setState({ conference: e.target.value})} /> #SYM22
+                  <input className={styles.inputSym} type="checkbox" onChange={(e) => this.setState({ conference: e.target.value})} /> #SYM22
                 </div>
 
                 <div>
-                  <input className={styles.inputCommeets} type="checkbox" round onChange={(e) => this.setState({ conference: e.target.value})} /> #COMMEETS22
+                  <input className={styles.inputCommeets} type="checkbox" onChange={(e) => this.setState({ conference: e.target.value})} /> #COMMEETS22
                 </div>
 
                 <div>
-                  <input className={styles.inputAll} type="checkbox" round onChange={(e) => this.setState({ conference: e.target.value})} /> Todos
+                  <input className={styles.inputAll} type="checkbox" onChange={(e) => this.setState({ conference: e.target.value})} /> Todos
                 </div>
               </div>
 

@@ -143,8 +143,42 @@ select {
 }
 
 
+/* XX-Small devices (portrait phones, less than 375px) */
+@media (max-width: 375px) {
+  .applicationForm .arrowDownOne {
+    position: absolute;
+    color: #FFF;
+    top: 23.7rem;
+    left: 20.5rem;
+  }
+  
+  .applicationForm .arrowDownTwo {
+    position: absolute;
+    color: #FFF;
+    top: 28.5rem;
+    left: 20.5rem;
+  }
+}
+
+/* XX-Small devices (portrait phones, less than 425px) */
+@media (min-width: 414px) and (max-width: 530px) {
+  .applicationForm .arrowDownOne {
+    position: absolute;
+    color: #FFF;
+    top: 23.7rem;
+    left: 24.5rem;
+  }
+  
+  .applicationForm .arrowDownTwo {
+    position: absolute;
+    color: #FFF;
+    top: 28.5rem;
+    left: 24.5rem;
+  }
+}
+
 /* X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+@media (min-width: 531px) and (max-width: 575.98px) {
   .applicationForm .arrowDownOne {
     position: absolute;
     color: #FFF;
@@ -189,6 +223,19 @@ select {
   .applicationForm .arrowDownTwo {
    display: none;
   }
+
+  .applicationForm .checkboxGroup {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .applicationForm .checkboxGroup .inputLygga {
+    margin-left: 0;
+  }
+  
+  .applicationForm .checkboxGroup .inputCommeets {
+    margin-left: 2.8rem;
+  }
 }
 
 /* Large devices (desktops, less than 1200px) */
@@ -213,6 +260,14 @@ select {
     color: #FFF;
     top: 27.5rem;
     left: 17.5rem;
+  }
+
+  .applicationForm .checkboxGroup .inputLygga {
+    margin-left: -9rem;
+  }
+  
+  .applicationForm .checkboxGroup .inputCommeets {
+    margin-left: -6.2rem;
   }
 }
 

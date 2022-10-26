@@ -1,66 +1,68 @@
 import "./AllTheLeaders.css";
 
 import { useEffect, useState } from "react";
+import axios from "axios";
 
-import EclipseYellow from '../../assets/images/leaders/eclipse-yellow.png';
+import EclipseYellow from "../../assets/images/leaders/eclipse-yellow.png";
 import { LeaderData } from "../leaderdata/LeaderData";
 import { MagnifyingGlass } from "phosphor-react";
 
-export function AllTheLeaders() {
+export function AllTheLeaders({ showAll }) {
   const [initialAllLeaders, setInitialAllLeaders] = useState([]);
   const [allLeaders, setAllLeaders] = useState([]);
-  const [initialDate, setInitialDate] = useState([]);
-  const [date, setDate] = useState([]);
-  
-  useEffect(() => {
-    const fetchLeaders = async () => {
-      try {
-        const response = await fetch(
-          "/server/fisweek/lideres"
-        );
-        const data = await response.json();
-        setInitialAllLeaders(data);
-        setAllLeaders(data);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    fetchLeaders();
-  }, []);
+  // const [initialDates, setInitialDates] = useState([]);
+  // const [dates, setDates] = useState([]);
 
   useEffect(() => {
-    const fetchDataLeaders = async () => {
-      try {
-        const response = await fetch(
-          "/server/fisweek/painel/buscar"
-        );
-        const data = await response.json();
-        setInitialDate(data);
-        setDate(data);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    fetchDataLeaders();
-  }, []);
+    axios
+      .get("/server/fisweek/lideres")
+      .then((response) => {
+        const infoLeaders = showAll ? response.data.slice(0,200) : response.data.slice(0,2)
+        console.log(infoLeaders)
+        setInitialAllLeaders(infoLeaders);
+        setAllLeaders(infoLeaders);
+      })
+      .catch((err) => {
+        setErr(err);
+      });
+  }),
+    [];
 
+    // useEffect(() => {
+    //   axios
+    //     .get("/server/fisweek/painel/buscar")
+    //     .then((response) => {
+    //       const infoData = showAll ? response.data : response.data.slice(0,2)
+    //       setInitialDates(response.data);
+    //       setDates(response.data);
+    //     })
+    //     .catch((err) => {
+    //       setErr(err);
+    //     });
+    // }),
+    //   [];
 
   const handleChange = ({ target }) => {
-    if(!target.value) {
-      setAllLeaders(initialAllLeaders)
-      setDate(initialDate)
-      return
-    } 
+    if (!target.value) {
+      console.log(initialAllLeaders)
+      setAllLeaders(initialAllLeaders);
+      // setDates(initialDates);
+      return;
+    }
 
-    const filterLeaders = allLeaders.filter(({ name }) => name.toLowerCase().toUpperCase().includes(target.value))
+    const filterLeaders = allLeaders.filter(({ name }) =>
+      name.toLowerCase().includes(target.value)
+    );
+    console.log(filterLeaders); // Retirar o console.log()
+    setAllLeaders(filterLeaders);
 
-    setAllLeaders(filterLeaders)
 
-
-    const filterDataLeaders = date.filter(({ name }) => name.toLowerCase().toUpperCase().includes(target.value))
-
-    setInitialDate(filterDataLeaders)
-  }
+    // const filterDateLeaders = dates.filter(({ data }) =>
+    //   data.toLowerCase().toUpperCase().includes(target.value)
+    // );
+    // console.log(filterDateLeaders); 
+    // setDates(filterDateLeaders);
+  };
 
   return (
     <div className="allTheLeaders">
@@ -79,28 +81,31 @@ export function AllTheLeaders() {
       </section>
 
       <div>
-        <input 
-          type="text" 
+        <input
+          type="text"
           onChange={handleChange}
-          placeholder="Pesquise por nome ou evento" />
+          placeholder="Pesquise por nome ou evento"
+        />
 
-        <MagnifyingGlass className="iconSearch" size={32}/>
+        <MagnifyingGlass className="iconSearch" size={32} />
       </div>
 
       <div className="leaderDataGroup">
-          {allLeaders.map((leader) => (
-            <div>
-              <LeaderData key={leader.id}/>
-              {leader.name} 
-            </div>
-          ))}
+        {allLeaders.map((leader) => (
+          <div>
+            <LeaderData 
+              showAll={true} 
+            />
+            {leader.name}
+          </div>
+        ))}
 
-          {date.map((leader) => (
-            <div>
-              <LeaderData key={leader.id}/>
-              {leader.name} 
-            </div>
-          ))}
+        {/* {dates.map((date) => (
+          <div>
+            <LeaderData key={date.id} showAll={false} />
+            {date.data}
+          </div>
+        ))} */}
       </div>
     </div>
   );

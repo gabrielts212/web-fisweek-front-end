@@ -64,6 +64,7 @@
   width: 61.5rem;
   height: 50px;
   background: #4a2bd100;
+  color: #DAD3FF;
   border: 3px solid #DAD3FF;
   border-radius: 49px;
 
@@ -87,11 +88,9 @@
 }
 
 .allTheLeaders .leaderDataGroup {
-  width: 100%;
+  /* width: 100%; */
   height: auto;
   display: grid;
-  place-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
   gap: 3rem;
 
   margin-right: 0;

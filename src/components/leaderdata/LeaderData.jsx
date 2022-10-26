@@ -5,16 +5,17 @@ import moment from 'moment';
 
 import "./LeaderData.css";
 
-export function LeaderData() {
+export function LeaderData({ showAll }) {
   const [leaders, setLeaders] = useState([]);
-  const [date, setDate] = useState([]);
+  const [dates, setDates] = useState([]);
   const [err, setErr] = useState([]);
 
   useEffect(() => {
     axios
       .get("/server/fisweek/lideres")
       .then((response) => {
-        setLeaders(response.data);
+        const infoLeaders = showAll ? response.data.slice(0,200) : response.data.slice(0,6)
+        setLeaders(infoLeaders);
       })
       .catch((err) => {
         setErr(err);
@@ -22,41 +23,40 @@ export function LeaderData() {
   }),
     [];
 
-  useEffect(() => {
-    axios
-      .get("/server/fisweek/painel/buscar")
-      .then((response) => {
-        setDate(response.data);
-      })
-      .catch((err) => {
-        setErr(err);
-      });
-  }),
-    [];
+  // useEffect(() => {
+  //   axios
+  //     .get("/server/fisweek/painel/buscar")
+  //     .then((response) => {
+  //       const infoData = showAll ? response.data : response.data.slice(0,2)
+  //       setDates(response.data);
+  //     })
+  //     .catch((err) => {
+  //       setErr(err);
+  //     });
+  // }),
+  //   [];
 
   return (
     <div>
-      {leaders.slice(0, 2).map((leader, key) => {
+      {leaders.map((leader, key) => {
         return (
           <div className="leaderData" key={key._id}>
-            <img
-              className="avatarLeader"
-              src={`https://fis.org.br/server/biblioteca/imagens/${leader.imagem}`}
-            />
-            <img className="panel" src={leader.paineis}/>
+            <img className="avatarLeader" src={leader.imagem} />
+            <img className="panel" src={leader.evento}/>
 
-            {date.map((d) => {
+            {/* {dates.map((date, key) => {
               return (
-                <div className="leadersDate">
-                  <span className="dateDay">{moment(d.data).format("DD")}</span>
-                  <span className="dateMonth ">{moment(d.data).format("MM")}</span>
+                <div className="leadersDate" key={key._id}>
+                  <span className="dateDay">{moment(date.data).format("DD")}</span>
+                  <span className="dateMonth ">{moment(date.data).format("MM")}</span>
                 </div>
               );
-            })}
+            })} */}
 
             <div className="leadersInfo">
-              <h4 className="leaderName">{leader.nome}</h4>
+              <h4 className="leaderName">{leader.tratamento}</h4>
               <span className="leaderOffice">{leader.descricao.BR}</span>
+              <span className="leaderCompany">{leader.empresa}</span>
             </div>
           </div>
         );
@@ -64,4 +64,5 @@ export function LeaderData() {
     </div>
   );
 }
+
 

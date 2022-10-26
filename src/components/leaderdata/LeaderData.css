@@ -4,7 +4,7 @@
   justify-content: center;
 
   position: relative;
-  margin-block: 7rem 15rem;
+  margin-block: 7rem 22rem;
 }
 
 .leaderData .avatarLeader {
@@ -13,15 +13,15 @@
   border-radius: 100%;
 
   position: absolute;
-  top: -2rem;
-  left: -3rem;
+  top: -3rem;
+  left: -2rem;
   z-index: 1;
 }
 
 .leaderData .panel {
   width: 13rem;
   height: 20rem;
-  margin: -3.5rem 0 0 4rem;
+  margin: -4.5rem 0 0 4rem;
 }
 
 .leaderData .leadersDate {
@@ -51,8 +51,8 @@
 }
 
 .leaderData .leadersInfo {
-  width: 25rem;
-  height: 10rem;
+  width: 28rem;
+  height: 15rem;
   background: #6645F4;
   color: #FFF;
   border-radius: 0% 72% 1% 1% / 14% 209% 0% 0%;
@@ -61,7 +61,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin: 23.5rem 0 0 0;
+  margin: 25.5rem 0 0 0;
   padding: .5rem 0 0 1.3rem;
 
   position: absolute;
@@ -74,12 +74,12 @@
   word-wrap: break-word;
 }
 
-.leaderData .leadersInfo .leaderOffice {
-  width: 20rem;
+.leaderData .leadersInfo .leaderOffice,
+.leaderData .leadersInfo .leaderCompany {
+  width: 21rem;
   font-size: 1.1rem;
   font-weight: 500;
 }
-
 
 /* ====== @MEDIA QUERY ========= */
 

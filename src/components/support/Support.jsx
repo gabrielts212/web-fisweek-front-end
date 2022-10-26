@@ -3,7 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 
-import "./Apoio.css"
+import "./Support.css"
 
 import Abimed from "../../assets/images/Partners/apoio/abimed.svg";
 import Abcis from "../../assets/images/Partners/apoio/abcis.svg";
@@ -53,7 +53,7 @@ import Uff from "../../assets/images/Partners/apoio/uff.svg";
 import Sbh from "../../assets/images/Partners/apoio/sbh.svg";
 
 
-export  function Apoio() {
+export  function Support() {
   const responsive = {
     superLargeDesktop: {
       
@@ -75,8 +75,8 @@ export  function Apoio() {
   };
   
   return (
-      <div id="apoio-carousel">
-      <h2 className="apoio">Apoio</h2>
+      <div id="supportCarousel">
+      <h2 className="Support">Apoio</h2>
       <Carousel
           infinite
           autoPlay
@@ -84,54 +84,54 @@ export  function Apoio() {
           customTransition="1000ms ease-in-out"
           draggable={false}
           customLeftArrow={
-          <button className="apoiobutton left" aria-label="Move Banner Left"><MdChevronLeft size={20} /></button>}
+          <button className="supportbutton left" aria-label="Move Banner Left"><MdChevronLeft size={20} /></button>}
           customRightArrow={
-            <button className="apoiobutton right" aria-label="Move Banner Right"><MdChevronRight size={20} /></button>
+            <button className="supportbutton right" aria-label="Move Banner Right"><MdChevronRight size={20} /></button>
           }
           responsive={responsive}
         >
           
           <img
             src={Abcis}
-            alt={"Logo do parceiro "}
-            className="apoio-partner"
+            alt={"Logo do parceiro"}
+            className="supportPartner"
           />
-<a href="https://abimed.org.br/" target="_blank">
+          <a href="https://abimed.org.br/" target="_blank">
             <img
               src={Abimed}
-              alt={"Logo do parceiro "}
-              className="apoio-partner"
+              alt={"Logo do parceiro"}
+              className="supportPartner"
             />
           </a>
 
           <a href="https://abimo.org.br/" target="_blank">
             <img
               src={Abimo}
-              alt={"Logo do parceiro "}
-              className="apoio-partner"
+              alt={"Logo do parceiro"}
+              className="supportPartner"
             />
           </a>
 
           <a href="https://www.ixconference.com.br/" target="_blank">
             <img
               src={Abo20}
-              alt={"Logo do parceiro "}
-              className="apoio-partner"
+              alt={"Logo do parceiro"}
+              className="supportPartner"
             />
           </a>
 
           <a href="https://www.abrafarma.com.br" target="_blank">
             <img
               src={Abrafarma}
-              alt={"Logo do parceiro "}
-              className="apoio-partner"
+              alt={"Logo do parceiro"}
+              className="supportPartner"
             />
           </a>
 
           <a href="https://abramed.org.br/" target="_blank">
             <img
               src={Abramed}
-              alt={"Logo do parceiro "}
+              alt={"Logo do parceiro"}
               className="apoio-partner"
             />
           </a>
@@ -142,7 +142,7 @@ export  function Apoio() {
           >
             <img
               src={Abramge}
-              alt={"Logo do parceiro "}
+              alt={"Logo do parceiro"}
               className="apoio-partner"
             />
           </a>
@@ -150,7 +150,7 @@ export  function Apoio() {
           <a href="http://www.abrasp.org.br/" target="_blank">
             <img
               src={Abrasp}
-              alt={"Logo do parceiro "}
+              alt={"Logo do parceiro"}
               className="apoio-partner"
             />
           </a>
@@ -158,7 +158,7 @@ export  function Apoio() {
           <a href="https://abstartups.com.br/" target="_blank">
             <img
               src={Abstartups}
-              alt={"Logo do parceiro "}
+              alt={"Logo do parceiro"}
               className="apoio-partner"
             />
           </a>
@@ -166,7 +166,7 @@ export  function Apoio() {
           <a href="https://www.acate.com.br/" target="_blank">
             <img
               src={Acate}
-              alt={"Logo do parceiro "}
+              alt={"Logo do parceiro"}
               className="apoio-partner"
             />
           </a>
@@ -182,7 +182,7 @@ export  function Apoio() {
           <a href="https://www.aherj.com.br" target="_blank">
             <img
               src={Aherj}
-              alt={"Logo do parceiro "}
+              alt={"Logo do parceiro"}
               className="apoio-partner"
             />
           </a>
@@ -190,7 +190,7 @@ export  function Apoio() {
           <a href="https://www.anahp.com.br/" target="_blank">
             <img
               src={Anahp_2}
-              alt={"Logo do parceiro "}
+              alt={"Logo do parceiro"}
               className="apoio-partner"
             />
           </a>
@@ -198,7 +198,7 @@ export  function Apoio() {
           <a href="https://www.gov.br/anm/pt-br" target="_blank">
             <img
               src={Anm}
-              alt={"Logo do parceiro "}
+              alt={"Logo do parceiro"}
               className="apoio-partner"
             />
           </a>
@@ -207,7 +207,7 @@ export  function Apoio() {
           <a href="https://biominas.org.br/" target="_blank">
             <img
               src={Biominas}
-              alt={"Logo do parceiro "}
+              alt={"Logo do parceiro"}
               className="apoio-partner"
             />
           </a>
@@ -215,7 +215,7 @@ export  function Apoio() {
           <a href="https://brasscom.org.br/" target="_blank">
             <img
               src={Brasscom}
-              alt={"Logo do parceiro "}
+              alt={"Logo do parceiro"}
               className="apoio-partner"
             />
           </a>
@@ -223,7 +223,7 @@ export  function Apoio() {
           <a href="http://www.camara.rio/" target="_blank">
             <img
               src={Camara_rio}
-              alt={"Logo do parceiro "}
+              alt={"Logo do parceiro"}
               className="apoio-partner"
             />
           </a>
@@ -231,7 +231,7 @@ export  function Apoio() {
           <a href="https://cbexs.com.br/" target="_blank">
             <img
               src={Cbexs}
-              alt={"Logo do parceiro "}
+              alt={"Logo do parceiro"}
               className="apoio-partner"
             />
           </a>
@@ -239,7 +239,7 @@ export  function Apoio() {
           <a href="http://cnsaude.org.br/" target="_blank">
             <img
               src={Cnsaude}
-              alt={"Logo do parceiro "}
+              alt={"Logo do parceiro"}
               className="apoio-partner"
             />
           </a>
@@ -247,7 +247,7 @@ export  function Apoio() {
           <a href="https://www.israeltrade.org.br" target="_blank">
             <img
               src={Israel}
-              alt={"Logo do parceiro "}
+              alt={"Logo do parceiro"}
               className="apoio-partner"
             />
           </a>
@@ -255,7 +255,7 @@ export  function Apoio() {
           <a href="https://www.cremerj.org.br/" target="_blank">
             <img
               src={Cremerj}
-              alt={"Logo do parceiro "}
+              alt={"Logo do parceiro"}
               className="apoio-partner"
             />
           </a>
@@ -263,7 +263,7 @@ export  function Apoio() {
           <a href="https://cubo.network/" target="_blank">
             <img
               src={Cubo}
-              alt={"Logo do parceiro "}
+              alt={"Logo do parceiro"}
               className="apoio-partner"
             />
           </a>
@@ -271,7 +271,7 @@ export  function Apoio() {
           <a href="https://eretz.bio/" target="_blank">
             <img
               src={Eretz}
-              alt={"Logo do parceiro "}
+              alt={"Logo do parceiro"}
               className="apoio-partner"
             />
           </a>
@@ -279,7 +279,7 @@ export  function Apoio() {
           <a href="https://www.fbah.org.br" target="_blank">
             <img
               src={Fbah}
-              alt={"Logo do parceiro "}
+              alt={"Logo do parceiro"}
               className="apoio-partner"
             />
           </a>
@@ -457,10 +457,7 @@ export  function Apoio() {
               className="apoio-partner"
             />
           </a>
-
-          
         </Carousel>
       </div>
-    
   );
 }
