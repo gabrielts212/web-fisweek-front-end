@@ -6,15 +6,25 @@ import BackgroundVideo from "../../assets/images/institutional/backgroundvideo.p
 
 export function Institutional() {
   return (
-    <div className="videoBackground">
-      {/* <img className="background" src={BackgroundVideo} /> */}
+    <div className="background">
       {/* <img className="" src={BackgroundVideo2} /> */}
+      <img className="videoImage" src={BackgroundVideo} />
+
       <h1>
         Vamos transformar o <br /> universo da saúde juntos?
       </h1>
-      <video className="video">
-        <source src="VIDEOAQUI.mp4" type="video/mp4" />
-      </video>
+
+      <iframe
+        className="iframeVideo"
+        width="1000"
+        height="600"
+        src="https://www.youtube.com/embed/FzihvtVLOxY"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        scolling="no"
+      ></iframe>
 
       <div className="videoButton">
         <a href="#">

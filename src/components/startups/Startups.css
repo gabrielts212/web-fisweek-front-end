@@ -153,6 +153,7 @@
 }
 .textArea{
   background: #454267;
+  width: 300px;
 }
 .buttonDeck{
   width: 18rem;
@@ -193,9 +194,8 @@ input[type="file"] {
   border-radius: 5px;
   position: absolute;
   margin-top: 132px;
-  margin-left: -230px;
+  margin-left: -250px;
 }
-
 
 /* Small devices (landscape phones, less than 360px) */
 @media (min-width: 360px) and (max-width: 550.98px) {
@@ -221,17 +221,6 @@ input[type="file"] {
     margin: -24rem 0 0 6rem;
     position: absolute;
   }
-  /* .modal-content {
-    height: 684px;
-    border-radius: 7% 10% 12% 1%;
-    width: 451px;
-    z-index: 999;
-    position: absolute;
-    background: #53507d;
-    padding-left: 20px;
-    margin-left:-10px;
-    margin-bottom: 300px;
-  } */
   .eventBeehive {
     width: 22rem;
     height: 25rem;
@@ -287,9 +276,9 @@ input[type="file"] {
   }
   .formStartups{
     position: relative;
-    margin-top: 150px;
+    margin-top: 140px;
     border-radius: 10px;
-    padding: 0px;
+    padding: 5px;
     width: min-content;
     align-items: center;
   }
@@ -333,7 +322,7 @@ input[type="file"] {
   font-size: 1.1rem;
   font-weight: 600;
   color: #fff;
-  margin-left: 3px;
+  margin-left: -8px;
   background-color:#2A2850 ;
 }
 .buttonModal{
@@ -345,7 +334,7 @@ input[type="file"] {
   font-weight: 600;
   color: #2a2850;
   margin: 0.5rem 0 -1.5rem 0;
-  margin-left: 100px;
+  margin-left: 85px;
 }
 .eventBeehive button {
   width: 8rem;
@@ -368,6 +357,21 @@ input[type="file"] {
 }
 .eventBeehive img {
   width: 10rem;
+}
+.textArea{
+  background: #454267;
+  width: 220px;
+}
+.custom-upload {
+  min-width: 224px;
+  padding: 8px 4px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  margin-top: 132px;
+  margin-left: -221px;
 }
 }
 /* X-Small devices (portrait phones, less than 576px) */
@@ -505,6 +509,19 @@ input[type="file"] {
     /* background-color: #fff; */
     display: none;
   }
+  .textArea
+  { background: #454267; width: 260px; }
+  .custom-upload {
+    min-width: 224px;
+    padding: 12px 4px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 132px;
+    margin-left: -250px;
+  }
 }
 /* Small devices (landscape phones, less than 768px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -639,6 +656,7 @@ input[type="file"] {
     color: #2a2850;
     margin: 0rem 0 -0.5rem 0;
   }
+  .textArea{ background: #454267; width: 270px; }
 }
 /* Medium devices (tablets, less than 992px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -695,7 +713,7 @@ input[type="file"] {
     font-size: 1.1rem;
     font-weight: 600;
     color: #fff;
-    margin-left: 3px;
+    margin-left: 22px;
     background-color:#2A2850 ;
   }
   .formSelect {
@@ -718,7 +736,7 @@ input[type="file"] {
     padding: 0px;
     width: min-content;
     align-items: center;
-    margin-left: 83px;
+    margin-left: 50px;
   }
   .eventBeehive {
     width: 25rem;
@@ -753,6 +771,19 @@ input[type="file"] {
     /* background-color: #fff; */
     display: none;
   }
+  .textArea{ background: #454267; width: 300px; }
+  .custom-upload {
+    min-width: 224px;
+    padding: 12px 4px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 132px;
+    margin-left: -273px;
+  }
+  
 }
 /* Large devices (desktops, less than 1200px) */
 @media (min-width: 992px ) and (max-width: 1199.98px) {
@@ -801,7 +832,7 @@ input[type="file"] {
     font-size: 1.1rem;
     font-weight: 600;
     color: #fff;
-    margin-left: 3px;
+    margin-left: 22px;
     background-color:#2A2850 ;
   }
   .formSelect {
@@ -824,7 +855,7 @@ input[type="file"] {
     padding: 0px;
     width: min-content;
     align-items: center;
-    margin-left: 83px;
+    margin-left: 66px;
   }
   .eventBeehive {
     width: 29rem;
@@ -857,6 +888,19 @@ input[type="file"] {
     height: 100%;
     /* background-color: #fff; */
     display: none;
+  }
+  .textArea{ background: #454267; width: 300px; }
+
+  .custom-upload {
+    min-width: 224px;
+    padding: 12px 4px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 132px;
+    margin-left: -273px;
   }
 }
 /* X-Large devices (large desktops, less than 1400px) */
@@ -917,7 +961,7 @@ input[type="file"] {
     font-size: 1.1rem;
     font-weight: 600;
     color: #fff;
-    margin-left: 3px;
+    margin-left: 20px;
     background-color:#2A2850 ;
   }
   .formSelect {
@@ -940,7 +984,7 @@ input[type="file"] {
     padding: 0px;
     width: min-content;
     align-items: center;
-    margin-left: 100px;
+    margin-left: 75px;
   }
   .eventBeehive {
     width: 29rem;
@@ -974,5 +1018,17 @@ input[type="file"] {
     height: 100%;
     /* background-color: #fff; */
     display: none;
+  }
+  .textArea{ background: #454267; width: 300px; }
+  .custom-upload {
+    min-width: 224px;
+    padding: 14px 4px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 132px;
+    margin-left: -277px;
   }
 }
