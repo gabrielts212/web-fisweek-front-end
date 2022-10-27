@@ -61,6 +61,7 @@ export function Startups() {
             overlayClassName="modal-overlay"
             className="modal-content"
           >
+            
             <form className="formStartups" onSubmit={handleSubmit(createUser)}>
               <label className="captionTitle">
                 <input

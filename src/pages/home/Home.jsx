@@ -17,6 +17,7 @@ import { Startups } from '../../components/startups/Startups';
 import { Partners} from '../../components/partners/Partners';
 import { Gold } from '../../components/gold/Gold';
 import { Support } from '../../components/support/Support';
+import { BroadcastPage} from '../../components/broadcastpage/BroadcastPage';
 
 import './Home.css';
 
@@ -29,6 +30,10 @@ export function Home() {
             <Row>
                 {/* <Col xs={12} md={8}><RegistrationInfo /></Col>
                 <Col xs={12} md={4}><ApplicationForm /></Col> */}
+            </Row>
+            <Row>
+                <Col xs={12} md={8}><RegistrationInfo /></Col>
+                <Col xs={12} md={4}><BroadcastPage /></Col>
             </Row>
             <Row>
                 {/* <ConferenceBar /> */}
@@ -52,7 +57,7 @@ export function Home() {
                 {/* <Testimonials /> */}
             </Row>
             <Row>
-                {/* <Startups /> */}
+                <Startups />
             </Row>
             <Row>
                 {/* <Partners/> */}
