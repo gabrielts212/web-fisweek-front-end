@@ -20,7 +20,7 @@
 
 .leaderData .panel {
   width: 13rem;
-  height: 20rem;
+  height: 22rem;
   margin: -4.5rem 0 0 4rem;
 }
 
@@ -51,8 +51,8 @@
 }
 
 .leaderData .leadersInfo {
-  width: 28rem;
-  height: 15rem;
+  width: 26.5rem;
+  height: 12rem;
   background: #6645F4;
   color: #FFF;
   border-radius: 0% 72% 1% 1% / 14% 209% 0% 0%;
@@ -61,7 +61,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin: 25.5rem 0 0 0;
+  margin: 26rem 0 0 0;
   padding: .5rem 0 0 1.3rem;
 
   position: absolute;
@@ -76,7 +76,7 @@
 
 .leaderData .leadersInfo .leaderOffice,
 .leaderData .leadersInfo .leaderCompany {
-  width: 21rem;
+  width: 23rem;
   font-size: 1.1rem;
   font-weight: 500;
 }

@@ -5,10 +5,15 @@ import moment from 'moment';
 
 import "./LeaderData.css";
 
-export function LeaderData({ showAll }) {
-  const [leaders, setLeaders] = useState([]);
+export function LeaderData({ input, showAll }) {
+  const [leaders, setLeaders] = useState([])
   const [dates, setDates] = useState([]);
   const [err, setErr] = useState([]);
+  const [search, setSearch] = useState([]);
+
+  const filteredLeaders = leaders.filter(leader => 
+    leader.tratamento.toLowerCase().includes(input.toLowerCase())
+  )
 
   useEffect(() => {
     axios
@@ -27,8 +32,8 @@ export function LeaderData({ showAll }) {
   //   axios
   //     .get("/server/fisweek/painel/buscar")
   //     .then((response) => {
-  //       const infoData = showAll ? response.data : response.data.slice(0,2)
-  //       setDates(response.data);
+  //       const infoData = showAll ? response.data.slice(0,200) : response.data.slice(0,6)
+  //       setDates(infoData);
   //     })
   //     .catch((err) => {
   //       setErr(err);
@@ -38,11 +43,11 @@ export function LeaderData({ showAll }) {
 
   return (
     <div>
-      {leaders.map((leader, key) => {
+      {filteredLeaders.map((leader, key) => {
         return (
           <div className="leaderData" key={key._id}>
             <img className="avatarLeader" src={leader.imagem} />
-            <img className="panel" src={leader.evento}/>
+            <img className="panel" src={leader.evento}/> 
 
             {/* {dates.map((date, key) => {
               return (

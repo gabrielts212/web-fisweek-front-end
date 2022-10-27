@@ -1,68 +1,17 @@
 import "./AllTheLeaders.css";
 
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { useState } from "react";
 
-import EclipseYellow from "../../assets/images/leaders/eclipse-yellow.png";
+import EclipseYellow from '../../assets/images/leaders/eclipse-yellow.png';
 import { LeaderData } from "../leaderdata/LeaderData";
 import { MagnifyingGlass } from "phosphor-react";
 
-export function AllTheLeaders({ showAll }) {
-  const [initialAllLeaders, setInitialAllLeaders] = useState([]);
-  const [allLeaders, setAllLeaders] = useState([]);
-  // const [initialDates, setInitialDates] = useState([]);
-  // const [dates, setDates] = useState([]);
+export function AllTheLeaders() {
+  const [ input, setInput ] = useState("")
 
-  useEffect(() => {
-    axios
-      .get("/server/fisweek/lideres")
-      .then((response) => {
-        const infoLeaders = showAll ? response.data.slice(0,200) : response.data.slice(0,2)
-        console.log(infoLeaders)
-        setInitialAllLeaders(infoLeaders);
-        setAllLeaders(infoLeaders);
-      })
-      .catch((err) => {
-        setErr(err);
-      });
-  }),
-    [];
-
-    // useEffect(() => {
-    //   axios
-    //     .get("/server/fisweek/painel/buscar")
-    //     .then((response) => {
-    //       const infoData = showAll ? response.data : response.data.slice(0,2)
-    //       setInitialDates(response.data);
-    //       setDates(response.data);
-    //     })
-    //     .catch((err) => {
-    //       setErr(err);
-    //     });
-    // }),
-    //   [];
-
-  const handleChange = ({ target }) => {
-    if (!target.value) {
-      console.log(initialAllLeaders)
-      setAllLeaders(initialAllLeaders);
-      // setDates(initialDates);
-      return;
-    }
-
-    const filterLeaders = allLeaders.filter(({ name }) =>
-      name.toLowerCase().includes(target.value)
-    );
-    console.log(filterLeaders); // Retirar o console.log()
-    setAllLeaders(filterLeaders);
-
-
-    // const filterDateLeaders = dates.filter(({ data }) =>
-    //   data.toLowerCase().toUpperCase().includes(target.value)
-    // );
-    // console.log(filterDateLeaders); 
-    // setDates(filterDateLeaders);
-  };
+  const searchHandler = (event) => {
+    setInput(event.target.value)
+  }
 
   return (
     <div className="allTheLeaders">
@@ -72,40 +21,21 @@ export function AllTheLeaders({ showAll }) {
       </header>
 
       <section className="daysOfTheWeek">
-        <div className="Every Days">Todos</div>
-        <div className="Days">Dia 7</div>
-        <div className="Days">Dia 8</div>
-        <div className="Days">Dia 9</div>
-        <div className="Days">Dia 10</div>
-        <div className="Days">Dia 11</div>
+        <div className="Every Days" onClick={() => {console.log("Todos")}}>Todos</div>
+        <div className="Days" onClick={() => {console.log("Dia 7")}}>Dia 7</div>
+        <div className="Days" onClick={() => {console.log("Dia 8")}}>Dia 8</div>
+        <div className="Days" onClick={() => {console.log("Dia 9")}}>Dia 9</div>
+        <div className="Days" onClick={() => {console.log("Dia 10")}}>Dia 10</div>
+        <div className="Days" onClick={() => {console.log("Dia 11 ")}}>Dia 11</div>
       </section>
 
       <div>
-        <input
-          type="text"
-          onChange={handleChange}
-          placeholder="Pesquise por nome ou evento"
-        />
-
-        <MagnifyingGlass className="iconSearch" size={32} />
+        <input type="text" placeholder="Pesquise por nome ou evento" onChange={searchHandler}/>
+        <MagnifyingGlass className="iconSearch" size={32}/>
       </div>
 
-      <div className="leaderDataGroup">
-        {allLeaders.map((leader) => (
-          <div>
-            <LeaderData 
-              showAll={true} 
-            />
-            {leader.name}
-          </div>
-        ))}
-
-        {/* {dates.map((date) => (
-          <div>
-            <LeaderData key={date.id} showAll={false} />
-            {date.data}
-          </div>
-        ))} */}
+      <div className="leaderDataGroup" >
+        <LeaderData input={input} showAll={true}/>
       </div>
     </div>
   );

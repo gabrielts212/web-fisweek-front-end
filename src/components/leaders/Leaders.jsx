@@ -7,6 +7,7 @@ export function Leaders() {
     <div className="Leaders" id="leaders">
       <div className="leaderGroup">
         <LeaderData 
+          input={""}
           showAll={false}
         />
       </div>
@@ -17,4 +18,3 @@ export function Leaders() {
     </div>
   );
 }
-
