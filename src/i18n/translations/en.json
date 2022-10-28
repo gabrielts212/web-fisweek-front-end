@@ -35,6 +35,101 @@
 
     "button": {
       "register": "SUSCRIBE"
+    },
+
+    "header": {
+      "list1": "LÍDERES",
+      "list2": "EVENTOS",
+      "list3": "PROGRAMAÇÃO",
+      "list4": "DEPOIMENTOS",
+      "list5": "STARTUPS"
+    },
+
+    "leaders": {
+      "fullName": "Nome Completo",
+      "Office": "Cargo",
+      "company": "Empresa",
+      "seeAllLeaders": "Ver todos os líderes",
+      "filterLeaders": "Pesquise por nome ou evento"
+    },
+
+    "timer": {
+      "days": "dias",
+      "hours": "horas",
+      "minutes": "minutos",
+      "seconds": "segundos"
+    },
+
+    "institutional": {
+      "title": "Vamos transformar o universo da saúde juntos?",
+      "iWantToSuscribe!": "Quero me cadastrar"
+    },
+
+    "events": {
+      "fisText": "#FIS is the largest health leaders event in Latin America. It is our main product. Our objective is to discuss among the most important characters the most troublesome subjects in health. We bring matters to transform the main 10 beliefs of our organization: Industrial complex, communication, education, entrepreneurship, finance, administration, governance, innovation, assistantial models and regulation.",
+
+      "symetriaText": "#SYMETRIA is the first ESG (Environmental, Social and Governance) health event in Latin America. Great Leaders of the sectors will be participating bringing in their experiences. Everything that has to do with the DNA of Iniciativa FIS will be playing a role in the event. ",
+
+      "commeetsText": "#COMMEETS is the event in which our greatest allies with create content",
+
+      "lyggaText": "#LYGGA is to us an Education synonym which is one of the main Iniciativa FIS beliefs. With it we bring an exclusive event to dedicate Health education with major health discussions to executives and academics. The idea is to present methodologies and instruments to Digital Health, giving in updates, networking and opportunities to follow up debates with sensible subjects to the health area.",
+
+      "knowMore": "Saiba mais",
+      "transmissionHours": "horas de transmissão",
+      "days": "dias",
+      "enterprises": "empresas",
+      "languages": "idiomas",
+      "speakers": "palestrantes"
+    },
+
+    "programmation": {
+      "programmation": "Programação",
+      "all": "Todos",
+      "day": "Dia",
+      "text": "Os desafios de implementar políticas públicas de saúde durante uma pandemia",
+      "moderator": "Moderador",
+      "seeCompleteProgramming": "Ver programação completa",
+      "iWantToSubscribe": "Quero me cadastrar",
+      "filterProgrammation": "Pesquise por tema, participante ou evento"
+    },
+
+    "declaration": {
+      "declaration": "",
+      "d1": "",
+      "d2": "",
+      "d3": "",
+      "iWantToSubscribe": "Quero me cadastrar"
+    },
+
+    "startups": {
+      "text": "BEE HIVE is the moment in which the health Startups will have their online Pitch. Here is where the companies can take a change to present their solutions to Leaders and to the Health market.",
+
+      "register": "Cadastrar",
+      "eventOnline": "The event will be in person and online",
+      "startupName": "Nome da Startup",
+      "representantName": "Nome do Representante",
+      "emai": "Email",
+      "phoneNumber": "Telefone de Contato",
+      "selectACountry": "Selecione um País",
+      "city": "Cidade",
+      "url": "Site/URL",
+      "textarea": "Descreva sua Solução (Máximo de 120 caracteres)",
+      "upload": "Faça o upload do seu Deck",
+      "buttonOk": "OK"
+    },
+
+    "partners": {
+      "partners": "Parceiros",
+      "partnersDiamond": "Parceiros Diamond",
+      "partnersGold": "Parceiros Gold",
+      "support": "Apoio"
+    },
+
+    "footer": {
+      "needHelp": "Precisa de ajuda?",
+      "commercial": "Comercial",
+      "pressOffice": "Assessoria de Imprensa",
+      "ourSocialMedia": "Nossas redes"
     }
   }
 }

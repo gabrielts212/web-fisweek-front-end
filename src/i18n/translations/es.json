@@ -35,6 +35,101 @@
 
     "button": {
       "register": "SUSCRIBETE"
+    },
+
+    "header": {
+      "list1": "LÍDERES",
+      "list2": "EVENTOS",
+      "list3": "PROGRAMACIÓN",
+      "list4": "DECLARACIONES",
+      "list5": "STARTUPS"
+    },
+
+    "leaders": {
+      "fullName": "Nombre Completo",
+      "Office": "Cargo",
+      "company": "Empresa",
+      "seeAllLeaders": "Ver todos los Líderes",
+      "filterLeaders": "Buscar por nombre o evento "
+    },
+
+    "timer": {
+      "days": "días ",
+      "hours": "horas",
+      "minutes": "minutos",
+      "seconds": "segundos"
+    },
+
+    "institutional": {
+      "title": "¿Transformamos el universo de la Salud juntos?",
+      "iWantToSuscribe!": "Quiero suscribirme"
+    },
+
+    "events": {
+      "fisText": "#FIS es el mayor evento de Líderes del Sector de la Salud de Latinoamérica. Es nuestra marca registrada. Tiene como objetivo dialogar y debatir junto a los mayores Líderes del sector de Brasil. Hacer un panorama del presente prediciendo el futuro es algo muy común en #FIS. A través de él, traemos discusiones para transformar los diez ejes principales de nuestro segmento: Complejo Industrial, Comunicación, Educación, Emprendedurismo, Finanzas, Gestión, Gobernanza, Innovación, Modelos Asistenciales y Regulación.",
+
+      "symetriaText": "#SYMETRIA es el primer evento ESG (Environmental, Social and Governance) del Sector de la Salud en Latinoamérica. Grandes Líderes de este sector y de fuera comparten sus experiencias, trayendo un enfoque ambiental de gobernanza, de estrategias generales, innovación… O sea, todo aquello que tenga el ADN de Iniciativa FIS.",
+
+      "commeetsText": "#COMMEETS es el evento donde nuestros aliados generan contenido.",
+
+      "lyggaText": "#LYGGA para nosotros, es sinónimo de Educación, que es uno de los principales pilares de Iniciativa FIS. Con eso, trajimos un evento exclusivamente dedicado a la Educación en el Sector de la Salud, con discusiones para académicos y ejecutivos. La idea es presentar metodologías e instrumentos recurrentes en la Salud Digital, proporcionando actualización, networking y la oportunidad de acompañar los debates con temas sensibles para el área de la Salud.",
+
+      "knowMore": "Saber más",
+      "transmissionHours": "horas de transmisión",
+      "days": "días ",
+      "enterprises": "empresas",
+      "languages": "idiomas",
+      "speakers": "disertantes"
+    },
+
+    "programmation": {
+      "programmation": "programación",
+      "all": "Todos",
+      "day": "Día",
+      "text": "Los desafíos de implementar políticas públicas de la Salud durante una pandemia",
+      "moderator": "Moderador",
+      "seeCompleteProgramming": "Ver programación completa",
+      "iWantToSubscribe": "Quiero suscribirme",
+      "filterProgrammation": "Buscar por tema, participante o evento"
+    },
+
+    "declaration": {
+      "declaration": "Declaraciones",
+      "d1": "",
+      "d2": "",
+      "d3": "",
+      "iWantToSubscribe": "Quiero suscribirme"
+    },
+
+    "startups": {
+      "text": "BEE HIVE es el momento de Pitch online de las StartUps del Sector de la Salud. Es por medio de ella que las empresas pueden aprovechar para presentar sus soluciones a los Líderes de la Salud y al mercado.",
+
+      "register": "Cadastrar",
+      "eventOnline": "The event will be in person and online",
+      "startupName": "Nome da Startup",
+      "representantName": "Nome do Representante",
+      "emai": "Email",
+      "phoneNumber": "Telefone de Contato",
+      "selectACountry": "Selecione um País",
+      "city": "Cidade",
+      "url": "Site/URL",
+      "textarea": "Descreva sua Solução (Máximo de 120 caracteres)",
+      "upload": "Faça o upload do seu Deck",
+      "buttonOk": "OK"
+    },
+
+    "partners": {
+      "partners": "Parceiros",
+      "partnersDiamond": "Parceiros Diamond",
+      "partnersGold": "Parceiros Gold",
+      "support": "Apoio"
+    },
+
+    "footer": {
+      "needHelp": "Precisa de ajuda?",
+      "commercial": "Comercial",
+      "pressOffice": "Assessoria de Imprensa",
+      "ourSocialMedia": "Nossas redes"
     }
   }
 }

@@ -32,17 +32,15 @@ export function Home() {
                 <Col xs={12} md={4}><ApplicationForm /></Col> */}
             </Row>
             <Row>
-                <Col xs={12} md={8}><RegistrationInfo /></Col>
-                <Col xs={12} md={4}><BroadcastPage /></Col>
+                {/* <Col xs={12} md={8}><RegistrationInfo /></Col>
+                <Col xs={12} md={4}><BroadcastPage /></Col> */}
             </Row>
             <Row>
-                {/* <ConferenceBar /> */}
+                <ConferenceBar />
             </Row>
+            <Leaders/>
             <Row>
-                <Col xs={12} md={12}><Leaders/></Col>
-            </Row>
-            <Row>
-                {/* <Timer /> */}
+                <Timer />
             </Row>
             <Row>
                 {/* <Institutional /> */}
@@ -57,7 +55,7 @@ export function Home() {
                 {/* <Testimonials /> */}
             </Row>
             <Row>
-                <Startups />
+                {/* <Startups /> */}
             </Row>
             <Row>
                 {/* <Partners/> */}

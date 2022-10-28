@@ -1,3 +1,8 @@
+:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px;
+}
+
 .allTheLeaders {
   background: #4a2bd118;
   filter: blur(.03rem);
@@ -88,13 +93,11 @@
 }
 
 .allTheLeaders .leaderDataGroup {
-  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
   height: auto;
-  display: grid;
-  gap: 3rem;
-
   margin-right: 0;
-  margin-bottom: 6rem;
+  margin-bottom: 6rem
 }
 
 

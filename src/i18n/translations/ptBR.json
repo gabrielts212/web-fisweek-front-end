@@ -35,6 +35,97 @@
 
     "button": {
       "register": "CADASTRE-SE"
+    },
+
+    "header": {
+      "list1": "LÍDERES",
+      "list2": "EVENTOS",
+      "list3": "PROGRAMAÇÃO",
+      "list4": "DEPOIMENTOS",
+      "list5": "STARTUPS"
+    },
+
+    "leaders": {
+      "fullName": "Nome Completo",
+      "Office": "Cargo",
+      "company": "Empresa",
+      "seeAllLeaders": "Ver todos os líderes",
+      "filterLeaders": "Pesquise por nome ou evento"
+    },
+
+    "timer": {
+      "days": "dias",
+      "hours": "horas",
+      "minutes": "minutos",
+      "seconds": "segundos"
+    },
+
+    "institutional": {
+      "title": "Vamos transformar o universo da saúde juntos?",
+      "iWantToSuscribe!": "Quero me cadastrar"
+    },
+
+    "events": {
+      "fisText": "",
+      "symetriaText": "",
+      "commeetsText": "",
+      "lyggaText": "",
+
+      "knowMore": "Saiba mais",
+      "transmissionHours": "horas de transmissão",
+      "days": "dias",
+      "enterprises": "empresas",
+      "languages": "idiomas",
+      "speakers": "palestrantes"
+    },
+
+    "programmation": {
+      "programmation": "Programação",
+      "all": "Todos",
+      "day": "Dia",
+      "text": "Os desafios de implementar políticas públicas de saúde durante uma pandemia",
+      "moderator": "Moderador",
+      "seeCompleteProgramming": "Ver programação completa",
+      "iWantToSubscribe": "Quero me cadastrar",
+      "filterProgrammation": "Pesquise por tema, participante ou evento"
+    },
+
+    "declaration": {
+      "declaration": "Depoimentos",
+      "d1": "",
+      "d2": "",
+      "d3": "",
+      "iWantToSubscribe": "Quero me cadastrar"
+    },
+
+    "startups": {
+      "text": "",
+      "register": "Cadastrar",
+      "eventOnline": "The event will be in person and online",
+      "startupName": "Nome da Startup",
+      "representantName": "Nome do Representante",
+      "emai": "Email",
+      "phoneNumber": "Telefone de Contato",
+      "selectACountry": "Selecione um País",
+      "city": "Cidade",
+      "url": "Site/URL",
+      "textarea": "Descreva sua Solução (Máximo de 120 caracteres)",
+      "upload": "Faça o upload do seu Deck",
+      "buttonOk": "OK"
+    },
+
+    "partners": {
+      "partners": "Parceiros",
+      "partnersDiamond": "Parceiros Diamond",
+      "partnersGold": "Parceiros Gold",
+      "support": "Apoio"
+    },
+
+    "footer": {
+      "needHelp": "Precisa de ajuda?",
+      "commercial": "Comercial",
+      "pressOffice": "Assessoria de Imprensa",
+      "ourSocialMedia": "Nossas redes"
     }
   }
 }

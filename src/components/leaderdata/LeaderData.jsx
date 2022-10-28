@@ -2,6 +2,11 @@ import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import moment from 'moment';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+
+import AvatarLeader from '../../assets/images/leaders/avatarLeader.png';
+import Panel from '../../assets/images/leaders/panel.png';
 
 import "./LeaderData.css";
 
@@ -9,7 +14,6 @@ export function LeaderData({ input, showAll }) {
   const [leaders, setLeaders] = useState([])
   const [dates, setDates] = useState([]);
   const [err, setErr] = useState([]);
-  const [search, setSearch] = useState([]);
 
   const filteredLeaders = leaders.filter(leader => 
     leader.tratamento.toLowerCase().includes(input.toLowerCase())
@@ -42,12 +46,12 @@ export function LeaderData({ input, showAll }) {
   //   [];
 
   return (
-    <div>
+    <Row className="rowLeaders">
       {filteredLeaders.map((leader, key) => {
         return (
-          <div className="leaderData" key={key._id}>
-            <img className="avatarLeader" src={leader.imagem} />
-            <img className="panel" src={leader.evento}/> 
+          <Col xs={4} key={key._id}>
+            <img className="avatarLeader" src={AvatarLeader} />
+            <img className="panel" src={Panel}/> 
 
             {/* {dates.map((date, key) => {
               return (
@@ -63,10 +67,10 @@ export function LeaderData({ input, showAll }) {
               <span className="leaderOffice">{leader.descricao.BR}</span>
               <span className="leaderCompany">{leader.empresa}</span>
             </div>
-          </div>
+          </Col>
         );
       })}
-    </div>
+    </Row>
   );
 }
 
