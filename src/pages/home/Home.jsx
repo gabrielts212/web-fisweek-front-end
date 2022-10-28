@@ -21,7 +21,19 @@ import { BroadcastPage} from '../../components/broadcastpage/BroadcastPage';
 
 import './Home.css';
 
+import { useEffect } from 'react';
+import { LanguageState } from '../../Context/Context';
+import { useTranslation } from 'react-i18next';
+
 export function Home() {
+    const { state } = LanguageState()
+
+    const { i18n } = useTranslation()
+    useEffect(() => {
+      i18n.changeLanguage(state.language)
+  
+    }, [state.language])
+
     return (
         <Container>
             <Row>

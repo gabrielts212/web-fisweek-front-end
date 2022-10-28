@@ -6,6 +6,10 @@ import pt from '../../assets/images/flags/pt.png'
 
 import './styles.css'
 
+import { LanguageState } from '../../Context/Context'
+import { useNavigate } from 'react-router-dom'
+
+
 const languageOptions = [
   {
     name: "Português",
@@ -26,6 +30,15 @@ const languageOptions = [
 
 export const LanguageSwitcher = () => {
   const { t, i18n } = useTranslation()
+  const { dispatch } = LanguageState()
+
+  const navigate = useNavigate()
+
+  const updatingLanguage = language => {
+    dispatch({ type: 'UPDATE', payload: language})
+  }
+
+
 
   return (
     <div className="languageSwitcher">
@@ -33,7 +46,8 @@ export const LanguageSwitcher = () => {
         <button 
           key={languageOptions.value}
           onClick={() => {
-            i18n.changeLanguage(languageOptions.value)
+            updatingLanguage(languageOptions.value)
+            navigate(`/${languageOptions.value}`) 
           }}
         >
 

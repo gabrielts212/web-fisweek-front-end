@@ -14,23 +14,27 @@ export function LeaderData({ input, showAll }) {
   const [leaders, setLeaders] = useState([])
   const [dates, setDates] = useState([]);
   const [err, setErr] = useState([]);
+  const [ isLoading, setIsLoading ] = useState(true)
 
   const filteredLeaders = leaders.filter(leader => 
     leader.tratamento.toLowerCase().includes(input.toLowerCase())
   )
 
   useEffect(() => {
+    setIsLoading(true)
     axios
       .get("/server/fisweek/lideres")
       .then((response) => {
         const infoLeaders = showAll ? response.data.slice(0,200) : response.data.slice(0,6)
         setLeaders(infoLeaders);
+        setIsLoading(false)
       })
       .catch((err) => {
+        setIsLoading(false)
         setErr(err);
       });
-  }),
-    [];
+  }, []);
+    
 
   // useEffect(() => {
   //   axios
@@ -47,7 +51,7 @@ export function LeaderData({ input, showAll }) {
 
   return (
     <Row className="rowLeaders">
-      {filteredLeaders.map((leader, key) => {
+      {isLoading ? <p style={{color: 'white'}}> Espere ai, por favor. Estamos carregando! </p> : filteredLeaders.map((leader, key) => {
         return (
           <Col xs={4} key={key._id} className="colLeaders">
             <img className="avatarLeader" src={AvatarLeader} />
