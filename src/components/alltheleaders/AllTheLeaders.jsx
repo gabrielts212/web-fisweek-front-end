@@ -20,17 +20,17 @@ export function AllTheLeaders() {
         <img src={EclipseYellow} alt="Circulo amarelo" />
       </header>
 
-      <section className="daysOfTheWeek">
+      {/* <section className="daysOfTheWeek">
         <div className="Every Days" onClick={() => {console.log("Todos")}}>Todos</div>
         <div className="Days" onClick={() => {console.log("Dia 7")}}>Dia 7</div>
         <div className="Days" onClick={() => {console.log("Dia 8")}}>Dia 8</div>
         <div className="Days" onClick={() => {console.log("Dia 9")}}>Dia 9</div>
         <div className="Days" onClick={() => {console.log("Dia 10")}}>Dia 10</div>
         <div className="Days" onClick={() => {console.log("Dia 11 ")}}>Dia 11</div>
-      </section>
+      </section> */}
 
       <div>
-        <input type="text" placeholder="Pesquise por nome ou evento" onChange={searchHandler}/>
+        <input type="text" placeholder="Pesquise por nome" onChange={searchHandler}/>
         <MagnifyingGlass className="iconSearch" size={32}/>
       </div>
 

@@ -1,8 +1,5 @@
-.rowLeaders {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 8rem;
+.colLeaders {
+  margin-bottom: 5rem;
 }
 
 .avatarLeader {

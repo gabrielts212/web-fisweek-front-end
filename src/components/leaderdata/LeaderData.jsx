@@ -49,7 +49,7 @@ export function LeaderData({ input, showAll }) {
     <Row className="rowLeaders">
       {filteredLeaders.map((leader, key) => {
         return (
-          <Col xs={4} key={key._id}>
+          <Col xs={4} key={key._id} className="colLeaders">
             <img className="avatarLeader" src={AvatarLeader} />
             <img className="panel" src={Panel}/> 
 

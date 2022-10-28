@@ -93,11 +93,7 @@
 }
 
 .allTheLeaders .leaderDataGroup {
-  display: flex;
-  flex-direction: row;
-  height: auto;
-  margin-right: 0;
-  margin-bottom: 6rem
+  
 }
 
 

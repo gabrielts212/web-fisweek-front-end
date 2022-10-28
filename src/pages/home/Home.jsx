@@ -25,11 +25,11 @@ export function Home() {
     return (
         <Container>
             <Row>
-               {/* <Header /> */}
+               <Header />
             </Row>
             <Row>
-                {/* <Col xs={12} md={8}><RegistrationInfo /></Col>
-                <Col xs={12} md={4}><ApplicationForm /></Col> */}
+                <Col xs={12} md={8}><RegistrationInfo /></Col>
+                <Col xs={12} md={4}><ApplicationForm /></Col>
             </Row>
             <Row>
                 {/* <Col xs={12} md={8}><RegistrationInfo /></Col>
@@ -43,7 +43,7 @@ export function Home() {
                 <Timer />
             </Row>
             <Row>
-                {/* <Institutional /> */}
+                <Institutional />
             </Row>
             <Row>
                 {/* <EventsFis /> */}
@@ -58,10 +58,10 @@ export function Home() {
                 {/* <Startups /> */}
             </Row>
             <Row>
-                {/* <Partners/> */}
+                <Partners/>
             </Row>
             <Row>
-                {/* <Footer /> */}
+                <Footer />
             </Row>
         </Container>
     );

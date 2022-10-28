@@ -8,28 +8,28 @@ export function Timer() {
     >
       <div className="countdownEl days-c">
         <p className="textTimer" id="days"></p>
-        <span className="stopwatchDate">Days</span>
+        <span className="stopwatchDate">dias</span>
       </div>
 
       <span className="separation">:</span>
 
       <div className="countdownEl hours-c">
         <p className="textTimer" id="hours"></p>
-        <span className="stopwatchDate">hours</span>
+        <span className="stopwatchDate">horas</span>
       </div>
 
       <span className="separation">:</span>
 
       <div className="countdownEl minutes-c">
         <p className="textTimer" id="minutes"></p>
-        <span className="stopwatchDate">minutes</span>
+        <span className="stopwatchDate">minutos</span>
       </div>
 
       <span className="separation">:</span>
 
       <div className="countdownEl seconds-c">
         <p className="textTimer" id="seconds"></p>
-        <span className="stopwatchDate">seconds</span>
+        <span className="stopwatchDate">segundos</span>
       </div>
     </div>
   );
@@ -42,39 +42,36 @@ let day = hour * 24;
 
 let timer;
 
-let count_down = new Date("09/30/2022 12:54:00").getTime();
+let count_down = new Date("11/07/2022 09:00:00").getTime();
 let x = setInterval(() => countDown(), second);
+
+function padLeadingZeros(num, size) {
+  var s = num+"";
+  while (s.length < size) s = "0" + s;
+  return s;
+}
 
 function countDown() {
   let now = new Date(Date.now()).getTime();
   let diff = count_down - now;
-  if(diff > 0){
 
-    document.getElementById("days").innerText = Math.floor(diff / day);
-    document.getElementById("hours").innerText = Math.floor((diff % day) / hour);
-    document.getElementById("minutes").innerText = Math.floor(
-      (diff % hour) / minute
-      );
-      document.getElementById("seconds").innerText = Math.floor(
-        (diff % minute) / second
-        );
-        
-        if (days.innerText < 10) {
-          days.innerText = `0${days.innerText}`;
-        }
-        if (hours.innerText < 10) {
-          hours.innerText = `0${hours.innerText}`;
-        }
-        if (minutes.innerText < 10) {
-          minutes.innerText = `0${minutes.innerText}`;
-        }
-        if (seconds.innerText < 10) {
-          seconds.innerText = `0${seconds.innerText}`;
-        }
-        
-        if ( hour == 0 && minute == 0 && second == 0 && day  == 0) {
-          timer = timer  + 2;
-        }
-      }
-        
+  if(diff > 0){    
+    let diffDays = Math.floor(diff / day);    
+    let elDays = document.getElementById("days");
+    elDays.innerText = padLeadingZeros(diffDays, 2);
+
+    let elHours = document.getElementById("hours");
+    let diffHours = Math.floor((diff % day) / hour);
+    elHours.innerText = padLeadingZeros(diffHours, 2);
+
+    let elMinutes = document.getElementById("minutes");
+    elMinutes.innerText = padLeadingZeros(Math.floor((diff % hour) / minute), 2);
+    
+    let elSeconds = document.getElementById("seconds");
+    elSeconds.innerText = padLeadingZeros(Math.floor((diff % minute) / second), 2);
+       
+    if ( hour == 0 && minute == 0 && second == 0 && day  == 0) {
+      timer = timer  + 2;
+    }
+  }        
 }
