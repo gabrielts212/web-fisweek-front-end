@@ -51,9 +51,9 @@ export function LeaderData({ input, showAll }) {
 
   return (
     <Row className="rowLeaders">
-      {isLoading ? <p style={{color: 'white'}}> Espere ai, por favor. Estamos carregando! </p> : filteredLeaders.map((leader, key) => {
+      {isLoading ? <p style={{color: 'white'}}>Aguarde por favor, estamos carregando! </p> : filteredLeaders.map((leader, key) => {
         return (
-          <Col xs={4} key={key._id} className="colLeaders">
+          <Col xs={12} sm={12} md={6} lg={4} key={key._id} className="colLeaders">
             <img className="avatarLeader" src={AvatarLeader} />
             <img className="panel" src={Panel}/> 
 

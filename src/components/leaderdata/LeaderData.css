@@ -82,114 +82,65 @@
 
 /* ====== @MEDIA QUERY ========= */
 
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+  .avatarLeader {
+    width: 18rem;
+    height: 17rem;
+    margin: 7rem 2.5rem;
+  }
+  
+  .panel {
+    width: 12rem;
+    height: 16rem;
+    margin: 6rem 9.5rem;
+  }
+
+  .leadersInfo {
+    margin: -6.5rem 1.5rem;
+    width: 26rem;
+    height: 12rem;
+  }
+}
+
 /* Medium devices (tablets, less than 992px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .leaderData {
-    margin-block: 7rem 31rem;
-  }
-
-  .leaderData .avatarLeader {
-    width: 17rem;
-    height: 19rem;
-  
-    position: absolute;
-    top: -3rem;
-    left: -9rem;
+  .avatarLeader {
+    width: 18rem;
+    height: 17rem;
+    margin: 7rem 3.5rem;
   }
   
-  .leaderData .panel {
+  .panel {
     width: 12rem;
-    height: 19rem;
-    margin: -3.5rem 0 0 4rem;
+    height: 16rem;
+    margin: 6rem 8.5rem;
   }
-  
-  .leaderData .leadersDate {
-    margin: -2rem 0 0 14.5rem;
-  }
-  
-  .leaderData .leadersDate .dateDay,
-  .leaderData .leadersDate .dateMonth {
-    width: 55px;
-    height: 68px;
-    font-size: 2.5rem;
-    padding: 1.3rem;
-  }
-  
-  .leaderData .leadersInfo {
-    width: 22.5rem;
-    height: 9.5rem;
 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 37rem 0 0 0;
-    padding: .5rem 0 0 1.3rem;
+  .leadersInfo {
+    margin: -6.5rem 1.5rem;
+    width: 26rem;
+    height: 12rem;
   }
-  
-  .leaderData .leadersInfo .leaderName {
-    font-size: 1.2rem;
-  }
-  
-  .leaderData .leadersInfo .leaderOffice,
-  .leaderData .leadersInfo .leaderCompany {
-    width: 19.5rem;
-    font-size: 1rem;
-  }  
 }
 
 /* Large devices (desktops, less than 1200px) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .leaderData {
-    margin-block: 7rem 30rem;
+  .avatarLeader {
+    width: 18rem;
+    height: 17rem;
+    margin: 7rem 3.5rem;
   }
   
-  .leaderData .avatarLeader {
-    width: 17rem;
-    height: 19rem;
-  
-    position: absolute;
-    top: -3rem;
-    left: -9rem;
-  }
-  
-  .leaderData .panel {
+  .panel {
     width: 12rem;
-    height: 19rem;
-    margin: -3.5rem 0 0 4rem;
+    height: 16rem;
+    margin: 6rem 11rem;
   }
-  
-  .leaderData .leadersDate {
-    margin: -2rem 0 0 14.5rem;
+
+  .leadersInfo {
+    margin: -6.5rem 3.5rem;
+    width: 26rem;
+    height: 12rem;
   }
-  
-  .leaderData .leadersDate .dateDay,
-  .leaderData .leadersDate .dateMonth {
-    width: 55px;
-    height: 68px;
-    font-size: 2.5rem;
-    padding: 1.3rem;
-  }
-  
-  .leaderData .leadersInfo {
-    width: 22.5rem;
-    height: 9.5rem;
-  
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 36rem 0 0 0;
-    padding: .5rem 0 0 1.3rem;
-  }
-  
-  .leaderData .leadersInfo .leaderName {
-    font-size: 1.2rem;
-  }
-  
-  .leaderData .leadersInfo .leaderOffice,
-  .leaderData .leadersInfo .leaderCompany {
-    width: 19.5rem;
-    font-size: 1rem;
-  }  
 }

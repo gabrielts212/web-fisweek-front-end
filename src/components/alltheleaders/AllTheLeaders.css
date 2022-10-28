@@ -92,10 +92,6 @@
   margin: -8.7rem 0 0 58rem;
 }
 
-.allTheLeaders .leaderDataGroup {
-  
-}
-
 
 /* ====== @MEDIA QUERY ========= */
 
@@ -142,10 +138,7 @@
   }
 
   .allTheLeaders .leaderDataGroup {
-    gap: 2rem;
-    grid-template-columns: 1fr;
-    margin-right: 2.7rem;
-    margin-top: 2rem;
+    margin-left: 2rem;
   }
 
   .allTheLeaders::-webkit-scrollbar {
@@ -196,10 +189,7 @@
   }
 
   .allTheLeaders .leaderDataGroup {
-    gap: 2rem;
-    grid-template-columns: 1fr;
-    margin-right: 2.7rem;
-    margin-top: 2rem;
+    margin-left: 2rem;
   }
 
   .allTheLeaders::-webkit-scrollbar {
@@ -246,13 +236,6 @@
   
   .allTheLeaders .iconSearch {
     margin: -8.9rem 0 0 29.5rem;
-  }
-
-  .allTheLeaders .leaderDataGroup {
-    gap: 2rem;
-    grid-template-columns: 1fr 1fr;
-    margin-right: 2.7rem;
-    margin-top: -2rem;
   }
 }
 
