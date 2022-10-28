@@ -28,7 +28,7 @@ export function Header() {
           )}
         </div>
 
-        <ul className={click ? "navMenu active" : "navMenu"}>
+        {/* <ul className={click ? "navMenu active" : "navMenu"}>
           <li className="navItem">
             <a href="#">
               <Link
@@ -100,7 +100,7 @@ export function Header() {
               </Link>
             </a>
           </li>
-        </ul>
+        </ul> */}
       </nav>
     </div>
   );

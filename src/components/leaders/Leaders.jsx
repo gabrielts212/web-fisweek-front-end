@@ -5,7 +5,7 @@ import "./Leaders.css";
 
 export function Leaders() {
   return (
-    <div>
+    <div id="leaders">
       <LeaderData input={""} showAll={false} />
       <Row>
         <a href="/fisweek22/#/leaderspage" target="_blank">

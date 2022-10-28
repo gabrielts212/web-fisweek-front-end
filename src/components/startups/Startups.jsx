@@ -31,7 +31,7 @@ export function Startups() {
   }
 
   return (
-    <div className="Startups">
+    <div className="Startups" id="startups">
       <img className="startupsImage" src={StartupsImage} />
       <img className="startupsImageSmall" src={StartupsImageSmall} />
       <header>
