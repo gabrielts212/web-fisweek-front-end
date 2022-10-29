@@ -1,7 +1,7 @@
 import "./Institutional.css";
 import { Link } from "react-scroll";
 
-import BackgroundVideo from "../../assets/images/institutional/backgroundvideo.png";
+import BackgroundVideo from "../../assets/images/institutional/backgroundVideo.png";
 
 export function Institutional() {
   return (
