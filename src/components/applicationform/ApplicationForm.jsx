@@ -99,7 +99,7 @@ class ApplicationForm extends React.Component {
               </div>
               
               <TextInput round placeholder={t("inputs.WhichEventWouldYouLikeToAttend")} onChange={(e) => this.setState({ conference: e.target.value})} />
-              <div className={styles.checkboxGroup}>
+              {/* <div className={styles.checkboxGroup}>
                 <div>
                   <input className={styles.inputFis} type="checkbox" onChange={(e) => this.setState({ conference: e.target.value})} /> #FIS22
                 </div>
@@ -119,8 +119,7 @@ class ApplicationForm extends React.Component {
                 <div>
                   <input className={styles.inputAll} type="checkbox" onChange={(e) => this.setState({ conference: e.target.value})} /> Todos
                 </div>
-              </div>
-
+              </div> */}
               <TextInput round name="idade" value={age} placeholder={t("inputs.age")} maxLength={2} number onChange={(e) => this.setState({ age: isNaN(e.target.value) ? undefined : e.target.value})} />
               <Button text={t("register")} onClick={this.onButtonClick.bind(this)} alt />
             </div>
