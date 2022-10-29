@@ -3,7 +3,7 @@ import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 
-import "./gold.css";
+import "./Gold.css";
 
 import Abramed from "../../assets/images/Partners/gold/abramed.svg";
 import Abramge from "../../assets/images/Partners/gold/abramgenacional.png";
