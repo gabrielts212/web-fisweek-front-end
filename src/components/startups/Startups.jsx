@@ -1,7 +1,7 @@
 import "./Startups.css";
 
-import StartupsImage from "../../assets/images/startups/StartupsImage.png";
-import StartupsImageSmall from "../../assets/images/startups/StartupsImageSmall.png";
+import StartupsImage from "../../assets/images/startups/startupsImage.png";
+import StartupsImageSmall from "../../assets/images/startups/startupsImageSmall.png";
 import BEEHIVE from "../../assets/images/startups/BEEHIVE.png";
 import { useState } from "react";
 import Modal from "react-modal";
