@@ -18,7 +18,9 @@ export function Header() {
     <div className="header">
       <nav className="navbar">
         <div className="imageFis">
-          <img className="headerFis" src={HeaderFis} alt="image header" />
+          <a href="/fisweek22/#/">
+            <img className="headerFis" src={HeaderFis} alt="image header" />
+          </a>
         </div>
         <div className="flags">
           <LanguageSwitcher />

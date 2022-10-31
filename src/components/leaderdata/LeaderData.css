@@ -25,15 +25,15 @@
 }
 
 .leadersDate {
-  margin: -2rem 0 0 14.5rem;
+  margin: -17rem 0 0 16.5rem;
   position: absolute;
-  z-index: 1;
+  z-index: 999;
 }
 
 .leadersDate .dateDay,
 .leadersDate .dateMonth {
   width: 65px;
-  height: 78px;
+  height: 70px;
   background: #FFF;
   color: #2A2850;
   font-size: 2.7rem;

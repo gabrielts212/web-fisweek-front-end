@@ -31,7 +31,6 @@ export function LeaderData({ input, showAll }) {
       });
   }, []);
     
-
   // useEffect(() => {
   //   axios
   //     .get("/server/fisweek/painel/buscar")
@@ -50,7 +49,12 @@ export function LeaderData({ input, showAll }) {
       {filteredLeaders.map((leader, key) => {
         return (
           <Col xs={12} sm={12} md={6} lg={4} key={key._id} className="colLeaders">
-            <img className="avatarLeader" src={AvatarLeader} />
+            <img 
+              className="avatarLeader" 
+              src={AvatarLeader}
+              // src="https://cpanel.fis.org.br/cpsess6995292450/frontend/paper_lantern/filemanager/index.html/images-lideres-sample.png"
+              // onError={(e) => {e.target.onerror = null; e.target.src={AvatarLeader} }} 
+            />
             <img className="panel" src={Panel}/> 
 
             {/* {dates.map((date, key) => {
