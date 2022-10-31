@@ -5,13 +5,16 @@ import StartupsImageSmall from "../../assets/images/startups/startupsImageSmall.
 import BEEHIVE from "../../assets/images/startups/BEEHIVE.png";
 import { useState } from "react";
 import Modal from "react-modal";
-
 import { useForm } from "react-hook-form";
+
+import { useTranslation } from 'react-i18next';
 
 import Eclipse from "../../assets/images/startups/eclipse.png";
 Modal.setAppElement("#root");
 
 export function Startups() {
+  const { t } = useTranslation();
+
   const [modalIsOpen, setIsOpen] = useState(false);
   const {
     register,
@@ -42,18 +45,8 @@ export function Startups() {
       <div className="eventBeehive">
         <div className="smBeehive">
           <img src={BEEHIVE} alt="BEEHIVE" />
-          <p title="Deslize para Baixo">
-            Nossa grande contribuição para a Inovação na Saúde. Um evento feito
-            para ser destaque no setor, com grandes lideranças, trocas de
-            experiências e muito conteúdo e interação. 100% digital e gratuito e
-            com a cara da #IniciativaFIS. Nossa grande contribuição para a
-            Inovação na Saúde. Um evento feito para ser destaque no setor, com
-            grandes ssa grande contribuição para a Inovação na Saúde. Um evento
-            feito para ser destaque no setor, com grandes lideranças, trocas de
-            experiências e muito conteúdo e interação. 100% digital e gratuito e
-            com a cara da #IniciativaFIS.
-          </p>
-          <button onClick={openModal}>Cadastrar</button>
+          <p title="Deslize para Baixo">{t("startups.text")}</p>
+          <button onClick={openModal}>{t("startups.register")}</button>
           <Modal
             isOpen={modalIsOpen}
             onRequestClose={closeModal}
@@ -67,7 +60,7 @@ export function Startups() {
                 <input
                   type="text"
                   name="name"
-                  placeholder="Nome da Startup"
+                  placeholder={t("startups.startupName")}
                   {...register("Startup", {
                     required: true,
                   })}
@@ -77,7 +70,7 @@ export function Startups() {
                 <input
                   type="text"
                   name="name"
-                  placeholder="Nome do Representante"
+                  placeholder={t("startups.representantName")}
                   {...register("Representante", {
                     required: true,
                   })}
@@ -87,7 +80,7 @@ export function Startups() {
                 <input
                   type="Email"
                   name="Email"
-                  placeholder="Email"
+                  placeholder={t("startups.emai")}
                   {...register("Email", {
                     required: true,
                   })}
@@ -97,7 +90,7 @@ export function Startups() {
                 <input
                   type="number"
                   name="name"
-                  placeholder="Telefone de Contato"
+                  placeholder={t("startups.phoneNumber")}
                   {...register("Telefone", {
                     required: true,
                   })}
@@ -105,17 +98,17 @@ export function Startups() {
                 />
                 <div>
                   <select className="formSelect">
-                    <option>Selecione um País</option>
-                    <option value="Brasil">Brasil</option>
-                    <option value="Espanha">Espanha</option>
-                    <option value="Estados Unidos">Estados Unidos</option>
+                    <option>{t("startups.selectACountry")}</option>
+                    <option value="Brasil">{t("startups.brazil")}</option>
+                    <option value="Espanha">{t("startups.spain")}</option>
+                    <option value="Estados Unidos">{t("startups.unitedStates")}</option>
                   </select>
                 </div>
 
                 <input
                   type="text"
                   name="name"
-                  placeholder="Cidade"
+                  placeholder={t("startups.city")}
                   {...register("cidade", {
                     required: true,
                   })}
@@ -125,7 +118,7 @@ export function Startups() {
                 <input
                   type="text"
                   name="name"
-                  placeholder="Site/URL"
+                  placeholder={t("startups.url")}
                   {...register("Site", {
                     required: true,
                   })}
@@ -133,6 +126,7 @@ export function Startups() {
                 />
                 <textarea
                   className="textArea"
+                  placeholder={t("startups.textarea")}
                   id=""
                   name=""
                   rows="5"
@@ -151,19 +145,14 @@ export function Startups() {
                 onChange={(e) => setFile(e.target.value)}
                 accept="application/pdf"
               /> 
-                <button className="buttonDeck">
+              <button className="buttonDeck">{t("startups.upload")}</button>
 
-                  Faça o upload do seu Deck
-                </button>
-
-                <button className="buttonModal" type="submit">
-                  OK
-                </button>
+              <button className="buttonModal" type="submit">{t("startups.buttonOk")}</button>
               </label>
             </form>
           </Modal>
         </div>
-        {/* <span> O evento será online e presencial </span> */}
+        <span>{t("startups.eventOnline")}</span>
       </div>
     </div>
   );

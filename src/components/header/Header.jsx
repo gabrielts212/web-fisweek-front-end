@@ -5,7 +5,11 @@ import { Link } from "react-scroll";
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
+import { useTranslation } from 'react-i18next';
+
 export function Header() {
+  const { t } = useTranslation();
+
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMenu = () => setClick(false);
@@ -39,7 +43,7 @@ export function Header() {
                 duration={500}
                 onClick={closeMenu}
               >
-                LÍDERES
+                {t("header.list1")}
               </Link>
             </a>
           </li>
@@ -54,7 +58,7 @@ export function Header() {
                 duration={500}
                 onClick={closeMenu}
               >
-                EVENTOS
+                {t("header.list2")}
               </Link>
             </a>
           </li>
@@ -68,7 +72,7 @@ export function Header() {
                 duration={500}
                 onClick={closeMenu}
               >
-                PROGRAMAÇÃO
+                {t("header.list3")}
               </Link>
             </a>
           </li>
@@ -82,7 +86,7 @@ export function Header() {
                 duration={500}
                 onClick={closeMenu}
               >
-                DEPOIMENTOS
+                {t("header.list4")}
               </Link>
             </a>
           </li>
@@ -96,7 +100,7 @@ export function Header() {
                 duration={500}
                 onClick={closeMenu}
               >
-                STARTUPS
+                {t("header.list5")}
               </Link>
             </a>
           </li>

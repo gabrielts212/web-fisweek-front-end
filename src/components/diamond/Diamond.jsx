@@ -2,6 +2,8 @@ import "./Diamond.css";
 import Carousel from "react-multi-carousel";
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 
+import { useTranslation } from 'react-i18next';
+
 import Americas from "../../assets/images/Partners/diamond/americas.svg";
 import Amil from "../../assets/images/Partners/diamond/amil.svg";
 import AstraZeneca from "../../assets/images/Partners/diamond/astra-zeneca.svg";
@@ -18,7 +20,9 @@ import Senac from "../../assets/images/Partners/diamond/senac.png";
 import WhiteMartins from "../../assets/images/Partners/diamond/white-martins.png";
 import Oncoclinicas from "../../assets/images/Partners/diamond/Oncoclinicas.png";
 
-export function Diamond(){
+export function Diamond() {
+  const { t } = useTranslation();
+
     const responsive = {
         superLargeDesktop: {
           breakpoint: { max: 4000, min: 3000 },
@@ -40,7 +44,7 @@ export function Diamond(){
 
     return(
       <div className="diamond">
-        <h2>Parceiros Diamond</h2>
+        <h2>{t("partners.partnersDiamond")}</h2>
         <div className="borderDiamond"></div>
 
         <Carousel

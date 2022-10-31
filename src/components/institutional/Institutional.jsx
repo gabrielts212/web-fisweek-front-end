@@ -1,17 +1,18 @@
 import "./Institutional.css";
 import { Link } from "react-scroll";
 
+import { useTranslation } from 'react-i18next';
 import BackgroundVideo from "../../assets/images/institutional/backgroundVideo.png";
 
 export function Institutional() {
+  const { t } = useTranslation();
+
   return (
     <div className="background">
       
       <img className="videoImage" src={BackgroundVideo} />
 
-      <h1>
-        Vamos transformar o <br /> universo da saúde juntos?
-      </h1>
+      <h1>{t("institutional.title")}</h1>
 
       <iframe
         className="iframeVideo"
@@ -35,7 +36,7 @@ export function Institutional() {
             offset={50}
             duration={500}
           >
-            <button className="videobuttonLink">Quero me cadastrar</button>
+            <button className="videobuttonLink">{t("institutional.iWantToSuscribe!")}</button>
           </Link>
         </a>
       </div>

@@ -112,7 +112,11 @@
   margin: -10rem 0 0 0;
 }
 
-.metricsGroup .metricsOne span,
+.metricsGroup .metricsOne span {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
 .metricsGroup .metricsTwo span,
 .metricsGroup .metricsThree span,
 .metricsGroup .metricsFour span,

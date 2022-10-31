@@ -9,22 +9,26 @@ import Telegram from "../../assets/images/footer/Telegram.png";
 import Spotify from "../../assets/images/footer/Spotify.png";
 import Tiktok from "../../assets/images/footer/Tiktok.png";
 
+import { useTranslation } from 'react-i18next';
+
 import "./Footer.css";
 
 export function Footer() {
+  const { t } = useTranslation();
+
   return (
     <div className="Footer">
       <div className="contact">
-        <h4>Precisa de ajuda?</h4>
+        <h4>{t("footer.needHelp")}</h4>
         <p>faleconosco@fis.org.br</p>
-        <h4>Comercial</h4>
+        <h4>{t("footer.commercial")}</h4>
         <p>comercial@fis.org.br</p>
-        <h4>Assessoria de Imprensa</h4>
+        <h4>{t("footer.pressOffice")}</h4>
         <p>faleconosco@fis.org.br</p>
       </div>
 
       <div className="networks">
-        <h4>Nossas redes</h4>
+        <h4>{t("footer.ourSocialMedia")}</h4>
       </div>
 
       <div className="sociais">

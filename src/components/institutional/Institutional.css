@@ -7,12 +7,13 @@
   height: 100%;
 }
 .background h1 {
+  width: 45rem;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -1000px;
-  margin-left: 350px;
+  margin-top: -62rem;
+  margin-left: 18rem;
   position: absolute;
   font-size: 3rem;
   font-weight: 700;
@@ -49,14 +50,161 @@
 .videobuttonLink:hover {
   filter: brightness(1.2);
 }
-@media (min-width: 360px) and (max-width: 550.98px) {
+
+@media (min-width: 375px) and (max-width: 512px) {
+  .background {
+    height: auto;
+  }
+
   .background h1 {
+    width: 27rem;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -300px;
-    margin-left: 43px;
+    margin-top: -21.7rem;
+    margin-left: -.5rem;
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .videoButton {
+    display: flex;
+    justify-content: center;
+    margin-top: -140px;
+  }
+
+  .background .iframeVideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: -20rem;
+    margin-left: 1.5rem;
+    position: absolute;
+    width: 350px;
+    height: 230px;
+  }
+
+  .videoButton .videobuttonLink {
+    width: 15rem;
+    height: 2.5rem;
+    border-radius: 8rem;
+    border: 0;
+    background: #ff4063;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1rem;
+    text-align: center;
+    margin-top: 7rem;
+    transition: 0.1s;
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 513px) and (max-width: 550.98px) {
+  .background h1 {
+    width: 20rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -27.5rem;
+    margin-left: 8rem;
+    position: absolute;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  .videoButton {
+    display: flex;
+    justify-content: center;
+    margin-top: -140px;
+  }
+  .videoButton .videobuttonLink {
+    width: 200px;
+    height: 35px;
+    border-radius: 8rem;
+    border: 0;
+    background: #ff4063;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1rem;
+    text-align: center;
+    margin-top: 7rem;
+    transition: 0.1s;
+    margin-left: 0px;
+  }
+  .background .iframeVideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: -23rem;
+    margin-left: 1.5rem;
+    position: absolute;
+    width: 450px;
+    height: 250px;
+  }
+}
+/* X-Small devices (portrait phones, less than 576px) */
+@media (min-width: 550px) and (max-width: 575.98px) {
+  .background h1 {
+    width: 25rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -29rem;
+    margin-left: 6rem;
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .videoButton {
+    display: flex;
+    justify-content: center;
+    margin-top: -140px;
+  }
+  .videoButton .videobuttonLink {
+    width: 17rem;
+    height: 4rem;
+    font-size: 1.2rem;
+    border-radius: 8rem;
+    border: 0;
+    background: #ff4063;
+    color: #fff;
+    font-weight: 500;
+    line-height: 3.535rem;
+    text-align: center;
+    margin-top: 5rem;
+    transition: 0.1s;
+    margin-left: -40px;
+  }
+  .background .iframeVideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: -24rem;
+    margin-left: 3rem;
+    position: absolute;
+    width: 450px;
+    height: 250px;
+  }
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .background h1 {
+    width: 30rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -29rem;
+    margin-left: 5rem;
     position: absolute;
     font-size: 1.5rem;
     font-weight: 700;
@@ -67,62 +215,17 @@
     margin-top: -140px;
   }
   .videoButton .videobuttonLink {
-    width: 211px;
-    height: 46.06px;
-    border-radius: 8rem;
-    border: 0;
-    background: #ff4063;
-    color: #fff;
+    width: 260px;
+    height: 48.06px;
     font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 3.535rem;
-    text-align: center;
-    margin-top: 6rem;
-    transition: 0.1s;
-    margin-left: 0px;
-  }
-  .background .iframeVideo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    margin-top: -17rem;
-    margin-left: 48px;
-    position: absolute;
-    width: 300px;
-    height: 173px;
-  }
-}
-/* X-Small devices (portrait phones, less than 576px) */
-@media (min-width: 550px) and (max-width: 575.98px) {
-  .background h1 {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -421px;
-    margin-left: 56px;
-    position: absolute;
-    font-size: 2rem;
-    font-weight: 700;
-  }
-  .videoButton {
-    display: flex;
-    justify-content: center;
-    margin-top: -140px;
-  }
-  .videoButton .videobuttonLink {
-    width: 379px;
-    height: 62.06px;
     border-radius: 8rem;
     border: 0;
     background: #ff4063;
     color: #fff;
-    font-size: 1.7rem;
     font-weight: 500;
     line-height: 3.535rem;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 5rem;
     transition: 0.1s;
     margin-left: -40px;
   }
@@ -131,52 +234,7 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    margin-top: -25rem;
-    margin-left: 30px;
-    position: absolute;
-    width: 450px;
-    height: 250px;
-  }
-}
-/* Small devices (landscape phones, less than 768px) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .background h1 {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -421px;
-    margin-left: 56px;
-    position: absolute;
-    font-size: 2rem;
-    font-weight: 700;
-  }
-  .videoButton {
-    display: flex;
-    justify-content: center;
-    margin-top: -140px;
-  }
-  .videoButton .videobuttonLink {
-    width: 379px;
-    height: 62.06px;
-    border-radius: 8rem;
-    border: 0;
-    background: #ff4063;
-    color: #fff;
-    font-size: 1.7rem;
-    font-weight: 500;
-    line-height: 3.535rem;
-    text-align: center;
-    margin-top: 4rem;
-    transition: 0.1s;
-    margin-left: -40px;
-  }
-  .background .iframeVideo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    margin-top: -25rem;
+    margin-top: -24.5rem;
     margin-left: 30px;
     position: absolute;
     width: 450px;
@@ -186,16 +244,18 @@
 /* Medium devices (tablets, less than 992px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .background h1 {
+    width: 30rem;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -550px;
-    margin-left: 181px;
+    margin-top: -40rem;
+    margin-left: 10rem;
     position: absolute;
     font-size: 2rem;
     font-weight: 700;
   }
+
   .videoButton {
     display: flex;
     justify-content: center;
@@ -227,6 +287,10 @@
     width: 550px;
     height: 360px;
   }
+
+  .videoButton .videobuttonLink {
+    margin-top: 5rem;
+  }  
 }
 /* Large devices (desktops, less than 1200px) */
 @media (min-width: 992px) and (max-width: 1199.98px) {

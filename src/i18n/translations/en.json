@@ -38,31 +38,31 @@
     },
 
     "header": {
-      "list1": "LÍDERES",
-      "list2": "EVENTOS",
-      "list3": "PROGRAMAÇÃO",
-      "list4": "DEPOIMENTOS",
+      "list1": "LEADERS",
+      "list2": "EVENTS",
+      "list3": "PROGRAMMING",
+      "list4": "DECLARATIONS",
       "list5": "STARTUPS"
     },
 
     "leaders": {
-      "fullName": "Nome Completo",
-      "Office": "Cargo",
-      "company": "Empresa",
-      "seeAllLeaders": "Ver todos os líderes",
-      "filterLeaders": "Pesquise por nome ou evento"
+      "fullName": "Name and Last Name",
+      "Office": "Enterprise",
+      "company": "Position",
+      "seeAllLeaders": "See all Leaders",
+      "filterLeaders": "Search by name"
     },
 
     "timer": {
-      "days": "dias",
-      "hours": "horas",
-      "minutes": "minutos",
-      "seconds": "segundos"
+      "days": "days ",
+      "hours": "hours",
+      "minutes": "minutes",
+      "seconds": "seconds"
     },
 
     "institutional": {
-      "title": "Vamos transformar o universo da saúde juntos?",
-      "iWantToSuscribe!": "Quero me cadastrar"
+      "title": "Let's change the health universe together!",
+      "iWantToSuscribe!": "I want to suscribe!"
     },
 
     "events": {
@@ -74,62 +74,66 @@
 
       "lyggaText": "#LYGGA is to us an Education synonym which is one of the main Iniciativa FIS beliefs. With it we bring an exclusive event to dedicate Health education with major health discussions to executives and academics. The idea is to present methodologies and instruments to Digital Health, giving in updates, networking and opportunities to follow up debates with sensible subjects to the health area.",
 
-      "knowMore": "Saiba mais",
-      "transmissionHours": "horas de transmissão",
-      "days": "dias",
-      "enterprises": "empresas",
-      "languages": "idiomas",
-      "speakers": "palestrantes"
+      "knowMore": "know more",
+      "transmissionHours": "transmission hours",
+      "days": "days ",
+      "enterprises": "enterprises",
+      "languages": "languages",
+      "speakers": "speakers"
     },
 
     "programmation": {
-      "programmation": "Programação",
-      "all": "Todos",
-      "day": "Dia",
-      "text": "Os desafios de implementar políticas públicas de saúde durante uma pandemia",
-      "moderator": "Moderador",
-      "seeCompleteProgramming": "Ver programação completa",
-      "iWantToSubscribe": "Quero me cadastrar",
-      "filterProgrammation": "Pesquise por tema, participante ou evento"
+      "programmation": "Programmation",
+      "all": "All",
+      "day": "Day",
+      "dayM": "day",
+      "text": "Challenges of applying Health public politics during pandemic times",
+      "moderator": "Moderator",
+      "seeCompleteProgramming": "See complete programming",
+      "iWantToSubscribe": "I want to subscribe",
+      "filterProgrammation": "Search by subject, participant or event"
     },
 
     "declaration": {
-      "declaration": "",
+      "declaration": "Declaration",
       "d1": "",
       "d2": "",
       "d3": "",
-      "iWantToSubscribe": "Quero me cadastrar"
+      "iWantToSubscribe": "I want to suscribe"
     },
 
     "startups": {
       "text": "BEE HIVE is the moment in which the health Startups will have their online Pitch. Here is where the companies can take a change to present their solutions to Leaders and to the Health market.",
 
-      "register": "Cadastrar",
+      "register": "suscribe",
       "eventOnline": "The event will be in person and online",
-      "startupName": "Nome da Startup",
-      "representantName": "Nome do Representante",
-      "emai": "Email",
-      "phoneNumber": "Telefone de Contato",
-      "selectACountry": "Selecione um País",
-      "city": "Cidade",
-      "url": "Site/URL",
-      "textarea": "Descreva sua Solução (Máximo de 120 caracteres)",
-      "upload": "Faça o upload do seu Deck",
+      "startupName": "Startup Name",
+      "representantName": "Representant Name",
+      "emai": "E-mail",
+      "phoneNumber": "Phone Number",
+      "selectACountry": "Select a Country",
+      "brazil": "Brazil",
+      "spain": "Spain",
+      "unitedStates": "United States",
+      "city": "City",
+      "url": "URL/WebPageL",
+      "textarea": "Describe a Solution (120 characters max.)",
+      "upload": "Upload your Deck",
       "buttonOk": "OK"
     },
 
     "partners": {
-      "partners": "Parceiros",
-      "partnersDiamond": "Parceiros Diamond",
-      "partnersGold": "Parceiros Gold",
-      "support": "Apoio"
+      "partners": "Partners",
+      "partnersDiamond": "Partners Diamond",
+      "partnersGold": "Partners Gold",
+      "support": "Support"
     },
 
     "footer": {
-      "needHelp": "Precisa de ajuda?",
-      "commercial": "Comercial",
-      "pressOffice": "Assessoria de Imprensa",
-      "ourSocialMedia": "Nossas redes"
+      "needHelp": "Need help?",
+      "commercial": "Commercial",
+      "pressOffice": "Press Office",
+      "ourSocialMedia": "Our Social Media"
     }
   }
 }

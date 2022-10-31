@@ -50,11 +50,11 @@
       "Office": "Cargo",
       "company": "Empresa",
       "seeAllLeaders": "Ver todos los Líderes",
-      "filterLeaders": "Buscar por nombre o evento "
+      "filterLeaders": "Buscar por nombre"
     },
 
     "timer": {
-      "days": "días ",
+      "days": "días",
       "hours": "horas",
       "minutes": "minutos",
       "seconds": "segundos"
@@ -76,7 +76,7 @@
 
       "knowMore": "Saber más",
       "transmissionHours": "horas de transmisión",
-      "days": "días ",
+      "days": "días",
       "enterprises": "empresas",
       "languages": "idiomas",
       "speakers": "disertantes"
@@ -86,6 +86,7 @@
       "programmation": "programación",
       "all": "Todos",
       "day": "Día",
+      "dayM": "día",
       "text": "Los desafíos de implementar políticas públicas de la Salud durante una pandemia",
       "moderator": "Moderador",
       "seeCompleteProgramming": "Ver programación completa",
@@ -104,32 +105,35 @@
     "startups": {
       "text": "BEE HIVE es el momento de Pitch online de las StartUps del Sector de la Salud. Es por medio de ella que las empresas pueden aprovechar para presentar sus soluciones a los Líderes de la Salud y al mercado.",
 
-      "register": "Cadastrar",
-      "eventOnline": "The event will be in person and online",
-      "startupName": "Nome da Startup",
-      "representantName": "Nome do Representante",
-      "emai": "Email",
-      "phoneNumber": "Telefone de Contato",
-      "selectACountry": "Selecione um País",
-      "city": "Cidade",
-      "url": "Site/URL",
-      "textarea": "Descreva sua Solução (Máximo de 120 caracteres)",
-      "upload": "Faça o upload do seu Deck",
+      "register": "Suscribirme",
+      "eventOnline": "El evento será online y presencial",
+      "startupName": "Nombre de la Startup",
+      "representantName": "Nombre del Representante",
+      "emai": "E-mail ",
+      "phoneNumber": "Telefono",
+      "selectACountry": "Seleccione un País",
+      "brazil": "Brasil",
+      "spain": "España",
+      "unitedStates": "Estados Unidos",
+      "city": "Ciudad",
+      "url": "Página Web/URL",
+      "textarea": "Describir la Solución (Máximo - 120 caracteres)",
+      "upload": "Hacer upload de su Deck",
       "buttonOk": "OK"
     },
 
     "partners": {
-      "partners": "Parceiros",
-      "partnersDiamond": "Parceiros Diamond",
-      "partnersGold": "Parceiros Gold",
-      "support": "Apoio"
+      "partners": "Parceros",
+      "partnersDiamond": "Parceros Diamond",
+      "partnersGold": "Parceros Gold",
+      "support": "Apoyo"
     },
 
     "footer": {
-      "needHelp": "Precisa de ajuda?",
+      "needHelp": "¿Necesitas Ayuda?",
       "commercial": "Comercial",
-      "pressOffice": "Assessoria de Imprensa",
-      "ourSocialMedia": "Nossas redes"
+      "pressOffice": "Asesoría de Imprensa",
+      "ourSocialMedia": "Nuestras Redes"
     }
   }
 }

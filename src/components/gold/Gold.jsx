@@ -3,6 +3,8 @@ import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 
+import { useTranslation } from 'react-i18next';
+
 import "./Gold.css";
 
 import Abramed from "../../assets/images/Partners/gold/abramed.svg";
@@ -26,6 +28,8 @@ import Fleury from "../../assets/images/Partners/gold/grupo fleury.png";
 // import Gsk from "../../assets/images/Partners/gold/gsk.png";
 
 export function Gold() {
+  const { t } = useTranslation();
+
     const responsive = {
       superLargeDesktop: {
         
@@ -49,7 +53,7 @@ export function Gold() {
     
     return (
     <div className="gold">
-      <h2 className="h2Gold">Parceiros Gold</h2>
+      <h2 className="h2Gold">{t("partners.partnersGold")}</h2>
       <div className="borderGold"></div>
 
         <Carousel

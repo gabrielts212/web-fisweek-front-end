@@ -5,6 +5,7 @@ import { PanelMeets } from '../panelmeets/PanelMeets'
 import { PanelSm } from '../panelsm/PanelSm'
 
 import { RegistrationInfo } from '../registrationInfo/RegistrationInfo'
+import { useTranslation } from 'react-i18next';
 import { Link } from "react-scroll";
 
 import axios from 'axios';
@@ -14,6 +15,8 @@ import { useEffect } from "react";
 import './Schedule.css'
 
 export function Schedule() {
+  const { t } = useTranslation();
+
   const [schedule, setSchedule] = useState([])
 
   const returnsSchedule = (value) => {
@@ -32,17 +35,17 @@ export function Schedule() {
   return (
     <div className="Schedule" id='schedule'>
       <header>
-        <h1>Programação</h1>
+        <h1>{t("programmation.programmation")}</h1>
         <img src={Eclipse} alt="Circulo vermelho" />
       </header>
       
       <section className="daysOfTheWeek">
-        <div className="Every Days">Todos</div>
-        <div className="Days">Dia 7</div>
-        <div className="Days">Dia 8</div>
-        <div className="Days">Dia 9</div>
-        <div className="Days">Dia 10</div>
-        <div className="Days">Dia 11</div>
+        <div className="Every Days">{t("programmation.all")}</div>
+        <div className="Days">{t("programmation.day")} 7</div>
+        <div className="Days">{t("programmation.day")} 8</div>
+        <div className="Days">{t("programmation.day")} 9</div>
+        <div className="Days">{t("programmation.day")} 10</div>
+        <div className="Days">{t("programmation.day")} 11</div>
       </section>
 
       <div className="ScheduleGroup">
@@ -87,13 +90,13 @@ export function Schedule() {
       </div>
       
       <a href="/fisweek22/#/allTheSchedule" target="_blank">
-        <button className="showShedule">Ver programação completa</button>
+        <button className="showShedule">{t("programmation.seeCompleteProgramming")}</button>
       </a>
 
       <div className="registrationButton">
         <a href="#">
           <Link to="registrationInfo" spy={true} smooth={true} offset={50} duration={500}>
-            <button className="buttonLink">Quero me cadastrar</button>
+            <button className="buttonLink">{t("programmation.iWantToSubscribe")}</button>
           </Link> 
         </a>
       </div>

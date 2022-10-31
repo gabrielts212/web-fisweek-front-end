@@ -3,6 +3,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 
+import { useTranslation } from 'react-i18next';
+
 import "./Support.css"
 
 import Abimed from "../../assets/images/Partners/apoio/abimed.svg";
@@ -54,6 +56,8 @@ import Sbh from "../../assets/images/Partners/apoio/sbh.svg";
 
 
 export  function Support() {
+  const { t } = useTranslation();
+
   const responsive = {
     superLargeDesktop: {
       
@@ -76,7 +80,7 @@ export  function Support() {
   
   return (
       <div id="supportCarousel">
-      <h2 className="Support">Apoio</h2>
+      <h2 className="Support">{t("partners.support")}</h2>
       <Carousel
           infinite
           autoPlay

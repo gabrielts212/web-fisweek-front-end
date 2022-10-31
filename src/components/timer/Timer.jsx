@@ -1,6 +1,11 @@
 import "./Timer.css";
 import bg from "../../assets/images/timer/bg.png";
+
+import { useTranslation } from 'react-i18next';
+
 export function Timer() {
+  const { t } = useTranslation();
+
   return (
     <div
       className="countdownContainer"
@@ -8,28 +13,28 @@ export function Timer() {
     >
       <div className="countdownEl days-c">
         <p className="textTimer" id="days"></p>
-        <span className="stopwatchDate">dias</span>
+        <span className="stopwatchDate">{t("timer.days")}</span>
       </div>
 
       <span className="separation">:</span>
 
       <div className="countdownEl hours-c">
         <p className="textTimer" id="hours"></p>
-        <span className="stopwatchDate">horas</span>
+        <span className="stopwatchDate">{t("timer.hours")}</span>
       </div>
 
       <span className="separation">:</span>
 
       <div className="countdownEl minutes-c">
         <p className="textTimer" id="minutes"></p>
-        <span className="stopwatchDate">minutos</span>
+        <span className="stopwatchDate">{t("timer.minutes")}</span>
       </div>
 
       <span className="separation">:</span>
 
       <div className="countdownEl seconds-c">
         <p className="textTimer" id="seconds"></p>
-        <span className="stopwatchDate">segundos</span>
+        <span className="stopwatchDate">{t("timer.seconds")}</span>
       </div>
     </div>
   );

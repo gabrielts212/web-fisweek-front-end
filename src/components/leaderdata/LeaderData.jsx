@@ -23,7 +23,7 @@ export function LeaderData({ input, showAll }) {
     axios
       .get("/server/fisweek/lideres")
       .then((response) => {
-        const infoLeaders = showAll ? response.data.slice(0,200) : response.data.slice(0,6)
+        const infoLeaders = showAll ? response.data : response.data.slice(0,6)
         setLeaders(infoLeaders);
       })
       .catch((err) => {
@@ -36,7 +36,7 @@ export function LeaderData({ input, showAll }) {
   //   axios
   //     .get("/server/fisweek/painel/buscar")
   //     .then((response) => {
-  //       const infoData = showAll ? response.data.slice(0,200) : response.data.slice(0,6)
+  //       const infoData = showAll ? response.data : response.data.slice(0,6)
   //       setDates(infoData);
   //     })
   //     .catch((err) => {
@@ -73,5 +73,3 @@ export function LeaderData({ input, showAll }) {
     </Row>
   );
 }
-
-

@@ -50,7 +50,7 @@
       "Office": "Cargo",
       "company": "Empresa",
       "seeAllLeaders": "Ver todos os líderes",
-      "filterLeaders": "Pesquise por nome ou evento"
+      "filterLeaders": "Pesquise por nome"
     },
 
     "timer": {
@@ -66,10 +66,13 @@
     },
 
     "events": {
-      "fisText": "",
-      "symetriaText": "",
-      "commeetsText": "",
-      "lyggaText": "",
+      "fisText": "#FIS é o maior evento de Lideranças do setor da Saúde da América Latina. É o carro-chefe da Iniciativa FIS, tendo como objetivo dialogar e debater com as maiores Lideranças desse setor do Brasil, como realizar um panorama do presente e visando o futuro. Por meio dele, trazemos discussões para transformar os dez eixos principais do nosso segmento: Complexo Industrial, Comunicação, Educação, Empreendedorismo, Financiamento, Gestão, Governança, Inovação, Modelos Assistenciais e Regulação.",
+
+      "symetriaText": "#SYMETRIA é o primeiro evento ESG (Enviromental, Social and Governance) do setor da Saúde da América Latina. Grandes Lideranças desse setor e de fora compartilham as suas Experiências, trazendo um enfoque ambiental, de governança, estratégias gerais, inovação, ou seja, tudo com o DNA da Iniciativa FIS.",
+
+      "commeetsText": "#COMMEETS, é o evento onde os nossos parceiros geram conteúdo.",
+
+      "lyggaText": "#LYGGA para nós é sinônimo de Educação, que é um dos pilares da Iniciativa FIS. Com isso, trouxemos um evento voltado para a educação na área da Saúde, com discussões para acadêmicos e executivos. A ideia é apresentar metodologias e instrumentos decorrentes da Saúde Digital, proporcionando atualização, networking e a oportunidade de acompanhar debates com temas sensíveis para a área da Saúde.",
 
       "knowMore": "Saiba mais",
       "transmissionHours": "horas de transmissão",
@@ -83,6 +86,7 @@
       "programmation": "Programação",
       "all": "Todos",
       "day": "Dia",
+      "dayM": "dia",
       "text": "Os desafios de implementar políticas públicas de saúde durante uma pandemia",
       "moderator": "Moderador",
       "seeCompleteProgramming": "Ver programação completa",
@@ -99,14 +103,18 @@
     },
 
     "startups": {
-      "text": "",
+      "text": "BEE HIVE é o momento de Pitch online das Startups do Setor da Saúde. É por meio dele que as empresas podem aproveitar para apresentar as suas soluções aos Líderes da Saúde e ao mercado.",
+
       "register": "Cadastrar",
-      "eventOnline": "The event will be in person and online",
+      "eventOnline": "O evento será online e presencial",
       "startupName": "Nome da Startup",
       "representantName": "Nome do Representante",
-      "emai": "Email",
+      "emai": "E-mail",
       "phoneNumber": "Telefone de Contato",
       "selectACountry": "Selecione um País",
+      "brazil": "Brasil",
+      "spain": "Espanha",
+      "unitedStates": "Estados Unidos",
       "city": "Cidade",
       "url": "Site/URL",
       "textarea": "Descreva sua Solução (Máximo de 120 caracteres)",

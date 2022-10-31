@@ -9,13 +9,8 @@ import './App.css'
 
 import { LanguageState } from './Context/Context';
 
-
-
 export default function App() {
   const { state: { language } } = LanguageState()
-
-
-
 
   return (
     <HashRouter>

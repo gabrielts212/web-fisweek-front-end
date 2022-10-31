@@ -10,11 +10,14 @@ import MetricsFour from "../../assets/images/eventsfis/metrics-four.png";
 import MetricsFive from "../../assets/images/eventsfis/metrics-five.png";
 
 import { RegistrationInfo } from "../registrationInfo/RegistrationInfo";
+import { useTranslation } from 'react-i18next';
 import { Link } from "react-scroll";
 
 import "./EventsFis.css";
 
 export function EventsFis() {
+  const { t } = useTranslation();
+
   return (
     <div className="eventsFis" id="events">
       <img className="eventsLogo" src={EventsLogo} alt="Logo da Fisweek" />
@@ -23,17 +26,7 @@ export function EventsFis() {
         <div>
           <div className="fisGroup">
             <img src={EventsFiss} alt="Logo Fis" />
-            <p title="Deslize para Baixo">
-              Nossa grande contribuição para a Inovação na Saúde. Um evento
-              feito para ser destaque no setor, com grandes lideranças, trocas
-              de experiências e muito conteúdo e interação. 100% digital e
-              gratuito e com a cara da #IniciativaFIS. Nossa grande contribuição
-              para a Inovação na Saúde. Um evento feito para ser destaque no
-              setor, com grandes ssa grande contribuição para a Inovação na
-              Saúde. Um evento feito para ser destaque no setor, com grandes
-              lideranças, trocas de experiências e muito conteúdo e interação.
-              100% digital e gratuito e com a cara da #IniciativaFIS.
-            </p>
+            <p title="Deslize para Baixo">{t("events.fisText")}</p>
             <a href="#">
               <Link
                 to="registrationInfo"
@@ -42,24 +35,14 @@ export function EventsFis() {
                 offset={50}
                 duration={500}
               >
-                <button>Cadastrar</button>
+                <button>{t("events.knowMore")}</button>
               </Link>
             </a>
           </div>
 
           <div className="lyggaGroup">
             <img src={EventsLygga} alt="Logo Lygga" />
-            <p title="Deslize para Baixo">
-              Nossa grande contribuição para a Inovação na Saúde. Um evento
-              feito para ser destaque no setor, com grandes lideranças, trocas
-              de experiências e muito conteúdo e interação. 100% digital e
-              gratuito e com a cara da #IniciativaFIS. Nossa grande contribuição
-              para a Inovação na Saúde. Um evento feito para ser destaque no
-              setor, com grandes ssa grande contribuição para a Inovação na
-              Saúde. Um evento feito para ser destaque no setor, com grandes
-              lideranças, trocas de experiências e muito conteúdo e interação.
-              100% digital e gratuito e com a cara da #IniciativaFIS.
-            </p>
+            <p title="Deslize para Baixo">{t("events.lyggaText")}</p>
             <a href="#">
               <Link
                 to="registrationInfo"
@@ -68,7 +51,7 @@ export function EventsFis() {
                 offset={50}
                 duration={500}
               >
-                <button>Cadastrar</button>
+                <button>{t("events.knowMore")}</button>
               </Link>
             </a>
           </div>
@@ -77,17 +60,7 @@ export function EventsFis() {
         <div>
           <div className="smGroup">
             <img src={EventsSm} alt="Logo Sm" />
-            <p title="Deslize para Baixo">
-              Nossa grande contribuição para a Inovação na Saúde. Um evento
-              feito para ser destaque no setor, com grandes lideranças, trocas
-              de experiências e muito conteúdo e interação. 100% digital e
-              gratuito e com a cara da #IniciativaFIS. Nossa grande contribuição
-              para a Inovação na Saúde. Um evento feito para ser destaque no
-              setor, com grandes ssa grande contribuição para a Inovação na
-              Saúde. Um evento feito para ser destaque no setor, com grandes
-              lideranças, trocas de experiências e muito conteúdo e interação.
-              100% digital e gratuito e com a cara da #IniciativaFIS.
-            </p>
+            <p title="Deslize para Baixo">{t("events.symetriaText")}</p>
             <a href="#">
               <Link
                 to="registrationInfo"
@@ -96,24 +69,14 @@ export function EventsFis() {
                 offset={50}
                 duration={500}
               >
-                <button>Cadastrar</button>
+                <button>{t("events.knowMore")}</button>
               </Link>
             </a>
           </div>
 
           <div className="commeetsGroup">
             <img src={EventsCommeets} alt="Logo Commeets" />
-            <p title="Deslize para Baixo">
-              Nossa grande contribuição para a Inovação na Saúde. Um evento
-              feito para ser destaque no setor, com grandes lideranças, trocas
-              de experiências e muito conteúdo e interação. 100% digital e
-              gratuito e com a cara da #IniciativaFIS. Nossa grande contribuição
-              para a Inovação na Saúde. Um evento feito para ser destaque no
-              setor, com grandes ssa grande contribuição para a Inovação na
-              Saúde. Um evento feito para ser destaque no setor, com grandes
-              lideranças, trocas de experiências e muito conteúdo e interação.
-              100% digital e gratuito e com a cara da #IniciativaFIS.
-            </p>
+            <p title="Deslize para Baixo">{t("events.commeetsText")}</p>
             <a href="#">
               <Link
                 to="registrationInfo"
@@ -122,7 +85,7 @@ export function EventsFis() {
                 offset={50}
                 duration={500}
               >
-                <button>Cadastrar</button>
+                <button>{t("events.knowMore")}</button>
               </Link>
             </a>
           </div>
@@ -133,33 +96,31 @@ export function EventsFis() {
         <div className="metricsOne">
           <img src={MetricsOne} />
           <h1>+100</h1>
-          <span>horas de</span>
-          <br />
-          <span>transmissão</span>
+          <span>{t("events.transmissionHours")}</span>
         </div>
 
         <div className="metricsTwo">
           <img src={MetricsTwo} />
           <h1>5</h1>
-          <span>dias</span>
+          <span>{t("events.days")}</span>
         </div>
 
         <div className="metricsThree">
           <img src={MetricsThree} />
           <h1>+200</h1>
-          <span>empresas</span>
+          <span>{t("events.enterprises")}</span>
         </div>
 
         <div className="metricsFour">
           <img src={MetricsFour} />
           <h1>3</h1>
-          <span>idiomas</span>
+          <span>{t("events.languages")}</span>
         </div>
 
         <div className="metricsFive">
           <img src={MetricsFive} />
           <h1>+300</h1>
-          <span>palestrantes</span>
+          <span>{t("events.speakers")}</span>
         </div>
       </div>
     </div>

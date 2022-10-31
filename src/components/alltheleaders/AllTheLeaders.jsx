@@ -1,12 +1,15 @@
 import "./AllTheLeaders.css";
 
 import { useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 import EclipseYellow from '../../assets/images/leaders/eclipse-yellow.png';
 import { LeaderData } from "../leaderdata/LeaderData";
 import { MagnifyingGlass } from "phosphor-react";
 
 export function AllTheLeaders() {
+  const { t } = useTranslation();
+
   const [ input, setInput ] = useState("")
 
   const searchHandler = (event) => {
@@ -30,7 +33,7 @@ export function AllTheLeaders() {
       </section> */}
 
       <div>
-        <input type="text" placeholder="Pesquise por nome" onChange={searchHandler}/>
+        <input type="text" placeholder={t("leaders.filterLeaders")} onChange={searchHandler}/>
         <MagnifyingGlass className="iconSearch" size={32}/>
       </div>
 
