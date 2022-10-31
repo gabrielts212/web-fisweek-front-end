@@ -37,7 +37,7 @@ export function Home() {
     return (
         <Container>
             <Row>
-               {/* <Header /> */}
+               <Header />
             </Row>
             <Row>
                 {/* <Col xs={12} md={8}><RegistrationInfo /></Col>
@@ -50,7 +50,7 @@ export function Home() {
             <Row>
                 {/* <ConferenceBar /> */}
             </Row>
-            <Leaders/>
+                <Leaders/>
             <Row>
                 {/* <Timer /> */}
             </Row>
@@ -61,7 +61,7 @@ export function Home() {
                 {/* <EventsFis /> */}
             </Row>
             <Row>
-                {/* <Schedule /> */}
+                <Schedule />
             </Row>
             <Row>
                 {/* <Testimonials /> */}

@@ -9,27 +9,34 @@ import AvatarLeader from '../../assets/images/leaders/avatarLeader.png';
 import Panel from '../../assets/images/leaders/panel.png';
 
 import "./LeaderData.css";
+import { Spinner } from "react-bootstrap";
 
 export function LeaderData({ input, showAll }) {
   const [leaders, setLeaders] = useState([])
-  const [dates, setDates] = useState([]);
+  // const [dates, setDates] = useState([]);
   const [err, setErr] = useState([]);
+  const [isLoading, setIsLoading] = useState(true)
+
 
   const filteredLeaders = leaders.filter(leader => 
     leader.tratamento.toLowerCase().includes(input.toLowerCase())
   )
 
   useEffect(() => {
+    setIsLoading(true)
     axios
       .get("/server/fisweek/lideres")
       .then((response) => {
         const infoLeaders = showAll ? response.data : response.data.slice(0,6)
         setLeaders(infoLeaders);
+        setIsLoading(false)
       })
       .catch((err) => {
+        setIsLoading(false)
         setErr(err);
       });
   }, []);
+  
     
 
   // useEffect(() => {
@@ -47,7 +54,7 @@ export function LeaderData({ input, showAll }) {
 
   return (
     <Row className="rowLeaders">
-      {filteredLeaders.map((leader, key) => {
+      { isLoading ? <Spinner animation="border" role="status" variant="light" className="spinner"/> : filteredLeaders.map((leader, key) => {
         return (
           <Col xs={12} sm={12} md={6} lg={4} key={key._id} className="colLeaders">
             <img className="avatarLeader" src={AvatarLeader} />

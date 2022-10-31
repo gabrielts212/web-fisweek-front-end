@@ -19,18 +19,18 @@ export function Schedule() {
 
   const [schedule, setSchedule] = useState([])
 
-  const returnsSchedule = (value) => {
+  // const returnsSchedule = (value) => {
     
-  }
+  // }
 
-  const scheduleFiltered = schedule.filter(returnsSchedule);
-  const getData = async () => {
-    let result = await axios.post("searchNew");
-    setSchedule(result.data);
-  };
-  useEffect(() => {
-    getData()
-  }, [])
+  // const scheduleFiltered = schedule.filter(returnsSchedule);
+  // const getData = async () => {
+  //   let result = await axios.post("searchNew");
+  //   setSchedule(result.data);
+  // };
+  // useEffect(() => {
+  //   getData()
+  // }, [])
 
   return (
     <div className="Schedule" id='schedule'>
@@ -41,26 +41,19 @@ export function Schedule() {
       
       <section className="daysOfTheWeek">
         <div className="Every Days">{t("programmation.all")}</div>
-        <div className="Days">{t("programmation.day")} 7</div>
+        {/* <div className="Days">{t("programmation.day")} 7</div>
         <div className="Days">{t("programmation.day")} 8</div>
         <div className="Days">{t("programmation.day")} 9</div>
         <div className="Days">{t("programmation.day")} 10</div>
-        <div className="Days">{t("programmation.day")} 11</div>
+        <div className="Days">{t("programmation.day")} 11</div> */}
       </section>
 
       <div className="ScheduleGroup">
-        {scheduleFiltered.map((panel) => {
-            return (
+        {/* {scheduleFiltered.map((panel) => {
+            return ( */}
               <>
-                <PanelFis 
-                  datas={panel.Dates}
-                  paragrago={panel.paragraph}
-                  img={panel.imgFis}
-                  avatarGrupo={panel.avatarGroup}
-                  nomes={panel.speakerGroup}
-                  moderador={panel.Moderator}
-                />
-                <PanelSm 
+                <PanelFis panelSearch={""} />
+                {/* <PanelSm 
                   datas={panel.Dates}
                   paragrago={panel.paragraph}
                   img={panel.imgFis}
@@ -83,13 +76,13 @@ export function Schedule() {
                   avatarGrupo={panel.avatarGroup}
                   nomes={panel.speakerGroup}
                   moderador={panel.Moderator}
-                />
+                /> */}
               </>
-            );
-          })}
+            {/* );
+          })} */}
       </div>
       
-      <a href="/fisweek22/#/allTheSchedule" target="_blank">
+      <a href="/fisweek22/#/schedulepage" target="_blank">
         <button className="showShedule">{t("programmation.seeCompleteProgramming")}</button>
       </a>
 

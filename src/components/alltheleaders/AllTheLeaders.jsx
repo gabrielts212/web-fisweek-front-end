@@ -16,6 +16,7 @@ export function AllTheLeaders() {
     setInput(event.target.value)
   }
 
+  
   return (
     <div className="allTheLeaders">
       <header>

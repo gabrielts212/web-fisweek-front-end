@@ -15,7 +15,7 @@ export function SchedulePage() {
                <Header />
             </Row>
             <Row>
-              <Col xs={12} md={12}><AllTheSchedule /></Col>
+              <Col xs={12} md={12}><AllTheSchedule showPanels={true} searchPanelHandler={""} /></Col>
             </Row>
             <Row>
                 <Footer />
