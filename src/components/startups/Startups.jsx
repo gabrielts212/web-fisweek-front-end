@@ -151,8 +151,8 @@ export function Startups() {
               </label>
             </form>
           </Modal>
+          <span className="spanOnline">{t("startups.eventOnline")}</span>
         </div>
-        <span>{t("startups.eventOnline")}</span>
       </div>
     </div>
   );

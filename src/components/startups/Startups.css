@@ -65,7 +65,7 @@
   font-size: 1.3rem;
   font-weight: 600;
   color: #2a2850;
-  margin: 1rem 0 -0.5rem 0;
+  margin: 1rem 0 1.5rem 0;
 }
 .Startups header {
   width: 511.58px;
@@ -153,7 +153,9 @@
 }
 .textArea{
   background: #454267;
+  color: #FFF;
   width: 300px;
+  padding-left: 20px;
 }
 .buttonDeck{
   width: 18rem;
@@ -197,46 +199,46 @@ input[type="file"] {
   margin-left: -250px;
 }
 
+.smBeehive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.spanOnline {
+  margin-bottom: 1rem;
+}
+
 /* Small devices (landscape phones, less than 360px) */
 @media (min-width: 360px) and (max-width: 550.98px) {
   .Startups header h1 {
-    font-size:1.9rem;
+    font-size: 2.1rem;
+    padding-left: 58px;
     font-weight: 700;
     color: #fff;
     padding: 0 0px 0 50px;
-    margin-left: -15px;
+    margin-left: 4rem;
   }
   .Startups header img {
     width: 20%;
-    margin-left: 10px;
+    margin-left: 3rem;
   }
   .Startups header {
-    width: 200px;
-    height: 40px;
+    width: 351.58px;
+    height: 70.73px;
     background: #525ba9;
     border-radius: 379px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: -24rem 0 0 6rem;
+    margin: -36rem 0 0 1rem;
     position: absolute;
   }
-  .eventBeehive {
-    width: 22rem;
-    height: 25rem;
-    border-radius: 22% 8% 8% 0 / 17% 7% 7% 70%;
-    background: #706ca3;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 3rem;
-    margin-top: 2rem;
-  }
+
   .Startups .eventBeehive {
-    width: 17rem;
-    height: 21rem;
+    width: 26rem;
+    height: 26rem;
     border-radius: 22% 8% 8% 0 / 17% 7% 7% 70%;
     background: #706ca3;
     color: #fff;
@@ -245,12 +247,12 @@ input[type="file"] {
     align-items: center;
     flex-direction: column;
     gap: 3rem;
-    margin-top: -11rem;
-    margin-left: 71px;
+    margin-top: -29rem;
+    margin-left: auto;
   }
   .startupsImageSmall {
     width: 100%;
-    height: 65%;
+    height: 100%;
     display: block;
   }
   .startupsImage {
@@ -347,20 +349,21 @@ input[type="file"] {
   margin: 0rem 0 1rem 0;
 }
 .eventBeehive p {
-  width: 15rem;
+  width: 20rem;
   height: 13rem;
   font-size: 1.3rem;
   line-height: 1.4;
   overflow-x: hidden;
   overflow-y: scroll;
-  margin-top: -1rem;
 }
 .eventBeehive img {
   width: 10rem;
+  margin-top: 5rem;
 }
 .textArea{
   background: #454267;
   width: 220px;
+  padding-left: 20px;
 }
 .custom-upload {
   min-width: 224px;
@@ -372,6 +375,17 @@ input[type="file"] {
   position: absolute;
   margin-top: 132px;
   margin-left: -221px;
+}
+
+.smBeehive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.spanOnline {
+  margin-bottom: 4rem;
 }
 }
 /* X-Small devices (portrait phones, less than 576px) */
@@ -1019,7 +1033,11 @@ input[type="file"] {
     /* background-color: #fff; */
     display: none;
   }
-  .textArea{ background: #454267; width: 300px; }
+  .textArea { 
+    background: #454267; 
+    width: 300px; 
+    padding-left: 20px;
+  }
   .custom-upload {
     min-width: 224px;
     padding: 14px 4px;

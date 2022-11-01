@@ -70,7 +70,7 @@ export function LeaderData({ input, showAll }) {
             <img 
               className="avatarLeader" 
               src={AvatarLeader}
-              // src="https://cpanel.fis.org.br/cpsess6995292450/frontend/paper_lantern/filemanager/index.html/images-lideres-sample.png"
+              // src="https://cpanel.fis.org.br/cpsess6995292450/frontend/paper_lantern/filemanager/index.html/public_html/images/lideres/sample.png"
               // onError={(e) => {e.target.onerror = null; e.target.src={AvatarLeader} }} 
             />
             <img className="panel" src={Panel}/> 
