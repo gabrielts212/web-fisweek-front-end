@@ -13,7 +13,7 @@ import { Spinner } from "react-bootstrap";
 
 export function LeaderData({ input, showAll }) {
   const [leaders, setLeaders] = useState([])
-  // const [dates, setDates] = useState([]);
+  const [dates, setDates] = useState([]);
   const [err, setErr] = useState([]);
   const [isLoading, setIsLoading] = useState(true)
 
@@ -48,9 +48,20 @@ export function LeaderData({ input, showAll }) {
   //     .catch((err) => {
   //       setErr(err);
   //     });
-  // }),
-  //   [];
-
+  // }, []);
+  
+  // const mapedLeader = [];
+  // leaders.forEach(leader => {
+  //   dates.forEach(date => {
+  //     if (leader._id == date.lideres.id) {
+  //       mapedLeader.push(leader)
+  //     }
+  //   })
+  // });
+  // console.log(mapedLeader)
+  
+  
+  
   return (
     <Row className="rowLeaders">
       { isLoading ? <Spinner animation="border" role="status" variant="light" className="spinner"/> : filteredLeaders.map((leader, key) => {

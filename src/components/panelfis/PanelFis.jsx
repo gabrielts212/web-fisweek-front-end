@@ -26,6 +26,8 @@ export function PanelFis({showAll, showPanels, panelSearch}) {
     date.painel.BR.toLowerCase().includes(panelSearch.toLowerCase())
     )
 
+
+
   useEffect (() => {
     axios
     .get("/server/fisweek/lideres")
@@ -55,13 +57,13 @@ export function PanelFis({showAll, showPanels, panelSearch}) {
           <div className="panelFis">
         <section className="Dates">
           <div className="Date" showPanels={false}>{t("programmation.dayM")} {moment(date.data).format("DD/MM")}</div>
-          {/* <div className="dateAndTime" showPanels={false}>{moment(date.horario.inicio).hour()}</div> */}
+          <div className="dateAndTime" showPanels={false}>{date.horario.inicio} - {date.horario.encerramento}</div>
           <div className="Utc3">UTC-3</div>
         </section>
 
         <section className="Speakers">
           <p className="paragraph">
-          {t("programmation.text")} {date.painel.BR}
+           {date.painel.BR}
           </p>
         {/* <div className="groupPanel">
           <img className="imgFis" src={ImgFis} />

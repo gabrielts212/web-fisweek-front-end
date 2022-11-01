@@ -14,10 +14,15 @@ export function AllTheSchedule() {
   const { t } = useTranslation();
   
   const [ panelSearch, setPanelSearch ] = useState("")
+  const [ days, setDays ] = useState("")
 
   const searchPanelHandler = (event) => {
     setPanelSearch(event.target.value)
   }
+
+  // const daysHandler = (event) => {
+  //   setDays(event.target.value)
+  // }
 
   return (
     <div className="allTheSchedule">
@@ -36,7 +41,7 @@ export function AllTheSchedule() {
       </section>
 
       <div>
-        <input type="text" placeholder={t("programmation.filterProgrammation")} onChange={searchPanelHandler}/>
+        <input type="text" placeholder="Pesquise por tema" onChange={searchPanelHandler}/>
         <MagnifyingGlass className="iconSearch" size={32}/>
       </div>
       
