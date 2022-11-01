@@ -7,57 +7,55 @@ import { useTranslation } from 'react-i18next';
 
 import "./Support.css"
 
-import Abimed from "../../assets/images/Partners/apoio/abimed.svg";
-import Abcis from "../../assets/images/Partners/apoio/abcis.svg";
-import Abimo from "../../assets/images/Partners/apoio/abimo.svg";
-import Abo20 from "../../assets/images/Partners/apoio/ABO20.png";
-import Abrafarma from "../../assets/images/Partners/apoio/abrafarma.svg";
-import Abramed from "../../assets/images/Partners/apoio/abramed.svg";
-import Abramge from "../../assets/images/Partners/apoio/abramge.svg";
-import Abrasp from "../../assets/images/Partners/apoio/abrasp.svg";
-import Abstartups from "../../assets/images/Partners/apoio/abstartups.svg";
-import Acate from "../../assets/images/Partners/apoio/acate.svg";
-import Ahcrj from "../../assets/images/Partners/apoio/ahcrj.svg";
-import Aherj from "../../assets/images/Partners/apoio/aherj.svg";
-import Anahp_2 from "../../assets/images/Partners/apoio/anahp_2.svg";
-import Anm from "../../assets/images/Partners/apoio/anm.svg";
-import Biominas from "../../assets/images/Partners/apoio/biominas.svg";
-import Brasscom from "../../assets/images/Partners/apoio/brasscom.svg";
-import Camara_rio from "../../assets/images/Partners/apoio/camara_rio.svg";
-import Cbexs from "../../assets/images/Partners/apoio/cbexs.svg";
-import Cnsaude from "../../assets/images/Partners/apoio/cnsaude.svg";
-import Cremerj from "../../assets/images/Partners/apoio/cremerj.svg";
-import Cubo from "../../assets/images/Partners/apoio/cubo.svg";
-import Eretz from "../../assets/images/Partners/apoio/eretz.svg";
-import Fbah from "../../assets/images/Partners/apoio/fbah.svg";
-import Fbh from "../../assets/images/Partners/apoio/fbh.svg";
-import Febase from "../../assets/images/Partners/apoio/febase.svg";
-import Feherj from "../../assets/images/Partners/apoio/feherj.svg";
-import Fehoesp from "../../assets/images/Partners/apoio/fehoesp.svg";
-import Fehosul from "../../assets/images/Partners/apoio/fehosul.svg";
-import Hospitalar from "../../assets/images/Partners/apoio/hospitalar.svg";
-import Institutosante from "../../assets/images/Partners/apoio/institutosante.png";
-import I2h from "../../assets/images/Partners/apoio/i2h.svg";
-import Iess from "../../assets/images/Partners/apoio/iess.svg";
-import Inei from "../../assets/images/Partners/apoio/inei.svg";
-import Israel from "../../assets/images/Partners/apoio/israel.svg";
-import Nead from "../../assets/images/Partners/apoio/nead.svg";
-import Porto_digital from "../../assets/images/Partners/apoio/porto_digital.svg";
-import Sbis from "../../assets/images/Partners/apoio/sbis.svg";
-import Sind_hosp from "../../assets/images/Partners/apoio/sind_hosp.svg";
-import Sind_hosp_rj from "../../assets/images/Partners/apoio/sind_hosp_rj.svg";
-import Sind_hosp_sp from "../../assets/images/Partners/apoio/sind_hosp_sp.svg";
-import Sindihospa from "../../assets/images/Partners/apoio/sindihospa.svg";
-// import Sindessmat from "../../assets/images/Partners/apoio/sindessmat.svg";
-import Sindusfarma from "../../assets/images/Partners/apoio/sindusfarma.svg";
-import Sp_gov from "../../assets/images/Partners/apoio/sp_gov.svg";
-import Uff from "../../assets/images/Partners/apoio/uff.svg";
-import Sbh from "../../assets/images/Partners/apoio/sbh.svg";
+import Abimed from "../../assets/images/Partners/apoio1/abimed.png";
+import Abcis from "../../assets/images/Partners/apoio1/abcis.png";
+import Abimo from "../../assets/images/Partners/apoio1/abimo.png";
+import Abo20 from "../../assets/images/Partners/apoio1/abo20.png";
+import Abrafarma from "../../assets/images/Partners/apoio1/abrafarma.png";
+import Abramed from "../../assets/images/Partners/apoio1/abramed.png";
+import Abramge from "../../assets/images/Partners/apoio1/abramge.png";
+import Abrasp from "../../assets/images/Partners/apoio1/abrasp.png";
+import Abstartups from "../../assets/images/Partners/apoio1/abstartups.png";
+import Acate from "../../assets/images/Partners/apoio1/acate.png";
+import Ahcrj from "../../assets/images/Partners/apoio1/ahcrj.png";
+import Aherj from "../../assets/images/Partners/apoio1/aherj.png";
+import Anahp_2 from "../../assets/images/Partners/apoio1/anahp_2.png";
+import Biominas from "../../assets/images/Partners/apoio1/biominas.png";
+import Brasscom from "../../assets/images/Partners/apoio1/brasscom.png";
+import Camara_rio from "../../assets/images/Partners/apoio1/camarario.png";
+import Cbexs from "../../assets/images/Partners/apoio1/cbexs.png";
+import Cnsaude from "../../assets/images/Partners/apoio1/cnsaude.png";
+import Eretz from "../../assets/images/Partners/apoio1/eretz.png";
+import Fbah from "../../assets/images/Partners/apoio1/fbah.png";
+import Fbh from "../../assets/images/Partners/apoio1/fbh.png";
+import Febase from "../../assets/images/Partners/apoio1/febase.png";
+import Feherj from "../../assets/images/Partners/apoio1/feherj.png";
+import Fehoesp from "../../assets/images/Partners/apoio1/fehoesp.png";
+import Fehosul from "../../assets/images/Partners/apoio1/fehosul.png";
+import Hospitalar from "../../assets/images/Partners/apoio1/hospitalar.png";
+import Institutosante from "../../assets/images/Partners/apoio1/institutosante.png";
+import Sbis from "../../assets/images/Partners/apoio1/sbis.png";
+import Sind_hosp from "../../assets/images/Partners/apoio1/sindhospe.png";
+import Sind_hosp_rj from "../../assets/images/Partners/apoio1/sindhosprj.png";
+import Sind_hosp_sp from "../../assets/images/Partners/apoio1/sindhosp.png";
+import Sindihospa from "../../assets/images/Partners/apoio1/sindihospa.png";
+import Sindusfarma from "../../assets/images/Partners/apoio1/sindusfarma.png";
+import Sp_gov from "../../assets/images/Partners/apoio1/spgov.png";
+import Uff from "../../assets/images/Partners/apoio1/uff.png";
+import Sbh from "../../assets/images/Partners/apoio1/sbh.png";
+import Cremerj from "../../assets/images/Partners/apoio1/cremerj.png";
+import Cubo from "../../assets/images/Partners/apoio1/cubo.png";
+import Israel from "../../assets/images/Partners/apoio1/israel.png";
+import Nead from "../../assets/images/Partners/apoio1/nead.png";
+import Porto_digital from "../../assets/images/Partners/apoio1/portaldigital.png";
+import I2h from "../../assets/images/Partners/apoio1/ih2.png";
+import Inei from "../../assets/images/Partners/apoio1/inei.png";
+// import Anm from "../../assets/images/Partners/apoio1/ anm.png";
 
 
 export  function Support() {
   const { t } = useTranslation();
-
+  
   const responsive = {
     superLargeDesktop: {
       
@@ -199,13 +197,13 @@ export  function Support() {
             />
           </a>
 
-          <a href="https://www.gov.br/anm/pt-br" target="_blank">
+          {/* <a href="https://www.gov.br/anm/pt-br" target="_blank">
             <img
               src={Anm}
               alt={"Logo do parceiro"}
               className="apoio-partner"
             />
-          </a>
+          </a> */}
 
 
           <a href="https://biominas.org.br/" target="_blank">
@@ -336,37 +334,29 @@ export  function Support() {
             />
           </a>
 
-          <a href="https://www.i2h.com.br/" target="_blank">
-            <img
-              src={I2h}
-              alt={"Logo do parceiro "}
-              className="apoio-partner"
-            />
-          </a>
-
-          <a href="https://www.iess.org.br/" target="_blank">
-            <img
-              src={Iess}
-              alt={"Logo do parceiro "}
-              className="apoio-partner"
-            />
-          </a>
-
-          <a href="https://ineidf.com.br/" target="_blank">
-            <img
-              src={Inei}
-              alt={"Logo do parceiro "}
-              className="apoio-partner"
-            />
-          </a>
 
           <a href="https://institutosante.com.br/" target="_blank">
             <img
               src={Institutosante}
               alt={"Logo do parceiro "}
               className="apoio-partner"
-            />
+              />
           </a>
+              <a href="https://www.i2h.com.br/" target="_blank">
+                <img
+                  src={I2h}
+                  alt={"Logo do parceiro "}
+                  className="apoio-partner"
+                />
+              </a>
+    
+              <a href="https://ineidf.com.br/" target="_blank">
+                <img
+                  src={Inei}
+                  alt={"Logo do parceiro "}
+                  className="apoio-partner"
+                />
+              </a>
 
           <a href="https://www.neadsaude.org.br/" target="_blank">
             <img

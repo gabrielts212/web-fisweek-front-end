@@ -7,25 +7,25 @@ import { useTranslation } from 'react-i18next';
 
 import "./Gold.css";
 
-import Abramed from "../../assets/images/Partners/gold/abramed.svg";
-import Abramge from "../../assets/images/Partners/gold/abramgenacional.png";
-import Anahp from "../../assets/images/Partners/gold/anahp.svg";
-import Berith from "../../assets/images/Partners/gold/berith.png";
-import Berkeley from "../../assets/images/Partners/gold/berkeley.svg";
-import Bradesco from "../../assets/images/Partners/gold/bradesco.svg";
-import Firjan from "../../assets/images/Partners/gold/firjan.svg";
-import Ibkl from "../../assets/images/Partners/gold/ibkl.svg";
-import Jj from "../../assets/images/Partners/gold/j&j.svg";
-import Materdei from "../../assets/images/Partners/gold/materdei.png";
-import Pfizer from "../../assets/images/Partners/gold/pfizer.png";
-import Rede_dor from "../../assets/images/Partners/gold/rededor.png";
-import Sabin from "../../assets/images/Partners/gold/sabin.svg";
-import Sinapse from "../../assets/images/Partners/gold/sinapse.svg";
-import Vventures from "../../assets/images/Partners/gold/vventures.svg";
-import Fena_saude from "../../assets/images/Partners/gold/fenasaude.png";
-import Careon from "../../assets/images/Partners/gold/Careon.png";
-import Fleury from "../../assets/images/Partners/gold/grupo fleury.png";
-// import Gsk from "../../assets/images/Partners/gold/gsk.png";
+import Abramed from "../../assets/images/Partners/gold1/abramed.png";
+import Abramge from "../../assets/images/Partners/gold1/abramge.png";
+import Anahp from "../../assets/images/Partners/gold1/anahp.png";
+import Berith from "../../assets/images/Partners/gold1/berith.png";
+import Berkeley from "../../assets/images/Partners/gold1/berkeley.png";
+import Bradesco from "../../assets/images/Partners/gold1/bradesco.png";
+import Firjan from "../../assets/images/Partners/gold1/firjan.png";
+import Ibkl from "../../assets/images/Partners/gold1/ibkl.png";
+import Jj from "../../assets/images/Partners/gold1/johnson.png";
+import Materdei from "../../assets/images/Partners/gold1/materdei.png";
+import Pfizer from "../../assets/images/Partners/gold1/pfizer.png";
+import Rede_dor from "../../assets/images/Partners/gold1/rededor.png";
+import Sabin from "../../assets/images/Partners/gold1/sabin.png";
+import Sinapse from "../../assets/images/Partners/gold1/sinapse.png";
+import Vventures from "../../assets/images/Partners/gold1/vventures.png";
+import Fena_saude from "../../assets/images/Partners/gold1/fenasaude.png";
+import Careon from "../../assets/images/Partners/gold1/careon.png";
+import Fleury from "../../assets/images/Partners/gold1/fleury.png";
+// import Gsk from "../../assets/images/Partners/gold1/gsk.png";
 
 export function Gold() {
   const { t } = useTranslation();

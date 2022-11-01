@@ -4,21 +4,20 @@ import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 
 import { useTranslation } from 'react-i18next';
 
-import Americas from "../../assets/images/Partners/diamond/americas.svg";
-import Amil from "../../assets/images/Partners/diamond/amil.svg";
-import AstraZeneca from "../../assets/images/Partners/diamond/astra-zeneca.svg";
-import Blessing from "../../assets/images/Partners/diamond/Blessing.png";
-import CortexMed from "../../assets/images/Partners/diamond/cortex-med.svg";
-import MedRio from "../../assets/images/Partners/diamond/med-rio.svg";
-// import Microsoft from "../../assets/images/Partners/diamond/microsoft.png";
-import Pronep from "../../assets/images/Partners/diamond/pronep.png";
-import RedeHospitalCasa from "../../assets/images/Partners/diamond/rede-hospital-casa.svg";
-import Roche from "../../assets/images/Partners/diamond/roche.svg";
-import Seegene from "../../assets/images/Partners/diamond/seegene.svg";
-import Sodexo from "../../assets/images/Partners/diamond/sodexo.png";
-import Senac from "../../assets/images/Partners/diamond/senac.png";
-import WhiteMartins from "../../assets/images/Partners/diamond/white-martins.png";
-import Oncoclinicas from "../../assets/images/Partners/diamond/Oncoclinicas.png";
+import Americas from "../../assets/images/Partners/teste/americas.png"
+import Amil from "../../assets/images/Partners/teste/amil.jpg";
+import AstraZeneca from "../../assets/images/Partners/teste/astrazeneca.jpg";
+import Blessing from "../../assets/images/Partners/teste/blessing.jpg";
+import CortexMed from "../../assets/images/Partners/teste/cortex-med.jpg";
+import MedRio from "../../assets/images/Partners/teste/medrio.jpg";
+import Pronep from "../../assets/images/Partners/teste/pronep.jpg";
+import RedeHospitalCasa from "../../assets/images/Partners/teste/rede.jpg";
+import Roche from "../../assets/images/Partners/teste/roche.jpg";
+import Seegene from "../../assets/images/Partners/teste/seegene.jpg";
+import Sodexo from "../../assets/images/Partners/teste/sodexo.jpg";
+import Senac from "../../assets/images/Partners/teste/senac.png";
+import WhiteMartins from "../../assets/images/Partners/teste/frame.jpg";
+import Oncoclinicas from "../../assets/images/Partners/teste/oncoclinicas.jpg";
 
 export function Diamond() {
   const { t } = useTranslation();
