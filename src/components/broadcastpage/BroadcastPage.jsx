@@ -63,7 +63,7 @@ export function BroadcastPage() {
               className="iframeVideo1"
               width="1000"
               height="600"
-              src="https://www.youtube.com/embed/5MqUYpfN45o"
+              src="https://www.youtube.com/embed/08ByQW0zlm4"
               title="Conheça a Iniciativa FIS"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -74,7 +74,7 @@ export function BroadcastPage() {
             <iframe
               width="480"
               height="600"
-              src="https://www.youtube.com/live_chat?v=5MqUYpfN45o&embed_domain=fis.org.br"
+              src="https://www.youtube.com/live_chat?v=08ByQW0zlm4&embed_domain=fis.org.br"
             ></iframe>
           </Modal>
 
