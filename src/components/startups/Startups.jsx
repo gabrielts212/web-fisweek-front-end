@@ -6,6 +6,7 @@ import BEEHIVE from "../../assets/images/startups/BEEHIVE.png";
 import { useState } from "react";
 import Modal from "react-modal";
 import { useForm } from "react-hook-form";
+import axios from "axios";
 
 import { useTranslation } from 'react-i18next';
 
@@ -14,17 +15,15 @@ Modal.setAppElement("#root");
 
 export function Startups() {
   const { t } = useTranslation();
-
-  const [modalIsOpen, setIsOpen] = useState(false);
+  const [modalIsOpen, setIsOpen] = useState(false)
+  
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  function createUser(data) {
-    console.log("ok", data);
-  }
+  const createUser = data => console.log("Enviado", data)
 
   function openModal() {
     setIsOpen(true);
@@ -61,7 +60,7 @@ export function Startups() {
                   type="text"
                   name="name"
                   placeholder={t("startups.startupName")}
-                  {...register("Startup", {
+                  {...register("name", {
                     required: true,
                   })}
                   required
@@ -69,9 +68,9 @@ export function Startups() {
 
                 <input
                   type="text"
-                  name="name"
+                  name="nameR"
                   placeholder={t("startups.representantName")}
-                  {...register("Representante", {
+                  {...register("nameR", {
                     required: true,
                   })}
                   required
@@ -79,9 +78,9 @@ export function Startups() {
 
                 <input
                   type="Email"
-                  name="Email"
+                  name="email"
                   placeholder={t("startups.emai")}
-                  {...register("Email", {
+                  {...register("email", {
                     required: true,
                   })}
                   required
@@ -89,9 +88,9 @@ export function Startups() {
 
                 <input
                   type="number"
-                  name="name"
+                  name="telephone"
                   placeholder={t("startups.phoneNumber")}
-                  {...register("Telefone", {
+                  {...register("telephone", {
                     required: true,
                   })}
                   required
@@ -99,17 +98,17 @@ export function Startups() {
                 <div>
                   <select className="formSelect">
                     <option>{t("startups.selectACountry")}</option>
-                    <option value="Brasil">{t("startups.brazil")}</option>
-                    <option value="Espanha">{t("startups.spain")}</option>
-                    <option value="Estados Unidos">{t("startups.unitedStates")}</option>
+                    <option>{t("startups.brazil")}</option>
+                    <option>{t("startups.spain")}</option>
+                    <option>{t("startups.unitedStates")}</option>
                   </select>
                 </div>
 
                 <input
                   type="text"
-                  name="name"
+                  name="city"
                   placeholder={t("startups.city")}
-                  {...register("cidade", {
+                  {...register("city", {
                     required: true,
                   })}
                   required
@@ -117,9 +116,9 @@ export function Startups() {
 
                 <input
                   type="text"
-                  name="name"
+                  name="site"
                   placeholder={t("startups.url")}
-                  {...register("Site", {
+                  {...register("site", {
                     required: true,
                   })}
                   required
@@ -128,12 +127,12 @@ export function Startups() {
                   className="textArea"
                   placeholder={t("startups.textarea")}
                   id=""
-                  name=""
+                  name="content"
+                  {...register("content")}
                   rows="5"
                   cols="28"
                 ></textarea>
 
-                
               <label htmlFor="deck" className="custom-upload" >
                
               </label>

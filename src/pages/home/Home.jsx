@@ -67,7 +67,7 @@ export function Home() {
                 {/* <Testimonials /> */}
             </Row>
             <Row>
-                {/* <Startups /> */}
+                <Startups />
             </Row>
             <Row>
                 <Partners/>
