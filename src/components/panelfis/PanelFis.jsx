@@ -75,7 +75,7 @@ export function PanelFis({ showAll, showPanels, panelSearch}) {
     
     return (
       <div>
-      {filteredDate.sort((a, b) => a.data > b.data ? 1 : -1).map((date) => {
+      {filteredDate.sort((a, b) => a.data >= b.data ? 1 : -1).map((date) => {
         return (
           <div className="panelFis">
             <section className="Dates">
