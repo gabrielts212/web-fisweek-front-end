@@ -209,7 +209,6 @@ input[type="file"] {
 .spanOnline {
   margin-bottom: 1rem;
 }
-
 /* Small devices (landscape phones, less than 360px) */
 @media (min-width: 360px) and (max-width: 550.98px) {
   .Startups header h1 {
@@ -301,7 +300,7 @@ input[type="file"] {
     background: #53507d;
     padding-left: 20px;
     margin-left:-31px;
-    margin-bottom: 300px;
+    margin-bottom: 145px;
   }
  .formSelect {
     width: 95%;

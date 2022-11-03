@@ -61,7 +61,11 @@ export function BroadcastPage() {
           >
             <iframe
               className="iframeVideo1"
+<<<<<<< Updated upstream
               width="1000"
+=======
+              width="800"
+>>>>>>> Stashed changes
               height="600"
               src="https://www.youtube.com/embed/08ByQW0zlm4"
               title="Conheça a Iniciativa FIS"
@@ -70,9 +74,14 @@ export function BroadcastPage() {
               allowfullscreen
               scolling="no"
             ></iframe>
+<<<<<<< Updated upstream
 
             <iframe
               width="480"
+=======
+            <iframe className="chat1"
+              width="450"
+>>>>>>> Stashed changes
               height="600"
               src="https://www.youtube.com/live_chat?v=08ByQW0zlm4&embed_domain=fis.org.br"
             ></iframe>
@@ -86,9 +95,15 @@ export function BroadcastPage() {
             overlayClassName="modal-overlay"
             className="modal-content3"
           >
+<<<<<<< Updated upstream
            <iframe
               className="iframeVideo2"
               width="1000"
+=======
+             <iframe
+              className="iframeVideo2"
+              width="800"
+>>>>>>> Stashed changes
               height="600"
               src="https://www.youtube.com/embed/5MqUYpfN45o"
               title="Conheça a Iniciativa FIS"
@@ -97,9 +112,14 @@ export function BroadcastPage() {
               allowfullscreen
               scolling="no"
             ></iframe>
+<<<<<<< Updated upstream
             
             <iframe
               width="480"
+=======
+            <iframe className="chat2"
+              width="450"
+>>>>>>> Stashed changes
               height="600"
               src="https://www.youtube.com/live_chat?v=5MqUYpfN45o&embed_domain=fis.org.br"
             ></iframe>
@@ -113,9 +133,15 @@ export function BroadcastPage() {
             overlayClassName="modal-overlay"
             className="modal-content4"
           >
+<<<<<<< Updated upstream
             <iframe
               className="iframeVideo3"
               width="1000"
+=======
+         <iframe
+              className="iframeVideo3"
+              width="800"
+>>>>>>> Stashed changes
               height="600"
               src="https://www.youtube.com/embed/5MqUYpfN45o"
               title="Conheça a Iniciativa FIS"
@@ -124,9 +150,14 @@ export function BroadcastPage() {
               allowfullscreen
               scolling="no"
             ></iframe>
+<<<<<<< Updated upstream
             
             <iframe
               width="480"
+=======
+            <iframe className="chat3"
+              width="450"
+>>>>>>> Stashed changes
               height="600"
               src="https://www.youtube.com/live_chat?v=5MqUYpfN45o&embed_domain=fis.org.br"
             ></iframe>
@@ -140,9 +171,15 @@ export function BroadcastPage() {
             overlayClassName="modal-overlay"
             className="modal-content5"
           >
+<<<<<<< Updated upstream
             <iframe
               className="iframeVideo4"
               width="1000"
+=======
+              <iframe
+              className="iframeVideo4"
+              width="800"
+>>>>>>> Stashed changes
               height="600"
               src="https://www.youtube.com/embed/5MqUYpfN45o"
               title="Conheça a Iniciativa FIS"
@@ -151,9 +188,14 @@ export function BroadcastPage() {
               allowfullscreen
               scolling="no"
             ></iframe>
+<<<<<<< Updated upstream
             
             <iframe
               width="480"
+=======
+            <iframe className="chat4"
+              width="450"
+>>>>>>> Stashed changes
               height="600"
               src="https://www.youtube.com/live_chat?v=5MqUYpfN45o&embed_domain=fis.org.br"
             ></iframe>

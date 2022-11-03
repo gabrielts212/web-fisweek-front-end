@@ -17,7 +17,7 @@ import Firjan from "../../assets/images/Partners/gold1/firjan.png";
 import Ibkl from "../../assets/images/Partners/gold1/ibkl.png";
 import Jj from "../../assets/images/Partners/gold1/johnson.png";
 import Materdei from "../../assets/images/Partners/gold1/materdei.png";
-import Pfizer from "../../assets/images/Partners/gold1/pfizer.png";
+import Pfizer from "../../assets/images/Partners/gold1/pfizer1.png";
 import Rede_dor from "../../assets/images/Partners/gold1/rededor.png";
 import Sabin from "../../assets/images/Partners/gold1/sabin.png";
 import Sinapse from "../../assets/images/Partners/gold1/sinapse.png";

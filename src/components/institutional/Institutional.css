@@ -51,21 +51,21 @@
   filter: brightness(1.2);
 }
 
-@media (min-width: 375px) and (max-width: 512px) {
+@media (min-width: 375px) and (max-width: 391.98px) {
   .background {
     height: auto;
   }
 
   .background h1 {
-    width: 27rem;
+    width: 20rem;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -21.7rem;
-    margin-left: -.5rem;
+    margin-top: -21rem;
+    margin-left: 3rem;
     position: absolute;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 700;
   }
   .videoButton {
@@ -79,11 +79,11 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    margin-top: -20rem;
-    margin-left: 1.5rem;
+    margin-top: -17.7rem;
+    margin-left: 2.5rem;
     position: absolute;
-    width: 350px;
-    height: 230px;
+    width: 300px;
+    height: 200px;
   }
 
   .videoButton .videobuttonLink {
@@ -97,21 +97,20 @@
     font-weight: 500;
     line-height: 1rem;
     text-align: center;
-    margin-top: 7rem;
+    margin-top: 7.2rem;
     transition: 0.1s;
-    margin-left: 0px;
+    margin-left: 16px;
   }
 }
-
-@media (min-width: 513px) and (max-width: 550.98px) {
+@media (min-width: 392px) and (max-width: 549.98px) {
   .background h1 {
     width: 20rem;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -27.5rem;
-    margin-left: 8rem;
+    margin-top: -21.5rem;
+    margin-left: 3rem;
     position: absolute;
     font-size: 1.3rem;
     font-weight: 700;
@@ -134,18 +133,18 @@
     text-align: center;
     margin-top: 7rem;
     transition: 0.1s;
-    margin-left: 0px;
+    margin-left: 1px;
   }
   .background .iframeVideo {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    margin-top: -23rem;
-    margin-left: 1.5rem;
+    margin-top: -18rem;
+    margin-left: 2.5rem;
     position: absolute;
-    width: 450px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
   }
 }
 /* X-Small devices (portrait phones, less than 576px) */
@@ -181,7 +180,7 @@
     text-align: center;
     margin-top: 5rem;
     transition: 0.1s;
-    margin-left: -40px;
+    margin-left: 8px;
   }
   .background .iframeVideo {
     display: flex;
@@ -227,7 +226,7 @@
     text-align: center;
     margin-top: 5rem;
     transition: 0.1s;
-    margin-left: -40px;
+    margin-left: 1px;
   }
   .background .iframeVideo {
     display: flex;

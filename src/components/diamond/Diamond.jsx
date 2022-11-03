@@ -4,20 +4,20 @@ import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 
 import { useTranslation } from 'react-i18next';
 
-import Americas from "../../assets/images/Partners/teste/americas.png"
-import Amil from "../../assets/images/Partners/teste/amil.jpg";
-import AstraZeneca from "../../assets/images/Partners/teste/astrazeneca.jpg";
-import Blessing from "../../assets/images/Partners/teste/blessing.jpg";
-import CortexMed from "../../assets/images/Partners/teste/cortex-med.jpg";
-import MedRio from "../../assets/images/Partners/teste/medrio.jpg";
-import Pronep from "../../assets/images/Partners/teste/pronep.jpg";
-import RedeHospitalCasa from "../../assets/images/Partners/teste/rede.jpg";
-import Roche from "../../assets/images/Partners/teste/roche.jpg";
-import Seegene from "../../assets/images/Partners/teste/seegene.jpg";
-import Sodexo from "../../assets/images/Partners/teste/sodexo.jpg";
-import Senac from "../../assets/images/Partners/teste/senac.png";
-import WhiteMartins from "../../assets/images/Partners/teste/frame.jpg";
-import Oncoclinicas from "../../assets/images/Partners/teste/oncoclinicas.jpg";
+import Americas from "../../assets/images/Partners/diamond1/americas.png"
+import Amil from "../../assets/images/Partners/diamond1/amil.jpg";
+import AstraZeneca from "../../assets/images/Partners/diamond1/astrazeneca.jpg";
+import Blessing from "../../assets/images/Partners/diamond1/blessing.jpg";
+import CortexMed from "../../assets/images/Partners/diamond1/cortex-med.jpg";
+import MedRio from "../../assets/images/Partners/diamond1/medrio.jpg";
+import Pronep from "../../assets/images/Partners/diamond1/pronep.jpg";
+import RedeHospitalCasa from "../../assets/images/Partners/diamond1/rede.jpg";
+import Roche from "../../assets/images/Partners/diamond1/roche.jpg";
+import Seegene from "../../assets/images/Partners/diamond1/seegene.jpg";
+import Sodexo from "../../assets/images/Partners/diamond1/sodexo.jpg";
+import Senac from "../../assets/images/Partners/diamond1/senac.png";
+import WhiteMartins from "../../assets/images/Partners/diamond1/frame.jpg";
+import Oncoclinicas from "../../assets/images/Partners/diamond1/oncoclinicas.jpg";
 
 export function Diamond() {
   const { t } = useTranslation();

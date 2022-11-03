@@ -50,7 +50,9 @@ import Nead from "../../assets/images/Partners/apoio1/nead.png";
 import Porto_digital from "../../assets/images/Partners/apoio1/portaldigital.png";
 import I2h from "../../assets/images/Partners/apoio1/ih2.png";
 import Inei from "../../assets/images/Partners/apoio1/inei.png";
-// import Anm from "../../assets/images/Partners/apoio1/ anm.png";
+import iess from "../../assets/images/Partners/apoio1/iess.png";
+import abes from "../../assets/images/Partners/apoio1/abes.png";
+import Anm from "../../assets/images/Partners/apoio1/anm.png";
 
 
 export  function Support() {
@@ -197,13 +199,13 @@ export  function Support() {
             />
           </a>
 
-          {/* <a href="https://www.gov.br/anm/pt-br" target="_blank">
+          <a href="https://www.gov.br/anm/pt-br" target="_blank">
             <img
               src={Anm}
               alt={"Logo do parceiro"}
               className="apoio-partner"
             />
-          </a> */}
+          </a>
 
 
           <a href="https://biominas.org.br/" target="_blank">
@@ -447,6 +449,20 @@ export  function Support() {
           <a href="https://www.uff.br/">
             <img
               src={Uff}
+              alt={"Logo do parceiro "}
+              className="apoio-partner"
+            />
+          </a>
+          <a href="https://www.iess.org.br/" target="_blank">
+            <img
+              src={iess}
+              alt={"Logo do parceiro "}
+              className="apoio-partner"
+            />
+          </a>
+          <a href="https://www.abes.org.br" target="_blank">
+            <img
+              src={abes}
               alt={"Logo do parceiro "}
               className="apoio-partner"
             />
