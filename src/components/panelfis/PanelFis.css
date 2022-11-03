@@ -59,6 +59,21 @@
 
   margin-bottom: 4.5rem;
 }
+.Speakers .avatarGroup .speakerName {
+  width: 10rem;
+  height: 3rem;
+  color: #FFF;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: -1rem 0 0 .5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  z-index: 999;
+}
 
 .Speakers .groupPanel .imgFis,
 .Speakers .groupPanel .imgSm,

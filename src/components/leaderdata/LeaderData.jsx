@@ -16,53 +16,71 @@ export function LeaderData({ input, showAll }) {
   const [dates, setDates] = useState([]);
   const [err, setErr] = useState([]);
   const [isLoading, setIsLoading] = useState(true)
-
-
-  const filteredLeaders = leaders.filter(leader => 
-    leader.tratamento.toLowerCase().includes(input.toLowerCase())
-  )
-
+ 
+  
   useEffect(() => {
     setIsLoading(true)
     axios
-      .get("/server/fisweek/lideres")
-      .then((response) => {
-        const infoLeaders = showAll ? response.data : response.data.slice(0,6)
-        setLeaders(infoLeaders);
-        setIsLoading(false)
+    .get("/server/fisweek/lideres")
+    .then((response) => {
+      const infoLeaders = response.data
+      setLeaders(infoLeaders);
+      setIsLoading(false)
       })
       .catch((err) => {
         setIsLoading(false)
         setErr(err);
       });
-  }, []);
-  
+    }, []);
     
-  // useEffect(() => {
-  //   axios
-  //     .get("/server/fisweek/painel/buscar")
-  //     .then((response) => {
-  //       const infoData = showAll ? response.data : response.data.slice(0,6)
-  //       setDates(infoData);
-  //     })
-  //     .catch((err) => {
-  //       setErr(err);
-  //     });
-  // }, []);
-  
-  // const mapedLeader = [];
-  // leaders.forEach(leader => {
-  //   dates.forEach(date => {
-  //     if (leader._id == date.lideres.id) {
-  //       mapedLeader.push(leader)
-  //     }
-  //   })
-  // });
-  // console.log(mapedLeader)
-  
-  
-  
-  return (
+    useEffect(() => {
+      axios
+      .get("/server/fisweek/painel/buscar")
+      .then((response) => {
+        const infoData = response.data
+        setDates(infoData);
+      })
+      .catch((err) => {
+        setErr(err);
+      });
+    }, []);
+     
+    
+    const mapedLeaders = showAll ? dates?.map(({lideres}) => {
+      return lideres.map(({id}) => {
+        const rightLeader = leaders?.find(leader => leader._id === id)
+        
+        return {tratamento: rightLeader?.tratamento, descricao: rightLeader?.descricao}
+      })
+    }
+    )
+    .reduce((acc, current) => {
+      return [...acc, ...current]
+    }, []) : 
+    dates?.map(({lideres}) => {
+      return lideres.map(({id}) => {
+        const rightLeader = leaders?.find(leader => leader._id === id)
+        
+        return {tratamento: rightLeader?.tratamento, descricao: rightLeader?.descricao}
+      })
+    }
+    )
+    .reduce((acc, current) => {
+      return [...acc, ...current]
+    }, []).slice(0,6)
+    
+    
+    const filteredLeaders = mapedLeaders?.filter(leader => 
+    leader.tratamento?.toLowerCase().includes(input.toLowerCase())
+    )
+    
+    
+    
+    // console.log(mapedLeaders, 'maped leaders')
+   
+          
+          
+          return (
     <Row className="rowLeaders">
       { isLoading ? <Spinner animation="border" role="status" variant="light" className="spinner"/> : filteredLeaders.map((leader, key) => {
         return (
