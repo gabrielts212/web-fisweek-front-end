@@ -59,21 +59,6 @@
 
   margin-bottom: 4.5rem;
 }
-.Speakers .avatarGroup .speakerName {
-  width: 10rem;
-  height: 3rem;
-  color: #FFF;
-  font-size: 1rem;
-  font-weight: 700;
-  margin: -1rem 0 0 .5rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  position: absolute;
-  z-index: 999;
-}
 
 .Speakers .groupPanel .imgFis,
 .Speakers .groupPanel .imgSm,
@@ -93,10 +78,10 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
-
-  position: absolute;
-  top: 10rem;
-  left: 14rem;
+  margin-right: 6rem;
+  position: relative;
+  top: -0.8rem;
+  left: -68rem;
 }
 
 .Speakers .avatarGroup::-webkit-scrollbar {
@@ -174,7 +159,7 @@
   
   .Speakers .avatarGroup {
     gap: 1rem;
-
+    display: none;
     width: 73%;
     height: 17rem;
     overflow-x: scroll;
@@ -247,7 +232,7 @@
   
   .Speakers .avatarGroup {
     gap: 1rem;
-
+    display: none;
     width: 75%;
     height: 17rem;
     overflow-x: scroll;
@@ -320,7 +305,7 @@
   
   .Speakers .avatarGroup {
     gap: 1rem;
-
+    display: none;
     width: 80%;
     height: 17rem;
     overflow-x: scroll;
@@ -391,7 +376,7 @@
   
   .Speakers .avatarGroup {
     gap: 1rem;
-
+    display: none;
     width: 80%;
     height: 19rem;
     overflow-x: scroll;
@@ -462,10 +447,10 @@
   
   .Speakers .avatarGroup {
     gap: 1rem;
-
-    position: absolute;
-    top: 16rem;
-    left: 9.7rem;
+    margin-right: 8rem;
+    position: relative;
+    top: -2rem;
+    left: -40rem;
   }
   
   .Speakers .Moderator {
@@ -520,10 +505,11 @@
   
   .Speakers .avatarGroup {
     gap: 2rem;
-  
-    position: absolute;
-    top: 16rem;
-    left: 12rem;
+    display: flex;
+    margin-right: 11rem;
+    position: relative;
+    top: 1rem;
+    left: -52rem;
   }
   
   .Speakers .Moderator {
@@ -586,10 +572,10 @@
     align-items: center;
     justify-content: center;
     gap: 4.5rem;
-  
-    position: absolute;
-    top: 16rem;
-    left: 14rem;
+    
+    position: relative;
+    top: -0.5rem;
+    left: -66rem;
   }
   
   .Speakers .Moderator {

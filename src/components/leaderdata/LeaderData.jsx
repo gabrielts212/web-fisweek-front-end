@@ -56,7 +56,8 @@ export function LeaderData({ input, showAll }) {
     )
     .reduce((acc, current) => {
       return [...acc, ...current]
-    }, []) : 
+    }, []) 
+    : 
     dates?.map(({lideres}) => {
       return lideres.map(({id}) => {
         const rightLeader = leaders?.find(leader => leader._id === id)
@@ -79,10 +80,9 @@ export function LeaderData({ input, showAll }) {
     // console.log(mapedLeaders, 'maped leaders')
    
           
-          
           return (
     <Row className="rowLeaders">
-      { isLoading ? <Spinner animation="border" role="status" variant="light" className="spinner"/> : filteredLeaders.map((leader, key) => {
+      { isLoading ? <Spinner animation="border" role="status" variant="light" className="spinner"/> : filteredLeaders?.sort((a,b) => a.tratamento > b.tratamento ? 1 : -1).map((leader, key) => {
         return (
           <Col xs={12} sm={12} md={6} lg={4} key={key._id} className="colLeaders">
             <img 

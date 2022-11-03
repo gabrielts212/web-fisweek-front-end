@@ -2,13 +2,13 @@
 // import ImgSm from "../../assets/images/programming/painel-sm.png";
 // import ImgLygga from "../../assets/images/programming/painel-lygga.png";
 // import ImgMeets from "../../assets/images/programming/painel-meets.png";
-// import PanelRectangle from "../../assets/images/programming/panel-rectangle.png";
-// import ImgRectangle from "../../assets/images/programming/img-rectangle.png";
-// import { Avatar } from "../avatar/Avatar";
+import PanelRectangle from "../../assets/images/programming/panel-rectangle.png";
+import ImgRectangle from "../../assets/images/programming/img-rectangle.png";
+import { Avatar } from "../avatar/Avatar";
 import moment from "moment";
 // import AvatarPanel from "../../assets/images/leaders/avatarLeader.png";
 // import styles from '../avatar/Avatar.module.css'
-// import AvatarLeader from '../../assets/images/leaders/avatarLeader.png';
+import AvatarLeader from '../../assets/images/leaders/avatarLeader.png';
 
 import "./PanelFis.css";
 
@@ -39,7 +39,7 @@ export function PanelFis({ showAll, showPanels, panelSearch}) {
     axios
     .get("/server/fisweek/painel/buscar")
     .then((response) => {
-      const infoData = showPanels ? response.data : response.data.slice(0, 4);
+      const infoData = showPanels ? response.data : response.data.slice(2, 6);
         setDates(infoData);
       })
       .catch((err) => {
@@ -47,26 +47,18 @@ export function PanelFis({ showAll, showPanels, panelSearch}) {
       });
     }, []);
     
-    // const mapedPanelsLeader = showAll ? dates?.map(({lideres}) => {
+    // const mapedPanelsLeader = dates?.map(({lideres}) => {
     //   return lideres.map(({id}) => {
     //     const rightPanelLeader = panel?.find(leader => leader._id === id)
         
     //     return {tratamento: rightPanelLeader?.tratamento}
     //   })
     // }
-    // ) :
-    // dates?.map(({lideres}) => {
-    //   return lideres.map(({id}) => {
-    //     const rightPanelLeader = panel?.find(leader => leader._id === id)
-        
-    //     return {tratamento: rightPanelLeader?.tratamento}
-    //   })
-    // }
-    // ).slice(0,4)
+    // ) 
   
+    // const newDays = [].concat(dates)
     
-    // console.log(mapedPanelsLeader)
-
+    
     
       const filteredDate = dates?.filter((date) =>
         date.painel?.BR.toLowerCase().includes(panelSearch.toLowerCase())
@@ -93,26 +85,24 @@ export function PanelFis({ showAll, showPanels, panelSearch}) {
               <p className="paragraph">
                 {date.painel.BR}
               </p>
-              {/* <div className="groupPanel">
-          <img className="imgFis" src={ImgFis} />
-
-          <img className="panelRectangle" src={PanelRectangle} />
-
-
-            <img className={styles.imgRectangle} src={background}/>
-            {mapedPanelsLeader?.map((leader) =>{ 
-              return (
-                <Row className="avatarGroup" showAll={true} >
-                <Col>
-            <img className={styles.avatar} src={AvatarLeader} />
-
-                <span className="speakerName">{leader[0].tratamento}</span>
-                </Col>
-          </Row>
-                )
-              })}
+                <div className="groupPanel">
+                {/* <img className="imgFis" src={painel.imagem} /> */}
+      
+                <img className="panelRectangle" src={PanelRectangle} />
+      
+              {date.lideres.map((tratamento) => (
+                <div className="avatarGroup" >
+                  <Avatar
+                    showAll={true}
+                    name={tratamento.tratamento}
+                    background={ImgRectangle}
+                    src={AvatarLeader}
+                  />
+                  {/* <div className="Moderator">Moderador</div> */}
+                  {/* <span className="speakerName">{tratamento.tratamento}</span> */}
+                </div>
+                  ))}
               </div>
-                <div className="Moderator">{t("programmation.moderator")}</div> */}
             </section>
           </div>
         );
