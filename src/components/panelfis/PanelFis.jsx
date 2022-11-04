@@ -1,14 +1,8 @@
-// import ImgFis from "../../assets/images/programming/painel-fis.png";
-// import ImgSm from "../../assets/images/programming/painel-sm.png";
-// import ImgLygga from "../../assets/images/programming/painel-lygga.png";
-// import ImgMeets from "../../assets/images/programming/painel-meets.png";
 import PanelRectangle from "../../assets/images/programming/panel-rectangle.png";
 import ImgRectangle from "../../assets/images/programming/img-rectangle.png";
 import { Avatar } from "../avatar/Avatar";
 import moment from "moment";
-// import AvatarPanel from "../../assets/images/leaders/avatarLeader.png";
-// import styles from '../avatar/Avatar.module.css'
-import AvatarLeader from '../../assets/images/leaders/avatarLeader.png';
+// import AvatarLeader from '../../assets/images/leaders/avatarLeader.png';
 
 import "./PanelFis.css";
 
@@ -16,55 +10,28 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
-// import { Col, Row } from "react-bootstrap";
 
-export function PanelFis({ showAll, showPanels, panelSearch}) {
+
+export function PanelFis({ showPanels, panelSearch}) {
   const { t } = useTranslation();
-  // const [panel, setPanel] = useState([]);
   const [dates, setDates] = useState([]);
-  
-  // useEffect(() => {
-  //   axios
-  //   .get("/server/fisweek/lideres")
-  //   .then((response) => {
-  //     const leadersPanel = response.data
-  //     setPanel(leadersPanel);
-  //   })
-  //   .catch((err) => {
-  //     setErr(err);
-  //   });;
-  // }, []);
   
   useEffect(() => {
     axios
     .get("/server/fisweek/painel/buscar")
     .then((response) => {
-      const infoData = showPanels ? response.data : response.data.slice(2, 6);
+      const infoData = showPanels ? response.data.slice(2,90) : response.data.slice(2, 6);
         setDates(infoData);
       })
       .catch((err) => {
         setErr(err);
       });
     }, []);
-    
-    // const mapedPanelsLeader = dates?.map(({lideres}) => {
-    //   return lideres.map(({id}) => {
-    //     const rightPanelLeader = panel?.find(leader => leader._id === id)
-        
-    //     return {tratamento: rightPanelLeader?.tratamento}
-    //   })
-    // }
-    // ) 
-  
-    // const newDays = [].concat(dates)
-    
-    
-    
-      const filteredDate = dates?.filter((date) =>
+
+      const filteredDate = dates?.filter((date) => 
         date.painel?.BR.toLowerCase().includes(panelSearch.toLowerCase())
       );
-        
-    
+
     return (
       <div>
       {filteredDate.sort((a, b) => a.data >= b.data ? 1 : -1).map((date) => {
@@ -85,23 +52,24 @@ export function PanelFis({ showAll, showPanels, panelSearch}) {
               <p className="paragraph">
                 {date.painel.BR}
               </p>
-                <div className="groupPanel">
-                {/* <img className="imgFis" src={painel.imagem} /> */}
-      
+                <div className="groupPanel">      
                 <img className="panelRectangle" src={PanelRectangle} />
-      
-              {date.lideres.map((tratamento) => (
-                <div className="avatarGroup" >
+              
+              {date.lideres.map((tratamento) => {
+                const leaderImage = tratamento.tratamento.toLowerCase().replace(' ' && /[^a-zA-Z0-9]/g, '-');
+                return (
+
+                  <div className="avatarGroup" >
                   <Avatar
                     showAll={true}
                     name={tratamento.tratamento}
                     background={ImgRectangle}
-                    src={AvatarLeader}
-                  />
-                  {/* <div className="Moderator">Moderador</div> */}
-                  {/* <span className="speakerName">{tratamento.tratamento}</span> */}
+                    src={"https://fis.org.br/images/lideres/" + leaderImage + ".png"}
+                    />
                 </div>
-                  ))}
+                    )
+                  }
+                  )}
               </div>
             </section>
           </div>

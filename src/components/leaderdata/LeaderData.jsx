@@ -5,7 +5,7 @@ import moment from "moment";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
-import AvatarLeader from "../../assets/images/leaders/avatarLeader.png";
+
 import Panel from "../../assets/images/leaders/panel.png";
 
 import "./LeaderData.css";
@@ -16,6 +16,7 @@ export function LeaderData({ input, showAll }) {
   const [dates, setDates] = useState([]);
   const [err, setErr] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+
 
   useEffect(() => {
     setIsLoading(true);
@@ -44,9 +45,8 @@ export function LeaderData({ input, showAll }) {
       });
   }, []);
 
-  const mapedLeaders = showAll
-    ? dates
-        ?.map(({ lideres }) => {
+  const mapedLeaders = showAll ? 
+    dates?.map(({ lideres }) => {
           return lideres.map(({ id }) => {
             const rightLeader = leaders?.find((leader) => leader._id === id);
 
@@ -59,8 +59,8 @@ export function LeaderData({ input, showAll }) {
         .reduce((acc, current) => {
           return [...acc, ...current];
         }, [])
-    : dates
-        ?.map(({ lideres }) => {
+    : 
+    dates?.map(({ lideres }) => {
           return lideres.map(({ id }) => {
             const rightLeader = leaders?.find((leader) => leader._id === id);
 
@@ -75,6 +75,7 @@ export function LeaderData({ input, showAll }) {
         }, [])
         .slice(0, 6);
 
+    
   const filteredLeaders = mapedLeaders?.filter((leader) =>
     leader.tratamento?.toLowerCase().includes(input.toLowerCase())
   );
@@ -91,7 +92,8 @@ export function LeaderData({ input, showAll }) {
           className="spinner"
         />
       ) : (
-        filteredLeaders.map((leader, key) => {
+        filteredLeaders.sort((a, b) => a.data > b.data ? 1 : -1).map((leader, key) => {
+          const imgName = leader.tratamento.toLowerCase().replace(' ', '-');
           return (
             <Col
               xs={12}
@@ -103,9 +105,13 @@ export function LeaderData({ input, showAll }) {
             >
               <img
                 className="avatarLeader"
-                src={AvatarLeader}
-                // src="https://cpanel.fis.org.br/cpsess6995292450/frontend/paper_lantern/filemanager/index.html/public_html/images/lideres/sample.png"
-                // onError={(e) => {e.target.onerror = null; e.target.src={AvatarLeader} }}
+                // src={AvatarLeader}
+                src={"https://fis.org.br/images/lideres/" + imgName + ".png"}
+                alt="Image not found"
+                onError={(e) =>
+                  (e.target.onerror = null)(
+                    (e.target.src =
+                      "https://fis.org.br/images/lideres/avatarLeader.png"))}
               />
               <img className="panel" src={Panel} />
 

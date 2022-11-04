@@ -24,6 +24,8 @@ export function Startups() {
   } = useForm();
 
   const createUser = data => console.log("Enviado", data)
+  
+  console.log(createUser)
 
   function openModal() {
     setIsOpen(true);

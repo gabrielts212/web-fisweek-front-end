@@ -14,16 +14,18 @@ export function AllTheSchedule() {
   const { t } = useTranslation();
   
   const [ panelSearch, setPanelSearch ] = useState("")
-  const [ days, setDays ] = useState("")
+  // const [ leaderSearch, setLeaderSearch ] = useState("")
 
   const searchPanelHandler = (event) => {
     setPanelSearch(event.target.value)
+    // setLeaderSearch(event.target.value)
   }
 
-  // const daysHandler = (event) => {
-  //   setDays(event.target.value)
+  // const searchLeaderHandler = (event) => {
+  //   setLeaderSearch(event.target.value)
   // }
-
+ 
+// console.log(leaderSearch)
   return (
     <div className="allTheSchedule">
       <header>
@@ -45,7 +47,7 @@ export function AllTheSchedule() {
         <MagnifyingGlass className="iconSearch" size={32}/>
       </div>
       
-      <PanelFis  showAll={false} showPanels={true} panelSearch={panelSearch}/>
+      <PanelFis  showAll={false} showPanels={true} panelSearch={panelSearch} />
       {/* <PanelSm />
       <PanelLygaa />
       <PanelMeets /> */}

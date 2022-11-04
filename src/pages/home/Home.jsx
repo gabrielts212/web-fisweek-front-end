@@ -50,7 +50,7 @@ export function Home() {
             <Row>
                 <ConferenceBar />
             </Row>
-                {/* <Leaders/> */}
+                <Leaders/>
             <Row>
                 <Timer />
             </Row>
@@ -67,7 +67,7 @@ export function Home() {
                 {/* <Testimonials /> */}
             </Row>
             <Row>
-                <Startups />
+                {/* <Startups /> */}
             </Row>
             <Row>
                 <Partners/>
