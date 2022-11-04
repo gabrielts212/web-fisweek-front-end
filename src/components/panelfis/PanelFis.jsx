@@ -56,7 +56,7 @@ export function PanelFis({ showPanels, panelSearch}) {
                 <img className="panelRectangle" src={PanelRectangle} />
               
               {date.lideres.map((tratamento) => {
-                const leaderImage = tratamento.tratamento.toLowerCase().replace(' ' && /[^a-zA-Z0-9]/g, '-');
+                const leaderImage = tratamento?.tratamento?.toLowerCase().replace(' ' && /[^a-zA-Z0-9]/g, '-');
                 return (
 
                   <div className="avatarGroup" >

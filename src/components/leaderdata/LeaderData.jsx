@@ -93,7 +93,7 @@ export function LeaderData({ input, showAll }) {
         />
       ) : (
         filteredLeaders.sort((a, b) => a.data > b.data ? 1 : -1).map((leader, key) => {
-          const imgName = leader.tratamento.toLowerCase().replace(' ', '-');
+          const imgName = leader?.tratamento?.toLowerCase().replace(' ', '-');
           return (
             <Col
               xs={12}
