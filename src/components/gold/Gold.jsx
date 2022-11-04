@@ -25,7 +25,7 @@ import Vventures from "../../assets/images/Partners/gold1/vventures.png";
 import Fena_saude from "../../assets/images/Partners/gold1/fenasaude.png";
 import Careon from "../../assets/images/Partners/gold1/careon.png";
 import Fleury from "../../assets/images/Partners/gold1/fleury.png";
-// import Gsk from "../../assets/images/Partners/gold1/gsk.png";
+import Gsk from "../../assets/images/Partners/gold1/gsk.png";
 
 export function Gold() {
   const { t } = useTranslation();
@@ -125,12 +125,12 @@ export function Gold() {
             <img className="gold-partner" src={Pfizer} alt={"Logo do parceiro "} />
           </a>
 
-          {/* <a
+          <a
             href="https://br.gsk.com/pt-br/?cc=br_psea_ac_not_applicable_45566&gclid=CjwKCAjwzaSLBhBJEiwAJSRoknpi1MW9t0Nqo4gxAaKJZDOmFNwkbhQoXp8AwkWN66do1Z_1vQCA8BoCTicQAvD_BwE"
             target="_blank"
           >
             <img className="gold-partner" src={Gsk} alt={"Logo do parceiro "} />
-          </a> */}
+          </a>
 
           <a href="https://www.rededorsaoluiz.com.br/" target="_blank">
             <img className="gold-partner" src={Rede_dor} alt={"Logo do parceiro "} />

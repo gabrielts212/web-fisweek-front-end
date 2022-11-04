@@ -53,6 +53,8 @@ import Inei from "../../assets/images/Partners/apoio1/inei.png";
 import iess from "../../assets/images/Partners/apoio1/iess.png";
 import abes from "../../assets/images/Partners/apoio1/abes.png";
 import Anm from "../../assets/images/Partners/apoio1/anm.png";
+import Fenaess from "../../assets/images/Partners/apoio1/fenaess.png";
+import Abdeh from "../../assets/images/Partners/apoio1/abdeh.png";
 
 
 export  function Support() {
@@ -103,6 +105,20 @@ export  function Support() {
           <a href="https://abimed.org.br/" target="_blank">
             <img
               src={Abimed}
+              alt={"Logo do parceiro"}
+              className="supportPartner"
+            />
+          </a>
+          <a href="#" target="_blank">
+            <img
+              src={Fenaess}
+              alt={"Logo do parceiro"}
+              className="supportPartner"
+            />
+          </a>
+          <a href="#" target="_blank">
+            <img
+              src={Abdeh}
               alt={"Logo do parceiro"}
               className="supportPartner"
             />

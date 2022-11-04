@@ -17,12 +17,11 @@ export function Startups() {
   const { t } = useTranslation();
   const [modalIsOpen, setIsOpen] = useState(false)
   
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-
+  const { register, erros, reset, handleSubmit} = useForm(false);
+  const registerHandler = (data) => {
+    console.log(data);
+    reset();
+   }
   const createUser = data => console.log("Enviado", data)
   
   console.log(createUser)
@@ -56,12 +55,14 @@ export function Startups() {
             className="modal-content"
           >
             
-            <form className="formStartups" onSubmit={handleSubmit(createUser)}>
+            <form className="formStartups" onSubmit={handleSubmit (registerHandler)}>
               <label className="captionTitle">
                 <input
                   type="text"
                   name="name"
                   placeholder={t("startups.startupName")}
+                  onChange={(e) => setUserName(e.target.value)}
+                  ref={register}
                   {...register("name", {
                     required: true,
                   })}
@@ -70,9 +71,11 @@ export function Startups() {
 
                 <input
                   type="text"
-                  name="nameR"
+                  name="representant"
                   placeholder={t("startups.representantName")}
-                  {...register("nameR", {
+                  onChange={(e) => setUserName(e.target.value)}
+                  ref={register}
+                  {...register("representant", {
                     required: true,
                   })}
                   required
@@ -82,6 +85,8 @@ export function Startups() {
                   type="Email"
                   name="email"
                   placeholder={t("startups.emai")}
+                  onChange={(e) => setUserName(e.target.value)}
+                  ref={register}
                   {...register("email", {
                     required: true,
                   })}
@@ -92,6 +97,8 @@ export function Startups() {
                   type="number"
                   name="telephone"
                   placeholder={t("startups.phoneNumber")}
+                  onChange={(e) => setUserName(e.target.value)}
+                  ref={register}
                   {...register("telephone", {
                     required: true,
                   })}
@@ -110,6 +117,8 @@ export function Startups() {
                   type="text"
                   name="city"
                   placeholder={t("startups.city")}
+                  onChange={(e) => setUserName(e.target.value)}
+                  ref={register}
                   {...register("city", {
                     required: true,
                   })}
@@ -120,6 +129,8 @@ export function Startups() {
                   type="text"
                   name="site"
                   placeholder={t("startups.url")}
+                  onChange={(e) => setUserName(e.target.value)}
+                  ref={register}
                   {...register("site", {
                     required: true,
                   })}

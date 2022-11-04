@@ -78,7 +78,7 @@ export function Header() {
               </Link>
             </a>
           </li>
-          {/* <li className="navItem">
+          <li className="navItem">
             <a href="#">
               <Link
                 to="testimonials"
@@ -92,7 +92,7 @@ export function Header() {
               </Link>
             </a>
           </li>
-          <li className="navItem">
+          {/* <li className="navItem">
             <a href="#">
               <Link
                 to="Startups"

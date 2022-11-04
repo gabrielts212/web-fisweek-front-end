@@ -34,7 +34,7 @@ export function Testimonials() {
             {t("declaration.d1")}
           </p>
           <img className="citeImg" src={CiteImg} />
-          <span className="DepositionsName">Vera Valente</span>
+          <span className="DepositionsName">Lídia Abdalla</span>
         </div>
 
         <div className="Depositions">
@@ -43,9 +43,9 @@ export function Testimonials() {
             {t("declaration.d2")}
           </p>
           <img className="citeImg" src={CiteImg} />
-          <span className="DepositionsName">Nome Pessoa</span>
+          <span className="DepositionsName">Arthur Lima</span>
         </div>
-
+{/* 
         <div className="Depositions">
           <img className="depositionsImg" src={Depositions} />
           <p className="citeDepositions">
@@ -53,7 +53,7 @@ export function Testimonials() {
           </p>
           <img className="citeImg" src={CiteImg} />
           <span className="DepositionsName">Nome Pessoa</span>
-        </div>
+        </div> */}
       </section>
 
       <div className="registrationButton">

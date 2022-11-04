@@ -23,7 +23,7 @@
   align-items: center;
   justify-content: center;
 
-  margin: 4.5rem 0 5.5rem 0;
+  margin: 2.5rem 0 7.5rem 0;
 }
 
 .Testimonials header h1 {
@@ -62,12 +62,13 @@
   display: flex;
   flex-direction: column;
   gap: 7rem;
-  margin: -41rem 0 0 20rem;
+  margin: -51rem 0 0 20rem;
 }
 
 .DepositionsGroup .Depositions .depositionsImg {
   width: 50rem;
   height: 18rem;
+  margin-top: 85px;
 }
 
 .DepositionsGroup .Depositions:nth-child(3) {
@@ -81,11 +82,11 @@
   line-height: 1.5;
   text-align: center;
   color: #FFF;
-  margin: -14.5rem 0 1rem 10rem;
+  margin: -17.5rem 0 1rem 10rem;
 }
 
 .Depositions .citeImg {
-  margin: -2rem 0 0 9rem;
+  margin: -5rem 0 0 9rem;
 }
 
 .Depositions .DepositionsName {
@@ -117,13 +118,14 @@
 }
 
 .Testimonials .registrationButton .buttonLink {
-  margin: 6rem 0 4rem;
+  margin: 14rem 0 4rem;
 }
 
 /* ====== @MEDIA QUERY ========= */
 
 /* XX-Small devices (portrait phones, less than 392px) */
-@media (max-width: 391px) {
+
+@media (max-width: 390px) {
   .Testimonials header {
     width: 351.58px;
     height: 70.73px;
@@ -181,13 +183,13 @@
 
   .Depositions .citeDepositions {
     width: 18rem;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     line-height: 1.5;
     margin: -24.3rem 4.5rem 1rem 3.5rem;
   }
   
   .Depositions .citeImg {
-    margin: -3rem 0 0 3.5rem;
+    margin: 0rem 0 0 3.5rem;
     width: 4rem;
   }
   
@@ -202,10 +204,93 @@
     height: 40.06px;
     font-size: 1.1rem;
     line-height: normal;
-    margin: 0 0 3rem;
+    /* margin: 11 0 1rem; */
+    margin-top: 20px;
   }
 }
+@media (max-width: 375px) and (max-width: 391.98px) {
+  .Testimonials header {
+    width: 351.58px;
+    height: 70.73px;
+  }
+  
+  .Testimonials header h1 {
+    font-size: 2.1rem;
+    padding-left: 58px;
+  }
+  
+  .Testimonials header img {
+    width: 20%;
+  }
+  
+  .testimonialsImages .ManBackground {
+    width: 8rem;
+    height: 15rem;
+    margin: -4rem 0 0 -12.5rem;
+  }
+  
+  .testimonialsImages .Man {
+    width: 8.2rem;
+    height: 16.2rem;
+    margin: -2rem 0 0 -8.1rem;
+  }
+  
+  .testimonialsImages .circleTestimonial {
+    width: 8rem;
+    height: 8rem;
+  
+    position: absolute;
+    top: 30rem;
+    left: 1rem;
+  }
+  
+  .DepositionsGroup {
+    gap: 1.5rem;
+    margin: -17rem 0 0 9rem;
 
+    height: 28rem;
+    flex-direction: row;
+    width: 62%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .DepositionsGroup::-webkit-scrollbar {
+    display: none;
+  }
+
+  .DepositionsGroup .Depositions .depositionsImg {
+    width: 25rem;
+    height: 26rem;
+  }
+
+  .Depositions .citeDepositions {
+    width: 18rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: -24.3rem 4.5rem 1rem 3.5rem;
+  }
+  
+  .Depositions .citeImg {
+    margin: 0rem 0 0 3.5rem;
+    width: 4rem;
+  }
+  
+  .Depositions .DepositionsName {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0 0 0 3.5rem;
+  }
+
+  .Testimonials .registrationButton .buttonLink {
+    width: 240px;
+    height: 40.06px;
+    font-size: 1.1rem;
+    line-height: normal;
+    /* margin: 11 0 1rem; */
+    margin-top: 20px;
+  }
+}
 /* X-Small devices (portrait phones, less than 550px) */
 @media (min-width: 392px) and (max-width: 549.98px) {
   .Testimonials header {
@@ -265,7 +350,7 @@
 
   .Depositions .citeDepositions {
     width: 17rem;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     line-height: 1.5;
     margin: -24.3rem 4.5rem 1rem 4.5rem;
   }
@@ -286,10 +371,10 @@
     height: 40.06px;
     font-size: 1.1rem;
     line-height: normal;
-    margin: 1rem 0 3rem;
+    /* margin: 11 0 1rem; */
+    margin-top: 20px;
   }
 }
-
 /* Small devices (landscape phones, less than 768px) */
 @media (min-width: 550px) and (max-width: 767.98px) {  
   .Testimonials header {
@@ -349,9 +434,9 @@
 
   .Depositions .citeDepositions {
     width: 19rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.5;
-    margin: -22.8rem 4.5rem 1rem 4.5rem;
+    margin: -25.8rem 4.5rem 1rem 4.5rem;
   }
   
   .Depositions .citeImg {
@@ -373,12 +458,12 @@
     margin: 2rem 0 3.5rem;
   }
 }
-
 /* Medium devices (tablets, less than 992px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .Testimonials header {
     width: 391.58px;
     height: 86.73px;
+    margin: 1.5rem 0 5.5rem 0;
   }
   
   .Testimonials header h1 {
@@ -413,19 +498,20 @@
   
   .DepositionsGroup {
     gap: 4rem;
-    margin: -29.5rem 0 0 14rem;
+    margin: -32.5rem 0 0 14rem;
   }
 
   .DepositionsGroup .Depositions .depositionsImg {
     width: 35rem;
     height: 13rem;
+    margin-top: 85px;
   }
   
   .Depositions .citeDepositions {
     width: 25rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.4;
-    margin: -10.7rem 0 1rem 5rem;
+    margin: -11.7rem 0 1rem 5rem;
   }
   
   .Depositions .citeImg {
@@ -444,15 +530,15 @@
     height: 48.06px;
     font-size: 1.3rem;
     line-height: normal;
-    margin: 4rem 0 3.5rem;
+    margin: 10rem 0 3.5rem;
   }
 }
-
 /* Large devices (desktops, less than 1200px) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .Testimonials header {
     width: 391.58px;
     height: 86.73px;
+    margin: 1.5rem 0 5.5rem 0;
   }
   
   .Testimonials header h1 {
@@ -487,16 +573,18 @@
   
   .DepositionsGroup {
     gap: 5rem;
-    margin: -36rem 0 0 18rem;
+    margin: -39rem 0 0 18rem;
   }
 
   .DepositionsGroup .Depositions .depositionsImg {
     width: 45rem;
     height: 16rem;
+    margin-top: 100px;
   }
 
   .Depositions .citeDepositions {
-    margin: -13.5rem 0 1rem 8rem;
+    margin: -15.5rem 0 1rem 8rem;
+    font-size: 1.2rem;
   }
   
   .Depositions .citeImg {
@@ -508,10 +596,9 @@
     width: 329px;
     height: 52.06px;
     font-size: 1.5rem;
-    margin: 5rem 0 4rem;
+    margin: 12rem 0 4rem;
   }
 }
-
 /* X-Large devices (large desktops, less than 1400px) */
 @media (min-width: 1200px) and (max-width: 1399.98px) { 
   .Testimonials header {
@@ -546,7 +633,7 @@
   }
   
   .DepositionsGroup .Depositions {
-    height: 16rem;
+    height: rem;
   }
   
   .Depositions .citeImg {
@@ -555,7 +642,6 @@
 
   .Testimonials .registrationButton .buttonLink {
     width: 359px;
-    margin: 6rem 0 4rem;
+    margin: 12rem 0 4rem;
   }
 }
-

@@ -18,6 +18,7 @@ import Sodexo from "../../assets/images/Partners/diamond1/sodexo.jpg";
 import Senac from "../../assets/images/Partners/diamond1/senac.png";
 import WhiteMartins from "../../assets/images/Partners/diamond1/frame.jpg";
 import Oncoclinicas from "../../assets/images/Partners/diamond1/oncoclinicas.jpg";
+import Novartis from "../../assets/images/Partners/diamond1/novartis.png";
 
 export function Diamond() {
   const { t } = useTranslation();
@@ -60,6 +61,9 @@ export function Diamond() {
         >
           <a href="https://www.americasmed.com.br/" target="_blank">
             <img src={Americas} alt={"Logo do parceiro "} />
+          </a>
+          <a href="https://www.novartis.com.br/" target="_blank">
+            <img src={Novartis} alt={"Logo do parceiro "} />
           </a>
           <a href="http://www.amil.com.br/institucional/#/" target="_blank">
             <img src={Amil} alt={"Logo do parceiro "} />
