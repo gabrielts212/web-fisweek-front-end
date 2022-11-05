@@ -75,12 +75,12 @@ export function LeaderData({ input, showAll }) {
         }, [])
         .slice(0, 6);
 
+        // console.log(mapedLeaders, 'maped leaders')
     
   const filteredLeaders = mapedLeaders?.filter((leader) =>
     leader.tratamento?.toLowerCase().includes(input.toLowerCase())
   );
 
-  // console.log(mapedLeaders, 'maped leaders')
 
   return (
     <Row className="rowLeaders">

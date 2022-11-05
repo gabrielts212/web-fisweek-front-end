@@ -2,7 +2,7 @@ import PanelRectangle from "../../assets/images/programming/panel-rectangle.png"
 import ImgRectangle from "../../assets/images/programming/img-rectangle.png";
 import { Avatar } from "../avatar/Avatar";
 import moment from "moment";
-// import AvatarLeader from '../../assets/images/leaders/avatarLeader.png';
+import AvatarLeader from '../../assets/images/leaders/avatarLeader.png';
 
 import "./PanelFis.css";
 
@@ -12,10 +12,23 @@ import { useEffect } from "react";
 import axios from "axios";
 
 
-export function PanelFis({ showPanels, panelSearch}) {
+export function PanelFis({ showAll, showPanels, panelSearch}) {
   const { t } = useTranslation();
+  const [panel, setPanel] = useState([]);
   const [dates, setDates] = useState([]);
   
+  useEffect(() => {
+    axios
+    .get("/server/fisweek/lideres")
+    .then((response) => {
+      const leadersPanel = response.data
+      setPanel(leadersPanel);
+    })
+    .catch((err) => {
+      setErr(err);
+    });;
+  }, []);
+
   useEffect(() => {
     axios
     .get("/server/fisweek/painel/buscar")
@@ -28,13 +41,40 @@ export function PanelFis({ showPanels, panelSearch}) {
       });
     }, []);
 
+    //   const mapedPanelsLeader = dates?.map(({lideres}) => {
+    //   return lideres.map(({id}) => {
+    //     const rightPanelLeader = panel?.find(leader => leader._id === id)
+
+    //     return {tratamento: rightPanelLeader?.tratamento}
+    //   });
+    // }
+    // ) 
+
+      const finalLeader = dates?.map(({lideres}) => {
+        return lideres.map(({id}) => {
+          const rightPanelLeader = panel?.find(leader => leader._id === id)
+          return { id, tratamento: rightPanelLeader?.tratamento}    
+        }
+        );
+      }
+      ).reduce((acc, current) => {
+        return [...acc, ...current];
+      }, []).filter(({id}) => id !== "")
+      
+      
+
+        
+      
+
+      
+
       const filteredDate = dates?.filter((date) => 
         date.painel?.BR.toLowerCase().includes(panelSearch.toLowerCase())
-      );
+        );
 
     return (
       <div>
-      {filteredDate.sort((a, b) => a.data >= b.data ? 1 : -1).map((date) => {
+      {filteredDate?.sort((a, b) => a.data >= b.data ? 1 : -1).map((date) => {
         return (
           <div className="panelFis">
             <section className="Dates">
@@ -55,21 +95,26 @@ export function PanelFis({ showPanels, panelSearch}) {
                 <div className="groupPanel">      
                 <img className="panelRectangle" src={PanelRectangle} />
               
-              {date.lideres.map((tratamento) => {
-                const leaderImage = tratamento?.tratamento?.toLowerCase().replace(' ' && /[^a-zA-Z0-9]/g, '-');
+              {date?.lideres.map(({id}) => {
+                const checkIdLeader = finalLeader?.find((leaderId) => leaderId.id === id)
+                // console.log(checkIdLeader)
+                
+                const leaderImage = checkIdLeader?.tratamento?.toLowerCase().replace(' ' && /[^a-zA-Z0-9]/g, '-');
                 return (
-
+                  
                   <div className="avatarGroup" >
                   <Avatar
                     showAll={true}
-                    name={tratamento.tratamento}
+                    name={checkIdLeader?.tratamento}
                     background={ImgRectangle}
                     src={"https://fis.org.br/images/lideres/" + leaderImage + ".png"}
                     />
                 </div>
                     )
                   }
-                  )}
+                    
+                    
+                    )}
               </div>
             </section>
           </div>
