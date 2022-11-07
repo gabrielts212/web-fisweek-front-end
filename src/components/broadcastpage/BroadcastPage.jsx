@@ -63,7 +63,7 @@ export function BroadcastPage() {
               className="iframeVideo1"
               width="800"
               height="600"
-              src="https://www.youtube.com/embed/2mdWWeeAND0"
+              src="https://www.youtube.com/embed/JmbOfugwa2A"
               title="Conheça a Iniciativa FIS"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -73,7 +73,7 @@ export function BroadcastPage() {
             <iframe className="chat1"
               width="450"
               height="600"
-              src="https://www.youtube.com/live_chat?v=2mdWWeeAND0&embed_domain=fis.org.br"
+              src="https://www.youtube.com/live_chat?v=JmbOfugwa2A&embed_domain=fis.org.br"
             ></iframe>
           </Modal>
 
@@ -89,7 +89,7 @@ export function BroadcastPage() {
               className="iframeVideo2"
               width="800"
               height="600"
-              src="https://www.youtube.com/embed/ZALjZKqevdE"
+              src="https://www.youtube.com/embed/EIx61QVnkxs"
               title="Conheça a Iniciativa FIS"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -99,7 +99,7 @@ export function BroadcastPage() {
             <iframe className="chat2"
               width="450"
               height="600"
-              src="https://www.youtube.com/live_chat?v=ZALjZKqevdE&embed_domain=fis.org.br"
+              src="https://www.youtube.com/live_chat?v=EIx61QVnkxs&embed_domain=fis.org.br"
             ></iframe>
           </Modal>
 
@@ -141,7 +141,7 @@ export function BroadcastPage() {
               className="iframeVideo4"
               width="800"
               height="600"
-              src="https://www.youtube.com/embed/7UW7OZYA8BE"
+              src="https://www.youtube.com/embed/1i0d4pEyLZA"
               title="Conheça a Iniciativa FIS"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -151,7 +151,7 @@ export function BroadcastPage() {
             <iframe className="chat4"
               width="450"
               height="600"
-              src="https://www.youtube.com/live_chat?v=7UW7OZYA8BE&embed_domain=fis.org.br"
+              src="https://www.youtube.com/live_chat?v=1i0d4pEyLZA&embed_domain=fis.org.br"
             ></iframe>
           </Modal>
         </div>
