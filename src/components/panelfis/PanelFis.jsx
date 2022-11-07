@@ -91,7 +91,7 @@ export function PanelFis({ showAll, showPanels, panelSearch}) {
                 const checkIdLeader = finalLeader?.find((leaderId) => leaderId.id === id)
                 // console.log(checkIdLeader)
                 
-                const leaderImage = checkIdLeader?.tratamento?.toLowerCase().replace(' ' && /[^a-zA-Z0-9]/g, '-');
+                const leaderImage = checkIdLeader?.tratamento?.normalize("NFD").toLowerCase().trim().replace(/[^a-zA-Z0-9]/g, "");
                 return (
                   
                   <div className="avatarGroup" >
@@ -99,7 +99,7 @@ export function PanelFis({ showAll, showPanels, panelSearch}) {
                     showAll={true}
                     name={checkIdLeader?.tratamento}
                     background={ImgRectangle}
-                    src={"https://fis.org.br/images/panelLideres/" + leaderImage + ".png"}
+                    src={"https://fis.org.br/images/finalpaineis/" + leaderImage + ".png"}
                     />
                 </div>
                     )

@@ -93,7 +93,7 @@ export function LeaderData({ input, showAll }) {
         />
       ) : (
         filteredLeaders.sort((a, b) => a.data > b.data ? 1 : -1).map((leader, key) => {
-          const imgName = leader?.tratamento?.normalize("NFD").toLowerCase().replace(' ' && /[^a-zA-Z0-9]/g, '-');
+          const imgName = leader?.tratamento?.normalize("NFD").toLowerCase().trim().replace(/[^a-zA-Z0-9]/g, "");
           return (
             <Col
               xs={12}
@@ -106,7 +106,7 @@ export function LeaderData({ input, showAll }) {
               <img
                 className="avatarLeader"
                 // src={AvatarLeader}
-                src={"https://fis.org.br/images/panelLideres/" + imgName + ".png"}
+                src={"https://fis.org.br/images/finalpaineis/" + imgName + ".png"}
                 alt="Image not found"
                 onError={(e) =>
                   (e.target.onerror = null)(
