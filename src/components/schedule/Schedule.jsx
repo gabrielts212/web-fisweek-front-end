@@ -89,7 +89,7 @@ export function Schedule() {
       <div className="registrationButton">
         <a href="#">
           <Link to="registrationInfo" spy={true} smooth={true} offset={50} duration={500}>
-            <button className="buttonLink">{t("programmation.iWantToSubscribe")}</button>
+            {/* <button className="buttonLink">{t("programmation.iWantToSubscribe")}</button> */}
           </Link> 
         </a>
       </div>

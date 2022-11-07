@@ -51,7 +51,7 @@ export function LeaderData({ input, showAll }) {
             const rightLeader = leaders?.find((leader) => leader._id === id);
 
             return {
-              tratamento: rightLeader?.tratamento,
+              tratamento: rightLeader?.nome,
               descricao: rightLeader?.descricao,
             };
           });
@@ -65,7 +65,7 @@ export function LeaderData({ input, showAll }) {
             const rightLeader = leaders?.find((leader) => leader._id === id);
 
             return {
-              tratamento: rightLeader?.tratamento,
+              tratamento: rightLeader?.nome,
               descricao: rightLeader?.descricao,
             };
           });
@@ -93,7 +93,7 @@ export function LeaderData({ input, showAll }) {
         />
       ) : (
         filteredLeaders.sort((a, b) => a.data > b.data ? 1 : -1).map((leader, key) => {
-          const imgName = leader?.tratamento?.toLowerCase().replace(' ', '-');
+          const imgName = leader?.tratamento?.normalize("NFD").toLowerCase().replace(' ' && /[^a-zA-Z0-9]/g, '-');
           return (
             <Col
               xs={12}
@@ -106,7 +106,7 @@ export function LeaderData({ input, showAll }) {
               <img
                 className="avatarLeader"
                 // src={AvatarLeader}
-                src={"https://fis.org.br/images/lideres/" + imgName + ".png"}
+                src={"https://fis.org.br/images/panelLideres/" + imgName + ".png"}
                 alt="Image not found"
                 onError={(e) =>
                   (e.target.onerror = null)(

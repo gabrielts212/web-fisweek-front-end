@@ -41,19 +41,11 @@ export function PanelFis({ showAll, showPanels, panelSearch}) {
       });
     }, []);
 
-    //   const mapedPanelsLeader = dates?.map(({lideres}) => {
-    //   return lideres.map(({id}) => {
-    //     const rightPanelLeader = panel?.find(leader => leader._id === id)
-
-    //     return {tratamento: rightPanelLeader?.tratamento}
-    //   });
-    // }
-    // ) 
-
+   
       const finalLeader = dates?.map(({lideres}) => {
         return lideres.map(({id}) => {
           const rightPanelLeader = panel?.find(leader => leader._id === id)
-          return { id, tratamento: rightPanelLeader?.tratamento}    
+          return { id, tratamento: rightPanelLeader?.nome}    
         }
         );
       }
@@ -63,7 +55,7 @@ export function PanelFis({ showAll, showPanels, panelSearch}) {
       
       
 
-        
+      
       
 
       
@@ -107,7 +99,7 @@ export function PanelFis({ showAll, showPanels, panelSearch}) {
                     showAll={true}
                     name={checkIdLeader?.tratamento}
                     background={ImgRectangle}
-                    src={"https://fis.org.br/images/lideres/" + leaderImage + ".png"}
+                    src={"https://fis.org.br/images/panelLideres/" + leaderImage + ".png"}
                     />
                 </div>
                     )

@@ -28,7 +28,7 @@ export function Institutional() {
 
 
       <div className="videoButton">
-        <a href="#">
+        {/* <a href="#">
           <Link
             to="registrationInfo"
             spy={true}
@@ -38,7 +38,7 @@ export function Institutional() {
           >
             <button className="videobuttonLink">{t("institutional.iWantToSuscribe!")}</button>
           </Link>
-        </a>
+        </a> */}
       </div>
     </div>
   );

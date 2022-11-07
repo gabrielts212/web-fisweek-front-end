@@ -52,7 +52,7 @@ export function Home() {
             </Row>
                 <Leaders/>
             <Row>
-                <Timer />
+                {/* <Timer /> */}
             </Row>
             <Row>
                 <Institutional />

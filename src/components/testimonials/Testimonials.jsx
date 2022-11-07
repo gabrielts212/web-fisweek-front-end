@@ -57,11 +57,14 @@ export function Testimonials() {
       </section>
 
       <div className="registrationButton">
-        <a href="#">
+        <div className="buttonLink">
+          
+        </div>
+        {/* <a href="#" >
           <Link to="registrationInfo" spy={true} smooth={true} offset={50} duration={500}>
             <button className="buttonLink">{t("declaration.iWantToSubscribe")}</button>
           </Link> 
-        </a>
+        </a> */}
       </div>
     </div>
   )
