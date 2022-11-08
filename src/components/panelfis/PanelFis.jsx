@@ -2,7 +2,7 @@ import PanelRectangle from "../../assets/images/programming/panel-rectangle.png"
 import ImgRectangle from "../../assets/images/programming/img-rectangle.png";
 import { Avatar } from "../avatar/Avatar";
 import moment from "moment";
-import AvatarLeader from '../../assets/images/leaders/avatarLeader.png';
+
 
 import "./PanelFis.css";
 
@@ -41,7 +41,6 @@ export function PanelFis({ showAll, showPanels, panelSearch}) {
       });
     }, []);
 
-   
       const finalLeader = dates?.map(({lideres}) => {
         return lideres.map(({id}) => {
           const rightPanelLeader = panel?.find(leader => leader._id === id)
@@ -52,13 +51,7 @@ export function PanelFis({ showAll, showPanels, panelSearch}) {
       ).reduce((acc, current) => {
         return [...acc, ...current];
       }, []).filter(({id}) => id !== "")
-      
-      
-
-      
-      
-
-      
+  
 
       const filteredDate = dates?.filter((date) => 
         date.painel?.BR.toLowerCase().includes(panelSearch.toLowerCase())
@@ -89,7 +82,6 @@ export function PanelFis({ showAll, showPanels, panelSearch}) {
               
               {date?.lideres.map(({id}) => {
                 const checkIdLeader = finalLeader?.find((leaderId) => leaderId.id === id)
-                // console.log(checkIdLeader)
                 
                 const leaderImage = checkIdLeader?.tratamento?.normalize("NFD").toLowerCase().trim().replace(/[^a-zA-Z0-9]/g, "");
                 return (

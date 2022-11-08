@@ -1,7 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import moment from "moment";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
@@ -105,7 +104,6 @@ export function LeaderData({ input, showAll }) {
             >
               <img
                 className="avatarLeader"
-                // src={AvatarLeader}
                 src={"https://fis.org.br/images/finalpaineis/" + imgName + ".png"}
                 alt="Image not found"
                 onError={(e) =>
@@ -114,16 +112,6 @@ export function LeaderData({ input, showAll }) {
                       "https://fis.org.br/images/lideres/avatarLeader.png"))}
               />
               <img className="panel" src={Panel} />
-
-              {/* {dates.map((date, key) => {
-              return (
-                <div className="leadersDate" key={key._id}>
-                  <span className="dateDay">{moment(date.data).format("DD")}</span>
-                  <span className="dateMonth ">{moment(date.data).format("MM")}</span>
-                </div>
-              );
-            })} */}
-
               <div className="leadersInfo">
                 <h4 className="leaderName">{leader.tratamento}</h4>
                 <span className="leaderOffice">{leader.descricao.BR}</span>
