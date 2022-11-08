@@ -23,10 +23,20 @@ a {
 
 /* ====== @MEDIA QUERY ========= */
 
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { 
+@media (min-width: 375px) and (max-width: 391.98px) {
   .showLeaders {
-    margin: 4rem 0 3rem 4rem;
+    margin: 4rem 0 8rem 3rem;
+  }
+}
+@media (min-width: 392px) and (max-width: 549.98px) {
+  .showLeaders {
+    margin: 4rem 0 8rem 3rem;
+  }
+}
+/* X-Small devices (portrait phones, less than 576px) */
+@media (min-width: 550px) and (max-width: 575.98px) {
+  .showLeaders {
+    margin: 4rem 0 8rem 8rem;
   }
 }
 

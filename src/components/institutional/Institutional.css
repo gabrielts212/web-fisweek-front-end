@@ -62,7 +62,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -21rem;
+    margin-top: -18rem;
     margin-left: 3rem;
     position: absolute;
     font-size: 1.3rem;
@@ -79,7 +79,7 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    margin-top: -17.7rem;
+    margin-top: -14.7rem;
     margin-left: 2.5rem;
     position: absolute;
     width: 300px;
@@ -109,7 +109,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -21.5rem;
+    margin-top: -18.5rem;
     margin-left: 3rem;
     position: absolute;
     font-size: 1.3rem;
@@ -140,7 +140,7 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    margin-top: -18rem;
+    margin-top: -15rem;
     margin-left: 2.5rem;
     position: absolute;
     width: 300px;
@@ -155,7 +155,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -29rem;
+    margin-top: -23rem;
     margin-left: 6rem;
     position: absolute;
     font-size: 1.5rem;
@@ -187,7 +187,7 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    margin-top: -24rem;
+    margin-top: -19rem;
     margin-left: 3rem;
     position: absolute;
     width: 450px;
@@ -202,8 +202,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -29rem;
-    margin-left: 5rem;
+    margin-top: -24rem;
+    margin-left: 1rem;
     position: absolute;
     font-size: 1.5rem;
     font-weight: 700;
@@ -233,7 +233,7 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    margin-top: -24.5rem;
+    margin-top: -19.5rem;
     margin-left: 30px;
     position: absolute;
     width: 450px;
@@ -248,7 +248,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -40rem;
+    margin-top: -34rem;
     margin-left: 10rem;
     position: absolute;
     font-size: 2rem;
@@ -280,7 +280,7 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    margin-top: -33rem;
+    margin-top: -28rem;
     margin-left: 73px;
     position: absolute;
     width: 550px;
@@ -298,7 +298,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -732px;
+    margin-top: -660px;
     margin-left: 181px;
     position: absolute;
     font-size: 3rem;
@@ -329,7 +329,7 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    margin-top: -44rem;
+    margin-top: -38rem;
     margin-left: 73px;
     position: absolute;
     width: 800px;
@@ -343,8 +343,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -870px;
-    margin-left: 275px;
+    margin-top: -774px;
+    margin-left: 246px;
     position: absolute;
     font-size: 3rem;
     font-weight: 700;
@@ -374,7 +374,7 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    margin-top: -53rem;
+    margin-top: -46rem;
     margin-left: 47px;
     position: absolute;
   }
