@@ -63,7 +63,7 @@ export function BroadcastPage() {
               className="iframeVideo1"
               width="800"
               height="600"
-              src="https://www.youtube.com/embed/4wNFF8ellxI"
+              src="https://www.youtube.com/embed/Q489QunyfNA"
               title="Conheça a Iniciativa FIS"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -73,7 +73,7 @@ export function BroadcastPage() {
             <iframe className="chat1"
               width="450"
               height="600"
-              src="https://www.youtube.com/live_chat?v=4wNFF8ellxI&embed_domain=fis.org.br"
+              src="https://www.youtube.com/live_chat?v=Q489QunyfNA&embed_domain=fis.org.br"
             ></iframe>
           </Modal>
 
@@ -89,7 +89,7 @@ export function BroadcastPage() {
               className="iframeVideo2"
               width="800"
               height="600"
-              src="https://www.youtube.com/embed/nfhZNwU0Sv4"
+              src="https://www.youtube.com/embed/XIMn-7AqRBw"
               title="Conheça a Iniciativa FIS"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -99,7 +99,7 @@ export function BroadcastPage() {
             <iframe className="chat2"
               width="450"
               height="600"
-              src="https://www.youtube.com/live_chat?v=nfhZNwU0Sv4&embed_domain=fis.org.br"
+              src="https://www.youtube.com/live_chat?v=XIMn-7AqRBw&embed_domain=fis.org.br"
             ></iframe>
           </Modal>
 
@@ -115,7 +115,7 @@ export function BroadcastPage() {
               className="iframeVideo3"
               width="800"
               height="600"
-              src="https://www.youtube.com/embed/ALMUrK341Y4"
+              src="https://www.youtube.com/embed/Wuny6GM0rzk"
               title="Conheça a Iniciativa FIS"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -125,7 +125,7 @@ export function BroadcastPage() {
             <iframe className="chat3"
               width="450"
               height="600"
-              src="https://www.youtube.com/live_chat?v=ALMUrK341Y4&embed_domain=fis.org.br"
+              src="https://www.youtube.com/live_chat?v=Wuny6GM0rzk&embed_domain=fis.org.br"
             ></iframe>
           </Modal>
 
@@ -141,7 +141,7 @@ export function BroadcastPage() {
               className="iframeVideo4"
               width="800"
               height="600"
-              src="https://www.youtube.com/embed/OPerwk_7fyM"
+              src="https://www.youtube.com/embed/dKgPzJYNU1o"
               title="Conheça a Iniciativa FIS"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -151,7 +151,7 @@ export function BroadcastPage() {
             <iframe className="chat4"
               width="450"
               height="600"
-              src="https://www.youtube.com/live_chat?v=OPerwk_7fyM&embed_domain=fis.org.br"
+              src="https://www.youtube.com/live_chat?v=dKgPzJYNU1o&embed_domain=fis.org.br"
             ></iframe>
           </Modal>
         </div>
